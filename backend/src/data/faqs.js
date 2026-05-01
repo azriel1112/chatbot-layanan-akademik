@@ -1,12 +1,1800 @@
 export const faqs = [
-  { id: 1, category: 'KRS', question: 'Bagaimana cara mengisi KRS?', answer: 'Mahasiswa dapat mengisi KRS melalui portal akademik pada menu KRS Online. Pilih mata kuliah sesuai kurikulum, pastikan jadwal tidak bentrok, lalu klik simpan dan ajukan persetujuan dosen wali.', keywords: ['krs', 'isi krs', 'kartu rencana studi', 'ambil mata kuliah'] },
-  { id: 2, category: 'KRS', question: 'Kapan jadwal pengisian KRS?', answer: 'Jadwal pengisian KRS mengikuti kalender akademik kampus. Umumnya dilakukan sebelum semester baru dimulai. Mahasiswa wajib memantau pengumuman resmi dari prodi atau BAAK.', keywords: ['jadwal krs', 'periode krs', 'kapan krs'] },
-  { id: 3, category: 'Pembayaran', question: 'Bagaimana cara membayar UKT?', answer: 'Pembayaran UKT dilakukan melalui virtual account bank yang tersedia di portal akademik. Setelah pembayaran berhasil, status pembayaran akan diperbarui otomatis atau maksimal 1x24 jam.', keywords: ['ukt', 'bayar kuliah', 'pembayaran', 'virtual account'] },
-  { id: 4, category: 'Nilai', question: 'Bagaimana cara melihat nilai semester?', answer: 'Nilai semester dapat dilihat melalui portal akademik pada menu KHS. Login menggunakan NIM dan password, lalu pilih semester yang ingin dilihat.', keywords: ['nilai', 'khs', 'lihat nilai', 'transkrip'] },
-  { id: 5, category: 'Cuti', question: 'Bagaimana prosedur pengajuan cuti akademik?', answer: 'Mahasiswa mengajukan cuti melalui bagian akademik dengan mengisi formulir cuti, melampirkan alasan, meminta persetujuan dosen wali dan ketua prodi, lalu menyerahkan berkas sebelum batas waktu yang ditentukan.', keywords: ['cuti', 'cuti akademik', 'berhenti sementara'] },
-  { id: 6, category: 'Skripsi', question: 'Apa syarat mengambil skripsi atau tugas akhir?', answer: 'Syarat umum mengambil skripsi adalah telah memenuhi jumlah SKS minimum, lulus mata kuliah prasyarat, memiliki IPK sesuai ketentuan prodi, dan telah menyelesaikan administrasi akademik.', keywords: ['skripsi', 'tugas akhir', 'syarat ta', 'proposal'] },
-  { id: 7, category: 'Surat', question: 'Bagaimana cara membuat surat aktif kuliah?', answer: 'Surat aktif kuliah dapat diajukan melalui layanan akademik fakultas atau portal layanan kampus dengan mengisi data diri, tujuan surat, dan mengunggah dokumen pendukung jika diperlukan.', keywords: ['surat aktif kuliah', 'surat keterangan', 'aktif kuliah'] },
-  { id: 8, category: 'Wisuda', question: 'Apa saja syarat pendaftaran wisuda?', answer: 'Syarat pendaftaran wisuda biasanya meliputi lulus sidang akhir, bebas administrasi keuangan, bebas pustaka, mengunggah pas foto, mengisi biodata ijazah, dan mendaftar melalui portal akademik.', keywords: ['wisuda', 'daftar wisuda', 'syarat wisuda'] },
-  { id: 9, category: 'Jadwal', question: 'Bagaimana cara melihat jadwal kuliah?', answer: 'Jadwal kuliah dapat dilihat pada portal akademik melalui menu Jadwal Kuliah. Pilih semester aktif dan kelas masing-masing.', keywords: ['jadwal kuliah', 'kelas', 'ruang kuliah'] },
-  { id: 10, category: 'Login', question: 'Apa yang harus dilakukan jika lupa password portal akademik?', answer: 'Mahasiswa dapat menggunakan fitur lupa password pada portal akademik atau menghubungi admin akademik dengan membawa identitas mahasiswa untuk proses reset password.', keywords: ['lupa password', 'reset password', 'login portal'] }
+  {
+    id: 1,
+    category: "Akreditasi",
+    question: "Apa akreditasi Universitas Mercu Buana saat ini?",
+    answer: `Universitas Mercu Buana saat ini terakreditasi UNGGUL oleh BAN-PT.
+
+Berdasarkan SK Konversi Peringkat Akreditasi Nomor 478/SK/BAN-PT/Ak.KP/PT/VIII/2022, Universitas Mercu Buana memperoleh nilai 363.
+
+Akreditasi ini berlaku mulai 30 Agustus 2022 sampai dengan 21 Desember 2026.`,
+    keywords: [
+      "akreditasi umb",
+      "akreditasi universitas mercu buana",
+      "umb unggul",
+      "akreditasi institusi",
+      "ban pt",
+    ],
+  },
+  {
+    id: 2,
+    category: "Akreditasi",
+    question: "Sampai kapan akreditasi Universitas Mercu Buana berlaku?",
+    answer: `Akreditasi UNGGUL Universitas Mercu Buana berlaku sampai dengan 21 Desember 2026.
+
+Masa berlaku tersebut tercantum dalam SK BAN-PT Nomor 478/SK/BAN-PT/Ak.KP/PT/VIII/2022.`,
+    keywords: [
+      "masa berlaku akreditasi umb",
+      "akreditasi umb sampai kapan",
+      "21 desember 2026",
+      "sk akreditasi umb",
+    ],
+  },
+  {
+    id: 3,
+    category: "Akreditasi",
+    question:
+      "Apa perbedaan akreditasi institusi dan akreditasi program studi?",
+    answer: `Akreditasi institusi adalah akreditasi untuk perguruan tinggi secara keseluruhan, misalnya Universitas Mercu Buana.
+
+Akreditasi program studi adalah akreditasi untuk jurusan atau prodi tertentu, misalnya Sistem Informasi, Teknik Informatika, atau Magister Sains Data.
+
+Panduan penggunaannya:
+1. Jika formulir meminta akreditasi kampus, gunakan akreditasi institusi.
+2. Jika formulir meminta akreditasi jurusan atau program studi, gunakan akreditasi prodi.
+3. Jika diminta akreditasi pada tahun kelulusan, gunakan dokumen yang berlaku pada tahun tersebut.`,
+    keywords: [
+      "akreditasi institusi",
+      "akreditasi prodi",
+      "akreditasi jurusan",
+      "beda akreditasi kampus dan prodi",
+    ],
+  },
+  {
+    id: 4,
+    category: "Akreditasi",
+    question:
+      "Apa akreditasi Program Studi Sistem Informasi Universitas Mercu Buana?",
+    answer: `Berdasarkan dokumen BAN-PT periode 2019-2024, Program Studi Sistem Informasi pada Program Sarjana Universitas Mercu Buana terakreditasi B dengan nilai 349.
+
+Akreditasi tersebut berlaku mulai 27 Agustus 2019 sampai dengan 27 Agustus 2024 berdasarkan SK Nomor 3207/SK/BAN-PT/Akred/S/VIII/2019.`,
+    keywords: [
+      "akreditasi sistem informasi",
+      "sistem informasi umb",
+      "si umb",
+      "akreditasi si",
+      "sk sistem informasi",
+    ],
+  },
+  {
+    id: 5,
+    category: "Akreditasi",
+    question: "Apa nomor SK akreditasi Sistem Informasi UMB?",
+    answer: `Nomor SK akreditasi Program Studi Sistem Informasi Universitas Mercu Buana periode 2019-2024 adalah:
+
+3207/SK/BAN-PT/Akred/S/VIII/2019
+
+SK tersebut diterbitkan oleh BAN-PT dan menyatakan bahwa Sistem Informasi UMB terakreditasi B dengan nilai 349.`,
+    keywords: [
+      "nomor sk sistem informasi",
+      "sk si umb",
+      "3207 sk ban pt",
+      "akreditasi si 2019",
+    ],
+  },
+  {
+    id: 6,
+    category: "Akreditasi",
+    question:
+      "Apa akreditasi Program Studi Teknik Informatika Universitas Mercu Buana?",
+    answer: `Program Studi Teknik Informatika pada Program Sarjana Universitas Mercu Buana terakreditasi UNGGUL oleh LAM INFOKOM.
+
+Detail akreditasinya:
+1. Nomor SK: 038/SK/LAM-INFOKOM/Ak/S/IV/2023.
+2. Peringkat: UNGGUL.
+3. Nilai: 362.
+4. Masa berlaku: 7 April 2023 sampai dengan 7 April 2028.`,
+    keywords: [
+      "akreditasi teknik informatika",
+      "teknik informatika umb",
+      "ti umb",
+      "akreditasi ti",
+      "lam infokom",
+    ],
+  },
+  {
+    id: 7,
+    category: "Akreditasi",
+    question: "Sampai kapan akreditasi Teknik Informatika UMB berlaku?",
+    answer: `Akreditasi Program Studi Teknik Informatika UMB berlaku sampai dengan 7 April 2028.
+
+Masa berlaku tersebut tercantum dalam SK LAM INFOKOM Nomor 038/SK/LAM-INFOKOM/Ak/S/IV/2023.`,
+    keywords: [
+      "masa berlaku teknik informatika",
+      "akreditasi ti sampai kapan",
+      "7 april 2028",
+      "sk ti umb",
+    ],
+  },
+  {
+    id: 8,
+    category: "Akreditasi",
+    question: "Apa akreditasi Program Studi Magister Sains Data UMB?",
+    answer: `Program Studi Sains Data pada Program Magister Universitas Mercu Buana memiliki peringkat Akreditasi Baik.
+
+Akreditasi ini diterbitkan oleh LAM INFOKOM melalui SK Nomor 118/SK/LAM-INFOKOM/Ak.Min/M/IX/2025 dan berlaku mulai 9 September 2025 sampai dengan 9 September 2027.`,
+    keywords: [
+      "akreditasi sains data",
+      "magister sains data",
+      "s2 sains data",
+      "akreditasi baik",
+      "lam infokom",
+    ],
+  },
+  {
+    id: 9,
+    category: "Akreditasi",
+    question: "Sampai kapan akreditasi Magister Sains Data UMB berlaku?",
+    answer: `Akreditasi Program Studi Sains Data pada Program Magister UMB berlaku sampai dengan 9 September 2027.
+
+Berdasarkan SK LAM INFOKOM, akreditasi ini berlaku untuk periode 9 September 2025 sampai 9 September 2027 dan tidak dapat diperpanjang.`,
+    keywords: [
+      "masa berlaku sains data",
+      "akreditasi magister sains data",
+      "9 september 2027",
+      "s2 sains data",
+    ],
+  },
+  {
+    id: 10,
+    category: "Akreditasi",
+    question:
+      "Apa saja program studi yang memiliki data akreditasi pada dokumen ini?",
+    answer: `Berdasarkan dokumen yang tersedia, data akreditasi yang dapat digunakan adalah:
+
+1. Universitas Mercu Buana sebagai institusi dengan peringkat UNGGUL.
+2. Program Studi Sistem Informasi dengan peringkat B untuk periode 2019-2024.
+3. Program Studi Teknik Informatika dengan peringkat UNGGUL untuk periode 2023-2028.
+4. Program Studi Magister Sains Data dengan peringkat Akreditasi Baik untuk periode 2025-2027.`,
+    keywords: [
+      "daftar akreditasi",
+      "prodi terakreditasi",
+      "akreditasi umb",
+      "akreditasi prodi umb",
+    ],
+  },
+  {
+    id: 11,
+    category: "Akreditasi",
+    question: "Dokumen apa yang digunakan untuk membuktikan akreditasi kampus?",
+    answer: `Untuk membuktikan akreditasi kampus atau institusi, gunakan SK BAN-PT tentang Konversi Peringkat Akreditasi Perguruan Tinggi Universitas Mercu Buana.
+
+Detail dokumen:
+1. Nomor SK: 478/SK/BAN-PT/Ak.KP/PT/VIII/2022.
+2. Peringkat: UNGGUL.
+3. Nilai: 363.
+4. Berlaku sampai: 21 Desember 2026.`,
+    keywords: [
+      "bukti akreditasi kampus",
+      "dokumen akreditasi umb",
+      "sk ban pt umb",
+      "sertifikat akreditasi",
+    ],
+  },
+  {
+    id: 12,
+    category: "Akreditasi",
+    question:
+      "Dokumen apa yang digunakan untuk membuktikan akreditasi program studi?",
+    answer: `Untuk membuktikan akreditasi program studi, gunakan SK atau sertifikat sesuai prodi masing-masing:
+
+1. Sistem Informasi:
+SK BAN-PT Nomor 3207/SK/BAN-PT/Akred/S/VIII/2019.
+
+2. Teknik Informatika:
+SK LAM INFOKOM Nomor 038/SK/LAM-INFOKOM/Ak/S/IV/2023.
+
+3. Magister Sains Data:
+SK LAM INFOKOM Nomor 118/SK/LAM-INFOKOM/Ak.Min/M/IX/2025.`,
+    keywords: [
+      "bukti akreditasi prodi",
+      "sk prodi",
+      "dokumen akreditasi jurusan",
+      "sertifikat akreditasi prodi",
+    ],
+  },
+  {
+    id: 13,
+    category: "Akreditasi",
+    question:
+      "Bagaimana cara menentukan dokumen akreditasi yang tepat untuk administrasi?",
+    answer: `Gunakan dokumen sesuai kebutuhan instansi.
+
+Langkah sederhananya:
+1. Jika diminta akreditasi kampus, gunakan akreditasi institusi Universitas Mercu Buana.
+2. Jika diminta akreditasi jurusan atau program studi, gunakan akreditasi prodi masing-masing.
+3. Jika diminta akreditasi pada tahun kelulusan, gunakan dokumen yang berlaku pada tanggal atau tahun kelulusan.
+4. Jika diminta dokumen terbaru, gunakan SK akreditasi yang masih berlaku saat ini.`,
+    keywords: [
+      "cara memilih dokumen akreditasi",
+      "akreditasi untuk administrasi",
+      "akreditasi tahun kelulusan",
+      "sk terbaru",
+    ],
+  },
+  {
+    id: 14,
+    category: "Akreditasi",
+    question:
+      "Apakah akreditasi pada tahun kelulusan harus sama dengan akreditasi terbaru?",
+    answer: `Tidak selalu.
+
+Jika instansi meminta akreditasi pada tahun kelulusan, maka gunakan akreditasi yang berlaku saat mahasiswa lulus.
+
+Namun, jika instansi meminta akreditasi terbaru, gunakan dokumen akreditasi terbaru yang masih berlaku. Karena itu, penting untuk melihat masa berlaku pada SK atau sertifikat akreditasi.`,
+    keywords: [
+      "akreditasi tahun kelulusan",
+      "akreditasi terbaru",
+      "dokumen saat lulus",
+      "masa berlaku akreditasi",
+    ],
+  },
+  {
+    id: 15,
+    category: "Akreditasi",
+    question:
+      "Apakah akreditasi program studi bisa berbeda dengan akreditasi universitas?",
+    answer: `Ya, bisa berbeda.
+
+Akreditasi universitas menilai perguruan tinggi secara keseluruhan, sedangkan akreditasi program studi menilai prodi tertentu.
+
+Contohnya:
+1. Universitas Mercu Buana memiliki akreditasi institusi UNGGUL.
+2. Teknik Informatika memiliki akreditasi UNGGUL.
+3. Sistem Informasi memiliki dokumen akreditasi tersendiri.
+4. Magister Sains Data juga memiliki dokumen akreditasi tersendiri.`,
+    keywords: [
+      "akreditasi prodi berbeda",
+      "akreditasi universitas berbeda",
+      "akreditasi kampus dan jurusan",
+      "peringkat prodi",
+    ],
+  },
+  {
+    id: 16,
+    category: "Akreditasi",
+    question:
+      "Apakah Sistem Informasi dan Teknik Informatika memiliki akreditasi internasional?",
+    answer: `Berdasarkan file gambar yang tersedia, terdapat dokumen akreditasi internasional ASIC untuk Program Studi Sistem Informasi dan Teknik Informatika periode 2020-2024.
+
+Untuk detail status, nomor sertifikat, atau kebutuhan legalisir, mahasiswa dapat menghubungi program studi atau bagian akademik.`,
+    keywords: [
+      "akreditasi internasional",
+      "asic",
+      "sistem informasi asic",
+      "teknik informatika asic",
+    ],
+  },
+  {
+    id: 17,
+    category: "Akreditasi",
+    question: "Apa perbedaan akreditasi BAN-PT, LAM INFOKOM, dan ASIC?",
+    answer: `Perbedaannya adalah:
+
+1. BAN-PT
+Lembaga akreditasi nasional untuk perguruan tinggi di Indonesia.
+
+2. LAM INFOKOM
+Lembaga akreditasi mandiri untuk bidang informatika dan komputer.
+
+3. ASIC
+Lembaga akreditasi internasional.
+
+Untuk kebutuhan administrasi nasional, biasanya digunakan dokumen BAN-PT atau LAM INFOKOM. Untuk kebutuhan internasional, gunakan sertifikat internasional seperti ASIC jika diminta.`,
+    keywords: [
+      "ban pt",
+      "lam infokom",
+      "asic",
+      "perbedaan lembaga akreditasi",
+      "akreditasi nasional internasional",
+    ],
+  },
+  {
+    id: 18,
+    category: "Akreditasi",
+    question:
+      "Apa yang harus dilakukan jika membutuhkan legalisir dokumen akreditasi?",
+    answer: `Jika membutuhkan legalisir dokumen akreditasi, mahasiswa dapat mengikuti langkah berikut:
+
+1. Siapkan informasi prodi, jenjang, dan tahun kelulusan.
+2. Tentukan apakah yang dibutuhkan akreditasi kampus atau akreditasi prodi.
+3. Hubungi program studi, fakultas, atau bagian administrasi akademik.
+4. Ikuti prosedur pengajuan legalisir sesuai ketentuan kampus.`,
+    keywords: [
+      "legalisir akreditasi",
+      "legalisir sk",
+      "dokumen akreditasi legalisir",
+      "administrasi akademik",
+    ],
+  },
+  {
+    id: 19,
+    category: "Akreditasi",
+    question: "Apakah akreditasi bisa dicabut sebelum masa berlakunya habis?",
+    answer: `Ya, akreditasi bisa dicabut sebelum masa berlakunya berakhir.
+
+Dalam dokumen SK akreditasi disebutkan bahwa peringkat akreditasi dapat dicabut apabila perguruan tinggi atau program studi terbukti tidak memenuhi syarat peringkat akreditasi.`,
+    keywords: [
+      "akreditasi dicabut",
+      "pencabutan akreditasi",
+      "syarat akreditasi",
+      "masa berlaku akreditasi",
+    ],
+  },
+  {
+    id: 20,
+    category: "Akreditasi",
+    question:
+      "Bagaimana cara mengecek akreditasi yang benar sebelum digunakan?",
+    answer: `Sebelum menggunakan dokumen akreditasi, cek beberapa hal berikut:
+
+1. Nama perguruan tinggi atau program studi.
+2. Jenjang pendidikan, misalnya S1 atau S2.
+3. Nomor SK.
+4. Lembaga penerbit, seperti BAN-PT atau LAM INFOKOM.
+5. Peringkat dan nilai akreditasi.
+6. Tanggal mulai dan akhir masa berlaku.
+
+Jika masih ragu, konfirmasi ke program studi atau bagian akademik.`,
+    keywords: [
+      "cek akreditasi",
+      "validasi akreditasi",
+      "nomor sk",
+      "masa berlaku sk",
+      "dokumen akreditasi benar",
+    ],
+  },
+  {
+    id: 21,
+    category: "Kerja Praktek",
+    question: "Apa itu Kerja Praktek atau KP?",
+    answer: `Kerja Praktek atau KP adalah bagian dari kurikulum sarjana Ilmu Komputer yang bertujuan memberikan pengalaman nyata kepada mahasiswa di dunia industri atau instansi.
+
+Melalui KP, mahasiswa dapat mengaplikasikan teori yang sudah dipelajari di perkuliahan ke dalam praktik profesional. Kegiatan KP juga dapat dilengkapi dengan seminar, kunjungan industri, penyusunan laporan, dan presentasi hasil kerja praktek.`,
+    keywords: [
+      "kerja praktek",
+      "kp",
+      "apa itu kp",
+      "magang",
+      "pengalaman industri",
+    ],
+  },
+  {
+    id: 22,
+    category: "Kerja Praktek",
+    question: "Apa tujuan Kerja Praktek bagi mahasiswa?",
+    answer: `Tujuan Kerja Praktek adalah membantu mahasiswa menghubungkan teori perkuliahan dengan kondisi nyata di dunia kerja.
+
+Secara umum, KP bertujuan untuk:
+1. Memberikan pengalaman langsung di industri atau instansi.
+2. Melatih mahasiswa memahami proses kerja profesional.
+3. Mengembangkan keterampilan teknis dan nonteknis.
+4. Membantu mahasiswa menyusun laporan akademik berdasarkan pengalaman lapangan.
+5. Mempersiapkan mahasiswa agar lebih siap menghadapi dunia kerja.`,
+    keywords: [
+      "tujuan kp",
+      "manfaat kp",
+      "kerja praktek mahasiswa",
+      "pengalaman kerja",
+      "dunia industri",
+    ],
+  },
+  {
+    id: 23,
+    category: "Kerja Praktek",
+    question: "Apa saja skema Kerja Praktek yang tersedia?",
+    answer: `Berdasarkan materi sosialisasi, skema Kerja Praktek terdiri dari beberapa pilihan:
+
+1. Magang Mandiri
+Mahasiswa melaksanakan magang secara mandiri di instansi mitra.
+
+2. KP Kelas Reguler 2
+Mahasiswa melampirkan surat keterangan bekerja, menyusun laporan KP, mempresentasikan laporan, dan tetap mengikuti kelas KP.
+
+3. Magang Internal SDM UMB
+Mahasiswa magang melalui Biro SDM UMB, mendapatkan konversi KP 3 SKS, tetap masuk kelas, dan membuat laporan.
+
+4. Magang Internal Non-SDM
+Mahasiswa dapat mengikuti magang melalui hibah dosen atau unit di UMB, wajib mengikuti kelas, membuat laporan, dan mendapatkan konversi KP 3 SKS.
+
+5. Kerja Praktek melalui Kelas KP
+Mahasiswa mengikuti pengayaan materi, seminar, kunjungan industri, menyusun laporan, dan melakukan presentasi.`,
+    keywords: [
+      "skema kp",
+      "jenis kp",
+      "magang mandiri",
+      "kp kelas",
+      "magang internal umb",
+    ],
+  },
+  {
+    id: 24,
+    category: "Kerja Praktek",
+    question: "Apa syarat mengambil mata kuliah Kerja Praktek?",
+    answer: `Syarat mengambil mata kuliah Kerja Praktek Program Studi Teknik Informatika antara lain:
+
+1. Mahasiswa telah lulus minimal 90 SKS.
+2. Mahasiswa memiliki rencana atau tempat kerja praktek yang sesuai dengan bidang Teknik Informatika.
+3. Mahasiswa wajib meminta form di Tata Usaha Fasilkom untuk surat keterangan akan magang.
+4. Mahasiswa memiliki dosen pembimbing yang ditentukan oleh prodi.
+5. Mahasiswa memiliki IPK minimal 2,75.
+6. Mahasiswa mematuhi persyaratan administratif dan prosedur akademik yang berlaku.`,
+    keywords: [
+      "syarat kp",
+      "ambil kp",
+      "minimal sks kp",
+      "ipk kp",
+      "kerja praktek teknik informatika",
+    ],
+  },
+  {
+    id: 25,
+    category: "Kerja Praktek",
+    question: "Berapa minimal SKS dan IPK untuk mengambil Kerja Praktek?",
+    answer: `Mahasiswa dapat mengambil Kerja Praktek jika sudah memenuhi minimal 90 SKS lulus dan memiliki IPK minimal 2,75.
+
+Persyaratan ini digunakan untuk memastikan mahasiswa sudah memiliki bekal akademik yang cukup sebelum melaksanakan kerja praktek dan menyusun laporan KP.`,
+    keywords: [
+      "minimal sks kp",
+      "ipk minimal kp",
+      "90 sks",
+      "ipk 2.75",
+      "syarat akademik kp",
+    ],
+  },
+  {
+    id: 26,
+    category: "Kerja Praktek",
+    question:
+      "Bagaimana jika mahasiswa sudah mengambil KP tetapi belum mendapat tempat magang?",
+    answer: `Jika mahasiswa sudah memilih mata kuliah Kerja Praktek tetapi belum mendapatkan tempat magang dalam kurun waktu 4 minggu perkuliahan, maka Program Studi Teknik Informatika akan memberikan daftar magang yang tersedia.
+
+Daftar magang tersebut wajib diikuti oleh mahasiswa sesuai ketentuan program studi.`,
+    keywords: [
+      "belum dapat tempat magang",
+      "tempat kp",
+      "magang belum dapat",
+      "list magang prodi",
+      "4 minggu kp",
+    ],
+  },
+  {
+    id: 27,
+    category: "Kerja Praktek",
+    question:
+      "Apakah tempat Kerja Praktek harus sesuai bidang Teknik Informatika?",
+    answer: `Ya. Program Studi Teknik Informatika mewajibkan mahasiswa memilih posisi Kerja Praktek yang sesuai dengan bidang Informatika.
+
+Mahasiswa sebaiknya memilih tempat KP berdasarkan:
+1. Kesesuaian bidang dengan Teknik Informatika.
+2. Minat dan tujuan karir.
+3. Reputasi perusahaan atau instansi.
+4. Kesempatan belajar dan pengembangan keterampilan.
+5. Saran dari dosen pembimbing atau program studi.`,
+    keywords: [
+      "tempat kp",
+      "bidang informatika",
+      "magang teknik informatika",
+      "pilih tempat kp",
+      "instansi kp",
+    ],
+  },
+  {
+    id: 28,
+    category: "Kerja Praktek",
+    question: "Berapa kali minimal bimbingan Kerja Praktek?",
+    answer: `Mahasiswa wajib melakukan bimbingan minimal 6 kali dengan dosen pembimbing.
+
+Setiap kegiatan bimbingan dicatat pada lembar atau kartu konsultasi/bimbingan dan dibubuhi tanda tangan dosen pembimbing. Lembar konsultasi tersebut dapat diperoleh melalui Tata Usaha Fasilkom.`,
+    keywords: [
+      "bimbingan kp",
+      "minimal bimbingan kp",
+      "6 kali bimbingan",
+      "kartu asistensi",
+      "lembar konsultasi",
+    ],
+  },
+  {
+    id: 29,
+    category: "Kerja Praktek",
+    question: "Apa itu kartu asistensi atau kartu bimbingan KP?",
+    answer: `Kartu asistensi atau kartu bimbingan KP adalah dokumen yang digunakan untuk mencatat proses konsultasi mahasiswa dengan dosen pembimbing.
+
+Di dalam kartu tersebut biasanya terdapat data:
+1. Nama mahasiswa.
+2. NIM.
+3. Fakultas.
+4. Program studi.
+5. Semester.
+6. Tahun akademik.
+7. Dosen pembimbing.
+8. Judul KP.
+9. Tanggal bimbingan.
+10. Keterangan bimbingan.
+11. Paraf dosen pembimbing.`,
+    keywords: [
+      "kartu asistensi kp",
+      "kartu bimbingan kp",
+      "lembar bimbingan",
+      "konsultasi kp",
+      "paraf dosen",
+    ],
+  },
+  {
+    id: 30,
+    category: "Kerja Praktek",
+    question: "Apa saja kegiatan dalam kelas Kerja Praktek?",
+    answer: `Kegiatan dalam kelas Kerja Praktek dapat mencakup pengayaan materi, seminar, kunjungan industri, penyusunan laporan, dan presentasi.
+
+Secara umum, kegiatan KP meliputi:
+1. Pengenalan tujuan KP, aturan pelaksanaan, format laporan, dan tata cara membuat resume seminar.
+2. Seminar topik series.
+3. Evaluasi resume seminar.
+4. Teknik mereview jurnal.
+5. Observasi atau kunjungan industri.
+6. Penyusunan laporan KP.
+7. Finalisasi laporan dan persiapan presentasi.
+8. UAS berupa presentasi laporan KP.`,
+    keywords: [
+      "kegiatan kp",
+      "kelas kp",
+      "seminar kp",
+      "kunjungan industri",
+      "presentasi laporan kp",
+    ],
+  },
+  {
+    id: 31,
+    category: "Kerja Praktek",
+    question: "Apakah mahasiswa KP wajib mengikuti seminar?",
+    answer: `Ya. Dalam skema KP, mahasiswa diwajibkan mengikuti rangkaian seminar yang ditetapkan oleh program studi.
+
+Seminar bertujuan untuk memastikan:
+1. Topik sesuai dengan bidang ilmu dan tujuan pembelajaran.
+2. Kegiatan mendukung capaian pembelajaran mata kuliah.
+3. Mahasiswa mendapatkan wawasan dari praktisi, alumni, atau topik industri.
+4. Hasil seminar dapat digunakan sebagai bahan resume, review jurnal, dan diskusi kelas.`,
+    keywords: [
+      "seminar kp",
+      "wajib seminar",
+      "resume seminar",
+      "topik seminar",
+      "kegiatan seminar kp",
+    ],
+  },
+  {
+    id: 32,
+    category: "Kerja Praktek",
+    question: "Apa yang dilakukan dalam kunjungan industri Kerja Praktek?",
+    answer: `Kunjungan industri bertujuan memberikan pengalaman langsung kepada mahasiswa untuk mengenal ekosistem kerja.
+
+Dalam kegiatan ini, mahasiswa melakukan:
+1. Observasi ke tempat industri.
+2. Diskusi dengan pihak industri.
+3. Dokumentasi kegiatan.
+4. Penyusunan laporan kunjungan.
+5. Presentasi atau refleksi hasil kunjungan.
+
+Kunjungan industri dapat dibagi ke beberapa tempat industri berbeda agar wawasan mahasiswa lebih luas.`,
+    keywords: [
+      "kunjungan industri",
+      "observasi industri",
+      "laporan kunjungan",
+      "refleksi kunjungan",
+      "kp industri",
+    ],
+  },
+  {
+    id: 33,
+    category: "Kerja Praktek",
+    question: "Bagaimana sistematika laporan Kerja Praktek?",
+    answer: `Sistematika laporan Kerja Praktek umumnya terdiri dari:
+
+1. Halaman Sampul.
+2. Halaman Judul.
+3. Halaman Pernyataan Karya Sendiri.
+4. Halaman Persetujuan.
+5. Halaman Pengesahan.
+6. Kata Pengantar.
+7. Abstrak.
+8. Abstract.
+9. Daftar Isi.
+10. Daftar Tabel.
+11. Daftar Gambar.
+12. Daftar Lampiran.
+13. BAB I Pendahuluan.
+14. BAB II Gambaran Umum Perusahaan.
+15. BAB III Metode Kegiatan Kerja Praktek.
+16. BAB IV Hasil Kerja Praktek.
+17. BAB V Kesimpulan dan Saran.
+18. Daftar Pustaka.
+19. Lampiran.`,
+    keywords: [
+      "sistematika laporan kp",
+      "format laporan kp",
+      "bab laporan kp",
+      "struktur laporan kerja praktek",
+    ],
+  },
+  {
+    id: 34,
+    category: "Kerja Praktek",
+    question: "Apa saja aturan umum penulisan laporan KP?",
+    answer: `Laporan KP harus ditulis secara jelas, sistematis, dan sesuai pedoman akademik.
+
+Beberapa aturan umumnya adalah:
+1. Mengikuti struktur laporan yang sudah ditentukan.
+2. Menggunakan referensi dan sitasi yang benar.
+3. Menghindari plagiarisme.
+4. Menggunakan bahasa baku dan gaya akademik.
+5. Menulis secara objektif berdasarkan data dan bukti.
+6. Menjaga konsistensi format, seperti font, spasi, margin, tabel, dan gambar.
+7. Melakukan review dan revisi sebelum laporan dikumpulkan.`,
+    keywords: [
+      "aturan laporan kp",
+      "penulisan laporan kp",
+      "format kp",
+      "sitasi kp",
+      "plagiarisme kp",
+    ],
+  },
+  {
+    id: 35,
+    category: "Kerja Praktek",
+    question: "Apa saja lampiran yang perlu disiapkan dalam laporan KP?",
+    answer: `Lampiran laporan KP dapat berisi dokumen pendukung yang membuktikan pelaksanaan kegiatan kerja praktek.
+
+Beberapa lampiran yang perlu disiapkan antara lain:
+1. Kartu asistensi atau lembar bimbingan.
+2. Surat balasan atau surat riset dari perusahaan/instansi.
+3. Form nilai industri Kerja Praktek.
+4. Form absensi dan aktivitas kerja praktek.
+5. Dokumentasi kegiatan, wawancara, kuesioner, atau data penelitian jika diperlukan.`,
+    keywords: [
+      "lampiran kp",
+      "dokumen kp",
+      "nilai industri",
+      "absensi industri",
+      "surat balasan kp",
+    ],
+  },
+  {
+    id: 36,
+    category: "Kerja Praktek",
+    question: "Apa isi form nilai industri Kerja Praktek?",
+    answer: `Form nilai industri Kerja Praktek digunakan oleh pembimbing industri untuk menilai mahasiswa selama melaksanakan KP di perusahaan atau instansi.
+
+Unsur penilaian meliputi:
+1. Kedisiplinan, seperti ketepatan waktu dan kehadiran.
+2. Sikap kerja, prosedur kerja, dan tanggung jawab.
+3. Prestasi kerja, seperti kemampuan kerja, keterampilan kerja, dan kualitas hasil kerja.
+4. Kemampuan beradaptasi, seperti komunikasi, kerja sama, kerajinan, dan inisiatif.
+5. Aspek lain seperti percaya diri, mematuhi aturan, dan penampilan atau kerapian.
+
+Nilai rata-rata dihitung dari seluruh unsur penilaian yang tersedia pada form.`,
+    keywords: [
+      "nilai industri kp",
+      "form nilai kp",
+      "penilaian industri",
+      "pembimbing industri",
+      "unsur penilaian kp",
+    ],
+  },
+  {
+    id: 37,
+    category: "Kerja Praktek",
+    question: "Apa fungsi form absensi dan aktivitas Kerja Praktek?",
+    answer: `Form absensi dan aktivitas Kerja Praktek digunakan untuk mencatat kehadiran dan aktivitas mahasiswa selama melaksanakan KP di perusahaan atau instansi.
+
+Form ini biasanya memuat:
+1. Hari atau tanggal kegiatan.
+2. Aktivitas pekerjaan yang dilakukan.
+3. Nama dan paraf pembimbing industri.
+
+Dokumen ini penting sebagai bukti bahwa mahasiswa benar-benar melaksanakan kegiatan kerja praktek sesuai jadwal dan arahan pembimbing industri.`,
+    keywords: [
+      "absensi kp",
+      "form aktivitas kp",
+      "kehadiran kp",
+      "paraf pembimbing industri",
+      "aktivitas kerja praktek",
+    ],
+  },
+  {
+    id: 38,
+    category: "Kerja Praktek",
+    question: "Bagaimana mekanisme sidang Kerja Praktek?",
+    answer: `Sidang Kerja Praktek adalah proses formal untuk mempresentasikan laporan KP di hadapan dosen penguji dan didampingi dosen pembimbing.
+
+Mekanismenya secara umum:
+1. Mahasiswa mendaftar sidang melalui Google Form dari TU Fasilkom.
+2. Mahasiswa mengunggah dokumen final KP yang sudah di-ACC dosen pembimbing.
+3. Mahasiswa memastikan sudah melakukan minimal 6 kali bimbingan.
+4. Jadwal sidang ditentukan oleh program studi.
+5. Mahasiswa menyiapkan presentasi berisi latar belakang, tujuan, metodologi, hasil, analisis, dan kesimpulan.
+6. Presentasi biasanya dilakukan sekitar 10 sampai 15 menit.
+7. Setelah presentasi, ada sesi tanya jawab dan diskusi dengan penguji sekitar 20 menit.
+8. Hasil sidang dapat berupa Lulus, Lulus dengan Revisi, atau Tidak Lulus.`,
+    keywords: [
+      "sidang kp",
+      "mekanisme sidang kp",
+      "daftar sidang kp",
+      "presentasi kp",
+      "lulus revisi kp",
+    ],
+  },
+  {
+    id: 39,
+    category: "Magang Mandiri",
+    question: "Apa itu Magang Mandiri?",
+    answer: `Magang Mandiri adalah kegiatan Pembelajaran di Luar Program Studi atau PDPS yang memberi kesempatan kepada mahasiswa untuk memperoleh pengalaman kerja secara langsung di dunia profesional.
+
+Melalui program ini, mahasiswa dapat menerapkan ilmu yang sudah dipelajari, mengembangkan kompetensi, memperluas relasi profesional, dan memperoleh pengalaman kerja yang relevan dengan bidang studinya.`,
+    keywords: [
+      "magang mandiri",
+      "apa itu magang mandiri",
+      "pdps",
+      "mbkm",
+      "pengalaman kerja",
+    ],
+  },
+  {
+    id: 40,
+    category: "Magang Mandiri",
+    question: "Apa tujuan Magang Mandiri?",
+    answer: `Tujuan Magang Mandiri adalah membantu mahasiswa mendapatkan pengalaman kerja nyata, menerapkan kompetensi yang dipelajari selama kuliah, memperluas relasi profesional, dan meningkatkan jejaring kerja sama antara program studi dengan mitra magang.`,
+    keywords: [
+      "tujuan magang mandiri",
+      "manfaat magang mandiri",
+      "pengalaman kerja",
+      "relasi profesional",
+    ],
+  },
+  {
+    id: 41,
+    category: "Magang Mandiri",
+    question: "Apa saja syarat mengikuti Magang Mandiri?",
+    answer: `Berdasarkan Pakta Integritas Magang Mandiri, beberapa syarat yang perlu diperhatikan adalah:
+
+1. Mahasiswa aktif pada semester 5 sampai 7 saat periode pendaftaran.
+2. Maksimal mengikuti kegiatan PDPS sebanyak 2 kali.
+3. Tidak sedang aktif dalam Program Kampus Merdeka flagship atau non-flagship saat program berlangsung.
+4. Tidak sedang cuti atau dikenakan sanksi akademik maupun non-akademik.
+5. Bersedia mengikuti seluruh ketentuan program sampai akhir.
+6. Bersedia menjalankan proses seleksi, pembekalan, pelaksanaan, dan pelaporan kegiatan dengan penuh tanggung jawab.`,
+    keywords: [
+      "syarat magang mandiri",
+      "semester magang mandiri",
+      "pakta integritas",
+      "pdps",
+      "kampus merdeka",
+    ],
+  },
+  {
+    id: 42,
+    category: "Magang Mandiri",
+    question: "Mahasiswa semester berapa yang bisa mengikuti Magang Mandiri?",
+    answer: `Mahasiswa yang dapat mengikuti Magang Mandiri adalah mahasiswa aktif pada semester 5 sampai semester 7 saat periode pendaftaran.`,
+    keywords: [
+      "semester magang mandiri",
+      "semester 5",
+      "semester 7",
+      "syarat semester magang",
+    ],
+  },
+  {
+    id: 43,
+    category: "Magang Mandiri",
+    question:
+      "Berapa kali mahasiswa boleh mengikuti kegiatan PDPS seperti Magang Mandiri?",
+    answer: `Mahasiswa maksimal dapat mengikuti kegiatan PDPS sebanyak 2 kali sesuai ketentuan yang tercantum dalam Pakta Integritas Magang Mandiri.`,
+    keywords: [
+      "maksimal pdps",
+      "berapa kali magang mandiri",
+      "pdps 2 kali",
+      "ketentuan magang",
+    ],
+  },
+  {
+    id: 44,
+    category: "Magang Mandiri",
+    question:
+      "Apakah mahasiswa yang sedang cuti boleh mengikuti Magang Mandiri?",
+    answer: `Tidak. Mahasiswa yang sedang cuti atau sedang dikenakan sanksi akademik maupun non-akademik tidak dapat mengikuti Program Magang Mandiri.`,
+    keywords: [
+      "cuti magang mandiri",
+      "mahasiswa cuti",
+      "sanksi akademik",
+      "tidak boleh magang",
+    ],
+  },
+  {
+    id: 45,
+    category: "Magang Mandiri",
+    question: "Apa itu Pakta Integritas Magang Mandiri?",
+    answer: `Pakta Integritas Magang Mandiri adalah surat pernyataan komitmen mahasiswa untuk mengikuti program dengan jujur, bertanggung jawab, dan sesuai aturan.
+
+Dokumen ini memuat pernyataan bahwa mahasiswa:
+1. Memenuhi ketentuan peserta Magang Mandiri.
+2. Bersedia mengikuti seluruh rangkaian program sampai akhir.
+3. Menjamin bahwa data dan dokumen yang diberikan benar.
+4. Bersedia menerima sanksi apabila melanggar ketentuan atau memalsukan dokumen.
+5. Menandatangani dokumen dengan materai 10.000.`,
+    keywords: [
+      "pakta integritas magang",
+      "surat pernyataan magang",
+      "komitmen magang",
+      "materai magang",
+    ],
+  },
+  {
+    id: 46,
+    category: "Magang Mandiri",
+    question:
+      "Apa itu Implementation Arrangement atau IA dalam Magang Mandiri?",
+    answer: `Implementation Arrangement atau IA adalah dokumen pelaksanaan kerja sama antara program studi atau fakultas Universitas Mercu Buana dengan institusi mitra untuk penyelenggaraan Program Magang.
+
+Dokumen IA biasanya memuat dasar kegiatan, maksud dan tujuan, lingkup kegiatan, alamat mitra, waktu pelaksanaan, jadwal kegiatan, serta daftar peserta magang.`,
+    keywords: [
+      "implementation arrangement",
+      "ia magang",
+      "dokumen ia",
+      "kerja sama mitra",
+      "mitra magang",
+    ],
+  },
+  {
+    id: 47,
+    category: "Magang Mandiri",
+    question: "Apa saja isi dokumen IA Magang Mandiri?",
+    answer: `Dokumen IA Magang Mandiri umumnya berisi:
+
+1. Logo dan identitas mitra.
+2. Identitas program studi, fakultas, dan Universitas Mercu Buana.
+3. Nama institusi mitra.
+4. Dasar pelaksanaan kegiatan.
+5. Maksud dan tujuan program.
+6. Lingkup kegiatan, yaitu penyelenggaraan magang mahasiswa.
+7. Alamat mitra.
+8. Waktu dan jadwal pelaksanaan kegiatan.
+9. Daftar peserta magang.
+10. Bagian penutup dan tanda tangan pihak terkait.`,
+    keywords: [
+      "isi ia magang",
+      "dokumen kerja sama magang",
+      "pelaksanaan kerja sama",
+      "jadwal magang",
+      "peserta magang",
+    ],
+  },
+  {
+    id: 48,
+    category: "Magang Mandiri",
+    question: "Apa itu Form Kesepakatan Rekognisi Magang Mandiri?",
+    answer: `Form Kesepakatan Rekognisi adalah dokumen untuk mengusulkan mata kuliah yang akan direkognisi dari kegiatan Magang Mandiri.
+
+Dalam form ini, mahasiswa atau pengusul mencantumkan mata kuliah yang diusulkan, jumlah SKS, mata kuliah yang disetujui, total SKS, serta persetujuan dari pihak terkait seperti Ketua Program Studi.`,
+    keywords: [
+      "form rekognisi",
+      "rekognisi magang",
+      "konversi sks",
+      "mata kuliah rekognisi",
+      "pdps",
+    ],
+  },
+  {
+    id: 49,
+    category: "Magang Mandiri",
+    question: "Apakah Magang Mandiri bisa dikonversi menjadi SKS?",
+    answer: `Ya. Magang Mandiri dapat diajukan untuk rekognisi atau konversi ke mata kuliah tertentu sesuai kesepakatan dan persetujuan program studi.
+
+Mahasiswa perlu mengisi Form Kesepakatan Rekognisi yang memuat mata kuliah usulan, jumlah SKS, mata kuliah yang disetujui, dan total SKS yang akan direkognisi.`,
+    keywords: [
+      "konversi sks magang",
+      "magang mandiri sks",
+      "rekognisi sks",
+      "mata kuliah disetujui",
+    ],
+  },
+  {
+    id: 50,
+    category: "Magang Mandiri",
+    question: "Apa fungsi logbook kegiatan Magang Mandiri?",
+    answer: `Logbook kegiatan digunakan untuk mencatat seluruh aktivitas mahasiswa selama mengikuti Magang Mandiri dari awal sampai akhir program.
+
+Logbook memuat informasi seperti:
+1. Tanggal kegiatan.
+2. Uraian aktivitas.
+3. Foto dokumentasi.
+4. Durasi kegiatan dalam jam.
+5. Total akumulasi jam.
+6. Dosen pembimbing, pendamping, atau pihak yang mengetahui kegiatan.`,
+    keywords: [
+      "logbook magang",
+      "logbook kegiatan",
+      "catatan aktivitas magang",
+      "durasi kegiatan",
+      "dokumentasi magang",
+    ],
+  },
+  {
+    id: 51,
+    category: "Magang Mandiri",
+    question: "Berapa minimal total jam kegiatan pada logbook Magang Mandiri?",
+    answer: `Pada template logbook kegiatan, total akumulasi jam yang dicantumkan adalah minimal 450 jam. Template juga mencantumkan keterangan bahwa alokasi waktu 1 SKS setara dengan 45 jam.`,
+    keywords: [
+      "minimal jam magang",
+      "450 jam",
+      "logbook magang mandiri",
+      "1 sks 45 jam",
+      "akumulasi jam",
+    ],
+  },
+  {
+    id: 52,
+    category: "Magang Mandiri",
+    question: "Bagaimana penilaian Magang Mandiri dari pihak mitra?",
+    answer: `Penilaian dari pihak mitra menggunakan Form Penilaian Mahasiswa Magang Mandiri.
+
+Unsur penilaiannya meliputi:
+1. Kolaborasi dengan bobot 30%.
+2. Komunikasi dengan bobot 35%.
+3. Produktivitas dengan bobot 35%.
+
+Aspek yang dinilai mencakup koordinasi, partisipasi, umpan balik, hasil kolaborasi, komunikasi efektif, kecepatan respons, etika, komitmen terhadap tugas, kualitas pekerjaan, kreativitas, dan inovasi.`,
+    keywords: [
+      "penilaian mitra",
+      "nilai magang mandiri",
+      "kolaborasi",
+      "komunikasi",
+      "produktivitas",
+    ],
+  },
+  {
+    id: 53,
+    category: "Magang Mandiri",
+    question: "Bagaimana penilaian Magang Mandiri dari dosen pembimbing?",
+    answer: `Penilaian dari dosen pembimbing mencakup kualitas laporan tertulis, pelaksanaan kegiatan, implementasi kegiatan, dan aspek administratif.
+
+Komponen penilaiannya adalah:
+1. Kualitas laporan tertulis dengan bobot 30%.
+2. Pelaksanaan dan implementasi kegiatan dengan bobot 35%.
+3. Aspek administratif dengan bobot 35%.
+
+Selain itu, rekap nilai akhir menggabungkan Nilai Mitra sebesar 60% dan Nilai Dosen Pembimbing sebesar 40%.`,
+    keywords: [
+      "penilaian dosen pembimbing",
+      "nilai dosen magang",
+      "laporan tertulis",
+      "nilai mitra 60",
+      "nilai dosen 40",
+    ],
+  },
+  {
+    id: 54,
+    category: "Magang Mandiri",
+    question: "Apa saja isi laporan akhir Magang Mandiri?",
+    answer: `Laporan akhir Magang Mandiri berisi identitas mahasiswa, lembar pengesahan, substansi laporan, dan lampiran pendukung.
+
+Bagian substansi laporan meliputi:
+1. Judul Laporan Magang.
+2. Pendahuluan.
+3. Profil Mitra.
+4. Hasil dan Pembahasan Program.
+5. Refleksi dan Evaluasi Implementasi Program.
+6. Kesimpulan dan Saran.
+
+Lampiran yang disiapkan dapat mencakup foto kegiatan, Implementation Agreement atau IA, Pakta Integritas, Form Kesepakatan Rekognisi, Form Penilaian, dan Logbook Kegiatan.`,
+    keywords: [
+      "laporan akhir magang",
+      "isi laporan magang mandiri",
+      "template laporan akhir",
+      "lampiran magang",
+      "hasil pembahasan",
+    ],
+  },
+  {
+    id: 55,
+    category: "Seminar Proposal",
+    question: "Apa itu Seminar Proposal?",
+    answer: `Seminar Proposal atau Sempro adalah proses sidang proposal penelitian di mana mahasiswa mempresentasikan rencana penelitian atau karyanya di hadapan dosen penguji dan didampingi dosen pembimbing. Sempro bertujuan untuk menilai pemahaman, kualitas proposal, metodologi, serta kontribusi penelitian yang akan dilakukan.`,
+    keywords: [
+      "seminar proposal",
+      "sempro",
+      "sidang proposal",
+      "proposal penelitian",
+      "mpti",
+    ],
+  },
+  {
+    id: 56,
+    category: "Seminar Proposal",
+    question: "Apa syarat mengambil mata kuliah MPTI atau Seminar Proposal?",
+    answer: `Syarat mengambil mata kuliah Metodologi Penelitian Teknologi Informasi atau MPTI antara lain:
+
+1. Mahasiswa telah lulus minimal 110 SKS.
+2. Mahasiswa memiliki rencana penelitian atau proyek penelitian.
+3. Mahasiswa memiliki dosen pembimbing yang ditentukan oleh program studi.
+4. Mahasiswa memiliki IPK minimal 2,50.
+5. Mahasiswa mematuhi persyaratan administratif, prosedur akademik, dan waktu pengajuan proposal yang berlaku.`,
+    keywords: [
+      "syarat sempro",
+      "syarat mpti",
+      "minimal sks sempro",
+      "ipk sempro",
+      "seminar proposal",
+    ],
+  },
+  {
+    id: 57,
+    category: "Seminar Proposal",
+    question: "Berapa minimal SKS dan IPK untuk mengambil Sempro?",
+    answer: `Mahasiswa dapat mengambil MPTI atau Seminar Proposal jika sudah lulus minimal 110 SKS dan memiliki IPK minimal 2,50.`,
+    keywords: [
+      "minimal sks sempro",
+      "ipk minimal sempro",
+      "110 sks",
+      "ipk 2.50",
+      "syarat mpti",
+    ],
+  },
+  {
+    id: 58,
+    category: "Seminar Proposal",
+    question: "Bagaimana mekanisme sidang Seminar Proposal?",
+    answer: `Mekanisme sidang Seminar Proposal secara umum adalah:
+
+1. Jadwal sidang proposal ditentukan oleh program studi, biasanya dimulai pada minggu ke-4 perkuliahan.
+2. Mahasiswa diberitahu tanggal, waktu, dan lokasi sidang oleh Tata Usaha Fasilkom.
+3. Mahasiswa menyiapkan materi presentasi proposal.
+4. Mahasiswa mempresentasikan proposal di hadapan 1 dosen penguji dan didampingi dosen pembimbing.
+5. Presentasi biasanya berlangsung sekitar 10 sampai 15 menit.
+6. Setelah presentasi, dilakukan sesi tanya jawab dan diskusi sekitar 20 menit.
+7. Hasil sidang dapat berupa Lulus, Lulus dengan Revisi, atau Tidak Lulus.`,
+    keywords: [
+      "mekanisme sempro",
+      "sidang seminar proposal",
+      "alur sempro",
+      "presentasi sempro",
+      "penguji sempro",
+    ],
+  },
+  {
+    id: 59,
+    category: "Seminar Proposal",
+    question: "Apa saja materi yang harus disiapkan untuk presentasi Sempro?",
+    answer: `Materi presentasi Seminar Proposal sebaiknya memuat latar belakang penelitian, tujuan penelitian, metodologi, temuan atau rancangan awal, analisis data jika sudah ada, serta kesimpulan atau hasil yang diharapkan.`,
+    keywords: [
+      "materi sempro",
+      "presentasi sempro",
+      "slide sempro",
+      "isi presentasi proposal",
+      "proposal penelitian",
+    ],
+  },
+  {
+    id: 60,
+    category: "Seminar Proposal",
+    question: "Berapa lama waktu presentasi Seminar Proposal?",
+    answer: `Waktu presentasi Seminar Proposal biasanya sekitar 10 sampai 15 menit, tergantung ketentuan dosen penguji atau pelaksanaan sidang proposal.`,
+    keywords: [
+      "durasi sempro",
+      "waktu presentasi sempro",
+      "presentasi 10 menit",
+      "presentasi 15 menit",
+    ],
+  },
+  {
+    id: 61,
+    category: "Seminar Proposal",
+    question: "Apa saja hasil keputusan sidang Sempro?",
+    answer: `Hasil keputusan sidang Seminar Proposal dapat berupa:
+
+1. Lulus
+Mahasiswa dapat melanjutkan proses akhir seperti penyerahan berkas akhir dan pengajuan nilai.
+
+2. Lulus dengan Revisi
+Mahasiswa wajib memperbaiki proposal sesuai masukan penguji atau pembimbing.
+
+3. Tidak Lulus
+Mahasiswa harus mendaftar ulang untuk sidang ulang proposal sesuai ketentuan program studi.`,
+    keywords: [
+      "hasil sidang sempro",
+      "keputusan sempro",
+      "lulus sempro",
+      "lulus revisi",
+      "tidak lulus sempro",
+    ],
+  },
+  {
+    id: 62,
+    category: "Seminar Proposal",
+    question: "Berapa lama batas waktu revisi setelah Sempro?",
+    answer: `Jika mahasiswa dinyatakan lulus dengan revisi, revisi proposal harus diselesaikan dalam waktu 7 hari terhitung setelah tanggal sidang dilaksanakan. Jika melewati batas waktu tersebut, mahasiswa dapat dianggap tidak melaksanakan kewajiban dan dapat diarahkan untuk sidang ulang.`,
+    keywords: [
+      "batas revisi sempro",
+      "revisi sempro 7 hari",
+      "lulus revisi sempro",
+      "deadline revisi proposal",
+    ],
+  },
+  {
+    id: 63,
+    category: "Seminar Proposal",
+    question: "Apa itu Formulir Revisi Seminar Proposal?",
+    answer: `Formulir Revisi Seminar Proposal adalah dokumen yang digunakan untuk mencatat catatan revisi dari dosen penelaah atau penguji setelah mahasiswa melaksanakan Sempro.
+
+Formulir ini memuat:
+1. Nama mahasiswa.
+2. Nomor Induk Mahasiswa.
+3. Judul proposal.
+4. Nama dosen penelaah.
+5. Catatan revisi proposal.
+6. Halaman yang perlu direvisi.
+7. Checklist penyelesaian revisi.
+8. Tanggal Sempro dan tanggal persetujuan revisi.
+9. Tanda tangan dosen penelaah.`,
+    keywords: [
+      "formulir revisi sempro",
+      "form revisi seminar proposal",
+      "catatan revisi proposal",
+      "dosen penelaah",
+    ],
+  },
+  {
+    id: 64,
+    category: "Seminar Proposal",
+    question:
+      "Apakah lembar revisi Sempro penting untuk mengambil Tugas Akhir?",
+    answer: `Ya. Pada formulir revisi disebutkan bahwa lembar revisi diperlukan untuk mengambil Tugas Akhir pada semester berikutnya. Karena itu, mahasiswa perlu menyelesaikan revisi dan memperoleh persetujuan sesuai arahan dosen penelaah atau penguji.`,
+    keywords: [
+      "lembar revisi sempro",
+      "ambil tugas akhir",
+      "revisi proposal",
+      "persetujuan revisi",
+    ],
+  },
+  {
+    id: 65,
+    category: "Seminar Proposal",
+    question: "Apa itu Kartu Asistensi Seminar Proposal?",
+    answer: `Kartu Asistensi Seminar Proposal adalah dokumen untuk mencatat proses bimbingan mahasiswa dengan dosen pembimbing selama penyusunan proposal.
+
+Data yang tercantum biasanya meliputi:
+1. Nama mahasiswa.
+2. NIM.
+3. Semester.
+4. Tahun akademik.
+5. Fakultas.
+6. Program studi.
+7. Dosen pembimbing.
+8. Judul proposal.
+9. Tanggal bimbingan.
+10. Keterangan bimbingan.
+11. Paraf dosen pembimbing.`,
+    keywords: [
+      "kartu asistensi sempro",
+      "kartu bimbingan sempro",
+      "bimbingan proposal",
+      "dosen pembimbing",
+    ],
+  },
+  {
+    id: 66,
+    category: "Seminar Proposal",
+    question: "Berapa minimal bimbingan sebelum Seminar Proposal?",
+    answer: `Mahasiswa wajib melakukan konsultasi atau bimbingan minimal 6 kali dengan dosen pembimbing. Setiap bimbingan dicatat pada lembar konsultasi atau kartu asistensi dan dibubuhi tanda tangan/paraf dosen pembimbing.`,
+    keywords: [
+      "minimal bimbingan sempro",
+      "6 kali bimbingan",
+      "kartu asistensi",
+      "bimbingan mpti",
+      "konsultasi proposal",
+    ],
+  },
+  {
+    id: 67,
+    category: "Seminar Proposal",
+    question: "Bagaimana agar nilai Sempro bisa optimal?",
+    answer: `Agar nilai Seminar Proposal lebih optimal, mahasiswa dapat melakukan beberapa hal berikut:
+
+1. Komitmen dengan timeline penelitian yang sudah dibuat.
+2. Sering melakukan bimbingan dengan dosen pembimbing.
+3. Meluangkan waktu khusus untuk menulis dan memperbaiki proposal penelitian.
+4. Memahami topik, metodologi, dan kontribusi penelitian.
+5. Memperhatikan jadwal publikasi atau target jurnal jika penelitian diarahkan ke publikasi.
+6. Menyiapkan presentasi dengan ringkas, jelas, dan sesuai isi proposal.`,
+    keywords: [
+      "tips sempro",
+      "nilai sempro",
+      "nilai mpti",
+      "persiapan sempro",
+      "seminar proposal optimal",
+    ],
+  },
+  {
+    id: 68,
+    category: "Tugas Akhir",
+    question: "Apa itu Tugas Akhir?",
+    answer: `Tugas Akhir atau TA adalah karya ilmiah yang disusun mahasiswa berdasarkan kaidah keilmuan dan penulisan ilmiah, di bawah arahan dosen pembimbing. TA menjadi salah satu syarat untuk menyelesaikan studi dan memperoleh gelar sarjana.`,
+    keywords: [
+      "tugas akhir",
+      "ta",
+      "skripsi",
+      "laporan tugas akhir",
+      "karya ilmiah",
+    ],
+  },
+  {
+    id: 69,
+    category: "Tugas Akhir",
+    question: "Apa tujuan penyusunan Tugas Akhir?",
+    answer: `Tujuan penyusunan Tugas Akhir adalah untuk menunjukkan kemampuan mahasiswa dalam menerapkan ilmu, melakukan penelitian atau pengembangan, menyusun karya ilmiah, dan menghasilkan solusi atau kontribusi sesuai bidang keilmuan.
+
+TA juga menjadi gambaran kesiapan mahasiswa untuk terjun ke dunia kerja atau dunia profesional.`,
+    keywords: [
+      "tujuan tugas akhir",
+      "tujuan ta",
+      "manfaat skripsi",
+      "penelitian tugas akhir",
+    ],
+  },
+  {
+    id: 70,
+    category: "Tugas Akhir",
+    question: "Apa saja syarat klik atau mengambil Tugas Akhir?",
+    answer: `Persyaratan akademis untuk mengambil Tugas Akhir antara lain:
+
+1. Jumlah SKS lulus + SKS tempuh + TA minimal 144 SKS.
+2. Mengisi form Klik TA saat pengisian KRS.
+3. Telah lulus Mata Kuliah Ciri Universitas atau MKCU sesuai ketentuan.
+4. Memenuhi nilai minimal untuk mata kuliah yang dipersyaratkan.
+5. Mengikuti ketentuan administrasi dari program studi atau fakultas.`,
+    keywords: [
+      "syarat tugas akhir",
+      "syarat klik ta",
+      "ambil ta",
+      "144 sks",
+      "krs ta",
+    ],
+  },
+  {
+    id: 71,
+    category: "Tugas Akhir",
+    question: "Berapa minimal SKS untuk mengambil Tugas Akhir?",
+    answer: `Mahasiswa dapat mengambil Tugas Akhir jika jumlah SKS lulus ditambah SKS tempuh dan SKS TA mencapai minimal 144 SKS.`,
+    keywords: ["minimal sks ta", "sks tugas akhir", "144 sks", "syarat sks ta"],
+  },
+  {
+    id: 72,
+    category: "Tugas Akhir",
+    question:
+      "Apa saja mata kuliah wajib yang harus diperhatikan sebelum sidang Tugas Akhir?",
+    answer: `Pada form pengajuan sidang TA, mahasiswa perlu melakukan verifikasi nilai mata kuliah wajib.
+
+Mata kuliah yang diverifikasi antara lain:
+1. Pendidikan Agama.
+2. Pancasila.
+3. Kewarganegaraan.
+4. Bahasa Indonesia.
+5. Pendidikan Anti Korupsi dan Etik UMB.
+6. Bahasa Inggris I.
+7. Bahasa Inggris II.
+8. Kewirausahaan I.
+9. Kerja Praktek.
+10. Metodologi Penelitian Teknologi Informasi atau MPTI.`,
+    keywords: [
+      "mata kuliah wajib ta",
+      "syarat sidang ta",
+      "mpti",
+      "kerja praktek",
+      "mkcu",
+    ],
+  },
+  {
+    id: 73,
+    category: "Tugas Akhir",
+    question: "Apa saja skema Tugas Akhir yang tersedia?",
+    answer: `Skema Tugas Akhir yang tersedia meliputi:
+
+1. Tugas Akhir Aplikatif, seperti proyek atau prototipe.
+2. Tugas Akhir Riset, seperti metode, model, algoritma, atau framework.
+3. Tugas Akhir Publikasi Ilmiah, seperti artikel jurnal yang accepted.
+4. Tugas Akhir Media Ilmiah, seperti media pembelajaran, buku monograf, buku referensi, book chapter, atau modul belajar.`,
+    keywords: [
+      "skema tugas akhir",
+      "skema ta",
+      "ta aplikatif",
+      "ta riset",
+      "publikasi ilmiah",
+      "media ilmiah",
+    ],
+  },
+  {
+    id: 74,
+    category: "Tugas Akhir",
+    question: "Apa itu Tugas Akhir Aplikatif?",
+    answer: `Tugas Akhir Aplikatif adalah skema TA yang menghasilkan solusi konkret atau produk yang dapat digunakan dalam konteks nyata. Contohnya pengembangan aplikasi, sistem informasi, prototipe, sistem berbasis AI, atau solusi teknologi untuk industri dan masyarakat.`,
+    keywords: [
+      "ta aplikatif",
+      "tugas akhir aplikatif",
+      "proyek ta",
+      "prototipe ta",
+      "aplikasi tugas akhir",
+    ],
+  },
+  {
+    id: 75,
+    category: "Tugas Akhir",
+    question: "Apa itu Tugas Akhir Riset?",
+    answer: `Tugas Akhir Riset adalah skema TA yang berfokus pada eksplorasi, penelitian, dan pemecahan masalah menggunakan metode ilmiah. Skema ini biasanya membahas metode, model, algoritma, framework, atau pendekatan tertentu untuk menghasilkan kontribusi akademik.`,
+    keywords: [
+      "ta riset",
+      "tugas akhir riset",
+      "skripsi riset",
+      "metode algoritma framework",
+    ],
+  },
+  {
+    id: 76,
+    category: "Tugas Akhir",
+    question: "Apa itu Tugas Akhir Publikasi Ilmiah?",
+    answer: `Tugas Akhir Publikasi Ilmiah adalah skema TA yang menghasilkan artikel ilmiah untuk dipublikasikan pada jurnal atau konferensi yang diakui. Pada skema ini, mahasiswa perlu melampirkan bukti accepted, published, atau dokumen pendukung publikasi sesuai ketentuan prodi.`,
+    keywords: [
+      "ta publikasi ilmiah",
+      "jurnal accepted",
+      "publikasi tugas akhir",
+      "artikel ilmiah",
+    ],
+  },
+  {
+    id: 77,
+    category: "Tugas Akhir",
+    question: "Apa itu Tugas Akhir Media Ilmiah?",
+    answer: `Tugas Akhir Media Ilmiah adalah skema TA yang menghasilkan produk media ilmiah atau media pembelajaran. Bentuknya dapat berupa buku monograf, buku referensi, book chapter, modul belajar, PPT, Word, video, podcast, TikTok, YouTube, Instagram, Facebook, atau media lain sesuai arahan program studi.`,
+    keywords: [
+      "ta media ilmiah",
+      "media pembelajaran",
+      "buku monograf",
+      "buku referensi",
+      "modul belajar",
+    ],
+  },
+  {
+    id: 78,
+    category: "Tugas Akhir",
+    question: "Apakah Tugas Akhir boleh dikerjakan berkelompok?",
+    answer: `Ya, beberapa skema TA dapat dikerjakan secara perorangan atau kelompok dengan jumlah maksimal 3 mahasiswa, sesuai ketentuan pada panduan TA dan persetujuan program studi.`,
+    keywords: [
+      "ta kelompok",
+      "tugas akhir kelompok",
+      "maksimal anggota ta",
+      "3 mahasiswa",
+    ],
+  },
+  {
+    id: 79,
+    category: "Tugas Akhir",
+    question: "Berapa maksimal jumlah kata untuk judul Tugas Akhir?",
+    answer: `Judul laporan Tugas Akhir maksimal 16 kata. Judul sebaiknya dibuat jelas, spesifik, sesuai topik, dan mencerminkan isi penelitian atau produk yang dikembangkan.`,
+    keywords: ["judul ta", "maksimal judul ta", "16 kata", "judul tugas akhir"],
+  },
+  {
+    id: 80,
+    category: "Tugas Akhir",
+    question: "Berapa minimal bimbingan Tugas Akhir?",
+    answer: `Mahasiswa wajib melakukan bimbingan Tugas Akhir minimal 8 kali pertemuan. Proses bimbingan harus tercatat pada Form Konsultasi Tugas Akhir di SIA dan diisi oleh dosen pembimbing sesuai judul yang diangkat mahasiswa.`,
+    keywords: [
+      "bimbingan ta",
+      "minimal bimbingan ta",
+      "8 kali bimbingan",
+      "form konsultasi ta",
+      "dosen pembimbing",
+    ],
+  },
+  {
+    id: 81,
+    category: "Tugas Akhir",
+    question: "Apa itu Kartu Asistensi Tugas Akhir?",
+    answer: `Kartu Asistensi Tugas Akhir adalah dokumen untuk mencatat proses bimbingan mahasiswa dengan dosen pembimbing.
+
+Data yang tercantum biasanya meliputi:
+1. Nama mahasiswa.
+2. NIM.
+3. Semester.
+4. Tahun akademik.
+5. Fakultas.
+6. Program studi.
+7. Dosen pembimbing.
+8. Judul TA.
+9. Tanggal bimbingan.
+10. Keterangan bimbingan.
+11. Paraf dosen pembimbing.`,
+    keywords: [
+      "kartu asistensi ta",
+      "kartu bimbingan ta",
+      "form bimbingan tugas akhir",
+      "paraf dosen",
+    ],
+  },
+  {
+    id: 82,
+    category: "Tugas Akhir",
+    question: "Bagaimana format umum laporan Tugas Akhir?",
+    answer: `Format umum laporan Tugas Akhir terdiri dari bagian awal, bagian isi, dan bagian akhir.
+
+Bagian awal biasanya memuat halaman sampul, halaman judul, pernyataan karya sendiri, pengesahan, kata pengantar, pernyataan publikasi, abstrak, abstract, daftar isi, daftar tabel, daftar gambar, dan daftar lampiran.
+
+Bagian isi memuat pendahuluan, tinjauan pustaka, metode penelitian, hasil dan pembahasan, serta kesimpulan dan saran. Bagian akhir memuat daftar pustaka dan lampiran.`,
+    keywords: [
+      "format laporan ta",
+      "struktur tugas akhir",
+      "sistematika ta",
+      "bagian laporan ta",
+    ],
+  },
+  {
+    id: 83,
+    category: "Tugas Akhir",
+    question: "Apa saja bagian awal laporan Tugas Akhir?",
+    answer: `Bagian awal laporan Tugas Akhir umumnya terdiri dari:
+
+1. Halaman Sampul atau Cover.
+2. Halaman Judul.
+3. Halaman Pernyataan Karya Sendiri.
+4. Halaman Pengesahan.
+5. Kata Pengantar.
+6. Halaman Pernyataan Persetujuan Publikasi Karya Ilmiah.
+7. Abstrak dan Abstract.
+8. Daftar Isi.
+9. Daftar Tabel jika diperlukan.
+10. Daftar Gambar jika diperlukan.
+11. Daftar Lampiran jika diperlukan.`,
+    keywords: [
+      "bagian awal ta",
+      "halaman sampul",
+      "halaman judul",
+      "abstrak",
+      "daftar isi",
+    ],
+  },
+  {
+    id: 84,
+    category: "Tugas Akhir",
+    question: "Apa saja isi BAB I Tugas Akhir?",
+    answer: `BAB I Tugas Akhir biasanya berisi Pendahuluan. Subbab yang umum digunakan adalah latar belakang, perumusan masalah, tujuan penelitian, manfaat penelitian, dan batasan masalah.`,
+    keywords: [
+      "bab 1 ta",
+      "pendahuluan tugas akhir",
+      "latar belakang",
+      "rumusan masalah",
+      "tujuan penelitian",
+    ],
+  },
+  {
+    id: 85,
+    category: "Tugas Akhir",
+    question: "Apa saja isi BAB II Tugas Akhir?",
+    answer: `BAB II Tugas Akhir biasanya berisi Tinjauan Pustaka. Bagian ini memuat penelitian terdahulu dan teori pendukung yang relevan dengan topik penelitian, metode, algoritma, framework, atau produk yang dikembangkan.`,
+    keywords: [
+      "bab 2 ta",
+      "tinjauan pustaka",
+      "penelitian terdahulu",
+      "teori pendukung",
+    ],
+  },
+  {
+    id: 86,
+    category: "Tugas Akhir",
+    question: "Apa saja isi BAB III Tugas Akhir?",
+    answer: `BAB III Tugas Akhir biasanya berisi Metode Penelitian. Isi bab ini dapat mencakup jenis penelitian, objek penelitian, tahapan penelitian, analisis kebutuhan, kerangka metode, teknik pengumpulan data, dan proses analisis yang digunakan.`,
+    keywords: [
+      "bab 3 ta",
+      "metode penelitian",
+      "tahapan penelitian",
+      "jenis penelitian",
+      "analisis kebutuhan",
+    ],
+  },
+  {
+    id: 87,
+    category: "Tugas Akhir",
+    question: "Apa saja isi BAB IV Tugas Akhir?",
+    answer: `BAB IV Tugas Akhir berisi hasil dan pembahasan. Isinya menyesuaikan skema TA, misalnya pembahasan produk, analisis metode, pemodelan, evaluasi algoritma, perbandingan hasil, atau pembahasan data penelitian.`,
+    keywords: [
+      "bab 4 ta",
+      "hasil dan pembahasan",
+      "pembahasan tugas akhir",
+      "evaluasi algoritma",
+    ],
+  },
+  {
+    id: 88,
+    category: "Tugas Akhir",
+    question: "Apa saja isi BAB V Tugas Akhir?",
+    answer: `BAB V Tugas Akhir berisi kesimpulan dan saran. Kesimpulan menjawab tujuan atau rumusan masalah penelitian, sedangkan saran berisi rekomendasi untuk pengembangan, penelitian lanjutan, atau perbaikan sistem di masa depan.`,
+    keywords: [
+      "bab 5 ta",
+      "kesimpulan dan saran",
+      "kesimpulan tugas akhir",
+      "saran penelitian",
+    ],
+  },
+  {
+    id: 89,
+    category: "Tugas Akhir",
+    question: "Apa ketentuan kertas dan pengetikan laporan Tugas Akhir?",
+    answer: `Ketentuan umum penulisan laporan Tugas Akhir adalah:
+
+1. Menggunakan kertas HVS putih ukuran A4.
+2. Berat kertas 80 gram.
+3. Margin kiri 4 cm.
+4. Margin kanan 3 cm.
+5. Margin atas 3 cm.
+6. Margin bawah 3 cm.
+7. Font Times New Roman ukuran 12.
+8. Spasi 1,5.
+9. Teks rata kiri kanan atau justify.
+10. Cetakan berwarna hitam pekat dan seragam.`,
+    keywords: [
+      "format pengetikan ta",
+      "margin ta",
+      "times new roman 12",
+      "spasi 1.5",
+      "kertas a4",
+    ],
+  },
+  {
+    id: 90,
+    category: "Tugas Akhir",
+    question: "Berapa maksimal halaman laporan Tugas Akhir?",
+    answer: `Jumlah halaman laporan Tugas Akhir program sarjana maksimal 90 halaman, dihitung dari halaman nomor 1 pada BAB Pendahuluan sampai dengan halaman Daftar Pustaka. Lampiran tidak termasuk dalam batas utama tersebut.`,
+    keywords: [
+      "maksimal halaman ta",
+      "90 halaman",
+      "jumlah halaman skripsi",
+      "laporan tugas akhir",
+    ],
+  },
+  {
+    id: 91,
+    category: "Tugas Akhir",
+    question: "Apa ketentuan daftar pustaka pada Tugas Akhir?",
+    answer: `Daftar pustaka Tugas Akhir menggunakan format APA dan dianjurkan menggunakan reference manager seperti Mendeley.
+
+Ketentuan penting:
+1. Sumber yang dikutip di isi laporan harus ada di daftar pustaka.
+2. Sumber di daftar pustaka harus dikutip di dalam teks.
+3. Minimal referensi yang digunakan sebanyak 15 artikel.
+4. Referensi artikel jurnal disarankan maksimal 5 tahun terakhir.
+5. Mahasiswa diwajibkan mensitasi 2 artikel dosen program studi Sistem Informasi atau Teknik Informatika Universitas Mercu Buana.`,
+    keywords: [
+      "daftar pustaka ta",
+      "format apa",
+      "mendeley",
+      "referensi tugas akhir",
+      "15 artikel",
+    ],
+  },
+  {
+    id: 92,
+    category: "Tugas Akhir",
+    question: "Apa saja syarat pendaftaran sidang Tugas Akhir?",
+    answer: `Syarat pendaftaran sidang Tugas Akhir antara lain:
+
+1. Mendapat persetujuan dari dosen Pembimbing Akademik.
+2. Melampirkan 10 sertifikat sebagai syarat kelulusan atau SKPI.
+3. Melampirkan screenshot atau tangkapan layar data yang dibutuhkan dari SIA.
+4. Melampirkan seluruh berkas Tugas Akhir.
+5. Melampirkan bukti pembayaran sidang TA.
+6. Melakukan pendaftaran melalui tautan atau prosedur yang diberikan saat sosialisasi.
+7. Memastikan tanda tangan dosen pembimbing tidak diwakilkan kecuali dalam kondisi tertentu sesuai ketentuan.`,
+    keywords: [
+      "syarat sidang ta",
+      "pendaftaran sidang ta",
+      "daftar sidang tugas akhir",
+      "10 sertifikat",
+      "bukti pembayaran sidang",
+    ],
+  },
+  {
+    id: 93,
+    category: "Tugas Akhir",
+    question: "Apa isi Form Pengajuan Sidang Tugas Akhir?",
+    answer: `Form Pengajuan Sidang Tugas Akhir berisi data mahasiswa, verifikasi akademik, verifikasi SKPI, dan verifikasi keuangan.
+
+Data yang diisi meliputi:
+1. Nama mahasiswa.
+2. NIM.
+3. Program studi dan fakultas.
+4. Judul Tugas Akhir.
+5. Dosen Pembimbing Akademik.
+6. Total SKS lulus dan SKS semester berjalan.
+7. Nilai mata kuliah wajib.
+8. Status pengisian SKPI dan 10 sertifikat.
+9. Verifikasi pelunasan biaya pendidikan dan biaya sidang TA oleh BAK.`,
+    keywords: [
+      "form pengajuan sidang ta",
+      "form sidang tugas akhir",
+      "verifikasi sks",
+      "verifikasi keuangan",
+      "verifikasi skpi",
+    ],
+  },
+  {
+    id: 94,
+    category: "Tugas Akhir",
+    question:
+      "Apakah mahasiswa harus melunasi biaya sebelum sidang Tugas Akhir?",
+    answer: `Ya. Pada Form Pengajuan Sidang TA terdapat bagian verifikasi keuangan oleh BAK. Mahasiswa perlu memastikan seluruh biaya pendidikan dan uang sidang Tugas Akhir sudah dilunasi sebelum proses sidang.`,
+    keywords: [
+      "biaya sidang ta",
+      "verifikasi keuangan",
+      "bak",
+      "pelunasan biaya",
+      "uang sidang",
+    ],
+  },
+  {
+    id: 95,
+    category: "Tugas Akhir",
+    question: "Apa itu Formulir Perjanjian Pra Sidang Tugas Akhir?",
+    answer: `Formulir Perjanjian Pra Sidang Tugas Akhir adalah surat pernyataan mahasiswa sebelum mengikuti sidang TA.
+
+Isi perjanjiannya antara lain:
+1. Bersedia menyelesaikan revisi sidang TA sesuai waktu yang ditentukan.
+2. Bersedia menyelesaikan administrasi keuangan sebelum pendaftaran sidang TA.
+3. Jika revisi tidak selesai, mahasiswa bersedia sidang ulang.
+4. Jika administrasi keuangan tidak selesai, mahasiswa bersedia melakukan perpanjangan TA jika masa studi masih ada dan dikenakan biaya sesuai aturan.
+5. Mahasiswa wajib menyertakan bukti kelulusan sertifikat kompetensi atau surat keterangan kelulusan dari LSP.`,
+    keywords: [
+      "form perjanjian pra sidang",
+      "pra sidang ta",
+      "revisi sidang ta",
+      "administrasi keuangan",
+      "sertifikat kompetensi",
+    ],
+  },
+  {
+    id: 96,
+    category: "Tugas Akhir",
+    question: "Apa pakaian yang digunakan saat sidang Tugas Akhir?",
+    answer: `Ketentuan pakaian sidang Tugas Akhir adalah:
+
+1. Pria memakai jas dan celana hitam, kemeja putih, dan dasi.
+2. Wanita memakai blazer dan rok hitam, kemeja atau blouse putih, serta hijab menyesuaikan jika menggunakan hijab.
+3. Rambut pria tidak boleh panjang.
+4. Untuk wanita berambut panjang, rambut sebaiknya diikat.`,
+    keywords: [
+      "pakaian sidang ta",
+      "dresscode sidang",
+      "jas hitam",
+      "blazer hitam",
+      "sidang tugas akhir",
+    ],
+  },
+  {
+    id: 97,
+    category: "Tugas Akhir",
+    question: "Berapa lama presentasi sidang Tugas Akhir?",
+    answer: `Presentasi sidang Tugas Akhir dilakukan menggunakan PowerPoint. Waktu presentasi maksimal 7 menit, kemudian masing-masing penguji diberikan waktu sekitar 10 sampai 15 menit untuk bertanya atau memberikan masukan.`,
+    keywords: [
+      "durasi sidang ta",
+      "presentasi sidang ta",
+      "7 menit",
+      "penguji sidang",
+      "powerpoint sidang",
+    ],
+  },
+  {
+    id: 98,
+    category: "Tugas Akhir",
+    question: "Siapa saja yang hadir saat sidang Tugas Akhir?",
+    answer: `Saat pelaksanaan sidang, mahasiswa didampingi oleh dosen pembimbing yang sekaligus bertindak sebagai moderator. Mahasiswa akan diuji oleh 3 orang dosen penguji.`,
+    keywords: [
+      "sidang tugas akhir",
+      "dosen pembimbing",
+      "moderator sidang",
+      "3 dosen penguji",
+    ],
+  },
+  {
+    id: 99,
+    category: "Tugas Akhir",
+    question: "Apa yang harus dilakukan setelah sidang Tugas Akhir?",
+    answer: `Setelah sidang Tugas Akhir, mahasiswa harus menyelesaikan revisi dan melakukan submit yudisium.
+
+Langkah umumnya:
+1. Melakukan revisi sesuai arahan dosen penguji dan pembimbing.
+2. Konsultasi sampai mendapatkan tanda ACC.
+3. Menyiapkan laporan TA final dan dokumen pendukung.
+4. Mengunggah berkas ke Form Yudisium Tata Usaha TI.
+5. Menunggu pengecekan berkas oleh TU.
+6. Jika berkas lengkap, mahasiswa akan menerima tanda terima penyerahan Tugas Akhir.
+7. Setelah itu mahasiswa dapat melanjutkan proses penyerahan ke perpustakaan dan tahapan berikutnya.`,
+    keywords: [
+      "setelah sidang ta",
+      "pasca sidang",
+      "revisi ta",
+      "submit yudisium",
+      "tanda terima tugas akhir",
+    ],
+  },
+  {
+    id: 100,
+    category: "Tugas Akhir",
+    question: "Berapa lama batas revisi setelah sidang Tugas Akhir?",
+    answer: `Mahasiswa yang dinyatakan lulus saat sidang wajib menyelesaikan revisi paling lama 14 hari atau maksimal 2 minggu setelah masa ujian sidang. Jika revisi tidak diselesaikan sesuai waktu yang ditentukan, mahasiswa dapat diarahkan untuk sidang ulang sesuai ketentuan.`,
+    keywords: [
+      "batas revisi ta",
+      "revisi sidang ta",
+      "14 hari",
+      "2 minggu",
+      "sidang ulang",
+    ],
+  },
+  {
+    id: 101,
+    category: "Tugas Akhir",
+    question:
+      "Apa saja berkas yang harus disiapkan setelah sidang Tugas Akhir?",
+    answer: `Setelah sidang dan revisi, mahasiswa perlu menyiapkan beberapa berkas untuk yudisium dan pengumpulan final.
+
+Berkas yang umumnya disiapkan:
+1. Laporan Tugas Akhir final dalam format Word.
+2. Kartu asistensi atau bukti bimbingan.
+3. Lampiran luaran TA khusus skema publikasi ilmiah.
+4. Bukti submit jurnal khusus skema publikasi ilmiah.
+5. Naskah jurnal yang disubmit.
+6. Curriculum Vitae atau CV format UMB.
+7. Surat izin riset dari perusahaan atau instansi tempat survey data.
+8. Lampiran surat HKI.
+9. Sertifikat BNSP atau bukti sertifikat kompetensi sesuai bidang ilmu.
+10. PowerPoint presentasi sidang.
+11. Dokumen SKPI atau 10 sertifikat.
+12. Bukti sumbangan alumni atau sumbangan buku jika diminta.
+13. Verifikasi Data Mahasiswa dari SIA.`,
+    keywords: [
+      "berkas pasca sidang",
+      "berkas yudisium",
+      "laporan final ta",
+      "cv umb",
+      "hki",
+      "sertifikat bnsp",
+    ],
+  },
+  {
+    id: 102,
+    category: "Tugas Akhir",
+    question: "Apa format penamaan file setelah sidang Tugas Akhir?",
+    answer: `Format penamaan file pasca sidang perlu mengikuti arahan dari program studi.
+
+Contoh format penamaan:
+1. Laporan Tugas Akhir: TALK+NIM+NAMA.docx.
+2. CV: CV+NIM+NAMA.doc.
+3. PowerPoint sidang: PRESI+NIM+NAMA.ppt atau .pptx.
+4. Folder aplikasi: APP+NIM+NAMA.
+5. Sertifikat: CERT+NIM+NAMA.docx.
+6. Bukti sumbangan alumni: BSB+NIM+NAMA.pdf.
+7. Verifikasi Data Mahasiswa: VDM+NIM+NAMA.pdf.
+
+Pastikan nama file sesuai format agar proses verifikasi TU lebih mudah.`,
+    keywords: [
+      "format penamaan file ta",
+      "talk nim nama",
+      "cv nim nama",
+      "presi nim nama",
+      "vdm nim nama",
+    ],
+  },
 ];
