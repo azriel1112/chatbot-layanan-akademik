@@ -188,6 +188,10 @@ p {
     margin-bottom: 4px;
 }
 
+.message-text {
+    white-space: pre-line;
+}
+
 @media (max-width: 900px) {
     .layout {
         grid-template-columns: 1fr;
