@@ -1,0 +1,16 @@
+node_modules/
+backend/node_modules/
+frontend/node_modules/
+
+.env
+.env.local
+
+desktop.ini
+.DS_Store
+
+dist/
+build/
+echo node_modules/ >> .gitignore
+echo frontend/node_modules/ >> .gitignore
+echo dist/ >> .gitignore
+echo frontend/dist/ >> .gitignore
