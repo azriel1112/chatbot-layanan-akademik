@@ -354,4 +354,383 @@ Jika masih ragu, konfirmasi ke program studi atau bagian akademik.`,
       "dokumen akreditasi benar",
     ],
   },
+  {
+    id: 21,
+    category: "Kerja Praktek",
+    question: "Apa itu Kerja Praktek atau KP?",
+    answer: `Kerja Praktek atau KP adalah bagian dari kurikulum sarjana Ilmu Komputer yang bertujuan memberikan pengalaman nyata kepada mahasiswa di dunia industri atau instansi.
+
+Melalui KP, mahasiswa dapat mengaplikasikan teori yang sudah dipelajari di perkuliahan ke dalam praktik profesional. Kegiatan KP juga dapat dilengkapi dengan seminar, kunjungan industri, penyusunan laporan, dan presentasi hasil kerja praktek.`,
+    keywords: [
+      "kerja praktek",
+      "kp",
+      "apa itu kp",
+      "magang",
+      "pengalaman industri",
+    ],
+  },
+  {
+    id: 22,
+    category: "Kerja Praktek",
+    question: "Apa tujuan Kerja Praktek bagi mahasiswa?",
+    answer: `Tujuan Kerja Praktek adalah membantu mahasiswa menghubungkan teori perkuliahan dengan kondisi nyata di dunia kerja.
+
+Secara umum, KP bertujuan untuk:
+1. Memberikan pengalaman langsung di industri atau instansi.
+2. Melatih mahasiswa memahami proses kerja profesional.
+3. Mengembangkan keterampilan teknis dan nonteknis.
+4. Membantu mahasiswa menyusun laporan akademik berdasarkan pengalaman lapangan.
+5. Mempersiapkan mahasiswa agar lebih siap menghadapi dunia kerja.`,
+    keywords: [
+      "tujuan kp",
+      "manfaat kp",
+      "kerja praktek mahasiswa",
+      "pengalaman kerja",
+      "dunia industri",
+    ],
+  },
+  {
+    id: 23,
+    category: "Kerja Praktek",
+    question: "Apa saja skema Kerja Praktek yang tersedia?",
+    answer: `Berdasarkan materi sosialisasi, skema Kerja Praktek terdiri dari beberapa pilihan:
+
+1. Magang Mandiri
+Mahasiswa melaksanakan magang secara mandiri di instansi mitra.
+
+2. KP Kelas Reguler 2
+Mahasiswa melampirkan surat keterangan bekerja, menyusun laporan KP, mempresentasikan laporan, dan tetap mengikuti kelas KP.
+
+3. Magang Internal SDM UMB
+Mahasiswa magang melalui Biro SDM UMB, mendapatkan konversi KP 3 SKS, tetap masuk kelas, dan membuat laporan.
+
+4. Magang Internal Non-SDM
+Mahasiswa dapat mengikuti magang melalui hibah dosen atau unit di UMB, wajib mengikuti kelas, membuat laporan, dan mendapatkan konversi KP 3 SKS.
+
+5. Kerja Praktek melalui Kelas KP
+Mahasiswa mengikuti pengayaan materi, seminar, kunjungan industri, menyusun laporan, dan melakukan presentasi.`,
+    keywords: [
+      "skema kp",
+      "jenis kp",
+      "magang mandiri",
+      "kp kelas",
+      "magang internal umb",
+    ],
+  },
+  {
+    id: 24,
+    category: "Kerja Praktek",
+    question: "Apa syarat mengambil mata kuliah Kerja Praktek?",
+    answer: `Syarat mengambil mata kuliah Kerja Praktek Program Studi Teknik Informatika antara lain:
+
+1. Mahasiswa telah lulus minimal 90 SKS.
+2. Mahasiswa memiliki rencana atau tempat kerja praktek yang sesuai dengan bidang Teknik Informatika.
+3. Mahasiswa wajib meminta form di Tata Usaha Fasilkom untuk surat keterangan akan magang.
+4. Mahasiswa memiliki dosen pembimbing yang ditentukan oleh prodi.
+5. Mahasiswa memiliki IPK minimal 2,75.
+6. Mahasiswa mematuhi persyaratan administratif dan prosedur akademik yang berlaku.`,
+    keywords: [
+      "syarat kp",
+      "ambil kp",
+      "minimal sks kp",
+      "ipk kp",
+      "kerja praktek teknik informatika",
+    ],
+  },
+  {
+    id: 25,
+    category: "Kerja Praktek",
+    question: "Berapa minimal SKS dan IPK untuk mengambil Kerja Praktek?",
+    answer: `Mahasiswa dapat mengambil Kerja Praktek jika sudah memenuhi minimal 90 SKS lulus dan memiliki IPK minimal 2,75.
+
+Persyaratan ini digunakan untuk memastikan mahasiswa sudah memiliki bekal akademik yang cukup sebelum melaksanakan kerja praktek dan menyusun laporan KP.`,
+    keywords: [
+      "minimal sks kp",
+      "ipk minimal kp",
+      "90 sks",
+      "ipk 2.75",
+      "syarat akademik kp",
+    ],
+  },
+  {
+    id: 26,
+    category: "Kerja Praktek",
+    question:
+      "Bagaimana jika mahasiswa sudah mengambil KP tetapi belum mendapat tempat magang?",
+    answer: `Jika mahasiswa sudah memilih mata kuliah Kerja Praktek tetapi belum mendapatkan tempat magang dalam kurun waktu 4 minggu perkuliahan, maka Program Studi Teknik Informatika akan memberikan daftar magang yang tersedia.
+
+Daftar magang tersebut wajib diikuti oleh mahasiswa sesuai ketentuan program studi.`,
+    keywords: [
+      "belum dapat tempat magang",
+      "tempat kp",
+      "magang belum dapat",
+      "list magang prodi",
+      "4 minggu kp",
+    ],
+  },
+  {
+    id: 27,
+    category: "Kerja Praktek",
+    question:
+      "Apakah tempat Kerja Praktek harus sesuai bidang Teknik Informatika?",
+    answer: `Ya. Program Studi Teknik Informatika mewajibkan mahasiswa memilih posisi Kerja Praktek yang sesuai dengan bidang Informatika.
+
+Mahasiswa sebaiknya memilih tempat KP berdasarkan:
+1. Kesesuaian bidang dengan Teknik Informatika.
+2. Minat dan tujuan karir.
+3. Reputasi perusahaan atau instansi.
+4. Kesempatan belajar dan pengembangan keterampilan.
+5. Saran dari dosen pembimbing atau program studi.`,
+    keywords: [
+      "tempat kp",
+      "bidang informatika",
+      "magang teknik informatika",
+      "pilih tempat kp",
+      "instansi kp",
+    ],
+  },
+  {
+    id: 28,
+    category: "Kerja Praktek",
+    question: "Berapa kali minimal bimbingan Kerja Praktek?",
+    answer: `Mahasiswa wajib melakukan bimbingan minimal 6 kali dengan dosen pembimbing.
+
+Setiap kegiatan bimbingan dicatat pada lembar atau kartu konsultasi/bimbingan dan dibubuhi tanda tangan dosen pembimbing. Lembar konsultasi tersebut dapat diperoleh melalui Tata Usaha Fasilkom.`,
+    keywords: [
+      "bimbingan kp",
+      "minimal bimbingan kp",
+      "6 kali bimbingan",
+      "kartu asistensi",
+      "lembar konsultasi",
+    ],
+  },
+  {
+    id: 29,
+    category: "Kerja Praktek",
+    question: "Apa itu kartu asistensi atau kartu bimbingan KP?",
+    answer: `Kartu asistensi atau kartu bimbingan KP adalah dokumen yang digunakan untuk mencatat proses konsultasi mahasiswa dengan dosen pembimbing.
+
+Di dalam kartu tersebut biasanya terdapat data:
+1. Nama mahasiswa.
+2. NIM.
+3. Fakultas.
+4. Program studi.
+5. Semester.
+6. Tahun akademik.
+7. Dosen pembimbing.
+8. Judul KP.
+9. Tanggal bimbingan.
+10. Keterangan bimbingan.
+11. Paraf dosen pembimbing.`,
+    keywords: [
+      "kartu asistensi kp",
+      "kartu bimbingan kp",
+      "lembar bimbingan",
+      "konsultasi kp",
+      "paraf dosen",
+    ],
+  },
+  {
+    id: 30,
+    category: "Kerja Praktek",
+    question: "Apa saja kegiatan dalam kelas Kerja Praktek?",
+    answer: `Kegiatan dalam kelas Kerja Praktek dapat mencakup pengayaan materi, seminar, kunjungan industri, penyusunan laporan, dan presentasi.
+
+Secara umum, kegiatan KP meliputi:
+1. Pengenalan tujuan KP, aturan pelaksanaan, format laporan, dan tata cara membuat resume seminar.
+2. Seminar topik series.
+3. Evaluasi resume seminar.
+4. Teknik mereview jurnal.
+5. Observasi atau kunjungan industri.
+6. Penyusunan laporan KP.
+7. Finalisasi laporan dan persiapan presentasi.
+8. UAS berupa presentasi laporan KP.`,
+    keywords: [
+      "kegiatan kp",
+      "kelas kp",
+      "seminar kp",
+      "kunjungan industri",
+      "presentasi laporan kp",
+    ],
+  },
+  {
+    id: 31,
+    category: "Kerja Praktek",
+    question: "Apakah mahasiswa KP wajib mengikuti seminar?",
+    answer: `Ya. Dalam skema KP, mahasiswa diwajibkan mengikuti rangkaian seminar yang ditetapkan oleh program studi.
+
+Seminar bertujuan untuk memastikan:
+1. Topik sesuai dengan bidang ilmu dan tujuan pembelajaran.
+2. Kegiatan mendukung capaian pembelajaran mata kuliah.
+3. Mahasiswa mendapatkan wawasan dari praktisi, alumni, atau topik industri.
+4. Hasil seminar dapat digunakan sebagai bahan resume, review jurnal, dan diskusi kelas.`,
+    keywords: [
+      "seminar kp",
+      "wajib seminar",
+      "resume seminar",
+      "topik seminar",
+      "kegiatan seminar kp",
+    ],
+  },
+  {
+    id: 32,
+    category: "Kerja Praktek",
+    question: "Apa yang dilakukan dalam kunjungan industri Kerja Praktek?",
+    answer: `Kunjungan industri bertujuan memberikan pengalaman langsung kepada mahasiswa untuk mengenal ekosistem kerja.
+
+Dalam kegiatan ini, mahasiswa melakukan:
+1. Observasi ke tempat industri.
+2. Diskusi dengan pihak industri.
+3. Dokumentasi kegiatan.
+4. Penyusunan laporan kunjungan.
+5. Presentasi atau refleksi hasil kunjungan.
+
+Kunjungan industri dapat dibagi ke beberapa tempat industri berbeda agar wawasan mahasiswa lebih luas.`,
+    keywords: [
+      "kunjungan industri",
+      "observasi industri",
+      "laporan kunjungan",
+      "refleksi kunjungan",
+      "kp industri",
+    ],
+  },
+  {
+    id: 33,
+    category: "Kerja Praktek",
+    question: "Bagaimana sistematika laporan Kerja Praktek?",
+    answer: `Sistematika laporan Kerja Praktek umumnya terdiri dari:
+
+1. Halaman Sampul.
+2. Halaman Judul.
+3. Halaman Pernyataan Karya Sendiri.
+4. Halaman Persetujuan.
+5. Halaman Pengesahan.
+6. Kata Pengantar.
+7. Abstrak.
+8. Abstract.
+9. Daftar Isi.
+10. Daftar Tabel.
+11. Daftar Gambar.
+12. Daftar Lampiran.
+13. BAB I Pendahuluan.
+14. BAB II Gambaran Umum Perusahaan.
+15. BAB III Metode Kegiatan Kerja Praktek.
+16. BAB IV Hasil Kerja Praktek.
+17. BAB V Kesimpulan dan Saran.
+18. Daftar Pustaka.
+19. Lampiran.`,
+    keywords: [
+      "sistematika laporan kp",
+      "format laporan kp",
+      "bab laporan kp",
+      "struktur laporan kerja praktek",
+    ],
+  },
+  {
+    id: 34,
+    category: "Kerja Praktek",
+    question: "Apa saja aturan umum penulisan laporan KP?",
+    answer: `Laporan KP harus ditulis secara jelas, sistematis, dan sesuai pedoman akademik.
+
+Beberapa aturan umumnya adalah:
+1. Mengikuti struktur laporan yang sudah ditentukan.
+2. Menggunakan referensi dan sitasi yang benar.
+3. Menghindari plagiarisme.
+4. Menggunakan bahasa baku dan gaya akademik.
+5. Menulis secara objektif berdasarkan data dan bukti.
+6. Menjaga konsistensi format, seperti font, spasi, margin, tabel, dan gambar.
+7. Melakukan review dan revisi sebelum laporan dikumpulkan.`,
+    keywords: [
+      "aturan laporan kp",
+      "penulisan laporan kp",
+      "format kp",
+      "sitasi kp",
+      "plagiarisme kp",
+    ],
+  },
+  {
+    id: 35,
+    category: "Kerja Praktek",
+    question: "Apa saja lampiran yang perlu disiapkan dalam laporan KP?",
+    answer: `Lampiran laporan KP dapat berisi dokumen pendukung yang membuktikan pelaksanaan kegiatan kerja praktek.
+
+Beberapa lampiran yang perlu disiapkan antara lain:
+1. Kartu asistensi atau lembar bimbingan.
+2. Surat balasan atau surat riset dari perusahaan/instansi.
+3. Form nilai industri Kerja Praktek.
+4. Form absensi dan aktivitas kerja praktek.
+5. Dokumentasi kegiatan, wawancara, kuesioner, atau data penelitian jika diperlukan.`,
+    keywords: [
+      "lampiran kp",
+      "dokumen kp",
+      "nilai industri",
+      "absensi industri",
+      "surat balasan kp",
+    ],
+  },
+  {
+    id: 36,
+    category: "Kerja Praktek",
+    question: "Apa isi form nilai industri Kerja Praktek?",
+    answer: `Form nilai industri Kerja Praktek digunakan oleh pembimbing industri untuk menilai mahasiswa selama melaksanakan KP di perusahaan atau instansi.
+
+Unsur penilaian meliputi:
+1. Kedisiplinan, seperti ketepatan waktu dan kehadiran.
+2. Sikap kerja, prosedur kerja, dan tanggung jawab.
+3. Prestasi kerja, seperti kemampuan kerja, keterampilan kerja, dan kualitas hasil kerja.
+4. Kemampuan beradaptasi, seperti komunikasi, kerja sama, kerajinan, dan inisiatif.
+5. Aspek lain seperti percaya diri, mematuhi aturan, dan penampilan atau kerapian.
+
+Nilai rata-rata dihitung dari seluruh unsur penilaian yang tersedia pada form.`,
+    keywords: [
+      "nilai industri kp",
+      "form nilai kp",
+      "penilaian industri",
+      "pembimbing industri",
+      "unsur penilaian kp",
+    ],
+  },
+  {
+    id: 37,
+    category: "Kerja Praktek",
+    question: "Apa fungsi form absensi dan aktivitas Kerja Praktek?",
+    answer: `Form absensi dan aktivitas Kerja Praktek digunakan untuk mencatat kehadiran dan aktivitas mahasiswa selama melaksanakan KP di perusahaan atau instansi.
+
+Form ini biasanya memuat:
+1. Hari atau tanggal kegiatan.
+2. Aktivitas pekerjaan yang dilakukan.
+3. Nama dan paraf pembimbing industri.
+
+Dokumen ini penting sebagai bukti bahwa mahasiswa benar-benar melaksanakan kegiatan kerja praktek sesuai jadwal dan arahan pembimbing industri.`,
+    keywords: [
+      "absensi kp",
+      "form aktivitas kp",
+      "kehadiran kp",
+      "paraf pembimbing industri",
+      "aktivitas kerja praktek",
+    ],
+  },
+  {
+    id: 38,
+    category: "Kerja Praktek",
+    question: "Bagaimana mekanisme sidang Kerja Praktek?",
+    answer: `Sidang Kerja Praktek adalah proses formal untuk mempresentasikan laporan KP di hadapan dosen penguji dan didampingi dosen pembimbing.
+
+Mekanismenya secara umum:
+1. Mahasiswa mendaftar sidang melalui Google Form dari TU Fasilkom.
+2. Mahasiswa mengunggah dokumen final KP yang sudah di-ACC dosen pembimbing.
+3. Mahasiswa memastikan sudah melakukan minimal 6 kali bimbingan.
+4. Jadwal sidang ditentukan oleh program studi.
+5. Mahasiswa menyiapkan presentasi berisi latar belakang, tujuan, metodologi, hasil, analisis, dan kesimpulan.
+6. Presentasi biasanya dilakukan sekitar 10 sampai 15 menit.
+7. Setelah presentasi, ada sesi tanya jawab dan diskusi dengan penguji sekitar 20 menit.
+8. Hasil sidang dapat berupa Lulus, Lulus dengan Revisi, atau Tidak Lulus.`,
+    keywords: [
+      "sidang kp",
+      "mekanisme sidang kp",
+      "daftar sidang kp",
+      "presentasi kp",
+      "lulus revisi kp",
+    ],
+  },
 ];
