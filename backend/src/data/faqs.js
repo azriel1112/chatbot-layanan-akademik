@@ -733,4 +733,274 @@ Mekanismenya secara umum:
       "lulus revisi kp",
     ],
   },
+  {
+    id: 39,
+    category: "Magang Mandiri",
+    question: "Apa itu Magang Mandiri?",
+    answer: `Magang Mandiri adalah kegiatan Pembelajaran di Luar Program Studi atau PDPS yang memberi kesempatan kepada mahasiswa untuk memperoleh pengalaman kerja secara langsung di dunia profesional.
+
+Melalui program ini, mahasiswa dapat menerapkan ilmu yang sudah dipelajari, mengembangkan kompetensi, memperluas relasi profesional, dan memperoleh pengalaman kerja yang relevan dengan bidang studinya.`,
+    keywords: [
+      "magang mandiri",
+      "apa itu magang mandiri",
+      "pdps",
+      "mbkm",
+      "pengalaman kerja",
+    ],
+  },
+  {
+    id: 40,
+    category: "Magang Mandiri",
+    question: "Apa tujuan Magang Mandiri?",
+    answer: `Tujuan Magang Mandiri adalah membantu mahasiswa mendapatkan pengalaman kerja nyata, menerapkan kompetensi yang dipelajari selama kuliah, memperluas relasi profesional, dan meningkatkan jejaring kerja sama antara program studi dengan mitra magang.`,
+    keywords: [
+      "tujuan magang mandiri",
+      "manfaat magang mandiri",
+      "pengalaman kerja",
+      "relasi profesional",
+    ],
+  },
+  {
+    id: 41,
+    category: "Magang Mandiri",
+    question: "Apa saja syarat mengikuti Magang Mandiri?",
+    answer: `Berdasarkan Pakta Integritas Magang Mandiri, beberapa syarat yang perlu diperhatikan adalah:
+
+1. Mahasiswa aktif pada semester 5 sampai 7 saat periode pendaftaran.
+2. Maksimal mengikuti kegiatan PDPS sebanyak 2 kali.
+3. Tidak sedang aktif dalam Program Kampus Merdeka flagship atau non-flagship saat program berlangsung.
+4. Tidak sedang cuti atau dikenakan sanksi akademik maupun non-akademik.
+5. Bersedia mengikuti seluruh ketentuan program sampai akhir.
+6. Bersedia menjalankan proses seleksi, pembekalan, pelaksanaan, dan pelaporan kegiatan dengan penuh tanggung jawab.`,
+    keywords: [
+      "syarat magang mandiri",
+      "semester magang mandiri",
+      "pakta integritas",
+      "pdps",
+      "kampus merdeka",
+    ],
+  },
+  {
+    id: 42,
+    category: "Magang Mandiri",
+    question: "Mahasiswa semester berapa yang bisa mengikuti Magang Mandiri?",
+    answer: `Mahasiswa yang dapat mengikuti Magang Mandiri adalah mahasiswa aktif pada semester 5 sampai semester 7 saat periode pendaftaran.`,
+    keywords: [
+      "semester magang mandiri",
+      "semester 5",
+      "semester 7",
+      "syarat semester magang",
+    ],
+  },
+  {
+    id: 43,
+    category: "Magang Mandiri",
+    question:
+      "Berapa kali mahasiswa boleh mengikuti kegiatan PDPS seperti Magang Mandiri?",
+    answer: `Mahasiswa maksimal dapat mengikuti kegiatan PDPS sebanyak 2 kali sesuai ketentuan yang tercantum dalam Pakta Integritas Magang Mandiri.`,
+    keywords: [
+      "maksimal pdps",
+      "berapa kali magang mandiri",
+      "pdps 2 kali",
+      "ketentuan magang",
+    ],
+  },
+  {
+    id: 44,
+    category: "Magang Mandiri",
+    question:
+      "Apakah mahasiswa yang sedang cuti boleh mengikuti Magang Mandiri?",
+    answer: `Tidak. Mahasiswa yang sedang cuti atau sedang dikenakan sanksi akademik maupun non-akademik tidak dapat mengikuti Program Magang Mandiri.`,
+    keywords: [
+      "cuti magang mandiri",
+      "mahasiswa cuti",
+      "sanksi akademik",
+      "tidak boleh magang",
+    ],
+  },
+  {
+    id: 45,
+    category: "Magang Mandiri",
+    question: "Apa itu Pakta Integritas Magang Mandiri?",
+    answer: `Pakta Integritas Magang Mandiri adalah surat pernyataan komitmen mahasiswa untuk mengikuti program dengan jujur, bertanggung jawab, dan sesuai aturan.
+
+Dokumen ini memuat pernyataan bahwa mahasiswa:
+1. Memenuhi ketentuan peserta Magang Mandiri.
+2. Bersedia mengikuti seluruh rangkaian program sampai akhir.
+3. Menjamin bahwa data dan dokumen yang diberikan benar.
+4. Bersedia menerima sanksi apabila melanggar ketentuan atau memalsukan dokumen.
+5. Menandatangani dokumen dengan materai 10.000.`,
+    keywords: [
+      "pakta integritas magang",
+      "surat pernyataan magang",
+      "komitmen magang",
+      "materai magang",
+    ],
+  },
+  {
+    id: 46,
+    category: "Magang Mandiri",
+    question:
+      "Apa itu Implementation Arrangement atau IA dalam Magang Mandiri?",
+    answer: `Implementation Arrangement atau IA adalah dokumen pelaksanaan kerja sama antara program studi atau fakultas Universitas Mercu Buana dengan institusi mitra untuk penyelenggaraan Program Magang.
+
+Dokumen IA biasanya memuat dasar kegiatan, maksud dan tujuan, lingkup kegiatan, alamat mitra, waktu pelaksanaan, jadwal kegiatan, serta daftar peserta magang.`,
+    keywords: [
+      "implementation arrangement",
+      "ia magang",
+      "dokumen ia",
+      "kerja sama mitra",
+      "mitra magang",
+    ],
+  },
+  {
+    id: 47,
+    category: "Magang Mandiri",
+    question: "Apa saja isi dokumen IA Magang Mandiri?",
+    answer: `Dokumen IA Magang Mandiri umumnya berisi:
+
+1. Logo dan identitas mitra.
+2. Identitas program studi, fakultas, dan Universitas Mercu Buana.
+3. Nama institusi mitra.
+4. Dasar pelaksanaan kegiatan.
+5. Maksud dan tujuan program.
+6. Lingkup kegiatan, yaitu penyelenggaraan magang mahasiswa.
+7. Alamat mitra.
+8. Waktu dan jadwal pelaksanaan kegiatan.
+9. Daftar peserta magang.
+10. Bagian penutup dan tanda tangan pihak terkait.`,
+    keywords: [
+      "isi ia magang",
+      "dokumen kerja sama magang",
+      "pelaksanaan kerja sama",
+      "jadwal magang",
+      "peserta magang",
+    ],
+  },
+  {
+    id: 48,
+    category: "Magang Mandiri",
+    question: "Apa itu Form Kesepakatan Rekognisi Magang Mandiri?",
+    answer: `Form Kesepakatan Rekognisi adalah dokumen untuk mengusulkan mata kuliah yang akan direkognisi dari kegiatan Magang Mandiri.
+
+Dalam form ini, mahasiswa atau pengusul mencantumkan mata kuliah yang diusulkan, jumlah SKS, mata kuliah yang disetujui, total SKS, serta persetujuan dari pihak terkait seperti Ketua Program Studi.`,
+    keywords: [
+      "form rekognisi",
+      "rekognisi magang",
+      "konversi sks",
+      "mata kuliah rekognisi",
+      "pdps",
+    ],
+  },
+  {
+    id: 49,
+    category: "Magang Mandiri",
+    question: "Apakah Magang Mandiri bisa dikonversi menjadi SKS?",
+    answer: `Ya. Magang Mandiri dapat diajukan untuk rekognisi atau konversi ke mata kuliah tertentu sesuai kesepakatan dan persetujuan program studi.
+
+Mahasiswa perlu mengisi Form Kesepakatan Rekognisi yang memuat mata kuliah usulan, jumlah SKS, mata kuliah yang disetujui, dan total SKS yang akan direkognisi.`,
+    keywords: [
+      "konversi sks magang",
+      "magang mandiri sks",
+      "rekognisi sks",
+      "mata kuliah disetujui",
+    ],
+  },
+  {
+    id: 50,
+    category: "Magang Mandiri",
+    question: "Apa fungsi logbook kegiatan Magang Mandiri?",
+    answer: `Logbook kegiatan digunakan untuk mencatat seluruh aktivitas mahasiswa selama mengikuti Magang Mandiri dari awal sampai akhir program.
+
+Logbook memuat informasi seperti:
+1. Tanggal kegiatan.
+2. Uraian aktivitas.
+3. Foto dokumentasi.
+4. Durasi kegiatan dalam jam.
+5. Total akumulasi jam.
+6. Dosen pembimbing, pendamping, atau pihak yang mengetahui kegiatan.`,
+    keywords: [
+      "logbook magang",
+      "logbook kegiatan",
+      "catatan aktivitas magang",
+      "durasi kegiatan",
+      "dokumentasi magang",
+    ],
+  },
+  {
+    id: 51,
+    category: "Magang Mandiri",
+    question: "Berapa minimal total jam kegiatan pada logbook Magang Mandiri?",
+    answer: `Pada template logbook kegiatan, total akumulasi jam yang dicantumkan adalah minimal 450 jam. Template juga mencantumkan keterangan bahwa alokasi waktu 1 SKS setara dengan 45 jam.`,
+    keywords: [
+      "minimal jam magang",
+      "450 jam",
+      "logbook magang mandiri",
+      "1 sks 45 jam",
+      "akumulasi jam",
+    ],
+  },
+  {
+    id: 52,
+    category: "Magang Mandiri",
+    question: "Bagaimana penilaian Magang Mandiri dari pihak mitra?",
+    answer: `Penilaian dari pihak mitra menggunakan Form Penilaian Mahasiswa Magang Mandiri.
+
+Unsur penilaiannya meliputi:
+1. Kolaborasi dengan bobot 30%.
+2. Komunikasi dengan bobot 35%.
+3. Produktivitas dengan bobot 35%.
+
+Aspek yang dinilai mencakup koordinasi, partisipasi, umpan balik, hasil kolaborasi, komunikasi efektif, kecepatan respons, etika, komitmen terhadap tugas, kualitas pekerjaan, kreativitas, dan inovasi.`,
+    keywords: [
+      "penilaian mitra",
+      "nilai magang mandiri",
+      "kolaborasi",
+      "komunikasi",
+      "produktivitas",
+    ],
+  },
+  {
+    id: 53,
+    category: "Magang Mandiri",
+    question: "Bagaimana penilaian Magang Mandiri dari dosen pembimbing?",
+    answer: `Penilaian dari dosen pembimbing mencakup kualitas laporan tertulis, pelaksanaan kegiatan, implementasi kegiatan, dan aspek administratif.
+
+Komponen penilaiannya adalah:
+1. Kualitas laporan tertulis dengan bobot 30%.
+2. Pelaksanaan dan implementasi kegiatan dengan bobot 35%.
+3. Aspek administratif dengan bobot 35%.
+
+Selain itu, rekap nilai akhir menggabungkan Nilai Mitra sebesar 60% dan Nilai Dosen Pembimbing sebesar 40%.`,
+    keywords: [
+      "penilaian dosen pembimbing",
+      "nilai dosen magang",
+      "laporan tertulis",
+      "nilai mitra 60",
+      "nilai dosen 40",
+    ],
+  },
+  {
+    id: 54,
+    category: "Magang Mandiri",
+    question: "Apa saja isi laporan akhir Magang Mandiri?",
+    answer: `Laporan akhir Magang Mandiri berisi identitas mahasiswa, lembar pengesahan, substansi laporan, dan lampiran pendukung.
+
+Bagian substansi laporan meliputi:
+1. Judul Laporan Magang.
+2. Pendahuluan.
+3. Profil Mitra.
+4. Hasil dan Pembahasan Program.
+5. Refleksi dan Evaluasi Implementasi Program.
+6. Kesimpulan dan Saran.
+
+Lampiran yang disiapkan dapat mencakup foto kegiatan, Implementation Agreement atau IA, Pakta Integritas, Form Kesepakatan Rekognisi, Form Penilaian, dan Logbook Kegiatan.`,
+    keywords: [
+      "laporan akhir magang",
+      "isi laporan magang mandiri",
+      "template laporan akhir",
+      "lampiran magang",
+      "hasil pembahasan",
+    ],
+  },
 ];
