@@ -1003,4 +1003,223 @@ Lampiran yang disiapkan dapat mencakup foto kegiatan, Implementation Agreement a
       "hasil pembahasan",
     ],
   },
+  {
+    id: 55,
+    category: "Seminar Proposal",
+    question: "Apa itu Seminar Proposal?",
+    answer: `Seminar Proposal atau Sempro adalah proses sidang proposal penelitian di mana mahasiswa mempresentasikan rencana penelitian atau karyanya di hadapan dosen penguji dan didampingi dosen pembimbing. Sempro bertujuan untuk menilai pemahaman, kualitas proposal, metodologi, serta kontribusi penelitian yang akan dilakukan.`,
+    keywords: [
+      "seminar proposal",
+      "sempro",
+      "sidang proposal",
+      "proposal penelitian",
+      "mpti",
+    ],
+  },
+  {
+    id: 56,
+    category: "Seminar Proposal",
+    question: "Apa syarat mengambil mata kuliah MPTI atau Seminar Proposal?",
+    answer: `Syarat mengambil mata kuliah Metodologi Penelitian Teknologi Informasi atau MPTI antara lain:
+
+1. Mahasiswa telah lulus minimal 110 SKS.
+2. Mahasiswa memiliki rencana penelitian atau proyek penelitian.
+3. Mahasiswa memiliki dosen pembimbing yang ditentukan oleh program studi.
+4. Mahasiswa memiliki IPK minimal 2,50.
+5. Mahasiswa mematuhi persyaratan administratif, prosedur akademik, dan waktu pengajuan proposal yang berlaku.`,
+    keywords: [
+      "syarat sempro",
+      "syarat mpti",
+      "minimal sks sempro",
+      "ipk sempro",
+      "seminar proposal",
+    ],
+  },
+  {
+    id: 57,
+    category: "Seminar Proposal",
+    question: "Berapa minimal SKS dan IPK untuk mengambil Sempro?",
+    answer: `Mahasiswa dapat mengambil MPTI atau Seminar Proposal jika sudah lulus minimal 110 SKS dan memiliki IPK minimal 2,50.`,
+    keywords: [
+      "minimal sks sempro",
+      "ipk minimal sempro",
+      "110 sks",
+      "ipk 2.50",
+      "syarat mpti",
+    ],
+  },
+  {
+    id: 58,
+    category: "Seminar Proposal",
+    question: "Bagaimana mekanisme sidang Seminar Proposal?",
+    answer: `Mekanisme sidang Seminar Proposal secara umum adalah:
+
+1. Jadwal sidang proposal ditentukan oleh program studi, biasanya dimulai pada minggu ke-4 perkuliahan.
+2. Mahasiswa diberitahu tanggal, waktu, dan lokasi sidang oleh Tata Usaha Fasilkom.
+3. Mahasiswa menyiapkan materi presentasi proposal.
+4. Mahasiswa mempresentasikan proposal di hadapan 1 dosen penguji dan didampingi dosen pembimbing.
+5. Presentasi biasanya berlangsung sekitar 10 sampai 15 menit.
+6. Setelah presentasi, dilakukan sesi tanya jawab dan diskusi sekitar 20 menit.
+7. Hasil sidang dapat berupa Lulus, Lulus dengan Revisi, atau Tidak Lulus.`,
+    keywords: [
+      "mekanisme sempro",
+      "sidang seminar proposal",
+      "alur sempro",
+      "presentasi sempro",
+      "penguji sempro",
+    ],
+  },
+  {
+    id: 59,
+    category: "Seminar Proposal",
+    question: "Apa saja materi yang harus disiapkan untuk presentasi Sempro?",
+    answer: `Materi presentasi Seminar Proposal sebaiknya memuat latar belakang penelitian, tujuan penelitian, metodologi, temuan atau rancangan awal, analisis data jika sudah ada, serta kesimpulan atau hasil yang diharapkan.`,
+    keywords: [
+      "materi sempro",
+      "presentasi sempro",
+      "slide sempro",
+      "isi presentasi proposal",
+      "proposal penelitian",
+    ],
+  },
+  {
+    id: 60,
+    category: "Seminar Proposal",
+    question: "Berapa lama waktu presentasi Seminar Proposal?",
+    answer: `Waktu presentasi Seminar Proposal biasanya sekitar 10 sampai 15 menit, tergantung ketentuan dosen penguji atau pelaksanaan sidang proposal.`,
+    keywords: [
+      "durasi sempro",
+      "waktu presentasi sempro",
+      "presentasi 10 menit",
+      "presentasi 15 menit",
+    ],
+  },
+  {
+    id: 61,
+    category: "Seminar Proposal",
+    question: "Apa saja hasil keputusan sidang Sempro?",
+    answer: `Hasil keputusan sidang Seminar Proposal dapat berupa:
+
+1. Lulus
+Mahasiswa dapat melanjutkan proses akhir seperti penyerahan berkas akhir dan pengajuan nilai.
+
+2. Lulus dengan Revisi
+Mahasiswa wajib memperbaiki proposal sesuai masukan penguji atau pembimbing.
+
+3. Tidak Lulus
+Mahasiswa harus mendaftar ulang untuk sidang ulang proposal sesuai ketentuan program studi.`,
+    keywords: [
+      "hasil sidang sempro",
+      "keputusan sempro",
+      "lulus sempro",
+      "lulus revisi",
+      "tidak lulus sempro",
+    ],
+  },
+  {
+    id: 62,
+    category: "Seminar Proposal",
+    question: "Berapa lama batas waktu revisi setelah Sempro?",
+    answer: `Jika mahasiswa dinyatakan lulus dengan revisi, revisi proposal harus diselesaikan dalam waktu 7 hari terhitung setelah tanggal sidang dilaksanakan. Jika melewati batas waktu tersebut, mahasiswa dapat dianggap tidak melaksanakan kewajiban dan dapat diarahkan untuk sidang ulang.`,
+    keywords: [
+      "batas revisi sempro",
+      "revisi sempro 7 hari",
+      "lulus revisi sempro",
+      "deadline revisi proposal",
+    ],
+  },
+  {
+    id: 63,
+    category: "Seminar Proposal",
+    question: "Apa itu Formulir Revisi Seminar Proposal?",
+    answer: `Formulir Revisi Seminar Proposal adalah dokumen yang digunakan untuk mencatat catatan revisi dari dosen penelaah atau penguji setelah mahasiswa melaksanakan Sempro.
+
+Formulir ini memuat:
+1. Nama mahasiswa.
+2. Nomor Induk Mahasiswa.
+3. Judul proposal.
+4. Nama dosen penelaah.
+5. Catatan revisi proposal.
+6. Halaman yang perlu direvisi.
+7. Checklist penyelesaian revisi.
+8. Tanggal Sempro dan tanggal persetujuan revisi.
+9. Tanda tangan dosen penelaah.`,
+    keywords: [
+      "formulir revisi sempro",
+      "form revisi seminar proposal",
+      "catatan revisi proposal",
+      "dosen penelaah",
+    ],
+  },
+  {
+    id: 64,
+    category: "Seminar Proposal",
+    question:
+      "Apakah lembar revisi Sempro penting untuk mengambil Tugas Akhir?",
+    answer: `Ya. Pada formulir revisi disebutkan bahwa lembar revisi diperlukan untuk mengambil Tugas Akhir pada semester berikutnya. Karena itu, mahasiswa perlu menyelesaikan revisi dan memperoleh persetujuan sesuai arahan dosen penelaah atau penguji.`,
+    keywords: [
+      "lembar revisi sempro",
+      "ambil tugas akhir",
+      "revisi proposal",
+      "persetujuan revisi",
+    ],
+  },
+  {
+    id: 65,
+    category: "Seminar Proposal",
+    question: "Apa itu Kartu Asistensi Seminar Proposal?",
+    answer: `Kartu Asistensi Seminar Proposal adalah dokumen untuk mencatat proses bimbingan mahasiswa dengan dosen pembimbing selama penyusunan proposal.
+
+Data yang tercantum biasanya meliputi:
+1. Nama mahasiswa.
+2. NIM.
+3. Semester.
+4. Tahun akademik.
+5. Fakultas.
+6. Program studi.
+7. Dosen pembimbing.
+8. Judul proposal.
+9. Tanggal bimbingan.
+10. Keterangan bimbingan.
+11. Paraf dosen pembimbing.`,
+    keywords: [
+      "kartu asistensi sempro",
+      "kartu bimbingan sempro",
+      "bimbingan proposal",
+      "dosen pembimbing",
+    ],
+  },
+  {
+    id: 66,
+    category: "Seminar Proposal",
+    question: "Berapa minimal bimbingan sebelum Seminar Proposal?",
+    answer: `Mahasiswa wajib melakukan konsultasi atau bimbingan minimal 6 kali dengan dosen pembimbing. Setiap bimbingan dicatat pada lembar konsultasi atau kartu asistensi dan dibubuhi tanda tangan/paraf dosen pembimbing.`,
+    keywords: [
+      "minimal bimbingan sempro",
+      "6 kali bimbingan",
+      "kartu asistensi",
+      "bimbingan mpti",
+      "konsultasi proposal",
+    ],
+  },
+  {
+    id: 67,
+    category: "Seminar Proposal",
+    question: "Bagaimana agar nilai Sempro bisa optimal?",
+    answer: `Agar nilai Seminar Proposal lebih optimal, mahasiswa dapat melakukan beberapa hal berikut:
+
+1. Komitmen dengan timeline penelitian yang sudah dibuat.
+2. Sering melakukan bimbingan dengan dosen pembimbing.
+3. Meluangkan waktu khusus untuk menulis dan memperbaiki proposal penelitian.
+4. Memahami topik, metodologi, dan kontribusi penelitian.
+5. Memperhatikan jadwal publikasi atau target jurnal jika penelitian diarahkan ke publikasi.
+6. Menyiapkan presentasi dengan ringkas, jelas, dan sesuai isi proposal.`,
+    keywords: [
+      "tips sempro",
+      "nilai sempro",
+      "nilai mpti",
+      "persiapan sempro",
+      "seminar proposal optimal",
+    ],
+  },
 ];
