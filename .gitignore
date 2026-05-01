@@ -10,3 +10,7 @@ desktop.ini
 
 dist/
 build/
+echo node_modules/ >> .gitignore
+echo frontend/node_modules/ >> .gitignore
+echo dist/ >> .gitignore
+echo frontend/dist/ >> .gitignore
