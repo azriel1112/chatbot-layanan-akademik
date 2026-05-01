@@ -1222,4 +1222,579 @@ Data yang tercantum biasanya meliputi:
       "seminar proposal optimal",
     ],
   },
+  {
+    id: 68,
+    category: "Tugas Akhir",
+    question: "Apa itu Tugas Akhir?",
+    answer: `Tugas Akhir atau TA adalah karya ilmiah yang disusun mahasiswa berdasarkan kaidah keilmuan dan penulisan ilmiah, di bawah arahan dosen pembimbing. TA menjadi salah satu syarat untuk menyelesaikan studi dan memperoleh gelar sarjana.`,
+    keywords: [
+      "tugas akhir",
+      "ta",
+      "skripsi",
+      "laporan tugas akhir",
+      "karya ilmiah",
+    ],
+  },
+  {
+    id: 69,
+    category: "Tugas Akhir",
+    question: "Apa tujuan penyusunan Tugas Akhir?",
+    answer: `Tujuan penyusunan Tugas Akhir adalah untuk menunjukkan kemampuan mahasiswa dalam menerapkan ilmu, melakukan penelitian atau pengembangan, menyusun karya ilmiah, dan menghasilkan solusi atau kontribusi sesuai bidang keilmuan.
+
+TA juga menjadi gambaran kesiapan mahasiswa untuk terjun ke dunia kerja atau dunia profesional.`,
+    keywords: [
+      "tujuan tugas akhir",
+      "tujuan ta",
+      "manfaat skripsi",
+      "penelitian tugas akhir",
+    ],
+  },
+  {
+    id: 70,
+    category: "Tugas Akhir",
+    question: "Apa saja syarat klik atau mengambil Tugas Akhir?",
+    answer: `Persyaratan akademis untuk mengambil Tugas Akhir antara lain:
+
+1. Jumlah SKS lulus + SKS tempuh + TA minimal 144 SKS.
+2. Mengisi form Klik TA saat pengisian KRS.
+3. Telah lulus Mata Kuliah Ciri Universitas atau MKCU sesuai ketentuan.
+4. Memenuhi nilai minimal untuk mata kuliah yang dipersyaratkan.
+5. Mengikuti ketentuan administrasi dari program studi atau fakultas.`,
+    keywords: [
+      "syarat tugas akhir",
+      "syarat klik ta",
+      "ambil ta",
+      "144 sks",
+      "krs ta",
+    ],
+  },
+  {
+    id: 71,
+    category: "Tugas Akhir",
+    question: "Berapa minimal SKS untuk mengambil Tugas Akhir?",
+    answer: `Mahasiswa dapat mengambil Tugas Akhir jika jumlah SKS lulus ditambah SKS tempuh dan SKS TA mencapai minimal 144 SKS.`,
+    keywords: ["minimal sks ta", "sks tugas akhir", "144 sks", "syarat sks ta"],
+  },
+  {
+    id: 72,
+    category: "Tugas Akhir",
+    question:
+      "Apa saja mata kuliah wajib yang harus diperhatikan sebelum sidang Tugas Akhir?",
+    answer: `Pada form pengajuan sidang TA, mahasiswa perlu melakukan verifikasi nilai mata kuliah wajib.
+
+Mata kuliah yang diverifikasi antara lain:
+1. Pendidikan Agama.
+2. Pancasila.
+3. Kewarganegaraan.
+4. Bahasa Indonesia.
+5. Pendidikan Anti Korupsi dan Etik UMB.
+6. Bahasa Inggris I.
+7. Bahasa Inggris II.
+8. Kewirausahaan I.
+9. Kerja Praktek.
+10. Metodologi Penelitian Teknologi Informasi atau MPTI.`,
+    keywords: [
+      "mata kuliah wajib ta",
+      "syarat sidang ta",
+      "mpti",
+      "kerja praktek",
+      "mkcu",
+    ],
+  },
+  {
+    id: 73,
+    category: "Tugas Akhir",
+    question: "Apa saja skema Tugas Akhir yang tersedia?",
+    answer: `Skema Tugas Akhir yang tersedia meliputi:
+
+1. Tugas Akhir Aplikatif, seperti proyek atau prototipe.
+2. Tugas Akhir Riset, seperti metode, model, algoritma, atau framework.
+3. Tugas Akhir Publikasi Ilmiah, seperti artikel jurnal yang accepted.
+4. Tugas Akhir Media Ilmiah, seperti media pembelajaran, buku monograf, buku referensi, book chapter, atau modul belajar.`,
+    keywords: [
+      "skema tugas akhir",
+      "skema ta",
+      "ta aplikatif",
+      "ta riset",
+      "publikasi ilmiah",
+      "media ilmiah",
+    ],
+  },
+  {
+    id: 74,
+    category: "Tugas Akhir",
+    question: "Apa itu Tugas Akhir Aplikatif?",
+    answer: `Tugas Akhir Aplikatif adalah skema TA yang menghasilkan solusi konkret atau produk yang dapat digunakan dalam konteks nyata. Contohnya pengembangan aplikasi, sistem informasi, prototipe, sistem berbasis AI, atau solusi teknologi untuk industri dan masyarakat.`,
+    keywords: [
+      "ta aplikatif",
+      "tugas akhir aplikatif",
+      "proyek ta",
+      "prototipe ta",
+      "aplikasi tugas akhir",
+    ],
+  },
+  {
+    id: 75,
+    category: "Tugas Akhir",
+    question: "Apa itu Tugas Akhir Riset?",
+    answer: `Tugas Akhir Riset adalah skema TA yang berfokus pada eksplorasi, penelitian, dan pemecahan masalah menggunakan metode ilmiah. Skema ini biasanya membahas metode, model, algoritma, framework, atau pendekatan tertentu untuk menghasilkan kontribusi akademik.`,
+    keywords: [
+      "ta riset",
+      "tugas akhir riset",
+      "skripsi riset",
+      "metode algoritma framework",
+    ],
+  },
+  {
+    id: 76,
+    category: "Tugas Akhir",
+    question: "Apa itu Tugas Akhir Publikasi Ilmiah?",
+    answer: `Tugas Akhir Publikasi Ilmiah adalah skema TA yang menghasilkan artikel ilmiah untuk dipublikasikan pada jurnal atau konferensi yang diakui. Pada skema ini, mahasiswa perlu melampirkan bukti accepted, published, atau dokumen pendukung publikasi sesuai ketentuan prodi.`,
+    keywords: [
+      "ta publikasi ilmiah",
+      "jurnal accepted",
+      "publikasi tugas akhir",
+      "artikel ilmiah",
+    ],
+  },
+  {
+    id: 77,
+    category: "Tugas Akhir",
+    question: "Apa itu Tugas Akhir Media Ilmiah?",
+    answer: `Tugas Akhir Media Ilmiah adalah skema TA yang menghasilkan produk media ilmiah atau media pembelajaran. Bentuknya dapat berupa buku monograf, buku referensi, book chapter, modul belajar, PPT, Word, video, podcast, TikTok, YouTube, Instagram, Facebook, atau media lain sesuai arahan program studi.`,
+    keywords: [
+      "ta media ilmiah",
+      "media pembelajaran",
+      "buku monograf",
+      "buku referensi",
+      "modul belajar",
+    ],
+  },
+  {
+    id: 78,
+    category: "Tugas Akhir",
+    question: "Apakah Tugas Akhir boleh dikerjakan berkelompok?",
+    answer: `Ya, beberapa skema TA dapat dikerjakan secara perorangan atau kelompok dengan jumlah maksimal 3 mahasiswa, sesuai ketentuan pada panduan TA dan persetujuan program studi.`,
+    keywords: [
+      "ta kelompok",
+      "tugas akhir kelompok",
+      "maksimal anggota ta",
+      "3 mahasiswa",
+    ],
+  },
+  {
+    id: 79,
+    category: "Tugas Akhir",
+    question: "Berapa maksimal jumlah kata untuk judul Tugas Akhir?",
+    answer: `Judul laporan Tugas Akhir maksimal 16 kata. Judul sebaiknya dibuat jelas, spesifik, sesuai topik, dan mencerminkan isi penelitian atau produk yang dikembangkan.`,
+    keywords: ["judul ta", "maksimal judul ta", "16 kata", "judul tugas akhir"],
+  },
+  {
+    id: 80,
+    category: "Tugas Akhir",
+    question: "Berapa minimal bimbingan Tugas Akhir?",
+    answer: `Mahasiswa wajib melakukan bimbingan Tugas Akhir minimal 8 kali pertemuan. Proses bimbingan harus tercatat pada Form Konsultasi Tugas Akhir di SIA dan diisi oleh dosen pembimbing sesuai judul yang diangkat mahasiswa.`,
+    keywords: [
+      "bimbingan ta",
+      "minimal bimbingan ta",
+      "8 kali bimbingan",
+      "form konsultasi ta",
+      "dosen pembimbing",
+    ],
+  },
+  {
+    id: 81,
+    category: "Tugas Akhir",
+    question: "Apa itu Kartu Asistensi Tugas Akhir?",
+    answer: `Kartu Asistensi Tugas Akhir adalah dokumen untuk mencatat proses bimbingan mahasiswa dengan dosen pembimbing.
+
+Data yang tercantum biasanya meliputi:
+1. Nama mahasiswa.
+2. NIM.
+3. Semester.
+4. Tahun akademik.
+5. Fakultas.
+6. Program studi.
+7. Dosen pembimbing.
+8. Judul TA.
+9. Tanggal bimbingan.
+10. Keterangan bimbingan.
+11. Paraf dosen pembimbing.`,
+    keywords: [
+      "kartu asistensi ta",
+      "kartu bimbingan ta",
+      "form bimbingan tugas akhir",
+      "paraf dosen",
+    ],
+  },
+  {
+    id: 82,
+    category: "Tugas Akhir",
+    question: "Bagaimana format umum laporan Tugas Akhir?",
+    answer: `Format umum laporan Tugas Akhir terdiri dari bagian awal, bagian isi, dan bagian akhir.
+
+Bagian awal biasanya memuat halaman sampul, halaman judul, pernyataan karya sendiri, pengesahan, kata pengantar, pernyataan publikasi, abstrak, abstract, daftar isi, daftar tabel, daftar gambar, dan daftar lampiran.
+
+Bagian isi memuat pendahuluan, tinjauan pustaka, metode penelitian, hasil dan pembahasan, serta kesimpulan dan saran. Bagian akhir memuat daftar pustaka dan lampiran.`,
+    keywords: [
+      "format laporan ta",
+      "struktur tugas akhir",
+      "sistematika ta",
+      "bagian laporan ta",
+    ],
+  },
+  {
+    id: 83,
+    category: "Tugas Akhir",
+    question: "Apa saja bagian awal laporan Tugas Akhir?",
+    answer: `Bagian awal laporan Tugas Akhir umumnya terdiri dari:
+
+1. Halaman Sampul atau Cover.
+2. Halaman Judul.
+3. Halaman Pernyataan Karya Sendiri.
+4. Halaman Pengesahan.
+5. Kata Pengantar.
+6. Halaman Pernyataan Persetujuan Publikasi Karya Ilmiah.
+7. Abstrak dan Abstract.
+8. Daftar Isi.
+9. Daftar Tabel jika diperlukan.
+10. Daftar Gambar jika diperlukan.
+11. Daftar Lampiran jika diperlukan.`,
+    keywords: [
+      "bagian awal ta",
+      "halaman sampul",
+      "halaman judul",
+      "abstrak",
+      "daftar isi",
+    ],
+  },
+  {
+    id: 84,
+    category: "Tugas Akhir",
+    question: "Apa saja isi BAB I Tugas Akhir?",
+    answer: `BAB I Tugas Akhir biasanya berisi Pendahuluan. Subbab yang umum digunakan adalah latar belakang, perumusan masalah, tujuan penelitian, manfaat penelitian, dan batasan masalah.`,
+    keywords: [
+      "bab 1 ta",
+      "pendahuluan tugas akhir",
+      "latar belakang",
+      "rumusan masalah",
+      "tujuan penelitian",
+    ],
+  },
+  {
+    id: 85,
+    category: "Tugas Akhir",
+    question: "Apa saja isi BAB II Tugas Akhir?",
+    answer: `BAB II Tugas Akhir biasanya berisi Tinjauan Pustaka. Bagian ini memuat penelitian terdahulu dan teori pendukung yang relevan dengan topik penelitian, metode, algoritma, framework, atau produk yang dikembangkan.`,
+    keywords: [
+      "bab 2 ta",
+      "tinjauan pustaka",
+      "penelitian terdahulu",
+      "teori pendukung",
+    ],
+  },
+  {
+    id: 86,
+    category: "Tugas Akhir",
+    question: "Apa saja isi BAB III Tugas Akhir?",
+    answer: `BAB III Tugas Akhir biasanya berisi Metode Penelitian. Isi bab ini dapat mencakup jenis penelitian, objek penelitian, tahapan penelitian, analisis kebutuhan, kerangka metode, teknik pengumpulan data, dan proses analisis yang digunakan.`,
+    keywords: [
+      "bab 3 ta",
+      "metode penelitian",
+      "tahapan penelitian",
+      "jenis penelitian",
+      "analisis kebutuhan",
+    ],
+  },
+  {
+    id: 87,
+    category: "Tugas Akhir",
+    question: "Apa saja isi BAB IV Tugas Akhir?",
+    answer: `BAB IV Tugas Akhir berisi hasil dan pembahasan. Isinya menyesuaikan skema TA, misalnya pembahasan produk, analisis metode, pemodelan, evaluasi algoritma, perbandingan hasil, atau pembahasan data penelitian.`,
+    keywords: [
+      "bab 4 ta",
+      "hasil dan pembahasan",
+      "pembahasan tugas akhir",
+      "evaluasi algoritma",
+    ],
+  },
+  {
+    id: 88,
+    category: "Tugas Akhir",
+    question: "Apa saja isi BAB V Tugas Akhir?",
+    answer: `BAB V Tugas Akhir berisi kesimpulan dan saran. Kesimpulan menjawab tujuan atau rumusan masalah penelitian, sedangkan saran berisi rekomendasi untuk pengembangan, penelitian lanjutan, atau perbaikan sistem di masa depan.`,
+    keywords: [
+      "bab 5 ta",
+      "kesimpulan dan saran",
+      "kesimpulan tugas akhir",
+      "saran penelitian",
+    ],
+  },
+  {
+    id: 89,
+    category: "Tugas Akhir",
+    question: "Apa ketentuan kertas dan pengetikan laporan Tugas Akhir?",
+    answer: `Ketentuan umum penulisan laporan Tugas Akhir adalah:
+
+1. Menggunakan kertas HVS putih ukuran A4.
+2. Berat kertas 80 gram.
+3. Margin kiri 4 cm.
+4. Margin kanan 3 cm.
+5. Margin atas 3 cm.
+6. Margin bawah 3 cm.
+7. Font Times New Roman ukuran 12.
+8. Spasi 1,5.
+9. Teks rata kiri kanan atau justify.
+10. Cetakan berwarna hitam pekat dan seragam.`,
+    keywords: [
+      "format pengetikan ta",
+      "margin ta",
+      "times new roman 12",
+      "spasi 1.5",
+      "kertas a4",
+    ],
+  },
+  {
+    id: 90,
+    category: "Tugas Akhir",
+    question: "Berapa maksimal halaman laporan Tugas Akhir?",
+    answer: `Jumlah halaman laporan Tugas Akhir program sarjana maksimal 90 halaman, dihitung dari halaman nomor 1 pada BAB Pendahuluan sampai dengan halaman Daftar Pustaka. Lampiran tidak termasuk dalam batas utama tersebut.`,
+    keywords: [
+      "maksimal halaman ta",
+      "90 halaman",
+      "jumlah halaman skripsi",
+      "laporan tugas akhir",
+    ],
+  },
+  {
+    id: 91,
+    category: "Tugas Akhir",
+    question: "Apa ketentuan daftar pustaka pada Tugas Akhir?",
+    answer: `Daftar pustaka Tugas Akhir menggunakan format APA dan dianjurkan menggunakan reference manager seperti Mendeley.
+
+Ketentuan penting:
+1. Sumber yang dikutip di isi laporan harus ada di daftar pustaka.
+2. Sumber di daftar pustaka harus dikutip di dalam teks.
+3. Minimal referensi yang digunakan sebanyak 15 artikel.
+4. Referensi artikel jurnal disarankan maksimal 5 tahun terakhir.
+5. Mahasiswa diwajibkan mensitasi 2 artikel dosen program studi Sistem Informasi atau Teknik Informatika Universitas Mercu Buana.`,
+    keywords: [
+      "daftar pustaka ta",
+      "format apa",
+      "mendeley",
+      "referensi tugas akhir",
+      "15 artikel",
+    ],
+  },
+  {
+    id: 92,
+    category: "Tugas Akhir",
+    question: "Apa saja syarat pendaftaran sidang Tugas Akhir?",
+    answer: `Syarat pendaftaran sidang Tugas Akhir antara lain:
+
+1. Mendapat persetujuan dari dosen Pembimbing Akademik.
+2. Melampirkan 10 sertifikat sebagai syarat kelulusan atau SKPI.
+3. Melampirkan screenshot atau tangkapan layar data yang dibutuhkan dari SIA.
+4. Melampirkan seluruh berkas Tugas Akhir.
+5. Melampirkan bukti pembayaran sidang TA.
+6. Melakukan pendaftaran melalui tautan atau prosedur yang diberikan saat sosialisasi.
+7. Memastikan tanda tangan dosen pembimbing tidak diwakilkan kecuali dalam kondisi tertentu sesuai ketentuan.`,
+    keywords: [
+      "syarat sidang ta",
+      "pendaftaran sidang ta",
+      "daftar sidang tugas akhir",
+      "10 sertifikat",
+      "bukti pembayaran sidang",
+    ],
+  },
+  {
+    id: 93,
+    category: "Tugas Akhir",
+    question: "Apa isi Form Pengajuan Sidang Tugas Akhir?",
+    answer: `Form Pengajuan Sidang Tugas Akhir berisi data mahasiswa, verifikasi akademik, verifikasi SKPI, dan verifikasi keuangan.
+
+Data yang diisi meliputi:
+1. Nama mahasiswa.
+2. NIM.
+3. Program studi dan fakultas.
+4. Judul Tugas Akhir.
+5. Dosen Pembimbing Akademik.
+6. Total SKS lulus dan SKS semester berjalan.
+7. Nilai mata kuliah wajib.
+8. Status pengisian SKPI dan 10 sertifikat.
+9. Verifikasi pelunasan biaya pendidikan dan biaya sidang TA oleh BAK.`,
+    keywords: [
+      "form pengajuan sidang ta",
+      "form sidang tugas akhir",
+      "verifikasi sks",
+      "verifikasi keuangan",
+      "verifikasi skpi",
+    ],
+  },
+  {
+    id: 94,
+    category: "Tugas Akhir",
+    question:
+      "Apakah mahasiswa harus melunasi biaya sebelum sidang Tugas Akhir?",
+    answer: `Ya. Pada Form Pengajuan Sidang TA terdapat bagian verifikasi keuangan oleh BAK. Mahasiswa perlu memastikan seluruh biaya pendidikan dan uang sidang Tugas Akhir sudah dilunasi sebelum proses sidang.`,
+    keywords: [
+      "biaya sidang ta",
+      "verifikasi keuangan",
+      "bak",
+      "pelunasan biaya",
+      "uang sidang",
+    ],
+  },
+  {
+    id: 95,
+    category: "Tugas Akhir",
+    question: "Apa itu Formulir Perjanjian Pra Sidang Tugas Akhir?",
+    answer: `Formulir Perjanjian Pra Sidang Tugas Akhir adalah surat pernyataan mahasiswa sebelum mengikuti sidang TA.
+
+Isi perjanjiannya antara lain:
+1. Bersedia menyelesaikan revisi sidang TA sesuai waktu yang ditentukan.
+2. Bersedia menyelesaikan administrasi keuangan sebelum pendaftaran sidang TA.
+3. Jika revisi tidak selesai, mahasiswa bersedia sidang ulang.
+4. Jika administrasi keuangan tidak selesai, mahasiswa bersedia melakukan perpanjangan TA jika masa studi masih ada dan dikenakan biaya sesuai aturan.
+5. Mahasiswa wajib menyertakan bukti kelulusan sertifikat kompetensi atau surat keterangan kelulusan dari LSP.`,
+    keywords: [
+      "form perjanjian pra sidang",
+      "pra sidang ta",
+      "revisi sidang ta",
+      "administrasi keuangan",
+      "sertifikat kompetensi",
+    ],
+  },
+  {
+    id: 96,
+    category: "Tugas Akhir",
+    question: "Apa pakaian yang digunakan saat sidang Tugas Akhir?",
+    answer: `Ketentuan pakaian sidang Tugas Akhir adalah:
+
+1. Pria memakai jas dan celana hitam, kemeja putih, dan dasi.
+2. Wanita memakai blazer dan rok hitam, kemeja atau blouse putih, serta hijab menyesuaikan jika menggunakan hijab.
+3. Rambut pria tidak boleh panjang.
+4. Untuk wanita berambut panjang, rambut sebaiknya diikat.`,
+    keywords: [
+      "pakaian sidang ta",
+      "dresscode sidang",
+      "jas hitam",
+      "blazer hitam",
+      "sidang tugas akhir",
+    ],
+  },
+  {
+    id: 97,
+    category: "Tugas Akhir",
+    question: "Berapa lama presentasi sidang Tugas Akhir?",
+    answer: `Presentasi sidang Tugas Akhir dilakukan menggunakan PowerPoint. Waktu presentasi maksimal 7 menit, kemudian masing-masing penguji diberikan waktu sekitar 10 sampai 15 menit untuk bertanya atau memberikan masukan.`,
+    keywords: [
+      "durasi sidang ta",
+      "presentasi sidang ta",
+      "7 menit",
+      "penguji sidang",
+      "powerpoint sidang",
+    ],
+  },
+  {
+    id: 98,
+    category: "Tugas Akhir",
+    question: "Siapa saja yang hadir saat sidang Tugas Akhir?",
+    answer: `Saat pelaksanaan sidang, mahasiswa didampingi oleh dosen pembimbing yang sekaligus bertindak sebagai moderator. Mahasiswa akan diuji oleh 3 orang dosen penguji.`,
+    keywords: [
+      "sidang tugas akhir",
+      "dosen pembimbing",
+      "moderator sidang",
+      "3 dosen penguji",
+    ],
+  },
+  {
+    id: 99,
+    category: "Tugas Akhir",
+    question: "Apa yang harus dilakukan setelah sidang Tugas Akhir?",
+    answer: `Setelah sidang Tugas Akhir, mahasiswa harus menyelesaikan revisi dan melakukan submit yudisium.
+
+Langkah umumnya:
+1. Melakukan revisi sesuai arahan dosen penguji dan pembimbing.
+2. Konsultasi sampai mendapatkan tanda ACC.
+3. Menyiapkan laporan TA final dan dokumen pendukung.
+4. Mengunggah berkas ke Form Yudisium Tata Usaha TI.
+5. Menunggu pengecekan berkas oleh TU.
+6. Jika berkas lengkap, mahasiswa akan menerima tanda terima penyerahan Tugas Akhir.
+7. Setelah itu mahasiswa dapat melanjutkan proses penyerahan ke perpustakaan dan tahapan berikutnya.`,
+    keywords: [
+      "setelah sidang ta",
+      "pasca sidang",
+      "revisi ta",
+      "submit yudisium",
+      "tanda terima tugas akhir",
+    ],
+  },
+  {
+    id: 100,
+    category: "Tugas Akhir",
+    question: "Berapa lama batas revisi setelah sidang Tugas Akhir?",
+    answer: `Mahasiswa yang dinyatakan lulus saat sidang wajib menyelesaikan revisi paling lama 14 hari atau maksimal 2 minggu setelah masa ujian sidang. Jika revisi tidak diselesaikan sesuai waktu yang ditentukan, mahasiswa dapat diarahkan untuk sidang ulang sesuai ketentuan.`,
+    keywords: [
+      "batas revisi ta",
+      "revisi sidang ta",
+      "14 hari",
+      "2 minggu",
+      "sidang ulang",
+    ],
+  },
+  {
+    id: 101,
+    category: "Tugas Akhir",
+    question:
+      "Apa saja berkas yang harus disiapkan setelah sidang Tugas Akhir?",
+    answer: `Setelah sidang dan revisi, mahasiswa perlu menyiapkan beberapa berkas untuk yudisium dan pengumpulan final.
+
+Berkas yang umumnya disiapkan:
+1. Laporan Tugas Akhir final dalam format Word.
+2. Kartu asistensi atau bukti bimbingan.
+3. Lampiran luaran TA khusus skema publikasi ilmiah.
+4. Bukti submit jurnal khusus skema publikasi ilmiah.
+5. Naskah jurnal yang disubmit.
+6. Curriculum Vitae atau CV format UMB.
+7. Surat izin riset dari perusahaan atau instansi tempat survey data.
+8. Lampiran surat HKI.
+9. Sertifikat BNSP atau bukti sertifikat kompetensi sesuai bidang ilmu.
+10. PowerPoint presentasi sidang.
+11. Dokumen SKPI atau 10 sertifikat.
+12. Bukti sumbangan alumni atau sumbangan buku jika diminta.
+13. Verifikasi Data Mahasiswa dari SIA.`,
+    keywords: [
+      "berkas pasca sidang",
+      "berkas yudisium",
+      "laporan final ta",
+      "cv umb",
+      "hki",
+      "sertifikat bnsp",
+    ],
+  },
+  {
+    id: 102,
+    category: "Tugas Akhir",
+    question: "Apa format penamaan file setelah sidang Tugas Akhir?",
+    answer: `Format penamaan file pasca sidang perlu mengikuti arahan dari program studi.
+
+Contoh format penamaan:
+1. Laporan Tugas Akhir: TALK+NIM+NAMA.docx.
+2. CV: CV+NIM+NAMA.doc.
+3. PowerPoint sidang: PRESI+NIM+NAMA.ppt atau .pptx.
+4. Folder aplikasi: APP+NIM+NAMA.
+5. Sertifikat: CERT+NIM+NAMA.docx.
+6. Bukti sumbangan alumni: BSB+NIM+NAMA.pdf.
+7. Verifikasi Data Mahasiswa: VDM+NIM+NAMA.pdf.
+
+Pastikan nama file sesuai format agar proses verifikasi TU lebih mudah.`,
+    keywords: [
+      "format penamaan file ta",
+      "talk nim nama",
+      "cv nim nama",
+      "presi nim nama",
+      "vdm nim nama",
+    ],
+  },
 ];
