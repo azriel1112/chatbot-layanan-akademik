@@ -3155,4 +3155,489 @@ Contohnya, kode prefix untuk uang kuliah, angsuran, KRS, UTS, UAS, semester pend
       "konfirmasi pembayaran",
     ],
   },
+  {
+    id: 184,
+    category: "Perubahan Status Mahasiswa",
+    question: "Apa saja jenis perubahan status mahasiswa yang tersedia?",
+    answer: `Jenis perubahan status mahasiswa yang tersedia berdasarkan dokumen prosedur adalah:
+
+1. Pengajuan Cuti.
+2. Aktif Kembali dari Cuti.
+3. Pindah Program Studi.
+4. Pindah Lokasi Kampus.
+5. Pindah Program Perkuliahan.
+
+Setiap jenis perubahan memiliki alur dan dokumen yang berbeda, jadi mahasiswa perlu mengikuti prosedur sesuai kebutuhan masing-masing.`,
+    keywords: [
+      "perubahan status mahasiswa",
+      "status mahasiswa",
+      "cuti",
+      "aktif kembali",
+      "pindah prodi",
+      "pindah lokasi",
+      "pindah program",
+    ],
+  },
+  {
+    id: 185,
+    category: "Pengajuan Cuti",
+    question: "Bagaimana cara mengajukan cuti kuliah?",
+    answer: `Cara mengajukan cuti kuliah adalah:
+
+1. Mahasiswa login ke SIA melalui https://sia.mercubuana.ac.id menggunakan username dan password.
+2. Pilih menu Detail Mahasiswa.
+3. Klik Pengajuan Status.
+4. Pada halaman Pengajuan Status Mahasiswa, klik tombol Tambah.
+5. Pilih jenis pengajuan menjadi Cuti.
+6. Klik Simpan.
+7. Pengajuan akan dicek dan disetujui oleh Kaprodi/Sekprodi.
+8. Pengajuan dilanjutkan ke BAK untuk persetujuan.
+9. BAP menyetujui dan memproses pengajuan cuti.
+10. Status mahasiswa berubah menjadi Cuti dan dapat dilihat di SIA.`,
+    keywords: [
+      "cara mengajukan cuti",
+      "pengajuan cuti",
+      "cuti kuliah",
+      "cuti mahasiswa",
+      "sia cuti",
+    ],
+  },
+  {
+    id: 186,
+    category: "Pengajuan Cuti",
+    question: "Di mana mahasiswa mengajukan cuti kuliah?",
+    answer: `Pengajuan cuti kuliah dilakukan melalui SIA di https://sia.mercubuana.ac.id dengan memilih menu Detail Mahasiswa, lalu masuk ke Pengajuan Status.`,
+    keywords: [
+      "tempat pengajuan cuti",
+      "sia cuti",
+      "link cuti",
+      "pengajuan status mahasiswa",
+    ],
+  },
+  {
+    id: 187,
+    category: "Pengajuan Cuti",
+    question: "Menu apa yang dipilih untuk mengajukan cuti di SIA?",
+    answer: `Mahasiswa memilih menu Detail Mahasiswa, kemudian klik Pengajuan Status. Setelah itu klik tombol Tambah dan pilih jenis pengajuan Cuti.`,
+    keywords: [
+      "menu cuti sia",
+      "detail mahasiswa",
+      "pengajuan status",
+      "tambah pengajuan cuti",
+    ],
+  },
+  {
+    id: 188,
+    category: "Pengajuan Cuti",
+    question: "Siapa saja yang menyetujui pengajuan cuti mahasiswa?",
+    answer: `Pengajuan cuti mahasiswa melalui beberapa tahap persetujuan:
+
+1. Kaprodi/Sekprodi mengecek dan menyetujui pengajuan cuti.
+2. BAK menyetujui pengajuan cuti mahasiswa.
+3. BAP menyetujui dan memproses pengajuan cuti.
+
+Setelah semua tahap selesai, status mahasiswa akan berubah menjadi Cuti di SIA.`,
+    keywords: [
+      "persetujuan cuti",
+      "kaprodi cuti",
+      "sekprodi cuti",
+      "bak cuti",
+      "bap cuti",
+    ],
+  },
+  {
+    id: 189,
+    category: "Pengajuan Cuti",
+    question: "Bagaimana cara mengecek status cuti sudah berhasil?",
+    answer: `Mahasiswa dapat mengecek status cuti melalui SIA. Jika pengajuan sudah selesai diproses, status mahasiswa akan berubah menjadi Cuti dan dapat dilihat pada data status mahasiswa di SIA.`,
+    keywords: [
+      "cek status cuti",
+      "status cuti sia",
+      "cuti berhasil",
+      "status mahasiswa cuti",
+    ],
+  },
+  {
+    id: 190,
+    category: "Pengajuan Cuti",
+    question: "Apa yang terjadi setelah pengajuan cuti disetujui?",
+    answer: `Setelah pengajuan cuti disetujui oleh Kaprodi/Sekprodi, BAK, dan BAP, status mahasiswa akan berubah menjadi Cuti. Status tersebut dapat dilihat oleh mahasiswa melalui SIA.`,
+    keywords: [
+      "setelah cuti disetujui",
+      "cuti disetujui",
+      "status berubah cuti",
+      "bap memproses cuti",
+    ],
+  },
+  {
+    id: 191,
+    category: "Aktif Kembali dari Cuti",
+    question: "Bagaimana prosedur aktif kembali dari cuti?",
+    answer: `Prosedur aktif kembali dari cuti adalah:
+
+1. Mahasiswa melakukan pembayaran sesuai ketentuan yang sudah ditetapkan.
+2. Mahasiswa mengisi KRS Online.
+3. Mahasiswa mendapatkan KRS.
+
+Prosedur ini berlaku untuk mahasiswa Reguler 1 maupun Reguler 2.`,
+    keywords: [
+      "aktif kembali dari cuti",
+      "aktif dari cuti",
+      "selesai cuti",
+      "krs setelah cuti",
+      "pembayaran setelah cuti",
+    ],
+  },
+  {
+    id: 192,
+    category: "Aktif Kembali dari Cuti",
+    question: "Apa langkah pertama untuk aktif kembali setelah cuti?",
+    answer: `Langkah pertama untuk aktif kembali setelah cuti adalah melakukan pembayaran sesuai ketentuan yang sudah ditetapkan.`,
+    keywords: [
+      "langkah pertama aktif cuti",
+      "pembayaran aktif kembali",
+      "aktif dari cuti",
+      "bayar setelah cuti",
+    ],
+  },
+  {
+    id: 193,
+    category: "Aktif Kembali dari Cuti",
+    question:
+      "Apakah mahasiswa yang aktif kembali dari cuti harus mengisi KRS?",
+    answer: `Ya. Setelah melakukan pembayaran sesuai ketentuan, mahasiswa harus mengisi KRS Online agar dapat memperoleh KRS dan mengikuti perkuliahan kembali.`,
+    keywords: [
+      "aktif cuti isi krs",
+      "krs online setelah cuti",
+      "mahasiswa aktif kembali",
+      "mendapatkan krs",
+    ],
+  },
+  {
+    id: 194,
+    category: "Pindah Program Studi",
+    question: "Bagaimana prosedur pindah program studi?",
+    answer: `Prosedur pindah program studi adalah:
+
+1. Mahasiswa mengunduh formulir Pindah Program Studi melalui https://bit.ly/formpindahprodi.
+2. Mahasiswa mengisi formulir Pindah Program Studi.
+3. Mahasiswa meminta persetujuan Kaprodi/Sekprodi asal.
+4. Mahasiswa mencetak transkrip nilai mandiri melalui SIA.
+5. Mahasiswa menyerahkan transkrip nilai dan meminta persetujuan Kaprodi/Sekprodi tujuan.
+6. Kaprodi/Sekprodi tujuan menyetujui, menentukan jumlah SKS yang diambil, dan menentukan jumlah SKS yang diakui.
+7. Mahasiswa mengunggah formulir yang sudah disetujui melalui Google Form sesuai kampus.
+8. BAP mengunduh dan mencetak formulir.
+9. BAP menyerahkan formulir ke BAK untuk validasi.
+10. BAK melakukan validasi dan menyerahkan formulir kembali ke BAP.
+11. BAP memproses perubahan NIM dan menyimpan berkas.
+12. BAP menginformasikan NIM dan password ke email mahasiswa.
+13. BAP menyerahkan berkas ke Kaprodi/Sekprodi tujuan untuk proses entry KRS.
+14. Kaprodi/Sekprodi memproses dan mengesahkan KRS.
+15. Mahasiswa dapat melihat informasi KRS di SIA.`,
+    keywords: [
+      "pindah program studi",
+      "pindah prodi",
+      "prosedur pindah prodi",
+      "form pindah prodi",
+      "ubah nim",
+    ],
+  },
+  {
+    id: 195,
+    category: "Pindah Program Studi",
+    question: "Di mana mahasiswa mengunduh formulir Pindah Program Studi?",
+    answer: `Formulir Pindah Program Studi dapat diunduh melalui link berikut: https://bit.ly/formpindahprodi`,
+    keywords: [
+      "unduh formulir pindah prodi",
+      "form pindah prodi",
+      "link pindah prodi",
+      "formpindahprodi",
+    ],
+  },
+  {
+    id: 196,
+    category: "Pindah Program Studi",
+    question: "Dokumen apa yang diperlukan untuk pindah program studi?",
+    answer: `Dokumen utama yang diperlukan untuk pindah program studi adalah Formulir Pindah Program Studi yang sudah diisi dan disetujui, serta transkrip nilai yang dicetak mandiri melalui SIA.`,
+    keywords: [
+      "dokumen pindah prodi",
+      "transkrip nilai",
+      "formulir pindah program studi",
+      "persyaratan pindah prodi",
+    ],
+  },
+  {
+    id: 197,
+    category: "Pindah Program Studi",
+    question: "Siapa yang harus menyetujui pengajuan pindah program studi?",
+    answer: `Pengajuan pindah program studi harus disetujui oleh Kaprodi/Sekprodi asal dan Kaprodi/Sekprodi program studi yang dituju. Setelah itu, berkas diproses oleh BAP dan divalidasi oleh BAK.`,
+    keywords: [
+      "persetujuan pindah prodi",
+      "kaprodi asal",
+      "kaprodi tujuan",
+      "sekprodi",
+      "validasi bak",
+    ],
+  },
+  {
+    id: 198,
+    category: "Pindah Program Studi",
+    question:
+      "Apa tugas Kaprodi atau Sekprodi tujuan dalam proses pindah program studi?",
+    answer: `Kaprodi/Sekprodi tujuan menyetujui pengajuan pindah program studi, menentukan jumlah SKS yang harus diambil mahasiswa, dan menentukan jumlah SKS yang dapat diakui dari program studi sebelumnya.`,
+    keywords: [
+      "kaprodi tujuan pindah prodi",
+      "sks diakui",
+      "sks diambil",
+      "ekuivalensi pindah prodi",
+    ],
+  },
+  {
+    id: 199,
+    category: "Pindah Program Studi",
+    question:
+      "Link upload berkas Pindah Program Studi untuk tiap kampus apa saja?",
+    answer: `Link upload berkas Pindah Program Studi adalah:
+
+1. Kampus Meruya:
+https://bit.ly/PINDAHPRODI
+
+2. Kampus Menteng:
+https://bit.ly/3c9C9wJ
+
+3. Kampus Warung Buncit:
+https://bit.ly/WBPindah-Program-Studi
+
+Mahasiswa perlu menggunakan link sesuai kampus masing-masing.`,
+    keywords: [
+      "upload pindah prodi",
+      "link pindah prodi meruya",
+      "pindah prodi menteng",
+      "pindah prodi warung buncit",
+    ],
+  },
+  {
+    id: 200,
+    category: "Pindah Program Studi",
+    question: "Apakah pindah program studi menyebabkan perubahan NIM?",
+    answer: `Ya. Dalam prosedur pindah program studi, BAP memproses perubahan NIM setelah berkas disetujui dan divalidasi oleh BAK. NIM dan password baru akan diinformasikan ke email mahasiswa.`,
+    keywords: [
+      "nim berubah pindah prodi",
+      "perubahan nim",
+      "nim baru pindah prodi",
+      "password baru",
+    ],
+  },
+  {
+    id: 201,
+    category: "Pindah Program Studi",
+    question:
+      "Bagaimana mahasiswa mendapatkan NIM dan password setelah pindah program studi?",
+    answer: `Setelah proses pindah program studi selesai, BAP menginformasikan NIM dan password ke email mahasiswa.`,
+    keywords: [
+      "nim password pindah prodi",
+      "email nim baru",
+      "bap email mahasiswa",
+      "password sia",
+    ],
+  },
+  {
+    id: 202,
+    category: "Pindah Program Studi",
+    question:
+      "Siapa yang melakukan entry KRS setelah mahasiswa pindah program studi?",
+    answer: `Entry KRS diproses oleh Kaprodi/Sekprodi program studi tujuan. Setelah KRS diproses dan disahkan, mahasiswa akan mendapatkan informasi melalui WhatsApp bahwa proses entry KRS sudah selesai.`,
+    keywords: [
+      "entry krs pindah prodi",
+      "krs pindah prodi",
+      "kaprodi entry krs",
+      "krs selesai",
+    ],
+  },
+  {
+    id: 203,
+    category: "Pindah Lokasi Kampus",
+    question: "Bagaimana prosedur pindah lokasi kampus?",
+    answer: `Prosedur pindah lokasi kampus adalah:
+
+1. Mahasiswa mengisi formulir Pindah Lokasi Kampus melalui Google Form sesuai kampus.
+2. BAP mengubah status lokasi kuliah melalui SIA.
+3. BAP mengirim informasi pindah lokasi kampus melalui email mahasiswa.
+4. Mahasiswa dapat melihat informasi pindah lokasi kampus di SIA.
+
+Pindah lokasi kampus berlaku untuk lokasi seperti Meruya, Menteng, dan Warung Buncit.`,
+    keywords: [
+      "pindah lokasi kampus",
+      "pindah kampus",
+      "pindah lokasi meruya menteng warung buncit",
+      "status lokasi kuliah",
+    ],
+  },
+  {
+    id: 204,
+    category: "Pindah Lokasi Kampus",
+    question: "Link formulir Pindah Lokasi Kampus untuk tiap kampus apa saja?",
+    answer: `Link formulir Pindah Lokasi Kampus adalah:
+
+1. Kampus Meruya:
+https://bit.ly/FORMPINDAHLOKASIKAMPUS
+
+2. Kampus Menteng:
+https://bit.ly/PindahLokasiKampus
+
+3. Kampus Warung Buncit:
+https:bit.ly/WBPindah-Lokasi-Kampus
+
+Pastikan mahasiswa memilih link sesuai kampus masing-masing.`,
+    keywords: [
+      "form pindah lokasi kampus",
+      "link pindah lokasi",
+      "pindah lokasi meruya",
+      "pindah lokasi menteng",
+      "pindah lokasi warung buncit",
+    ],
+  },
+  {
+    id: 205,
+    category: "Pindah Lokasi Kampus",
+    question: "Siapa yang mengubah status lokasi kuliah mahasiswa?",
+    answer: `Status lokasi kuliah mahasiswa diubah oleh BAP melalui SIA setelah mahasiswa mengisi formulir Pindah Lokasi Kampus.`,
+    keywords: [
+      "ubah status lokasi kuliah",
+      "bap pindah lokasi",
+      "sia lokasi kampus",
+      "status lokasi",
+    ],
+  },
+  {
+    id: 206,
+    category: "Pindah Lokasi Kampus",
+    question:
+      "Bagaimana mahasiswa mengetahui pindah lokasi kampus sudah diproses?",
+    answer: `Mahasiswa akan menerima informasi pindah lokasi kampus melalui email dari BAP. Setelah itu, mahasiswa juga dapat melihat informasi pindah lokasi kampus di SIA.`,
+    keywords: [
+      "cek pindah lokasi kampus",
+      "email pindah lokasi",
+      "pindah lokasi di sia",
+      "bap email",
+    ],
+  },
+  {
+    id: 207,
+    category: "Pindah Program Perkuliahan",
+    question: "Apa itu pindah program perkuliahan?",
+    answer: `Pindah program perkuliahan adalah perubahan program kuliah, misalnya dari Reguler 1 ke Reguler 2 atau Reguler 3, dan juga sebaliknya.`,
+    keywords: [
+      "pindah program perkuliahan",
+      "pindah reguler",
+      "reguler 1 ke reguler 2",
+      "reguler 2 ke reguler 1",
+    ],
+  },
+  {
+    id: 208,
+    category: "Pindah Program Perkuliahan",
+    question: "Bagaimana prosedur pindah program perkuliahan?",
+    answer: `Prosedur pindah program perkuliahan adalah:
+
+1. Mahasiswa mengunduh formulir melalui https://bit.ly/pindah-program-perkuliahan.
+2. Mahasiswa mengisi formulir Pindah Program Perkuliahan.
+3. Mahasiswa mengunggah formulir yang sudah ditandatangani dan Surat Keterangan Kerja jika pindah dari Reguler 1 ke Reguler 2.
+4. TU Fakultas mencetak formulir 3 rangkap untuk proses tanda tangan Kaprodi/Sekprodi.
+5. Kaprodi/Sekprodi menyetujui pengajuan.
+6. Formulir yang sudah disetujui diunggah TU Fakultas ke drive BAP.
+7. BAP menyerahkan berkas yang sudah divalidasi ke BAK.
+8. BAP mengubah status Pindah Program Perkuliahan.
+9. BAP mengirim informasi melalui email mahasiswa.
+10. Mahasiswa dapat melihat informasi Pindah Program Perkuliahan di SIA.`,
+    keywords: [
+      "prosedur pindah program perkuliahan",
+      "pindah reguler",
+      "form pindah program",
+      "reguler 1 reguler 2",
+    ],
+  },
+  {
+    id: 209,
+    category: "Pindah Program Perkuliahan",
+    question: "Di mana mengunduh formulir Pindah Program Perkuliahan?",
+    answer: `Formulir Pindah Program Perkuliahan dapat diunduh melalui link berikut: https://bit.ly/pindah-program-perkuliahan`,
+    keywords: [
+      "unduh formulir pindah program perkuliahan",
+      "form pindah reguler",
+      "pindah program perkuliahan",
+      "link form pindah",
+    ],
+  },
+  {
+    id: 210,
+    category: "Pindah Program Perkuliahan",
+    question:
+      "Apakah pindah dari Reguler 1 ke Reguler 2 perlu Surat Keterangan Kerja?",
+    answer: `Ya. Untuk pindah dari Reguler 1 ke Reguler 2, mahasiswa perlu mengunggah Surat Keterangan Kerja bersama formulir Pindah Program Perkuliahan yang sudah ditandatangani.`,
+    keywords: [
+      "surat keterangan kerja pindah reguler",
+      "reguler 1 ke reguler 2",
+      "syarat pindah reguler",
+      "pindah program perkuliahan",
+    ],
+  },
+  {
+    id: 211,
+    category: "Pindah Program Perkuliahan",
+    question: "Siapa yang menyetujui pindah program perkuliahan?",
+    answer: `Pengajuan pindah program perkuliahan disetujui oleh Kaprodi/Sekprodi. Setelah disetujui, formulir diproses oleh TU Fakultas, BAP, dan BAK sesuai alur yang berlaku.`,
+    keywords: [
+      "persetujuan pindah program",
+      "kaprodi pindah reguler",
+      "sekprodi pindah program",
+      "tu fakultas bap bak",
+    ],
+  },
+  {
+    id: 212,
+    category: "Pindah Program Perkuliahan",
+    question:
+      "Ke mana mahasiswa mengunggah formulir pindah program perkuliahan?",
+    answer: `Formulir Pindah Program Perkuliahan diunggah melalui link atau email yang ditentukan oleh fakultas.
+
+Daftar informasi fakultas:
+1. Ekonomi: feb.mercubuana.ac.id atau https://bit.ly/pindah_program_perkuliahan
+2. Teknik: fakultasteknik@mercubuana.ac.id
+3. Fikom: fikom@mercubuana.ac.id
+4. Fasilkom: fasilkom@mercubuana.ac.id
+5. FDSK: fdsk@mercubuana.ac.id
+6. Psikologi: fpsi@mercubuana.ac.id
+7. Pascasarjana: pasca@mercubuana.ac.id
+
+Untuk mahasiswa Jatisampurna, pengajuan diunggah melalui Google Form khusus yang ditentukan.`,
+    keywords: [
+      "upload pindah program perkuliahan",
+      "email fakultas",
+      "fasilkom pindah program",
+      "feb pindah program",
+      "jatisampurna",
+    ],
+  },
+  {
+    id: 213,
+    category: "Perubahan Status Mahasiswa",
+    question:
+      "Bagaimana cara memastikan perubahan status mahasiswa sudah berhasil?",
+    answer: `Mahasiswa dapat memastikan perubahan status sudah berhasil dengan cara:
+
+1. Mengecek informasi terbaru di SIA.
+2. Memeriksa email mahasiswa karena BAP dapat mengirim informasi melalui email.
+3. Mengecek KRS jika perubahan berkaitan dengan aktif kembali, pindah program studi, atau pindah program perkuliahan.
+4. Menghubungi BAP atau fakultas jika status belum berubah setelah mengikuti prosedur.
+
+Pastikan semua formulir, persetujuan, validasi, dan dokumen pendukung sudah lengkap agar proses tidak tertunda.`,
+    keywords: [
+      "cek perubahan status",
+      "status mahasiswa berhasil",
+      "cek sia",
+      "email bap",
+      "krs perubahan status",
+    ],
+  },
 ];
