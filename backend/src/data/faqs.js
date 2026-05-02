@@ -4720,4 +4720,360 @@ www.sia.mercubuana.ac.id`,
       "layanan mahasiswa",
     ],
   },
+  {
+    id: 281,
+    category: "Perpustakaan dan Jurnal",
+    question: "Apa saja layanan e-resource Perpustakaan UMB?",
+    answer: `E-resource Perpustakaan Universitas Mercu Buana mencakup akses ke beberapa database jurnal dan ebook.
+
+Layanan yang tersedia antara lain:
+1. IEEE Xplore untuk bidang elektro dan komputer.
+2. Gale untuk bidang ekonomi, sosial/humaniora, dan teknik/sains.
+3. Emerald untuk bidang ekonomi, manajemen, dan akuntansi.
+4. ProQuest Ebook Central untuk ebook berbagai bidang.
+5. EBSCO eBooks.
+6. Cambridge Core.
+
+Untuk akses username dan password, mahasiswa dapat menghubungi Perpustakaan UMB karena data akun tidak boleh dipublikasikan secara terbuka.`,
+    keywords: [
+      "e-resource umb",
+      "perpustakaan umb",
+      "jurnal online",
+      "ebook umb",
+      "database jurnal",
+    ],
+  },
+  {
+    id: 282,
+    category: "Perpustakaan dan Jurnal",
+    question: "Apakah username dan password e-resource boleh disebarkan?",
+    answer: `Tidak. Username dan password e-resource Perpustakaan UMB tidak boleh dipublikasikan di internet atau media terbuka seperti website, blog, Facebook, Twitter, atau media sejenis. Jika membutuhkan akses, mahasiswa sebaiknya menghubungi Perpustakaan UMB secara resmi.`,
+    keywords: [
+      "password e-resource",
+      "akun jurnal",
+      "akses jurnal",
+      "username perpustakaan",
+      "tidak boleh disebarkan",
+    ],
+  },
+  {
+    id: 283,
+    category: "Perpustakaan dan Jurnal",
+    question:
+      "Siapa yang bisa dihubungi untuk akses e-resource Perpustakaan UMB?",
+    answer: `Mahasiswa dapat menghubungi kontak Perpustakaan UMB yang tercantum pada dokumen e-resource:
+
+1. 0857-1035-5052.
+2. 0812-8233-9923.
+3. 0812-8396-1122.
+
+Kontak tersebut dapat digunakan untuk menanyakan akses jurnal, ebook, panduan penggunaan database, atau kendala layanan perpustakaan.`,
+    keywords: [
+      "kontak perpustakaan umb",
+      "kontak e-resource",
+      "akses jurnal umb",
+      "bantuan perpustakaan",
+    ],
+  },
+  {
+    id: 284,
+    category: "Perpustakaan dan Jurnal",
+    question: "Apa itu IEEE Xplore?",
+    answer: `IEEE Xplore adalah database jurnal dan publikasi ilmiah yang banyak digunakan untuk bidang elektro, komputer, informatika, teknologi informasi, dan bidang teknik terkait. Mahasiswa dapat menggunakan IEEE Xplore untuk mencari artikel jurnal, prosiding konferensi, dan referensi ilmiah yang relevan dengan topik penelitian.`,
+    keywords: [
+      "ieee xplore",
+      "jurnal ieee",
+      "jurnal komputer",
+      "jurnal teknik",
+      "artikel ilmiah",
+    ],
+  },
+  {
+    id: 285,
+    category: "Perpustakaan dan Jurnal",
+    question: "Bagaimana cara mencari artikel di IEEE Xplore?",
+    answer: `Cara mencari artikel di IEEE Xplore adalah:
+
+1. Buka https://ieeexplore.ieee.org/.
+2. Login menggunakan akses resmi dari Perpustakaan UMB.
+3. Gunakan Search Bar di bagian tengah halaman untuk memasukkan kata kunci.
+4. Gunakan filter di sisi kiri untuk mempersempit hasil pencarian.
+5. Klik judul artikel yang sesuai.
+6. Gunakan tombol PDF jika ingin mengunduh artikel.
+7. Gunakan fitur Cite This jika ingin mengambil sitasi artikel.
+
+Mahasiswa juga dapat menggunakan Advanced Search untuk pencarian yang lebih detail.`,
+    keywords: [
+      "cara akses ieee",
+      "search ieee",
+      "download pdf ieee",
+      "cite this ieee",
+      "advanced search ieee",
+    ],
+  },
+  {
+    id: 286,
+    category: "Perpustakaan dan Jurnal",
+    question: "Apa saja fitur penting di IEEE Xplore?",
+    answer: `Fitur penting di IEEE Xplore antara lain Browse, My Settings, What can I access, Top Searches, Search Bar, filter pencarian, PDF download, Cite This, informasi penulis, document sections, dan Advanced Search.
+
+Fitur tersebut membantu mahasiswa mencari artikel, mengecek akses yang tersedia, mengunduh artikel full text, dan membuat sitasi.`,
+    keywords: [
+      "fitur ieee",
+      "browse ieee",
+      "top searches",
+      "pdf ieee",
+      "cite ieee",
+    ],
+  },
+  {
+    id: 287,
+    category: "Perpustakaan dan Jurnal",
+    question: "Apa itu Gale?",
+    answer: `Gale adalah database e-journal yang menyediakan sumber ilmiah untuk beberapa bidang, seperti ekonomi, sosial/humaniora, dan teknik atau sains. Mahasiswa dapat menggunakan Gale untuk mencari artikel, jurnal, topik penelitian, dan referensi akademik.`,
+    keywords: [
+      "gale",
+      "jurnal gale",
+      "database gale",
+      "jurnal ekonomi",
+      "jurnal humaniora",
+    ],
+  },
+  {
+    id: 288,
+    category: "Perpustakaan dan Jurnal",
+    question: "Apa saja fitur pencarian di Gale?",
+    answer: `Fitur pencarian di Gale meliputi:
+
+1. Pencarian dasar.
+2. Pencarian artikel.
+3. Pencarian topik.
+4. Pencarian subjek manual.
+5. Pencarian jurnal.
+6. Limitasi artikel untuk mempersempit hasil.
+7. Topic Finder 3D.
+8. Fitur translate artikel.
+9. Highlight dan note.
+10. Export citation.
+11. Print, bookmark, dan penyimpanan artikel.
+
+Fitur ini membantu mahasiswa mengelola artikel untuk kebutuhan tugas, penelitian, atau tugas akhir.`,
+    keywords: [
+      "fitur gale",
+      "pencarian gale",
+      "topic finder",
+      "translate gale",
+      "export citation",
+    ],
+  },
+  {
+    id: 289,
+    category: "Perpustakaan dan Jurnal",
+    question: "Bagaimana cara menyimpan atau mengolah artikel di Gale?",
+    answer: `Artikel di Gale dapat disimpan dan diolah menggunakan beberapa fitur, seperti bookmark, virtual drive, highlight and note, export citation, print artikel, dan penyimpanan artikel. Mahasiswa juga dapat menggunakan fitur translate untuk menerjemahkan artikel serta fitur MP3 streaming atau download jika tersedia.`,
+    keywords: [
+      "simpan artikel gale",
+      "bookmark gale",
+      "highlight note",
+      "export citation gale",
+      "translate artikel",
+    ],
+  },
+  {
+    id: 290,
+    category: "Perpustakaan dan Jurnal",
+    question: "Apa itu Emerald?",
+    answer: `Emerald adalah database e-journal yang digunakan untuk mencari artikel ilmiah, terutama pada bidang ekonomi, manajemen, dan akuntansi. Mahasiswa dapat menggunakan Emerald untuk mencari artikel jurnal, membaca artikel yang tersedia, dan mengunduh PDF jika artikel tersebut termasuk dalam akses yang tersedia.`,
+    keywords: [
+      "emerald",
+      "jurnal emerald",
+      "emerald insight",
+      "jurnal manajemen",
+      "jurnal akuntansi",
+    ],
+  },
+  {
+    id: 291,
+    category: "Perpustakaan dan Jurnal",
+    question: "Bagaimana aturan akses Emerald dari luar kampus?",
+    answer: `Berdasarkan info akses Emerald, akses dari luar kampus tidak lagi memerlukan OAN, tetapi pengguna tetap harus memiliki akun Emerald.
+
+Ketentuannya:
+1. Mahasiswa harus membuat akun Emerald terlebih dahulu.
+2. Login pertama atau aktivasi akses perlu dilakukan melalui jaringan kampus.
+3. Setelah login melalui IP kampus, akses dapat digunakan dari luar kampus selama periode tertentu.
+4. Pengguna perlu login kembali melalui jaringan kampus sebelum masa akses berakhir.
+5. Jika mahasiswa kelas online tidak bisa akses dari kampus, admin perpustakaan dapat membantu mendaftarkan akun agar dapat digunakan dari luar kampus.`,
+    keywords: [
+      "akses emerald luar kampus",
+      "akun emerald",
+      "oan emerald",
+      "login emerald",
+      "ip kampus",
+    ],
+  },
+  {
+    id: 292,
+    category: "Perpustakaan dan Jurnal",
+    question: "Bagaimana cara mencari dan mengunduh artikel di Emerald?",
+    answer: `Cara mencari artikel di Emerald adalah:
+
+1. Buka https://www.emerald.com/insight/.
+2. Login menggunakan akun Emerald.
+3. Masukkan kata kunci artikel pada kolom pencarian.
+4. Periksa hasil pencarian.
+5. Gunakan filter Available untuk melihat artikel yang bisa diakses.
+6. Pilih artikel yang sesuai.
+7. Klik PDF untuk mengunduh artikel.
+
+Jika belum memiliki akun, mahasiswa perlu melakukan register terlebih dahulu.`,
+    keywords: [
+      "cara akses emerald",
+      "search emerald",
+      "download pdf emerald",
+      "available emerald",
+      "register emerald",
+    ],
+  },
+  {
+    id: 293,
+    category: "Perpustakaan dan Jurnal",
+    question: "Apa itu ProQuest?",
+    answer: `ProQuest adalah database yang menyediakan akses ke e-journal, e-book, artikel ilmiah, referensi, dan publikasi akademik. ProQuest dapat digunakan untuk mencari literatur penelitian, tugas kuliah, artikel jurnal, dan referensi tugas akhir.`,
+    keywords: [
+      "proquest",
+      "database proquest",
+      "jurnal proquest",
+      "ebook proquest",
+      "artikel ilmiah",
+    ],
+  },
+  {
+    id: 294,
+    category: "Perpustakaan dan Jurnal",
+    question: "Bagaimana cara mengakses ProQuest dari luar institusi?",
+    answer: `Cara mengakses ProQuest dari luar institusi adalah:
+
+1. Buka https://search.proquest.com/.
+2. Klik Log in through your library to access more features.
+3. Klik More Option.
+4. Masukkan username dan password resmi dari Perpustakaan UMB.
+5. Setelah berhasil login, gunakan fitur pencarian untuk mencari artikel atau ebook.
+
+Mahasiswa dapat meminta informasi akun resmi ke Perpustakaan UMB.`,
+    keywords: [
+      "akses proquest luar kampus",
+      "login proquest",
+      "proquest library",
+      "search proquest",
+      "akun proquest",
+    ],
+  },
+  {
+    id: 295,
+    category: "Perpustakaan dan Jurnal",
+    question: "Apa saja fitur utama ProQuest?",
+    answer: `Fitur utama ProQuest meliputi Basic Search, Databases, Advanced Search, Publications, My Research, Selected Item, Recent Searches, Help, Cite, Email, Print, Save Search, Alert, dan RSS Feed.
+
+Fitur tersebut dapat membantu mahasiswa mencari artikel, mempersempit hasil pencarian, membuat sitasi, menyimpan hasil pencarian, dan menerima pembaruan artikel terbaru melalui email atau RSS.`,
+    keywords: [
+      "fitur proquest",
+      "basic search",
+      "advanced search",
+      "my research",
+      "cite proquest",
+    ],
+  },
+  {
+    id: 296,
+    category: "Perpustakaan dan Jurnal",
+    question: "Bagaimana cara mencari artikel di ProQuest?",
+    answer: `Cara mencari artikel di ProQuest adalah:
+
+1. Masuk ke ProQuest.
+2. Gunakan Basic Search untuk pencarian sederhana.
+3. Masukkan kata kunci pada kolom pencarian.
+4. Gunakan tanda kutip jika ingin mencari frasa yang lebih spesifik.
+5. Persempit hasil berdasarkan jenis dokumen, tahun terbit, atau filter lain.
+6. Pilih artikel yang sesuai.
+7. Buka Full Text atau Full Text PDF jika tersedia.
+8. Gunakan Cite, Email, Print, atau Export jika diperlukan.`,
+    keywords: [
+      "cara cari artikel proquest",
+      "basic search proquest",
+      "full text pdf",
+      "filter proquest",
+      "export proquest",
+    ],
+  },
+  {
+    id: 297,
+    category: "Perpustakaan dan Jurnal",
+    question: "Apa itu Ebook Central?",
+    answer: `Ebook Central adalah platform ebook dari ProQuest yang menyediakan buku elektronik berbagai bidang. Mahasiswa dapat membaca buku secara online atau melakukan full download sesuai ketentuan akses yang tersedia.`,
+    keywords: [
+      "ebook central",
+      "proquest ebook central",
+      "ebook umb",
+      "baca ebook online",
+      "download ebook",
+    ],
+  },
+  {
+    id: 298,
+    category: "Perpustakaan dan Jurnal",
+    question: "Bagaimana cara menggunakan Ebook Central?",
+    answer: `Cara menggunakan Ebook Central adalah:
+
+1. Login menggunakan akses resmi Perpustakaan UMB.
+2. Masukkan kata kunci buku pada kolom pencarian.
+3. Pilih salah satu buku dari hasil pencarian.
+4. Gunakan filter jika ingin mempersempit hasil pencarian.
+5. Pilih Read Online untuk membaca langsung.
+6. Pilih Full Download jika ingin mengunduh buku sesuai pilihan waktu akses.
+7. Gunakan fitur Download, Print to PDF, Copy, atau fitur lain sesuai kebutuhan.
+
+Untuk Full Download, pengguna disarankan menginstal Adobe Digital Editions.`,
+    keywords: [
+      "cara ebook central",
+      "read online",
+      "full download ebook",
+      "adobe digital editions",
+      "download ebook central",
+    ],
+  },
+  {
+    id: 299,
+    category: "Perpustakaan dan Jurnal",
+    question: "Apa perbedaan jurnal, ebook, dan database e-resource?",
+    answer: `Jurnal berisi artikel ilmiah yang biasanya membahas hasil penelitian atau kajian akademik. Ebook adalah buku elektronik yang dapat dibaca online atau diunduh sesuai ketentuan. Database e-resource adalah platform yang menyediakan akses ke jurnal, ebook, prosiding, artikel, atau sumber akademik lainnya, misalnya IEEE Xplore, Gale, Emerald, ProQuest, EBSCO, dan Cambridge Core.`,
+    keywords: [
+      "perbedaan jurnal ebook",
+      "database e-resource",
+      "artikel ilmiah",
+      "ebook",
+      "jurnal",
+    ],
+  },
+  {
+    id: 300,
+    category: "Perpustakaan dan Jurnal",
+    question: "Bagaimana cara memilih database jurnal yang sesuai kebutuhan?",
+    answer: `Mahasiswa dapat memilih database berdasarkan bidang dan jenis sumber yang dibutuhkan:
+
+1. Untuk bidang komputer, informatika, elektro, dan teknologi, gunakan IEEE Xplore.
+2. Untuk ekonomi, sosial/humaniora, teknik, dan sains, gunakan Gale.
+3. Untuk manajemen, akuntansi, dan ekonomi, gunakan Emerald.
+4. Untuk ebook berbagai bidang, gunakan ProQuest Ebook Central, EBSCO eBooks, atau Cambridge Core.
+5. Untuk pencarian artikel yang lebih luas, gunakan ProQuest.
+
+Jika masih bingung memilih database, mahasiswa dapat menghubungi Perpustakaan UMB untuk arahan akses dan pencarian referensi.`,
+    keywords: [
+      "pilih database jurnal",
+      "database sesuai bidang",
+      "ieee gale emerald proquest",
+      "referensi tugas akhir",
+      "layanan perpustakaan",
+    ],
+  },
 ];
