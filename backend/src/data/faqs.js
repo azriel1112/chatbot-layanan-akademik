@@ -1797,4 +1797,543 @@ Pastikan nama file sesuai format agar proses verifikasi TU lebih mudah.`,
       "vdm nim nama",
     ],
   },
+  {
+    id: 103,
+    category: "Kurikulum",
+    question: "Apa itu kurikulum 2025?",
+    answer: `Kurikulum 2025 adalah susunan mata kuliah terbaru yang digunakan sebagai acuan pembelajaran mahasiswa. Dokumen kurikulum memuat kode mata kuliah, nama mata kuliah, nama dalam bahasa Inggris, jumlah SKS, semester, dan distribusi mata kuliah per semester.`,
+    keywords: [
+      "kurikulum 2025",
+      "apa itu kurikulum 2025",
+      "distribusi mata kuliah",
+      "mata kuliah 2025",
+    ],
+  },
+  {
+    id: 104,
+    category: "Kurikulum",
+    question: "Kapan kurikulum 2025 mulai berlaku?",
+    answer: `Berdasarkan dokumen distribusi mata kuliah Informatika S1, kurikulum 2025-2029 memiliki tanggal berlaku 1 Juni 2025.`,
+    keywords: [
+      "kurikulum 2025 berlaku",
+      "tanggal berlaku kurikulum",
+      "1 juni 2025",
+      "kurikulum 2025 2029",
+    ],
+  },
+  {
+    id: 105,
+    category: "Kurikulum",
+    question: "Berapa total SKS pada kurikulum 2025 Informatika S1?",
+    answer: `Total SKS mata kuliah pada Kurikulum 2025 Program Studi Teknik Informatika S1 adalah 144 SKS.`,
+    keywords: [
+      "total sks informatika",
+      "144 sks",
+      "kurikulum informatika 2025",
+      "sks kurikulum",
+    ],
+  },
+  {
+    id: 106,
+    category: "Kurikulum",
+    question: "Apa perbedaan kurikulum 2021 dan kurikulum 2025?",
+    answer: `Perbedaan kurikulum 2021 dan kurikulum 2025 terletak pada kode mata kuliah, nama mata kuliah, jumlah SKS tertentu, semester penempatan, serta penggabungan atau perubahan beberapa mata kuliah.
+
+Contohnya:
+1. Bahasa Inggris I, Bahasa Inggris II, English for Computer I, dan English for Computer II pada kurikulum 2021 diekuivalensikan menjadi Bahasa Inggris pada kurikulum 2025.
+2. CCNA R&S 1, CCNA R&S 2, CCNA R&S 3, Sistem Administrasi Jaringan, dan beberapa mata kuliah jaringan diekuivalensikan ke Fundamental Jaringan atau Pemrograman Jaringan.
+3. Kerja Praktek pada kurikulum 2021 memiliki 4 SKS, sedangkan pada kurikulum 2025 menjadi 3 SKS.`,
+    keywords: [
+      "beda kurikulum 2021 2025",
+      "perbedaan kurikulum",
+      "ekuivalensi kurikulum",
+      "kurikulum baru",
+    ],
+  },
+  {
+    id: 107,
+    category: "Ekuivalensi Mata Kuliah",
+    question: "Apa itu ekuivalensi mata kuliah?",
+    answer: `Ekuivalensi mata kuliah adalah pemetaan mata kuliah dari kurikulum lama ke kurikulum baru. Tujuannya agar mata kuliah yang sudah ditempuh mahasiswa pada kurikulum lama dapat disesuaikan dengan mata kuliah yang berlaku pada kurikulum baru.`,
+    keywords: [
+      "ekuivalensi mata kuliah",
+      "pemetaan mata kuliah",
+      "kurikulum lama ke baru",
+      "konversi mata kuliah",
+    ],
+  },
+  {
+    id: 108,
+    category: "Ekuivalensi Mata Kuliah",
+    question: "Untuk apa dokumen ekuivalensi mata kuliah digunakan?",
+    answer: `Dokumen ekuivalensi digunakan untuk membantu mahasiswa, dosen, dan program studi mengetahui mata kuliah lama yang setara dengan mata kuliah baru. Dokumen ini penting saat terjadi perubahan kurikulum, penyesuaian KRS, validasi nilai, atau pengecekan mata kuliah yang sudah pernah ditempuh.`,
+    keywords: [
+      "fungsi ekuivalensi",
+      "dokumen ekuivalensi",
+      "validasi mata kuliah",
+      "penyesuaian krs",
+    ],
+  },
+  {
+    id: 109,
+    category: "Ekuivalensi Mata Kuliah",
+    question:
+      "Apakah semua mata kuliah kurikulum 2021 memiliki padanan di kurikulum 2025?",
+    answer: `Sebagian besar mata kuliah kurikulum 2021 memiliki padanan pada kurikulum 2025, tetapi bentuk padanannya bisa berbeda. Ada mata kuliah yang tetap sama, ada yang berubah nama, ada yang digabung, dan ada yang dipetakan ke mata kuliah baru yang lebih relevan.`,
+    keywords: [
+      "padanan mata kuliah",
+      "semua mata kuliah ekuivalen",
+      "kurikulum 2021 ke 2025",
+      "mata kuliah baru",
+    ],
+  },
+  {
+    id: 110,
+    category: "Kurikulum Informatika",
+    question: "Apa saja mata kuliah semester 1 Informatika kurikulum 2025?",
+    answer: `Mata kuliah semester 1 Informatika kurikulum 2025 meliputi:
+
+1. Kalkulus I, 3 SKS.
+2. Konsep Dasar Pemrograman, 3 SKS.
+3. Fundamental Jaringan, 3 SKS.
+4. Konsep Sistem Basis Data, 3 SKS.
+5. Arsitektur dan Organisasi, 3 SKS.
+6. Bahasa Inggris, 2 SKS.
+7. Matematika dan Statistik Dasar, 3 SKS.`,
+    keywords: [
+      "semester 1 informatika",
+      "semester satu informatika",
+      "mata kuliah semester 1",
+      "matkul semester 1 informatika",
+      "kurikulum 2025 semester 1",
+      "kalkulus i",
+      "konsep dasar pemrograman",
+      "fundamental jaringan",
+    ],
+  },
+  {
+    id: 111,
+    category: "Kurikulum Informatika",
+    question: "Apa saja mata kuliah semester 2 Informatika kurikulum 2025?",
+    answer: `Mata kuliah semester 2 Informatika kurikulum 2025 meliputi:
+
+1. Sistem Operasi, 3 SKS.
+2. Statistik dan Probabilitas, 3 SKS.
+3. Kecerdasan Buatan, 3 SKS.
+4. Fundamental Struktur Data dan Algoritma, 3 SKS.
+5. Pemodelan Manajemen Data SQL/NoSQL, 3 SKS.
+6. Kalkulus II, 3 SKS.
+7. Pancasila, 2 SKS.`,
+    keywords: [
+      "semester 2 informatika",
+      "semester dua informatika",
+      "mata kuliah semester 2",
+      "matkul semester 2 informatika",
+      "kurikulum 2025 semester 2",
+      "sistem operasi",
+      "statistik dan probabilitas",
+      "kecerdasan buatan",
+      "struktur data",
+    ],
+  },
+  {
+    id: 112,
+    category: "Kurikulum Informatika",
+    question: "Apa saja mata kuliah semester 3 Informatika kurikulum 2025?",
+    answer: `Mata kuliah semester 3 Informatika kurikulum 2025 meliputi:
+
+1. Analisis dan Desain Berorientasi Objek, 3 SKS.
+2. Sains Data, 3 SKS.
+3. Aljabar Linier, 3 SKS.
+4. Matematika Diskrit, 3 SKS.
+5. Pendidikan Agama, 2 SKS.
+6. Bahasa Indonesia, 2 SKS.
+7. Rekayasa Perangkat Lunak, 3 SKS.
+8. Etika, Sosial dan Profesi, 3 SKS.`,
+    keywords: [
+      "semester 3 informatika",
+      "semester tiga informatika",
+      "mata kuliah semester 3",
+      "matkul semester 3 informatika",
+      "kurikulum 2025 semester 3",
+      "sains data",
+      "aljabar linier",
+      "matematika diskrit",
+      "rekayasa perangkat lunak",
+    ],
+  },
+  {
+    id: 113,
+    category: "Kurikulum Informatika",
+    question: "Apa saja mata kuliah semester 4 Informatika kurikulum 2025?",
+    answer: `Mata kuliah semester 4 Informatika kurikulum 2025 meliputi:
+
+1. Pemrograman Berorientasi Objek, 3 SKS.
+2. Keamanan Cyber, 3 SKS.
+3. Pemrograman Web, 3 SKS.
+4. Interaksi Manusia dan Komputer, 3 SKS.
+5. Machine Learning, 3 SKS.
+6. Pemrograman Jaringan, 3 SKS.
+7. Kewirausahaan, 3 SKS.
+8. Kewarganegaraan, 2 SKS.`,
+    keywords: [
+      "semester 4 informatika",
+      "semester empat informatika",
+      "mata kuliah semester 4",
+      "matkul semester 4 informatika",
+      "kurikulum 2025 semester 4",
+      "pemrograman berorientasi objek",
+      "keamanan cyber",
+      "pemrograman web",
+      "machine learning",
+    ],
+  },
+  {
+    id: 114,
+    category: "Kurikulum Informatika",
+    question: "Apa saja mata kuliah semester 5 Informatika kurikulum 2025?",
+    answer: `Mata kuliah semester 5 Informatika kurikulum 2025 meliputi:
+
+1. Metodologi Penelitian, 4 SKS.
+2. Analitik Data, 3 SKS.
+3. Pemrograman Web Enterprise, 3 SKS.
+4. Pengolahan Citra, 3 SKS.
+5. Deep Learning, 3 SKS.
+6. Kerja Praktek, 3 SKS.
+7. Pemrograman Mobile, 3 SKS.
+8. Pendidikan Anti Korupsi dan Etik UMB, 2 SKS.`,
+    keywords: [
+      "semester 5 informatika",
+      "semester lima informatika",
+      "mata kuliah semester 5",
+      "matkul semester 5 informatika",
+      "kurikulum 2025 semester 5",
+      "metodologi penelitian",
+      "analitik data",
+      "deep learning",
+      "kerja praktek",
+    ],
+  },
+  {
+    id: 115,
+    category: "Kurikulum Informatika",
+    question: "Apa saja mata kuliah semester 6 Informatika kurikulum 2025?",
+    answer: `Mata kuliah semester 6 Informatika kurikulum 2025 meliputi:
+
+1. Natural Language Processing, 3 SKS.
+2. Computer Vision, 3 SKS.
+3. Cloud Computing, 3 SKS.
+4. Sistem Informasi Geografis, 3 SKS.
+5. Animasi Komputer dan Pemodelan 3D, 3 SKS.
+6. Big Data, 3 SKS.
+7. UI/UX Teknologi Digital Immersive, 3 SKS.
+8. Generative AI, 3 SKS.`,
+    keywords: [
+      "semester 6 informatika",
+      "semester enam informatika",
+      "mata kuliah semester 6",
+      "matkul semester 6 informatika",
+      "kurikulum 2025 semester 6",
+      "natural language processing",
+      "computer vision",
+      "cloud computing",
+      "generative ai",
+    ],
+  },
+  {
+    id: 116,
+    category: "Kurikulum Informatika",
+    question: "Apa saja mata kuliah semester 7 Informatika kurikulum 2025?",
+    answer: `Mata kuliah semester 7 Informatika kurikulum 2025 adalah Capstone Project dengan bobot 5 SKS.`,
+    keywords: [
+      "semester 7 informatika",
+      "semester tujuh informatika",
+      "mata kuliah semester 7",
+      "matkul semester 7 informatika",
+      "kurikulum 2025 semester 7",
+      "capstone project",
+      "capstone 5 sks",
+    ],
+  },
+  {
+    id: 117,
+    category: "Kurikulum Informatika",
+    question: "Apa saja mata kuliah semester 8 Informatika kurikulum 2025?",
+    answer: `Mata kuliah semester 8 Informatika kurikulum 2025 adalah Tugas Akhir dengan bobot 6 SKS.`,
+    keywords: [
+      "semester 8 informatika",
+      "semester delapan informatika",
+      "mata kuliah semester 8",
+      "matkul semester 8 informatika",
+      "kurikulum 2025 semester 8",
+      "tugas akhir",
+      "ta 6 sks",
+    ],
+  },
+  {
+    id: 118,
+    category: "Kurikulum Informatika",
+    question:
+      "Apa saja mata kuliah yang termasuk bidang AI dan Data pada kurikulum 2025 Informatika?",
+    answer: `Mata kuliah yang berkaitan dengan AI dan data pada kurikulum 2025 Informatika antara lain Kecerdasan Buatan, Sains Data, Machine Learning, Analitik Data, Pengolahan Citra, Deep Learning, Natural Language Processing, Computer Vision, Big Data, dan Generative AI.`,
+    keywords: [
+      "mata kuliah ai",
+      "mata kuliah data",
+      "machine learning",
+      "deep learning",
+      "generative ai",
+    ],
+  },
+  {
+    id: 119,
+    category: "Kurikulum Informatika",
+    question:
+      "Apa saja mata kuliah yang berkaitan dengan pemrograman pada kurikulum 2025 Informatika?",
+    answer: `Mata kuliah pemrograman pada kurikulum 2025 Informatika meliputi Konsep Dasar Pemrograman, Fundamental Struktur Data dan Algoritma, Pemrograman Berorientasi Objek, Pemrograman Web, Pemrograman Jaringan, Pemrograman Web Enterprise, dan Pemrograman Mobile.`,
+    keywords: [
+      "mata kuliah pemrograman",
+      "pemrograman informatika",
+      "struktur data",
+      "pemrograman web",
+      "pemrograman mobile",
+    ],
+  },
+  {
+    id: 120,
+    category: "Kurikulum Informatika",
+    question:
+      "Apa saja mata kuliah yang berkaitan dengan jaringan dan keamanan pada kurikulum 2025 Informatika?",
+    answer: `Mata kuliah jaringan dan keamanan pada kurikulum 2025 Informatika antara lain Fundamental Jaringan, Keamanan Cyber, Pemrograman Jaringan, Cloud Computing, dan beberapa mata kuliah lanjutan seperti Big Data atau Sistem Informasi Geografis yang dapat mendukung bidang infrastruktur dan teknologi digital.`,
+    keywords: [
+      "mata kuliah jaringan",
+      "keamanan cyber",
+      "fundamental jaringan",
+      "pemrograman jaringan",
+      "cloud computing",
+    ],
+  },
+  {
+    id: 121,
+    category: "Ekuivalensi Mata Kuliah",
+    question: "Apa ekuivalensi Algoritma dan Pemrograman pada kurikulum 2025?",
+    answer: `Algoritma dan Pemrograman pada kurikulum 2021 diekuivalensikan menjadi Konsep Dasar Pemrograman pada kurikulum 2025.`,
+    keywords: [
+      "algoritma dan pemrograman",
+      "konsep dasar pemrograman",
+      "ekuivalensi algoritma",
+      "kurikulum 2025",
+    ],
+  },
+  {
+    id: 122,
+    category: "Ekuivalensi Mata Kuliah",
+    question: "Apa ekuivalensi Sistem Basis Data pada kurikulum 2025?",
+    answer: `Sistem Basis Data pada kurikulum 2021 diekuivalensikan menjadi Konsep Sistem Basis Data pada kurikulum 2025.`,
+    keywords: [
+      "sistem basis data",
+      "konsep sistem basis data",
+      "ekuivalensi basis data",
+      "database",
+    ],
+  },
+  {
+    id: 123,
+    category: "Ekuivalensi Mata Kuliah",
+    question: "Apa ekuivalensi Dasar Keamanan Komputer pada kurikulum 2025?",
+    answer: `Dasar Keamanan Komputer pada kurikulum 2021 diekuivalensikan menjadi Keamanan Cyber pada kurikulum 2025.`,
+    keywords: [
+      "dasar keamanan komputer",
+      "keamanan cyber",
+      "ekuivalensi keamanan",
+      "cyber security",
+    ],
+  },
+  {
+    id: 124,
+    category: "Ekuivalensi Mata Kuliah",
+    question: "Apa ekuivalensi Bahasa Inggris pada kurikulum 2025?",
+    answer: `Beberapa mata kuliah bahasa Inggris pada kurikulum 2021 diekuivalensikan menjadi Bahasa Inggris pada kurikulum 2025.
+
+Mata kuliah yang dipetakan ke Bahasa Inggris meliputi:
+1. Bahasa Inggris I.
+2. Bahasa Inggris II.
+3. English for Computer I.
+4. English for Computer II.`,
+    keywords: [
+      "bahasa inggris",
+      "english for computer",
+      "ekuivalensi bahasa inggris",
+      "kurikulum 2025",
+    ],
+  },
+  {
+    id: 125,
+    category: "Ekuivalensi Mata Kuliah",
+    question:
+      "Apa ekuivalensi Struktur Data dan Algoritma Lanjut pada kurikulum 2025?",
+    answer: `Struktur Data dan Algoritma Lanjut pada kurikulum 2021 diekuivalensikan menjadi Fundamental Struktur Data dan Algoritma pada kurikulum 2025.`,
+    keywords: [
+      "struktur data",
+      "algoritma lanjut",
+      "fundamental struktur data dan algoritma",
+      "ekuivalensi struktur data",
+    ],
+  },
+  {
+    id: 126,
+    category: "Ekuivalensi Mata Kuliah",
+    question:
+      "Apa ekuivalensi CCNA dan mata kuliah jaringan pada kurikulum 2025?",
+    answer: `Pada pemetaan Informatika, beberapa mata kuliah jaringan kurikulum 2021 diekuivalensikan ke mata kuliah jaringan kurikulum 2025.
+
+Contohnya:
+1. CCNA R&S 1 menjadi Fundamental Jaringan.
+2. Komunikasi Data menjadi Fundamental Jaringan.
+3. CCNA R&S 2 menjadi Fundamental Jaringan.
+4. CCNA R&S 3 menjadi Fundamental Jaringan.
+5. Sistem Administrasi Jaringan 1 dan 2 menjadi Fundamental Jaringan.
+6. Jaringan VOIP, Wireless Network & Mobile, dan Proyek Perancangan Jaringan & Keamanan Komputer menjadi Pemrograman Jaringan.`,
+    keywords: [
+      "ccna",
+      "fundamental jaringan",
+      "pemrograman jaringan",
+      "ekuivalensi jaringan",
+      "komunikasi data",
+    ],
+  },
+  {
+    id: 127,
+    category: "Ekuivalensi Mata Kuliah",
+    question: "Apa ekuivalensi Pemrograman PL/SQL pada kurikulum 2025?",
+    answer: `Pemrograman PL/SQL pada kurikulum 2021 diekuivalensikan menjadi Pemodelan Manajemen Data SQL/NoSQL pada kurikulum 2025.`,
+    keywords: [
+      "pl sql",
+      "pemrograman pl sql",
+      "pemodelan manajemen data",
+      "sql nosql",
+    ],
+  },
+  {
+    id: 128,
+    category: "Ekuivalensi Mata Kuliah",
+    question:
+      "Apa ekuivalensi Pengantar Kecerdasan Buatan pada kurikulum 2025?",
+    answer: `Pengantar Kecerdasan Buatan pada kurikulum 2021 diekuivalensikan menjadi Kecerdasan Buatan pada kurikulum 2025.`,
+    keywords: [
+      "pengantar kecerdasan buatan",
+      "kecerdasan buatan",
+      "artificial intelligence",
+      "ekuivalensi ai",
+    ],
+  },
+  {
+    id: 129,
+    category: "Ekuivalensi Mata Kuliah",
+    question: "Apa ekuivalensi Analisa Berorientasi Objek pada kurikulum 2025?",
+    answer: `Analisa Berorientasi Objek pada kurikulum 2021 diekuivalensikan menjadi Analisis dan Desain Berorientasi Objek pada kurikulum 2025.`,
+    keywords: [
+      "analisa berorientasi objek",
+      "analisis dan desain berorientasi objek",
+      "object oriented analysis",
+      "ekuivalensi ooad",
+    ],
+  },
+  {
+    id: 130,
+    category: "Ekuivalensi Mata Kuliah",
+    question:
+      "Apa ekuivalensi Komunikasi dan Etika Profesi pada kurikulum 2025?",
+    answer: `Komunikasi dan Etika Profesi pada kurikulum 2021 diekuivalensikan menjadi Etika, Sosial dan Profesi pada kurikulum 2025.`,
+    keywords: [
+      "komunikasi dan etika profesi",
+      "etika sosial dan profesi",
+      "ekuivalensi etika",
+      "profesi",
+    ],
+  },
+  {
+    id: 131,
+    category: "Ekuivalensi Mata Kuliah",
+    question: "Apa ekuivalensi Pengantar Data Mining pada kurikulum 2025?",
+    answer: `Pengantar Data Mining pada kurikulum 2021 diekuivalensikan menjadi Analitik Data pada kurikulum 2025.`,
+    keywords: [
+      "pengantar data mining",
+      "analitik data",
+      "data analytic",
+      "ekuivalensi data mining",
+    ],
+  },
+  {
+    id: 132,
+    category: "Ekuivalensi Mata Kuliah",
+    question: "Apa ekuivalensi Pemrograman Smart Web pada kurikulum 2025?",
+    answer: `Pemrograman Smart Web pada kurikulum 2021 diekuivalensikan menjadi Pemrograman Web Enterprise pada kurikulum 2025.`,
+    keywords: [
+      "pemrograman smart web",
+      "pemrograman web enterprise",
+      "ekuivalensi smart web",
+      "web enterprise",
+    ],
+  },
+  {
+    id: 133,
+    category: "Ekuivalensi Mata Kuliah",
+    question: "Apa ekuivalensi Kerja Praktek pada kurikulum 2025?",
+    answer: `Kerja Praktek pada kurikulum 2021 diekuivalensikan menjadi Kerja Praktek pada kurikulum 2025. Pada pemetaan Informatika, bobotnya berubah dari 4 SKS pada kurikulum 2021 menjadi 3 SKS pada kurikulum 2025.`,
+    keywords: ["kerja praktek", "kp", "ekuivalensi kerja praktek", "sks kp"],
+  },
+  {
+    id: 134,
+    category: "Ekuivalensi Mata Kuliah",
+    question:
+      "Apa ekuivalensi Metodologi Penelitian Teknologi Informasi pada kurikulum 2025?",
+    answer: `Metodologi Penelitian Teknologi Informasi pada kurikulum 2021 diekuivalensikan menjadi Metodologi Penelitian pada kurikulum 2025 dengan bobot 4 SKS.`,
+    keywords: [
+      "mpti",
+      "metodologi penelitian teknologi informasi",
+      "metodologi penelitian",
+      "ekuivalensi mpti",
+    ],
+  },
+  {
+    id: 135,
+    category: "Ekuivalensi Mata Kuliah",
+    question: "Apa ekuivalensi Tugas Akhir pada kurikulum 2025?",
+    answer: `Tugas Akhir pada kurikulum 2021 diekuivalensikan menjadi Tugas Akhir pada kurikulum 2025 dengan bobot 6 SKS.`,
+    keywords: ["tugas akhir", "ta", "ekuivalensi tugas akhir", "6 sks"],
+  },
+  {
+    id: 136,
+    category: "Kurikulum Sistem Informasi",
+    question: "Apa saja contoh mata kuliah Sistem Informasi kurikulum 2025?",
+    answer: `Contoh mata kuliah Sistem Informasi kurikulum 2025 meliputi Konsep Sistem Basis Data, Arsitektur dan Organisasi, Bahasa Inggris, Matematika Bisnis, Konsep Dasar Pemrograman, Fundamental Jaringan, Manajemen Proses Bisnis, Audit Sistem Informasi dan Manajemen Resiko IT, Manajemen Data, Sistem Informasi, Rekayasa Perangkat Lunak, Etika Sosial dan Profesi, Machine Learning, Arsitektur Enterprise, Kerja Praktek, Metodologi Penelitian, Capstone Project, dan Tugas Akhir.`,
+    keywords: [
+      "kurikulum sistem informasi",
+      "mata kuliah sistem informasi",
+      "si 2025",
+      "capstone project sistem informasi",
+    ],
+  },
+  {
+    id: 137,
+    category: "Kurikulum",
+    question:
+      "Bagaimana cara membaca dokumen kurikulum dan ekuivalensi mata kuliah?",
+    answer: `Cara membaca dokumen kurikulum dan ekuivalensi adalah:
+
+1. Lihat program studi terlebih dahulu, misalnya Teknik Informatika atau Sistem Informasi.
+2. Periksa kurikulum yang digunakan, misalnya 2021 atau 2025.
+3. Lihat kode mata kuliah, nama mata kuliah, SKS, dan semester.
+4. Jika ingin mengecek mata kuliah lama, cari pada kolom kurikulum 2021.
+5. Lihat padanannya pada kolom kurikulum 2025.
+6. Jika ada perbedaan SKS atau nama mata kuliah, gunakan dokumen ekuivalensi sebagai acuan awal.
+7. Jika masih ragu saat mengisi KRS, konfirmasi ke dosen PA, prodi, atau bagian akademik.`,
+    keywords: [
+      "cara membaca kurikulum",
+      "cara membaca ekuivalensi",
+      "cek mata kuliah",
+      "krs",
+      "dosen pa",
+    ],
+  },
 ];
