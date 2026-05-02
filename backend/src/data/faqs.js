@@ -2336,4 +2336,336 @@ Contohnya:
       "dosen pa",
     ],
   },
+  {
+    id: 138,
+    category: "Surat Keterangan",
+    question: "Apa saja jenis surat keterangan yang bisa diajukan mahasiswa?",
+    answer: `Jenis surat keterangan yang tersedia berdasarkan data formulir adalah:
+
+1. Surat Keterangan Mahasiswa Aktif.
+2. Surat Keterangan Lulus.
+3. Surat Keterangan Mengundurkan Diri.
+4. Surat Keterangan Mutasi.
+5. Surat Keterangan Putus Studi.
+6. Surat Keterangan Drop Out.
+
+Formulir tersedia untuk beberapa kampus, yaitu Kampus Meruya, Kampus Menteng, dan Kampus Warung Buncit.`,
+    keywords: [
+      "surat keterangan",
+      "jenis surat keterangan",
+      "sk aktif",
+      "sk lulus",
+      "sk mundur",
+      "mutasi",
+      "putus studi",
+      "drop out",
+    ],
+  },
+  {
+    id: 139,
+    category: "Surat Keterangan",
+    question: "Apa itu Surat Keterangan Mahasiswa Aktif?",
+    answer: `Surat Keterangan Mahasiswa Aktif adalah surat yang digunakan untuk menerangkan bahwa mahasiswa masih berstatus aktif kuliah. Surat ini biasanya dibutuhkan untuk keperluan administrasi seperti beasiswa, tunjangan orang tua, magang, pekerjaan, atau keperluan instansi tertentu.`,
+    keywords: [
+      "surat keterangan mahasiswa aktif",
+      "sk aktif",
+      "mahasiswa aktif",
+      "surat aktif kuliah",
+    ],
+  },
+  {
+    id: 140,
+    category: "Surat Keterangan",
+    question: "Bagaimana cara mengajukan Surat Keterangan Mahasiswa Aktif?",
+    answer: `Mahasiswa dapat mengajukan Surat Keterangan Mahasiswa Aktif melalui formulir sesuai kampus masing-masing:
+
+1. Kampus Meruya:
+https://bit.ly/SKAktif-UMB
+
+2. Kampus Menteng:
+https://docs.google.com/forms/d/e/1FAIpQLSe7GJV4HRCWWtpFMEqrMjtrIRqMAKu3Rw5QVi8d1QuODODQog/viewform
+
+3. Kampus Warung Buncit:
+https://bit.ly/WB-SKMahasiswaAktif
+
+Pastikan memilih formulir sesuai kampus agar pengajuan diproses oleh unit yang tepat.`,
+    keywords: [
+      "cara mengajukan sk aktif",
+      "form sk aktif",
+      "surat aktif meruya",
+      "surat aktif menteng",
+      "surat aktif warung buncit",
+    ],
+  },
+  {
+    id: 141,
+    category: "Surat Keterangan",
+    question: "Apa itu Surat Keterangan Lulus?",
+    answer: `Surat Keterangan Lulus atau SKL adalah surat yang menerangkan bahwa mahasiswa telah dinyatakan lulus. Surat ini biasanya digunakan sebelum ijazah diterbitkan atau untuk kebutuhan administrasi seperti melamar kerja, studi lanjut, dan keperluan instansi.`,
+    keywords: [
+      "surat keterangan lulus",
+      "skl",
+      "surat lulus",
+      "keterangan lulus",
+    ],
+  },
+  {
+    id: 142,
+    category: "Surat Keterangan",
+    question: "Bagaimana cara mengajukan Surat Keterangan Lulus?",
+    answer: `Mahasiswa dapat mengajukan Surat Keterangan Lulus melalui formulir sesuai kampus:
+
+1. Kampus Meruya:
+https://bit.ly/SKL-UMB
+
+2. Kampus Menteng:
+https://docs.google.com/forms/u/0/d/e/1FAIpQLScOIna2LKJ2svqZl3V-D4ckFIMX0HPAltVEFEjWqLsWpxI05Q/viewform?usp=send_form&pli=1
+
+3. Kampus Warung Buncit:
+https://bit.ly/WB-SKLulus
+
+Sebelum mengisi form, pastikan data kelulusan dan dokumen pendukung sudah siap.`,
+    keywords: [
+      "cara mengajukan skl",
+      "form skl",
+      "surat keterangan lulus meruya",
+      "skl menteng",
+      "skl warung buncit",
+    ],
+  },
+  {
+    id: 143,
+    category: "Surat Keterangan",
+    question:
+      "Apa itu Surat Keterangan Mengundurkan Diri, Mutasi, Putus Studi, atau Drop Out?",
+    answer: `Surat Keterangan Mengundurkan Diri, Mutasi, Putus Studi, atau Drop Out adalah surat yang berkaitan dengan perubahan atau penghentian status studi mahasiswa. Form ini digunakan jika mahasiswa membutuhkan keterangan resmi terkait pengunduran diri, perpindahan, putus studi, atau status drop out.`,
+    keywords: [
+      "surat mengundurkan diri",
+      "surat mutasi",
+      "surat putus studi",
+      "surat drop out",
+      "do",
+    ],
+  },
+  {
+    id: 144,
+    category: "Surat Keterangan",
+    question:
+      "Bagaimana cara mengajukan Surat Keterangan Mengundurkan Diri, Mutasi, Putus Studi, atau Drop Out?",
+    answer: `Pengajuan dilakukan melalui formulir sesuai kampus:
+
+1. Kampus Meruya:
+https://docs.google.com/forms/d/1_Svsv8_Fe0WYpWfBNxrDbWYhX-WOyjfolIExilrDTXU/edit
+
+2. Kampus Menteng:
+https://bit.ly/SKmundurPutusStudiDO
+
+3. Kampus Warung Buncit:
+https://bit.ly/SK-Mundur-WB
+
+Karena surat ini berkaitan dengan status studi, mahasiswa sebaiknya memastikan data akademik dan alasan pengajuan sudah benar sebelum mengisi formulir.`,
+    keywords: [
+      "form surat mundur",
+      "form mutasi",
+      "form putus studi",
+      "form drop out",
+      "sk mundur",
+    ],
+  },
+  {
+    id: 145,
+    category: "Surat Keterangan",
+    question:
+      "Form surat keterangan mana yang digunakan mahasiswa Kampus Meruya?",
+    answer: `Mahasiswa Kampus Meruya dapat menggunakan link berikut:
+
+1. Surat Keterangan Mahasiswa Aktif:
+https://bit.ly/SKAktif-UMB
+
+2. Surat Keterangan Lulus:
+https://bit.ly/SKL-UMB
+
+3. Surat Keterangan Mundur, Mutasi, Putus Studi, atau Drop Out:
+https://docs.google.com/forms/d/1_Svsv8_Fe0WYpWfBNxrDbWYhX-WOyjfolIExilrDTXU/edit`,
+    keywords: [
+      "kampus meruya",
+      "form meruya",
+      "surat keterangan meruya",
+      "sk aktif meruya",
+      "skl meruya",
+    ],
+  },
+  {
+    id: 146,
+    category: "Surat Keterangan",
+    question:
+      "Form surat keterangan mana yang digunakan mahasiswa Kampus Menteng?",
+    answer: `Mahasiswa Kampus Menteng dapat menggunakan link berikut:
+
+1. Surat Keterangan Mahasiswa Aktif:
+https://docs.google.com/forms/d/e/1FAIpQLSe7GJV4HRCWWtpFMEqrMjtrIRqMAKu3Rw5QVi8d1QuODODQog/viewform
+
+2. Surat Keterangan Lulus:
+https://docs.google.com/forms/u/0/d/e/1FAIpQLScOIna2LKJ2svqZl3V-D4ckFIMX0HPAltVEFEjWqLsWpxI05Q/viewform?usp=send_form&pli=1
+
+3. Surat Keterangan Mundur, Putus Studi, atau Drop Out:
+https://bit.ly/SKmundurPutusStudiDO`,
+    keywords: [
+      "kampus menteng",
+      "form menteng",
+      "surat keterangan menteng",
+      "sk aktif menteng",
+      "skl menteng",
+    ],
+  },
+  {
+    id: 147,
+    category: "Surat Keterangan",
+    question:
+      "Form surat keterangan mana yang digunakan mahasiswa Kampus Warung Buncit?",
+    answer: `Mahasiswa Kampus Warung Buncit dapat menggunakan link berikut:
+
+1. Surat Keterangan Mahasiswa Aktif:
+https://bit.ly/WB-SKMahasiswaAktif
+
+2. Surat Keterangan Lulus:
+https://bit.ly/WB-SKLulus
+
+3. Surat Keterangan Mundur, Putus Studi, atau Drop Out:
+https://bit.ly/SK-Mundur-WB`,
+    keywords: [
+      "kampus warung buncit",
+      "form warung buncit",
+      "surat keterangan warung buncit",
+      "sk aktif wb",
+      "skl wb",
+    ],
+  },
+  {
+    id: 148,
+    category: "Surat Keterangan",
+    question: "Siapa admin yang bisa dihubungi untuk layanan BAP Meruya?",
+    answer: `Untuk layanan BAP Kampus Meruya, mahasiswa dapat menghubungi:
+
+1. Admin 1 BAP Meruya:
+https://wa.me/6285183153369
+
+2. Admin 2 BAP Meruya:
+https://shorturl.at/wCDJN`,
+    keywords: [
+      "admin bap meruya",
+      "bap meruya",
+      "kontak meruya",
+      "whatsapp bap meruya",
+    ],
+  },
+  {
+    id: 149,
+    category: "Surat Keterangan",
+    question: "Siapa admin yang bisa dihubungi untuk layanan BAP Menteng?",
+    answer: `Untuk layanan BAP Kampus Menteng, mahasiswa dapat menghubungi admin melalui link berikut:
+https://api.whatsapp.com/send?phone=6281806927075&text=Halo%20Admin%0APerkenalkan%20Nama%20Saya%3A%0ANIM%3A%0AProdi%3A%0AKeperluan%3A%0A`,
+    keywords: [
+      "admin bap menteng",
+      "bap menteng",
+      "kontak menteng",
+      "whatsapp bap menteng",
+    ],
+  },
+  {
+    id: 150,
+    category: "Surat Keterangan",
+    question:
+      "Siapa admin yang bisa dihubungi untuk layanan BAP Warung Buncit?",
+    answer: `Untuk layanan BAP Kampus Warung Buncit, mahasiswa dapat menghubungi admin melalui link berikut:
+https://shorturl.at/nruC0`,
+    keywords: [
+      "admin bap warung buncit",
+      "bap warung buncit",
+      "kontak warung buncit",
+      "whatsapp bap wb",
+    ],
+  },
+  {
+    id: 151,
+    category: "Surat Keterangan",
+    question: "Apa yang harus disiapkan sebelum mengisi form surat keterangan?",
+    answer: `Sebelum mengisi form surat keterangan, mahasiswa sebaiknya menyiapkan:
+
+1. Nama lengkap sesuai data akademik.
+2. NIM.
+3. Program studi.
+4. Kampus asal, seperti Meruya, Menteng, atau Warung Buncit.
+5. Jenis surat yang dibutuhkan.
+6. Keperluan pengajuan surat.
+7. Dokumen pendukung jika diminta pada formulir.
+
+Pastikan data yang diisi benar agar proses pengajuan tidak terhambat.`,
+    keywords: [
+      "persiapan form surat",
+      "data surat keterangan",
+      "nim",
+      "prodi",
+      "keperluan surat",
+    ],
+  },
+  {
+    id: 152,
+    category: "Surat Keterangan",
+    question: "Apakah form surat keterangan harus sesuai kampus?",
+    answer: `Ya. Mahasiswa sebaiknya mengisi formulir sesuai kampus masing-masing, karena link pengajuan dibedakan untuk Kampus Meruya, Kampus Menteng, dan Kampus Warung Buncit.`,
+    keywords: [
+      "form sesuai kampus",
+      "kampus meruya menteng warung buncit",
+      "salah form",
+      "surat keterangan kampus",
+    ],
+  },
+  {
+    id: 153,
+    category: "Surat Keterangan",
+    question:
+      "Apa yang harus dilakukan jika salah mengisi form surat keterangan?",
+    answer: `Jika salah mengisi form surat keterangan, mahasiswa sebaiknya segera menghubungi admin BAP sesuai kampus masing-masing. Sampaikan nama, NIM, program studi, jenis surat yang diajukan, dan bagian data yang perlu diperbaiki.`,
+    keywords: [
+      "salah isi form",
+      "perbaiki form surat",
+      "revisi data surat",
+      "hubungi bap",
+    ],
+  },
+  {
+    id: 154,
+    category: "Surat Keterangan",
+    question: "Apakah Surat Keterangan Lulus sama dengan ijazah?",
+    answer: `Tidak. Surat Keterangan Lulus bukan ijazah. SKL hanya menerangkan bahwa mahasiswa telah dinyatakan lulus dan biasanya digunakan sementara untuk kebutuhan administrasi sebelum ijazah tersedia.`,
+    keywords: [
+      "skl sama dengan ijazah",
+      "surat keterangan lulus",
+      "ijazah",
+      "beda skl dan ijazah",
+    ],
+  },
+  {
+    id: 155,
+    category: "Surat Keterangan",
+    question: "Bagaimana alur umum pengajuan surat keterangan mahasiswa?",
+    answer: `Alur umum pengajuan surat keterangan adalah:
+
+1. Tentukan jenis surat yang dibutuhkan, misalnya SK Aktif, SKL, atau SK Mundur/Mutasi/Putus Studi/Drop Out.
+2. Pilih link formulir sesuai kampus.
+3. Isi data mahasiswa dengan benar.
+4. Unggah atau lengkapi dokumen pendukung jika diminta.
+5. Kirim formulir pengajuan.
+6. Hubungi admin BAP kampus jika perlu konfirmasi atau terdapat kendala.
+
+Gunakan formulir sesuai kampus agar pengajuan diproses oleh admin yang tepat.`,
+    keywords: [
+      "alur pengajuan surat",
+      "cara membuat surat keterangan",
+      "form surat keterangan",
+      "bap",
+      "admin kampus",
+    ],
+  },
 ];
