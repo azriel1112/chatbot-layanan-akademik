@@ -2972,4 +2972,187 @@ Pastikan menggunakan form atau kontak resmi agar pengajuan lebih mudah diproses.
       "pelaporan",
     ],
   },
+  {
+    id: 175,
+    category: "Pembayaran dan Biaya Kuliah",
+    question: "Bagaimana cara membayar biaya kuliah Universitas Mercu Buana?",
+    answer: `Pembayaran biaya kuliah Universitas Mercu Buana dilakukan secara SPC/Online melalui PT Bank BNI.
+
+Mahasiswa dapat melakukan pembayaran melalui:
+1. Mobile Banking BNI.
+2. Teller BNI seluruh cabang.
+3. ATM BNI, baik menggunakan KTM BNI maupun ATM BNI non-KTM.
+
+Pembayaran dilakukan menggunakan NIM dan kode prefix/billing sesuai kampus, kelas, dan jenis pembayaran.`,
+    keywords: [
+      "pembayaran kuliah",
+      "cara bayar kuliah",
+      "bayar umb",
+      "spc bni",
+      "biaya kuliah",
+    ],
+  },
+  {
+    id: 176,
+    category: "Pembayaran dan Biaya Kuliah",
+    question: "Apakah pembayaran kuliah UMB boleh melalui transfer biasa?",
+    answer: `Tidak. Mahasiswa yang sudah memiliki NIM diharuskan melakukan pembayaran kuliah secara SPC/Online dan tidak diperkenankan melakukan pembayaran melalui transfer biasa.`,
+    keywords: [
+      "transfer biasa",
+      "pembayaran transfer",
+      "spc online",
+      "bayar kuliah bni",
+      "nim",
+    ],
+  },
+  {
+    id: 177,
+    category: "Pembayaran dan Biaya Kuliah",
+    question: "Bagaimana cara membayar kuliah melalui Mobile Banking BNI?",
+    answer: `Cara pembayaran melalui Mobile Banking BNI adalah:
+
+1. Pilih menu Pembayaran.
+2. Pilih Biaya Pendidikan.
+3. Pilih rekening debet, lalu pilih jenis layanan.
+4. Pilih Pembayaran.
+5. Pilih Perguruan Tinggi Universitas Mercu Buana.
+6. Pada kolom Nomor Billing, input kode prefix + NIM.
+7. Pastikan nama dan jumlah tagihan sudah sesuai.
+8. Masukkan password transaksi.
+9. Jika berhasil, layar akan menampilkan transaksi berhasil.
+
+Jika tagihan tidak sesuai, mahasiswa perlu melapor ke loket layanan keuangan.`,
+    keywords: [
+      "mobile banking bni",
+      "m banking bni",
+      "cara bayar via bni mobile",
+      "biaya pendidikan bni",
+      "nomor billing",
+    ],
+  },
+  {
+    id: 178,
+    category: "Pembayaran dan Biaya Kuliah",
+    question: "Bagaimana cara membayar kuliah melalui Teller BNI?",
+    answer: `Untuk pembayaran melalui Teller BNI, mahasiswa cukup datang ke counter Teller BNI seluruh cabang dan menyampaikan bahwa akan membayar uang kuliah Universitas Mercu Buana melalui SPC/Online BNI.
+
+Mahasiswa menyebutkan nama, NIM, dan kode prefix sesuai jenis pembayaran. Setelah data diinput, petugas teller akan menyampaikan nominal tagihan. Setelah pembayaran dilakukan, mahasiswa akan memperoleh receipt atau tanda bukti pembayaran yang harus disimpan dengan baik.`,
+    keywords: [
+      "teller bni",
+      "bayar lewat teller",
+      "pembayaran teller bni",
+      "receipt pembayaran",
+      "bukti pembayaran",
+    ],
+  },
+  {
+    id: 179,
+    category: "Pembayaran dan Biaya Kuliah",
+    question: "Bagaimana cara membayar kuliah melalui ATM BNI?",
+    answer: `Cara pembayaran melalui ATM BNI adalah:
+
+1. Masukkan kartu ATM atau KTM.
+2. Pilih bahasa.
+3. Input PIN.
+4. Pilih Lanjutkan.
+5. Pilih Transaksi Pembayaran.
+6. Pilih Menu Berikutnya.
+7. Pilih Universitas.
+8. Pilih SPC/Student Payment Center.
+9. Input kode Universitas Mercu Buana dengan format 8018 + kode prefix + NIM.
+10. Pastikan nama dan jumlah tagihan sudah sesuai.
+11. Selesaikan transaksi.
+12. Simpan struk atau receipt sebagai bukti pembayaran.`,
+    keywords: [
+      "atm bni",
+      "bayar lewat atm",
+      "student payment center",
+      "8018",
+      "kode universitas mercu buana",
+    ],
+  },
+  {
+    id: 180,
+    category: "Pembayaran dan Biaya Kuliah",
+    question: "Apa itu kode prefix atau billing pembayaran UMB?",
+    answer: `Kode prefix atau billing adalah kode yang digunakan bersama NIM untuk membayar tagihan kuliah melalui SPC/Online BNI. Kode ini berbeda tergantung kampus, kelas, dan jenis pembayaran.
+
+Contohnya, kode prefix untuk uang kuliah, angsuran, KRS, UTS, UAS, semester pendek, dan biaya cuti berbeda dengan kode prefix untuk wisuda, ijazah, sidang, ujian susulan, transkrip nilai, atau sertifikasi profesi.`,
+    keywords: [
+      "kode prefix",
+      "kode billing",
+      "billing umb",
+      "prefix pembayaran",
+      "kode pembayaran",
+    ],
+  },
+  {
+    id: 181,
+    category: "Pembayaran dan Biaya Kuliah",
+    question: "Apa kode prefix pembayaran untuk kelas Reguler 1?",
+    answer: `Kode prefix pembayaran kelas Reguler 1 adalah:
+
+1. Kampus Meruya:
+13 untuk uang kuliah, angsuran, KRS-UTS-UAS, semester pendek, dan biaya cuti.
+14 untuk ijazah dan wisuda.
+15 untuk sidang TA/skripsi/tesis, ujian susulan, konversi, sumbangan buku alumni, transkrip nilai, dan sertifikasi profesi.
+
+2. Kampus Cibubur/Jatisampurna:
+33, 34, dan 35 sesuai jenis pembayaran.
+
+3. Kampus Warung Buncit/Pejaten:
+53, 54, dan 55 sesuai jenis pembayaran.
+
+4. Kampus Menteng:
+73, 74, dan 75 sesuai jenis pembayaran.`,
+    keywords: [
+      "prefix reguler 1",
+      "kode pembayaran reguler 1",
+      "kode meruya 13",
+      "kode menteng 73",
+      "kode warung buncit 53",
+    ],
+  },
+  {
+    id: 182,
+    category: "Pembayaran dan Biaya Kuliah",
+    question:
+      "Apa kode prefix pembayaran untuk kelas Reguler 2 atau kelas karyawan?",
+    answer: `Kode prefix pembayaran kelas Reguler 2 dan 3 atau kelas karyawan adalah:
+
+1. Kampus Meruya:
+23 untuk uang kuliah, angsuran, KRS-UTS-UAS, semester pendek, dan biaya cuti.
+24 untuk ijazah dan wisuda.
+25 untuk sidang TA/skripsi/tesis, ujian susulan, konversi, sumbangan buku alumni, transkrip nilai, dan sertifikasi profesi.
+
+2. Kampus Cibubur/Jatisampurna:
+43, 44, dan 45 sesuai jenis pembayaran.
+
+3. Kampus Warung Buncit/Pejaten:
+63, 64, dan 65 sesuai jenis pembayaran.
+
+4. Kampus Menteng:
+83, 84, dan 85 sesuai jenis pembayaran.`,
+    keywords: [
+      "prefix reguler 2",
+      "kode kelas karyawan",
+      "kode pembayaran reguler 2",
+      "kode meruya 23",
+      "kode menteng 83",
+    ],
+  },
+  {
+    id: 183,
+    category: "Pembayaran dan Biaya Kuliah",
+    question:
+      "Apa yang harus dilakukan jika nominal tagihan pembayaran tidak sesuai?",
+    answer: `Jika nama atau jumlah tagihan yang muncul tidak sesuai, mahasiswa tidak disarankan melanjutkan transaksi. Mahasiswa perlu melapor atau konfirmasi ke loket layanan keuangan agar tagihan dapat diperiksa terlebih dahulu.`,
+    keywords: [
+      "tagihan tidak sesuai",
+      "nominal tidak sesuai",
+      "salah tagihan",
+      "layanan keuangan",
+      "konfirmasi pembayaran",
+    ],
+  },
 ];
