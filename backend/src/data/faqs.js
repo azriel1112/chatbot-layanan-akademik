@@ -2668,4 +2668,308 @@ Gunakan formulir sesuai kampus agar pengajuan diproses oleh admin yang tepat.`,
       "admin kampus",
     ],
   },
+  {
+    id: 156,
+    category: "Layanan Akademik dan Pelaporan",
+    question: "Apa saja layanan akademik dan pelaporan yang tersedia?",
+    answer: `Layanan yang tersedia berdasarkan dokumen adalah:
+
+1. Form Pengajuan Legalisir Fasilkom.
+2. Form Permintaan Cek Turnitin dan Lembar Pernyataan Hasil Cek Uji Plagiasi.
+3. Form Permintaan Buka Blok KRS Teknik Informatika.
+4. Form Pelaporan Ketidaksesuaian Pembelajaran Dosen.
+5. Layanan BAK atau Biro Administrasi Keuangan.
+6. Kontak layanan keuangan berdasarkan kampus dan kelas.
+
+Mahasiswa dapat memilih layanan sesuai kebutuhan akademik atau administrasi yang sedang diurus.`,
+    keywords: [
+      "layanan akademik",
+      "pelaporan akademik",
+      "legalisir",
+      "turnitin",
+      "buka blok krs",
+      "bak",
+    ],
+  },
+  {
+    id: 157,
+    category: "Legalisir",
+    question: "Apa itu Form Legalisir Online Fasilkom?",
+    answer: `Form Legalisir Online Fasilkom adalah formulir untuk mengajukan legalisir dokumen akademik di lingkungan Fakultas Ilmu Komputer. Form ini digunakan ketika mahasiswa atau alumni membutuhkan pengesahan dokumen untuk keperluan administrasi, kerja, studi lanjut, atau instansi tertentu.`,
+    keywords: [
+      "legalisir fasilkom",
+      "form legalisir",
+      "legalisir online",
+      "legalisir dokumen akademik",
+    ],
+  },
+  {
+    id: 158,
+    category: "Legalisir",
+    question: "Bagaimana cara mengajukan legalisir Fasilkom?",
+    answer: `Mahasiswa atau alumni dapat mengajukan legalisir Fasilkom melalui link berikut:
+
+http://bit.ly/legalisir-online-fasilkom
+
+Sebelum mengisi form, pastikan data diri dan dokumen yang akan dilegalisir sudah disiapkan agar proses pengajuan lebih lancar.`,
+    keywords: [
+      "cara legalisir fasilkom",
+      "link legalisir",
+      "form legalisir online",
+      "pengajuan legalisir",
+    ],
+  },
+  {
+    id: 159,
+    category: "Legalisir",
+    question: "Kapan mahasiswa membutuhkan legalisir dokumen?",
+    answer: `Legalisir dokumen biasanya dibutuhkan untuk keperluan administrasi resmi, seperti melamar kerja, mendaftar studi lanjut, pendaftaran beasiswa, pemberkasan instansi, atau kebutuhan verifikasi dokumen akademik.`,
+    keywords: [
+      "kapan legalisir",
+      "butuh legalisir",
+      "dokumen legalisir",
+      "keperluan legalisir",
+    ],
+  },
+  {
+    id: 160,
+    category: "Turnitin",
+    question: "Apa itu layanan cek Turnitin Fasilkom?",
+    answer: `Layanan cek Turnitin Fasilkom adalah layanan untuk membantu mahasiswa melakukan pengecekan tingkat kemiripan atau similarity dokumen akademik. Layanan ini biasanya digunakan untuk tugas akhir, artikel ilmiah, laporan, atau dokumen lain yang membutuhkan pemeriksaan plagiarisme.`,
+    keywords: [
+      "turnitin",
+      "cek turnitin",
+      "similarity",
+      "plagiasi",
+      "uji plagiasi",
+    ],
+  },
+  {
+    id: 161,
+    category: "Turnitin",
+    question: "Bagaimana cara mengajukan cek Turnitin Fasilkom?",
+    answer: `Mahasiswa dapat mengajukan permintaan cek Turnitin dan lembar pernyataan hasil cek uji plagiasi melalui link berikut:
+
+https://forms.gle/SwNEPYuWSUw8TVjZ6
+
+Pastikan file yang akan dicek sudah sesuai ketentuan dan data yang diisi benar.`,
+    keywords: [
+      "cara cek turnitin",
+      "form turnitin",
+      "cek plagiasi",
+      "uji plagiasi fasilkom",
+      "similarity tugas akhir",
+    ],
+  },
+  {
+    id: 162,
+    category: "Turnitin",
+    question: "Untuk dokumen apa saja layanan cek Turnitin digunakan?",
+    answer: `Layanan cek Turnitin dapat digunakan untuk dokumen akademik seperti laporan tugas akhir, artikel ilmiah, laporan penelitian, atau dokumen lain yang membutuhkan pemeriksaan similarity sesuai ketentuan fakultas atau program studi.`,
+    keywords: [
+      "dokumen turnitin",
+      "laporan tugas akhir",
+      "artikel ilmiah",
+      "cek similarity",
+      "dokumen plagiasi",
+    ],
+  },
+  {
+    id: 163,
+    category: "Buka Blok KRS",
+    question: "Apa itu Form Permintaan Buka Blok KRS Teknik Informatika?",
+    answer: `Form Permintaan Buka Blok KRS Teknik Informatika adalah formulir yang digunakan mahasiswa TI untuk mengajukan pembukaan blokir KRS apabila terdapat kendala yang membuat mahasiswa tidak dapat melakukan pengisian atau akses KRS sesuai kebutuhan akademik.`,
+    keywords: [
+      "buka blok krs",
+      "blok krs ti",
+      "form buka blok krs",
+      "krs teknik informatika",
+    ],
+  },
+  {
+    id: 164,
+    category: "Buka Blok KRS",
+    question: "Bagaimana cara mengajukan buka blok KRS Teknik Informatika?",
+    answer: `Mahasiswa Teknik Informatika dapat mengajukan permintaan buka blok KRS melalui link berikut:
+
+http://bit.ly/BLOKKRS_TI
+
+Setelah mengisi form, mahasiswa perlu menunggu proses verifikasi atau tindak lanjut dari pihak terkait sesuai ketentuan program studi.`,
+    keywords: [
+      "cara buka blok krs",
+      "link buka blok krs",
+      "blok krs ti",
+      "form krs ti",
+    ],
+  },
+  {
+    id: 165,
+    category: "Buka Blok KRS",
+    question: "Kapan mahasiswa perlu mengisi Form Buka Blok KRS?",
+    answer: `Mahasiswa perlu mengisi Form Buka Blok KRS jika mengalami kendala akses atau pengisian KRS karena status KRS terblokir. Form ini digunakan agar pengajuan dapat diverifikasi oleh pihak program studi atau unit terkait.`,
+    keywords: [
+      "kapan buka blok krs",
+      "krs terblokir",
+      "tidak bisa isi krs",
+      "kendala krs",
+    ],
+  },
+  {
+    id: 166,
+    category: "Pelaporan Akademik",
+    question: "Apa itu pelaporan ketidaksesuaian pembelajaran dosen?",
+    answer: `Pelaporan ketidaksesuaian pembelajaran dosen adalah layanan pelaporan jika mahasiswa menemukan ketidaksesuaian dalam proses pembelajaran. Form ini dapat digunakan untuk menyampaikan laporan terkait pelaksanaan pembelajaran yang tidak sesuai dengan ketentuan atau jadwal yang seharusnya.`,
+    keywords: [
+      "pelaporan dosen",
+      "ketidaksesuaian pembelajaran",
+      "lapor pembelajaran",
+      "lapor dosen",
+    ],
+  },
+  {
+    id: 167,
+    category: "Pelaporan Akademik",
+    question:
+      "Kapan mahasiswa dapat mengisi form pelaporan ketidaksesuaian pembelajaran?",
+    answer: `Mahasiswa dapat mengisi form pelaporan jika terdapat kondisi pembelajaran yang tidak sesuai, misalnya kendala pelaksanaan perkuliahan, ketidaksesuaian jadwal, atau hal lain yang perlu dilaporkan agar dapat ditindaklanjuti oleh pihak terkait.`,
+    keywords: [
+      "kapan lapor dosen",
+      "lapor ketidaksesuaian",
+      "kendala pembelajaran",
+      "perkuliahan tidak sesuai",
+    ],
+  },
+  {
+    id: 168,
+    category: "Pelaporan Akademik",
+    question:
+      "Apa saja yang perlu disiapkan sebelum membuat laporan pembelajaran dosen?",
+    answer: `Sebelum membuat laporan, mahasiswa sebaiknya menyiapkan:
+
+1. Nama mahasiswa dan NIM.
+2. Program studi dan kelas.
+3. Nama mata kuliah.
+4. Nama dosen.
+5. Tanggal atau waktu kejadian.
+6. Uraian masalah secara jelas.
+7. Bukti pendukung jika tersedia.
+
+Laporan sebaiknya ditulis dengan bahasa yang sopan, jelas, dan sesuai fakta.`,
+    keywords: [
+      "data laporan dosen",
+      "laporan pembelajaran",
+      "bukti laporan",
+      "ketidaksesuaian dosen",
+    ],
+  },
+  {
+    id: 169,
+    category: "Pelaporan Akademik",
+    question: "Bagaimana cara menyampaikan laporan akademik yang baik?",
+    answer: `Agar laporan mudah diproses, mahasiswa dapat mengikuti cara berikut:
+
+1. Jelaskan masalah secara singkat dan jelas.
+2. Tulis waktu, mata kuliah, kelas, dan dosen terkait.
+3. Hindari bahasa emosional atau tuduhan tanpa bukti.
+4. Sertakan bukti pendukung jika ada.
+5. Gunakan form resmi agar laporan tercatat dan dapat ditindaklanjuti.`,
+    keywords: [
+      "cara membuat laporan",
+      "laporan akademik",
+      "lapor dosen yang baik",
+      "pelaporan resmi",
+    ],
+  },
+  {
+    id: 170,
+    category: "BAK",
+    question: "Apa itu BAK?",
+    answer: `BAK adalah Biro Administrasi Keuangan. Unit ini menangani layanan yang berkaitan dengan administrasi keuangan mahasiswa, seperti informasi pembayaran, konfirmasi kendala keuangan, dan layanan keuangan sesuai kampus atau kelas.`,
+    keywords: [
+      "bak",
+      "biro administrasi keuangan",
+      "keuangan kampus",
+      "administrasi keuangan",
+    ],
+  },
+  {
+    id: 171,
+    category: "BAK",
+    question: "Kapan jam layanan BAK Universitas Mercu Buana?",
+    answer: `Berdasarkan daftar pelayanan BAK, layanan BAK tersedia Senin sampai Sabtu pukul 08.00 sampai 16.00.`,
+    keywords: [
+      "jam layanan bak",
+      "jadwal bak",
+      "bak buka jam berapa",
+      "senin sabtu",
+    ],
+  },
+  {
+    id: 172,
+    category: "BAK",
+    question: "Siapa kontak BAK untuk Kampus Meruya?",
+    answer: `Kontak BAK untuk Kampus Meruya berdasarkan daftar pelayanan adalah:
+
+1. BAK UMB Reguler 1:
+0813 8936 5143
+wa.me/6281389365143
+
+2. BAK UMB Reguler 2:
+0813 1795 3366
+wa.me/6281317953366
+
+3. BAK1 UMB Reguler 1 dan 2:
+0851 7300 8754
+wa.me/6285173008754`,
+    keywords: [
+      "kontak bak meruya",
+      "bak meruya",
+      "keuangan meruya",
+      "reguler 1 meruya",
+      "reguler 2 meruya",
+    ],
+  },
+  {
+    id: 173,
+    category: "BAK",
+    question: "Siapa kontak BAK untuk Kampus Menteng dan Warung Buncit?",
+    answer: `Kontak BAK untuk Kampus Menteng dan Warung Buncit berdasarkan daftar pelayanan adalah:
+
+1. Kampus Menteng Reguler 1 dan 2:
+BAK1 Reguler 1 dan 2
+0851 8344 0664
+wa.me/6285183440664
+
+2. Kampus Warung Buncit:
+Gunakan kontak BAK sesuai informasi layanan kampus atau konfirmasi ke pusat pelayanan informasi apabila membutuhkan arahan lebih lanjut.`,
+    keywords: [
+      "kontak bak menteng",
+      "kontak bak warung buncit",
+      "bak menteng",
+      "bak warung buncit",
+      "keuangan kampus",
+    ],
+  },
+  {
+    id: 174,
+    category: "Layanan Akademik dan Pelaporan",
+    question:
+      "Bagaimana memilih layanan yang tepat sesuai kebutuhan mahasiswa?",
+    answer: `Mahasiswa dapat memilih layanan berdasarkan kebutuhan berikut:
+
+1. Jika membutuhkan legalisir dokumen, gunakan Form Legalisir Online Fasilkom.
+2. Jika membutuhkan cek similarity atau plagiasi, gunakan Form Permintaan Cek Turnitin.
+3. Jika KRS terblokir, gunakan Form Permintaan Buka Blok KRS TI.
+4. Jika ada kendala pembelajaran dosen, gunakan Form Pelaporan Ketidaksesuaian Pembelajaran.
+5. Jika masalah berkaitan dengan pembayaran atau keuangan, hubungi BAK sesuai kampus dan kelas.
+
+Pastikan menggunakan form atau kontak resmi agar pengajuan lebih mudah diproses.`,
+    keywords: [
+      "pilih layanan akademik",
+      "layanan mahasiswa",
+      "legalisir turnitin krs bak",
+      "form akademik",
+      "pelaporan",
+    ],
+  },
 ];
