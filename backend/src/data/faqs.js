@@ -1797,4 +1797,3283 @@ Pastikan nama file sesuai format agar proses verifikasi TU lebih mudah.`,
       "vdm nim nama",
     ],
   },
+  {
+    id: 103,
+    category: "Kurikulum",
+    question: "Apa itu kurikulum 2025?",
+    answer: `Kurikulum 2025 adalah susunan mata kuliah terbaru yang digunakan sebagai acuan pembelajaran mahasiswa. Dokumen kurikulum memuat kode mata kuliah, nama mata kuliah, nama dalam bahasa Inggris, jumlah SKS, semester, dan distribusi mata kuliah per semester.`,
+    keywords: [
+      "kurikulum 2025",
+      "apa itu kurikulum 2025",
+      "distribusi mata kuliah",
+      "mata kuliah 2025",
+    ],
+  },
+  {
+    id: 104,
+    category: "Kurikulum",
+    question: "Kapan kurikulum 2025 mulai berlaku?",
+    answer: `Berdasarkan dokumen distribusi mata kuliah Informatika S1, kurikulum 2025-2029 memiliki tanggal berlaku 1 Juni 2025.`,
+    keywords: [
+      "kurikulum 2025 berlaku",
+      "tanggal berlaku kurikulum",
+      "1 juni 2025",
+      "kurikulum 2025 2029",
+    ],
+  },
+  {
+    id: 105,
+    category: "Kurikulum",
+    question: "Berapa total SKS pada kurikulum 2025 Informatika S1?",
+    answer: `Total SKS mata kuliah pada Kurikulum 2025 Program Studi Teknik Informatika S1 adalah 144 SKS.`,
+    keywords: [
+      "total sks informatika",
+      "144 sks",
+      "kurikulum informatika 2025",
+      "sks kurikulum",
+    ],
+  },
+  {
+    id: 106,
+    category: "Kurikulum",
+    question: "Apa perbedaan kurikulum 2021 dan kurikulum 2025?",
+    answer: `Perbedaan kurikulum 2021 dan kurikulum 2025 terletak pada kode mata kuliah, nama mata kuliah, jumlah SKS tertentu, semester penempatan, serta penggabungan atau perubahan beberapa mata kuliah.
+
+Contohnya:
+1. Bahasa Inggris I, Bahasa Inggris II, English for Computer I, dan English for Computer II pada kurikulum 2021 diekuivalensikan menjadi Bahasa Inggris pada kurikulum 2025.
+2. CCNA R&S 1, CCNA R&S 2, CCNA R&S 3, Sistem Administrasi Jaringan, dan beberapa mata kuliah jaringan diekuivalensikan ke Fundamental Jaringan atau Pemrograman Jaringan.
+3. Kerja Praktek pada kurikulum 2021 memiliki 4 SKS, sedangkan pada kurikulum 2025 menjadi 3 SKS.`,
+    keywords: [
+      "beda kurikulum 2021 2025",
+      "perbedaan kurikulum",
+      "ekuivalensi kurikulum",
+      "kurikulum baru",
+    ],
+  },
+  {
+    id: 107,
+    category: "Ekuivalensi Mata Kuliah",
+    question: "Apa itu ekuivalensi mata kuliah?",
+    answer: `Ekuivalensi mata kuliah adalah pemetaan mata kuliah dari kurikulum lama ke kurikulum baru. Tujuannya agar mata kuliah yang sudah ditempuh mahasiswa pada kurikulum lama dapat disesuaikan dengan mata kuliah yang berlaku pada kurikulum baru.`,
+    keywords: [
+      "ekuivalensi mata kuliah",
+      "pemetaan mata kuliah",
+      "kurikulum lama ke baru",
+      "konversi mata kuliah",
+    ],
+  },
+  {
+    id: 108,
+    category: "Ekuivalensi Mata Kuliah",
+    question: "Untuk apa dokumen ekuivalensi mata kuliah digunakan?",
+    answer: `Dokumen ekuivalensi digunakan untuk membantu mahasiswa, dosen, dan program studi mengetahui mata kuliah lama yang setara dengan mata kuliah baru. Dokumen ini penting saat terjadi perubahan kurikulum, penyesuaian KRS, validasi nilai, atau pengecekan mata kuliah yang sudah pernah ditempuh.`,
+    keywords: [
+      "fungsi ekuivalensi",
+      "dokumen ekuivalensi",
+      "validasi mata kuliah",
+      "penyesuaian krs",
+    ],
+  },
+  {
+    id: 109,
+    category: "Ekuivalensi Mata Kuliah",
+    question:
+      "Apakah semua mata kuliah kurikulum 2021 memiliki padanan di kurikulum 2025?",
+    answer: `Sebagian besar mata kuliah kurikulum 2021 memiliki padanan pada kurikulum 2025, tetapi bentuk padanannya bisa berbeda. Ada mata kuliah yang tetap sama, ada yang berubah nama, ada yang digabung, dan ada yang dipetakan ke mata kuliah baru yang lebih relevan.`,
+    keywords: [
+      "padanan mata kuliah",
+      "semua mata kuliah ekuivalen",
+      "kurikulum 2021 ke 2025",
+      "mata kuliah baru",
+    ],
+  },
+  {
+    id: 110,
+    category: "Kurikulum Informatika",
+    question: "Apa saja mata kuliah semester 1 Informatika kurikulum 2025?",
+    answer: `Mata kuliah semester 1 Informatika kurikulum 2025 meliputi:
+
+1. Kalkulus I, 3 SKS.
+2. Konsep Dasar Pemrograman, 3 SKS.
+3. Fundamental Jaringan, 3 SKS.
+4. Konsep Sistem Basis Data, 3 SKS.
+5. Arsitektur dan Organisasi, 3 SKS.
+6. Bahasa Inggris, 2 SKS.
+7. Matematika dan Statistik Dasar, 3 SKS.`,
+    keywords: [
+      "semester 1 informatika",
+      "semester satu informatika",
+      "mata kuliah semester 1",
+      "matkul semester 1 informatika",
+      "kurikulum 2025 semester 1",
+      "kalkulus i",
+      "konsep dasar pemrograman",
+      "fundamental jaringan",
+    ],
+  },
+  {
+    id: 111,
+    category: "Kurikulum Informatika",
+    question: "Apa saja mata kuliah semester 2 Informatika kurikulum 2025?",
+    answer: `Mata kuliah semester 2 Informatika kurikulum 2025 meliputi:
+
+1. Sistem Operasi, 3 SKS.
+2. Statistik dan Probabilitas, 3 SKS.
+3. Kecerdasan Buatan, 3 SKS.
+4. Fundamental Struktur Data dan Algoritma, 3 SKS.
+5. Pemodelan Manajemen Data SQL/NoSQL, 3 SKS.
+6. Kalkulus II, 3 SKS.
+7. Pancasila, 2 SKS.`,
+    keywords: [
+      "semester 2 informatika",
+      "semester dua informatika",
+      "mata kuliah semester 2",
+      "matkul semester 2 informatika",
+      "kurikulum 2025 semester 2",
+      "sistem operasi",
+      "statistik dan probabilitas",
+      "kecerdasan buatan",
+      "struktur data",
+    ],
+  },
+  {
+    id: 112,
+    category: "Kurikulum Informatika",
+    question: "Apa saja mata kuliah semester 3 Informatika kurikulum 2025?",
+    answer: `Mata kuliah semester 3 Informatika kurikulum 2025 meliputi:
+
+1. Analisis dan Desain Berorientasi Objek, 3 SKS.
+2. Sains Data, 3 SKS.
+3. Aljabar Linier, 3 SKS.
+4. Matematika Diskrit, 3 SKS.
+5. Pendidikan Agama, 2 SKS.
+6. Bahasa Indonesia, 2 SKS.
+7. Rekayasa Perangkat Lunak, 3 SKS.
+8. Etika, Sosial dan Profesi, 3 SKS.`,
+    keywords: [
+      "semester 3 informatika",
+      "semester tiga informatika",
+      "mata kuliah semester 3",
+      "matkul semester 3 informatika",
+      "kurikulum 2025 semester 3",
+      "sains data",
+      "aljabar linier",
+      "matematika diskrit",
+      "rekayasa perangkat lunak",
+    ],
+  },
+  {
+    id: 113,
+    category: "Kurikulum Informatika",
+    question: "Apa saja mata kuliah semester 4 Informatika kurikulum 2025?",
+    answer: `Mata kuliah semester 4 Informatika kurikulum 2025 meliputi:
+
+1. Pemrograman Berorientasi Objek, 3 SKS.
+2. Keamanan Cyber, 3 SKS.
+3. Pemrograman Web, 3 SKS.
+4. Interaksi Manusia dan Komputer, 3 SKS.
+5. Machine Learning, 3 SKS.
+6. Pemrograman Jaringan, 3 SKS.
+7. Kewirausahaan, 3 SKS.
+8. Kewarganegaraan, 2 SKS.`,
+    keywords: [
+      "semester 4 informatika",
+      "semester empat informatika",
+      "mata kuliah semester 4",
+      "matkul semester 4 informatika",
+      "kurikulum 2025 semester 4",
+      "pemrograman berorientasi objek",
+      "keamanan cyber",
+      "pemrograman web",
+      "machine learning",
+    ],
+  },
+  {
+    id: 114,
+    category: "Kurikulum Informatika",
+    question: "Apa saja mata kuliah semester 5 Informatika kurikulum 2025?",
+    answer: `Mata kuliah semester 5 Informatika kurikulum 2025 meliputi:
+
+1. Metodologi Penelitian, 4 SKS.
+2. Analitik Data, 3 SKS.
+3. Pemrograman Web Enterprise, 3 SKS.
+4. Pengolahan Citra, 3 SKS.
+5. Deep Learning, 3 SKS.
+6. Kerja Praktek, 3 SKS.
+7. Pemrograman Mobile, 3 SKS.
+8. Pendidikan Anti Korupsi dan Etik UMB, 2 SKS.`,
+    keywords: [
+      "semester 5 informatika",
+      "semester lima informatika",
+      "mata kuliah semester 5",
+      "matkul semester 5 informatika",
+      "kurikulum 2025 semester 5",
+      "metodologi penelitian",
+      "analitik data",
+      "deep learning",
+      "kerja praktek",
+    ],
+  },
+  {
+    id: 115,
+    category: "Kurikulum Informatika",
+    question: "Apa saja mata kuliah semester 6 Informatika kurikulum 2025?",
+    answer: `Mata kuliah semester 6 Informatika kurikulum 2025 meliputi:
+
+1. Natural Language Processing, 3 SKS.
+2. Computer Vision, 3 SKS.
+3. Cloud Computing, 3 SKS.
+4. Sistem Informasi Geografis, 3 SKS.
+5. Animasi Komputer dan Pemodelan 3D, 3 SKS.
+6. Big Data, 3 SKS.
+7. UI/UX Teknologi Digital Immersive, 3 SKS.
+8. Generative AI, 3 SKS.`,
+    keywords: [
+      "semester 6 informatika",
+      "semester enam informatika",
+      "mata kuliah semester 6",
+      "matkul semester 6 informatika",
+      "kurikulum 2025 semester 6",
+      "natural language processing",
+      "computer vision",
+      "cloud computing",
+      "generative ai",
+    ],
+  },
+  {
+    id: 116,
+    category: "Kurikulum Informatika",
+    question: "Apa saja mata kuliah semester 7 Informatika kurikulum 2025?",
+    answer: `Mata kuliah semester 7 Informatika kurikulum 2025 adalah Capstone Project dengan bobot 5 SKS.`,
+    keywords: [
+      "semester 7 informatika",
+      "semester tujuh informatika",
+      "mata kuliah semester 7",
+      "matkul semester 7 informatika",
+      "kurikulum 2025 semester 7",
+      "capstone project",
+      "capstone 5 sks",
+    ],
+  },
+  {
+    id: 117,
+    category: "Kurikulum Informatika",
+    question: "Apa saja mata kuliah semester 8 Informatika kurikulum 2025?",
+    answer: `Mata kuliah semester 8 Informatika kurikulum 2025 adalah Tugas Akhir dengan bobot 6 SKS.`,
+    keywords: [
+      "semester 8 informatika",
+      "semester delapan informatika",
+      "mata kuliah semester 8",
+      "matkul semester 8 informatika",
+      "kurikulum 2025 semester 8",
+      "tugas akhir",
+      "ta 6 sks",
+    ],
+  },
+  {
+    id: 118,
+    category: "Kurikulum Informatika",
+    question:
+      "Apa saja mata kuliah yang termasuk bidang AI dan Data pada kurikulum 2025 Informatika?",
+    answer: `Mata kuliah yang berkaitan dengan AI dan data pada kurikulum 2025 Informatika antara lain Kecerdasan Buatan, Sains Data, Machine Learning, Analitik Data, Pengolahan Citra, Deep Learning, Natural Language Processing, Computer Vision, Big Data, dan Generative AI.`,
+    keywords: [
+      "mata kuliah ai",
+      "mata kuliah data",
+      "machine learning",
+      "deep learning",
+      "generative ai",
+    ],
+  },
+  {
+    id: 119,
+    category: "Kurikulum Informatika",
+    question:
+      "Apa saja mata kuliah yang berkaitan dengan pemrograman pada kurikulum 2025 Informatika?",
+    answer: `Mata kuliah pemrograman pada kurikulum 2025 Informatika meliputi Konsep Dasar Pemrograman, Fundamental Struktur Data dan Algoritma, Pemrograman Berorientasi Objek, Pemrograman Web, Pemrograman Jaringan, Pemrograman Web Enterprise, dan Pemrograman Mobile.`,
+    keywords: [
+      "mata kuliah pemrograman",
+      "pemrograman informatika",
+      "struktur data",
+      "pemrograman web",
+      "pemrograman mobile",
+    ],
+  },
+  {
+    id: 120,
+    category: "Kurikulum Informatika",
+    question:
+      "Apa saja mata kuliah yang berkaitan dengan jaringan dan keamanan pada kurikulum 2025 Informatika?",
+    answer: `Mata kuliah jaringan dan keamanan pada kurikulum 2025 Informatika antara lain Fundamental Jaringan, Keamanan Cyber, Pemrograman Jaringan, Cloud Computing, dan beberapa mata kuliah lanjutan seperti Big Data atau Sistem Informasi Geografis yang dapat mendukung bidang infrastruktur dan teknologi digital.`,
+    keywords: [
+      "mata kuliah jaringan",
+      "keamanan cyber",
+      "fundamental jaringan",
+      "pemrograman jaringan",
+      "cloud computing",
+    ],
+  },
+  {
+    id: 121,
+    category: "Ekuivalensi Mata Kuliah",
+    question: "Apa ekuivalensi Algoritma dan Pemrograman pada kurikulum 2025?",
+    answer: `Algoritma dan Pemrograman pada kurikulum 2021 diekuivalensikan menjadi Konsep Dasar Pemrograman pada kurikulum 2025.`,
+    keywords: [
+      "algoritma dan pemrograman",
+      "konsep dasar pemrograman",
+      "ekuivalensi algoritma",
+      "kurikulum 2025",
+    ],
+  },
+  {
+    id: 122,
+    category: "Ekuivalensi Mata Kuliah",
+    question: "Apa ekuivalensi Sistem Basis Data pada kurikulum 2025?",
+    answer: `Sistem Basis Data pada kurikulum 2021 diekuivalensikan menjadi Konsep Sistem Basis Data pada kurikulum 2025.`,
+    keywords: [
+      "sistem basis data",
+      "konsep sistem basis data",
+      "ekuivalensi basis data",
+      "database",
+    ],
+  },
+  {
+    id: 123,
+    category: "Ekuivalensi Mata Kuliah",
+    question: "Apa ekuivalensi Dasar Keamanan Komputer pada kurikulum 2025?",
+    answer: `Dasar Keamanan Komputer pada kurikulum 2021 diekuivalensikan menjadi Keamanan Cyber pada kurikulum 2025.`,
+    keywords: [
+      "dasar keamanan komputer",
+      "keamanan cyber",
+      "ekuivalensi keamanan",
+      "cyber security",
+    ],
+  },
+  {
+    id: 124,
+    category: "Ekuivalensi Mata Kuliah",
+    question: "Apa ekuivalensi Bahasa Inggris pada kurikulum 2025?",
+    answer: `Beberapa mata kuliah bahasa Inggris pada kurikulum 2021 diekuivalensikan menjadi Bahasa Inggris pada kurikulum 2025.
+
+Mata kuliah yang dipetakan ke Bahasa Inggris meliputi:
+1. Bahasa Inggris I.
+2. Bahasa Inggris II.
+3. English for Computer I.
+4. English for Computer II.`,
+    keywords: [
+      "bahasa inggris",
+      "english for computer",
+      "ekuivalensi bahasa inggris",
+      "kurikulum 2025",
+    ],
+  },
+  {
+    id: 125,
+    category: "Ekuivalensi Mata Kuliah",
+    question:
+      "Apa ekuivalensi Struktur Data dan Algoritma Lanjut pada kurikulum 2025?",
+    answer: `Struktur Data dan Algoritma Lanjut pada kurikulum 2021 diekuivalensikan menjadi Fundamental Struktur Data dan Algoritma pada kurikulum 2025.`,
+    keywords: [
+      "struktur data",
+      "algoritma lanjut",
+      "fundamental struktur data dan algoritma",
+      "ekuivalensi struktur data",
+    ],
+  },
+  {
+    id: 126,
+    category: "Ekuivalensi Mata Kuliah",
+    question:
+      "Apa ekuivalensi CCNA dan mata kuliah jaringan pada kurikulum 2025?",
+    answer: `Pada pemetaan Informatika, beberapa mata kuliah jaringan kurikulum 2021 diekuivalensikan ke mata kuliah jaringan kurikulum 2025.
+
+Contohnya:
+1. CCNA R&S 1 menjadi Fundamental Jaringan.
+2. Komunikasi Data menjadi Fundamental Jaringan.
+3. CCNA R&S 2 menjadi Fundamental Jaringan.
+4. CCNA R&S 3 menjadi Fundamental Jaringan.
+5. Sistem Administrasi Jaringan 1 dan 2 menjadi Fundamental Jaringan.
+6. Jaringan VOIP, Wireless Network & Mobile, dan Proyek Perancangan Jaringan & Keamanan Komputer menjadi Pemrograman Jaringan.`,
+    keywords: [
+      "ccna",
+      "fundamental jaringan",
+      "pemrograman jaringan",
+      "ekuivalensi jaringan",
+      "komunikasi data",
+    ],
+  },
+  {
+    id: 127,
+    category: "Ekuivalensi Mata Kuliah",
+    question: "Apa ekuivalensi Pemrograman PL/SQL pada kurikulum 2025?",
+    answer: `Pemrograman PL/SQL pada kurikulum 2021 diekuivalensikan menjadi Pemodelan Manajemen Data SQL/NoSQL pada kurikulum 2025.`,
+    keywords: [
+      "pl sql",
+      "pemrograman pl sql",
+      "pemodelan manajemen data",
+      "sql nosql",
+    ],
+  },
+  {
+    id: 128,
+    category: "Ekuivalensi Mata Kuliah",
+    question:
+      "Apa ekuivalensi Pengantar Kecerdasan Buatan pada kurikulum 2025?",
+    answer: `Pengantar Kecerdasan Buatan pada kurikulum 2021 diekuivalensikan menjadi Kecerdasan Buatan pada kurikulum 2025.`,
+    keywords: [
+      "pengantar kecerdasan buatan",
+      "kecerdasan buatan",
+      "artificial intelligence",
+      "ekuivalensi ai",
+    ],
+  },
+  {
+    id: 129,
+    category: "Ekuivalensi Mata Kuliah",
+    question: "Apa ekuivalensi Analisa Berorientasi Objek pada kurikulum 2025?",
+    answer: `Analisa Berorientasi Objek pada kurikulum 2021 diekuivalensikan menjadi Analisis dan Desain Berorientasi Objek pada kurikulum 2025.`,
+    keywords: [
+      "analisa berorientasi objek",
+      "analisis dan desain berorientasi objek",
+      "object oriented analysis",
+      "ekuivalensi ooad",
+    ],
+  },
+  {
+    id: 130,
+    category: "Ekuivalensi Mata Kuliah",
+    question:
+      "Apa ekuivalensi Komunikasi dan Etika Profesi pada kurikulum 2025?",
+    answer: `Komunikasi dan Etika Profesi pada kurikulum 2021 diekuivalensikan menjadi Etika, Sosial dan Profesi pada kurikulum 2025.`,
+    keywords: [
+      "komunikasi dan etika profesi",
+      "etika sosial dan profesi",
+      "ekuivalensi etika",
+      "profesi",
+    ],
+  },
+  {
+    id: 131,
+    category: "Ekuivalensi Mata Kuliah",
+    question: "Apa ekuivalensi Pengantar Data Mining pada kurikulum 2025?",
+    answer: `Pengantar Data Mining pada kurikulum 2021 diekuivalensikan menjadi Analitik Data pada kurikulum 2025.`,
+    keywords: [
+      "pengantar data mining",
+      "analitik data",
+      "data analytic",
+      "ekuivalensi data mining",
+    ],
+  },
+  {
+    id: 132,
+    category: "Ekuivalensi Mata Kuliah",
+    question: "Apa ekuivalensi Pemrograman Smart Web pada kurikulum 2025?",
+    answer: `Pemrograman Smart Web pada kurikulum 2021 diekuivalensikan menjadi Pemrograman Web Enterprise pada kurikulum 2025.`,
+    keywords: [
+      "pemrograman smart web",
+      "pemrograman web enterprise",
+      "ekuivalensi smart web",
+      "web enterprise",
+    ],
+  },
+  {
+    id: 133,
+    category: "Ekuivalensi Mata Kuliah",
+    question: "Apa ekuivalensi Kerja Praktek pada kurikulum 2025?",
+    answer: `Kerja Praktek pada kurikulum 2021 diekuivalensikan menjadi Kerja Praktek pada kurikulum 2025. Pada pemetaan Informatika, bobotnya berubah dari 4 SKS pada kurikulum 2021 menjadi 3 SKS pada kurikulum 2025.`,
+    keywords: ["kerja praktek", "kp", "ekuivalensi kerja praktek", "sks kp"],
+  },
+  {
+    id: 134,
+    category: "Ekuivalensi Mata Kuliah",
+    question:
+      "Apa ekuivalensi Metodologi Penelitian Teknologi Informasi pada kurikulum 2025?",
+    answer: `Metodologi Penelitian Teknologi Informasi pada kurikulum 2021 diekuivalensikan menjadi Metodologi Penelitian pada kurikulum 2025 dengan bobot 4 SKS.`,
+    keywords: [
+      "mpti",
+      "metodologi penelitian teknologi informasi",
+      "metodologi penelitian",
+      "ekuivalensi mpti",
+    ],
+  },
+  {
+    id: 135,
+    category: "Ekuivalensi Mata Kuliah",
+    question: "Apa ekuivalensi Tugas Akhir pada kurikulum 2025?",
+    answer: `Tugas Akhir pada kurikulum 2021 diekuivalensikan menjadi Tugas Akhir pada kurikulum 2025 dengan bobot 6 SKS.`,
+    keywords: ["tugas akhir", "ta", "ekuivalensi tugas akhir", "6 sks"],
+  },
+  {
+    id: 136,
+    category: "Kurikulum Sistem Informasi",
+    question: "Apa saja contoh mata kuliah Sistem Informasi kurikulum 2025?",
+    answer: `Contoh mata kuliah Sistem Informasi kurikulum 2025 meliputi Konsep Sistem Basis Data, Arsitektur dan Organisasi, Bahasa Inggris, Matematika Bisnis, Konsep Dasar Pemrograman, Fundamental Jaringan, Manajemen Proses Bisnis, Audit Sistem Informasi dan Manajemen Resiko IT, Manajemen Data, Sistem Informasi, Rekayasa Perangkat Lunak, Etika Sosial dan Profesi, Machine Learning, Arsitektur Enterprise, Kerja Praktek, Metodologi Penelitian, Capstone Project, dan Tugas Akhir.`,
+    keywords: [
+      "kurikulum sistem informasi",
+      "mata kuliah sistem informasi",
+      "si 2025",
+      "capstone project sistem informasi",
+    ],
+  },
+  {
+    id: 137,
+    category: "Kurikulum",
+    question:
+      "Bagaimana cara membaca dokumen kurikulum dan ekuivalensi mata kuliah?",
+    answer: `Cara membaca dokumen kurikulum dan ekuivalensi adalah:
+
+1. Lihat program studi terlebih dahulu, misalnya Teknik Informatika atau Sistem Informasi.
+2. Periksa kurikulum yang digunakan, misalnya 2021 atau 2025.
+3. Lihat kode mata kuliah, nama mata kuliah, SKS, dan semester.
+4. Jika ingin mengecek mata kuliah lama, cari pada kolom kurikulum 2021.
+5. Lihat padanannya pada kolom kurikulum 2025.
+6. Jika ada perbedaan SKS atau nama mata kuliah, gunakan dokumen ekuivalensi sebagai acuan awal.
+7. Jika masih ragu saat mengisi KRS, konfirmasi ke dosen PA, prodi, atau bagian akademik.`,
+    keywords: [
+      "cara membaca kurikulum",
+      "cara membaca ekuivalensi",
+      "cek mata kuliah",
+      "krs",
+      "dosen pa",
+    ],
+  },
+  {
+    id: 138,
+    category: "Surat Keterangan",
+    question: "Apa saja jenis surat keterangan yang bisa diajukan mahasiswa?",
+    answer: `Jenis surat keterangan yang tersedia berdasarkan data formulir adalah:
+
+1. Surat Keterangan Mahasiswa Aktif.
+2. Surat Keterangan Lulus.
+3. Surat Keterangan Mengundurkan Diri.
+4. Surat Keterangan Mutasi.
+5. Surat Keterangan Putus Studi.
+6. Surat Keterangan Drop Out.
+
+Formulir tersedia untuk beberapa kampus, yaitu Kampus Meruya, Kampus Menteng, dan Kampus Warung Buncit.`,
+    keywords: [
+      "surat keterangan",
+      "jenis surat keterangan",
+      "sk aktif",
+      "sk lulus",
+      "sk mundur",
+      "mutasi",
+      "putus studi",
+      "drop out",
+    ],
+  },
+  {
+    id: 139,
+    category: "Surat Keterangan",
+    question: "Apa itu Surat Keterangan Mahasiswa Aktif?",
+    answer: `Surat Keterangan Mahasiswa Aktif adalah surat yang digunakan untuk menerangkan bahwa mahasiswa masih berstatus aktif kuliah. Surat ini biasanya dibutuhkan untuk keperluan administrasi seperti beasiswa, tunjangan orang tua, magang, pekerjaan, atau keperluan instansi tertentu.`,
+    keywords: [
+      "surat keterangan mahasiswa aktif",
+      "sk aktif",
+      "mahasiswa aktif",
+      "surat aktif kuliah",
+    ],
+  },
+  {
+    id: 140,
+    category: "Surat Keterangan",
+    question: "Bagaimana cara mengajukan Surat Keterangan Mahasiswa Aktif?",
+    answer: `Mahasiswa dapat mengajukan Surat Keterangan Mahasiswa Aktif melalui formulir sesuai kampus masing-masing:
+
+1. Kampus Meruya:
+https://bit.ly/SKAktif-UMB
+
+2. Kampus Menteng:
+https://docs.google.com/forms/d/e/1FAIpQLSe7GJV4HRCWWtpFMEqrMjtrIRqMAKu3Rw5QVi8d1QuODODQog/viewform
+
+3. Kampus Warung Buncit:
+https://bit.ly/WB-SKMahasiswaAktif
+
+Pastikan memilih formulir sesuai kampus agar pengajuan diproses oleh unit yang tepat.`,
+    keywords: [
+      "cara mengajukan sk aktif",
+      "form sk aktif",
+      "surat aktif meruya",
+      "surat aktif menteng",
+      "surat aktif warung buncit",
+    ],
+  },
+  {
+    id: 141,
+    category: "Surat Keterangan",
+    question: "Apa itu Surat Keterangan Lulus?",
+    answer: `Surat Keterangan Lulus atau SKL adalah surat yang menerangkan bahwa mahasiswa telah dinyatakan lulus. Surat ini biasanya digunakan sebelum ijazah diterbitkan atau untuk kebutuhan administrasi seperti melamar kerja, studi lanjut, dan keperluan instansi.`,
+    keywords: [
+      "surat keterangan lulus",
+      "skl",
+      "surat lulus",
+      "keterangan lulus",
+    ],
+  },
+  {
+    id: 142,
+    category: "Surat Keterangan",
+    question: "Bagaimana cara mengajukan Surat Keterangan Lulus?",
+    answer: `Mahasiswa dapat mengajukan Surat Keterangan Lulus melalui formulir sesuai kampus:
+
+1. Kampus Meruya:
+https://bit.ly/SKL-UMB
+
+2. Kampus Menteng:
+https://docs.google.com/forms/u/0/d/e/1FAIpQLScOIna2LKJ2svqZl3V-D4ckFIMX0HPAltVEFEjWqLsWpxI05Q/viewform?usp=send_form&pli=1
+
+3. Kampus Warung Buncit:
+https://bit.ly/WB-SKLulus
+
+Sebelum mengisi form, pastikan data kelulusan dan dokumen pendukung sudah siap.`,
+    keywords: [
+      "cara mengajukan skl",
+      "form skl",
+      "surat keterangan lulus meruya",
+      "skl menteng",
+      "skl warung buncit",
+    ],
+  },
+  {
+    id: 143,
+    category: "Surat Keterangan",
+    question:
+      "Apa itu Surat Keterangan Mengundurkan Diri, Mutasi, Putus Studi, atau Drop Out?",
+    answer: `Surat Keterangan Mengundurkan Diri, Mutasi, Putus Studi, atau Drop Out adalah surat yang berkaitan dengan perubahan atau penghentian status studi mahasiswa. Form ini digunakan jika mahasiswa membutuhkan keterangan resmi terkait pengunduran diri, perpindahan, putus studi, atau status drop out.`,
+    keywords: [
+      "surat mengundurkan diri",
+      "surat mutasi",
+      "surat putus studi",
+      "surat drop out",
+      "do",
+    ],
+  },
+  {
+    id: 144,
+    category: "Surat Keterangan",
+    question:
+      "Bagaimana cara mengajukan Surat Keterangan Mengundurkan Diri, Mutasi, Putus Studi, atau Drop Out?",
+    answer: `Pengajuan dilakukan melalui formulir sesuai kampus:
+
+1. Kampus Meruya:
+https://docs.google.com/forms/d/1_Svsv8_Fe0WYpWfBNxrDbWYhX-WOyjfolIExilrDTXU/edit
+
+2. Kampus Menteng:
+https://bit.ly/SKmundurPutusStudiDO
+
+3. Kampus Warung Buncit:
+https://bit.ly/SK-Mundur-WB
+
+Karena surat ini berkaitan dengan status studi, mahasiswa sebaiknya memastikan data akademik dan alasan pengajuan sudah benar sebelum mengisi formulir.`,
+    keywords: [
+      "form surat mundur",
+      "form mutasi",
+      "form putus studi",
+      "form drop out",
+      "sk mundur",
+    ],
+  },
+  {
+    id: 145,
+    category: "Surat Keterangan",
+    question:
+      "Form surat keterangan mana yang digunakan mahasiswa Kampus Meruya?",
+    answer: `Mahasiswa Kampus Meruya dapat menggunakan link berikut:
+
+1. Surat Keterangan Mahasiswa Aktif:
+https://bit.ly/SKAktif-UMB
+
+2. Surat Keterangan Lulus:
+https://bit.ly/SKL-UMB
+
+3. Surat Keterangan Mundur, Mutasi, Putus Studi, atau Drop Out:
+https://docs.google.com/forms/d/1_Svsv8_Fe0WYpWfBNxrDbWYhX-WOyjfolIExilrDTXU/edit`,
+    keywords: [
+      "kampus meruya",
+      "form meruya",
+      "surat keterangan meruya",
+      "sk aktif meruya",
+      "skl meruya",
+    ],
+  },
+  {
+    id: 146,
+    category: "Surat Keterangan",
+    question:
+      "Form surat keterangan mana yang digunakan mahasiswa Kampus Menteng?",
+    answer: `Mahasiswa Kampus Menteng dapat menggunakan link berikut:
+
+1. Surat Keterangan Mahasiswa Aktif:
+https://docs.google.com/forms/d/e/1FAIpQLSe7GJV4HRCWWtpFMEqrMjtrIRqMAKu3Rw5QVi8d1QuODODQog/viewform
+
+2. Surat Keterangan Lulus:
+https://docs.google.com/forms/u/0/d/e/1FAIpQLScOIna2LKJ2svqZl3V-D4ckFIMX0HPAltVEFEjWqLsWpxI05Q/viewform?usp=send_form&pli=1
+
+3. Surat Keterangan Mundur, Putus Studi, atau Drop Out:
+https://bit.ly/SKmundurPutusStudiDO`,
+    keywords: [
+      "kampus menteng",
+      "form menteng",
+      "surat keterangan menteng",
+      "sk aktif menteng",
+      "skl menteng",
+    ],
+  },
+  {
+    id: 147,
+    category: "Surat Keterangan",
+    question:
+      "Form surat keterangan mana yang digunakan mahasiswa Kampus Warung Buncit?",
+    answer: `Mahasiswa Kampus Warung Buncit dapat menggunakan link berikut:
+
+1. Surat Keterangan Mahasiswa Aktif:
+https://bit.ly/WB-SKMahasiswaAktif
+
+2. Surat Keterangan Lulus:
+https://bit.ly/WB-SKLulus
+
+3. Surat Keterangan Mundur, Putus Studi, atau Drop Out:
+https://bit.ly/SK-Mundur-WB`,
+    keywords: [
+      "kampus warung buncit",
+      "form warung buncit",
+      "surat keterangan warung buncit",
+      "sk aktif wb",
+      "skl wb",
+    ],
+  },
+  {
+    id: 148,
+    category: "Surat Keterangan",
+    question: "Siapa admin yang bisa dihubungi untuk layanan BAP Meruya?",
+    answer: `Untuk layanan BAP Kampus Meruya, mahasiswa dapat menghubungi:
+
+1. Admin 1 BAP Meruya:
+https://wa.me/6285183153369
+
+2. Admin 2 BAP Meruya:
+https://shorturl.at/wCDJN`,
+    keywords: [
+      "admin bap meruya",
+      "bap meruya",
+      "kontak meruya",
+      "whatsapp bap meruya",
+    ],
+  },
+  {
+    id: 149,
+    category: "Surat Keterangan",
+    question: "Siapa admin yang bisa dihubungi untuk layanan BAP Menteng?",
+    answer: `Untuk layanan BAP Kampus Menteng, mahasiswa dapat menghubungi admin melalui link berikut:
+https://api.whatsapp.com/send?phone=6281806927075&text=Halo%20Admin%0APerkenalkan%20Nama%20Saya%3A%0ANIM%3A%0AProdi%3A%0AKeperluan%3A%0A`,
+    keywords: [
+      "admin bap menteng",
+      "bap menteng",
+      "kontak menteng",
+      "whatsapp bap menteng",
+    ],
+  },
+  {
+    id: 150,
+    category: "Surat Keterangan",
+    question:
+      "Siapa admin yang bisa dihubungi untuk layanan BAP Warung Buncit?",
+    answer: `Untuk layanan BAP Kampus Warung Buncit, mahasiswa dapat menghubungi admin melalui link berikut:
+https://shorturl.at/nruC0`,
+    keywords: [
+      "admin bap warung buncit",
+      "bap warung buncit",
+      "kontak warung buncit",
+      "whatsapp bap wb",
+    ],
+  },
+  {
+    id: 151,
+    category: "Surat Keterangan",
+    question: "Apa yang harus disiapkan sebelum mengisi form surat keterangan?",
+    answer: `Sebelum mengisi form surat keterangan, mahasiswa sebaiknya menyiapkan:
+
+1. Nama lengkap sesuai data akademik.
+2. NIM.
+3. Program studi.
+4. Kampus asal, seperti Meruya, Menteng, atau Warung Buncit.
+5. Jenis surat yang dibutuhkan.
+6. Keperluan pengajuan surat.
+7. Dokumen pendukung jika diminta pada formulir.
+
+Pastikan data yang diisi benar agar proses pengajuan tidak terhambat.`,
+    keywords: [
+      "persiapan form surat",
+      "data surat keterangan",
+      "nim",
+      "prodi",
+      "keperluan surat",
+    ],
+  },
+  {
+    id: 152,
+    category: "Surat Keterangan",
+    question: "Apakah form surat keterangan harus sesuai kampus?",
+    answer: `Ya. Mahasiswa sebaiknya mengisi formulir sesuai kampus masing-masing, karena link pengajuan dibedakan untuk Kampus Meruya, Kampus Menteng, dan Kampus Warung Buncit.`,
+    keywords: [
+      "form sesuai kampus",
+      "kampus meruya menteng warung buncit",
+      "salah form",
+      "surat keterangan kampus",
+    ],
+  },
+  {
+    id: 153,
+    category: "Surat Keterangan",
+    question:
+      "Apa yang harus dilakukan jika salah mengisi form surat keterangan?",
+    answer: `Jika salah mengisi form surat keterangan, mahasiswa sebaiknya segera menghubungi admin BAP sesuai kampus masing-masing. Sampaikan nama, NIM, program studi, jenis surat yang diajukan, dan bagian data yang perlu diperbaiki.`,
+    keywords: [
+      "salah isi form",
+      "perbaiki form surat",
+      "revisi data surat",
+      "hubungi bap",
+    ],
+  },
+  {
+    id: 154,
+    category: "Surat Keterangan",
+    question: "Apakah Surat Keterangan Lulus sama dengan ijazah?",
+    answer: `Tidak. Surat Keterangan Lulus bukan ijazah. SKL hanya menerangkan bahwa mahasiswa telah dinyatakan lulus dan biasanya digunakan sementara untuk kebutuhan administrasi sebelum ijazah tersedia.`,
+    keywords: [
+      "skl sama dengan ijazah",
+      "surat keterangan lulus",
+      "ijazah",
+      "beda skl dan ijazah",
+    ],
+  },
+  {
+    id: 155,
+    category: "Surat Keterangan",
+    question: "Bagaimana alur umum pengajuan surat keterangan mahasiswa?",
+    answer: `Alur umum pengajuan surat keterangan adalah:
+
+1. Tentukan jenis surat yang dibutuhkan, misalnya SK Aktif, SKL, atau SK Mundur/Mutasi/Putus Studi/Drop Out.
+2. Pilih link formulir sesuai kampus.
+3. Isi data mahasiswa dengan benar.
+4. Unggah atau lengkapi dokumen pendukung jika diminta.
+5. Kirim formulir pengajuan.
+6. Hubungi admin BAP kampus jika perlu konfirmasi atau terdapat kendala.
+
+Gunakan formulir sesuai kampus agar pengajuan diproses oleh admin yang tepat.`,
+    keywords: [
+      "alur pengajuan surat",
+      "cara membuat surat keterangan",
+      "form surat keterangan",
+      "bap",
+      "admin kampus",
+    ],
+  },
+  {
+    id: 156,
+    category: "Layanan Akademik dan Pelaporan",
+    question: "Apa saja layanan akademik dan pelaporan yang tersedia?",
+    answer: `Layanan yang tersedia berdasarkan dokumen adalah:
+
+1. Form Pengajuan Legalisir Fasilkom.
+2. Form Permintaan Cek Turnitin dan Lembar Pernyataan Hasil Cek Uji Plagiasi.
+3. Form Permintaan Buka Blok KRS Teknik Informatika.
+4. Form Pelaporan Ketidaksesuaian Pembelajaran Dosen.
+5. Layanan BAK atau Biro Administrasi Keuangan.
+6. Kontak layanan keuangan berdasarkan kampus dan kelas.
+
+Mahasiswa dapat memilih layanan sesuai kebutuhan akademik atau administrasi yang sedang diurus.`,
+    keywords: [
+      "layanan akademik",
+      "pelaporan akademik",
+      "legalisir",
+      "turnitin",
+      "buka blok krs",
+      "bak",
+    ],
+  },
+  {
+    id: 157,
+    category: "Legalisir",
+    question: "Apa itu Form Legalisir Online Fasilkom?",
+    answer: `Form Legalisir Online Fasilkom adalah formulir untuk mengajukan legalisir dokumen akademik di lingkungan Fakultas Ilmu Komputer. Form ini digunakan ketika mahasiswa atau alumni membutuhkan pengesahan dokumen untuk keperluan administrasi, kerja, studi lanjut, atau instansi tertentu.`,
+    keywords: [
+      "legalisir fasilkom",
+      "form legalisir",
+      "legalisir online",
+      "legalisir dokumen akademik",
+    ],
+  },
+  {
+    id: 158,
+    category: "Legalisir",
+    question: "Bagaimana cara mengajukan legalisir Fasilkom?",
+    answer: `Mahasiswa atau alumni dapat mengajukan legalisir Fasilkom melalui link berikut:
+
+http://bit.ly/legalisir-online-fasilkom
+
+Sebelum mengisi form, pastikan data diri dan dokumen yang akan dilegalisir sudah disiapkan agar proses pengajuan lebih lancar.`,
+    keywords: [
+      "cara legalisir fasilkom",
+      "link legalisir",
+      "form legalisir online",
+      "pengajuan legalisir",
+    ],
+  },
+  {
+    id: 159,
+    category: "Legalisir",
+    question: "Kapan mahasiswa membutuhkan legalisir dokumen?",
+    answer: `Legalisir dokumen biasanya dibutuhkan untuk keperluan administrasi resmi, seperti melamar kerja, mendaftar studi lanjut, pendaftaran beasiswa, pemberkasan instansi, atau kebutuhan verifikasi dokumen akademik.`,
+    keywords: [
+      "kapan legalisir",
+      "butuh legalisir",
+      "dokumen legalisir",
+      "keperluan legalisir",
+    ],
+  },
+  {
+    id: 160,
+    category: "Turnitin",
+    question: "Apa itu layanan cek Turnitin Fasilkom?",
+    answer: `Layanan cek Turnitin Fasilkom adalah layanan untuk membantu mahasiswa melakukan pengecekan tingkat kemiripan atau similarity dokumen akademik. Layanan ini biasanya digunakan untuk tugas akhir, artikel ilmiah, laporan, atau dokumen lain yang membutuhkan pemeriksaan plagiarisme.`,
+    keywords: [
+      "turnitin",
+      "cek turnitin",
+      "similarity",
+      "plagiasi",
+      "uji plagiasi",
+    ],
+  },
+  {
+    id: 161,
+    category: "Turnitin",
+    question: "Bagaimana cara mengajukan cek Turnitin Fasilkom?",
+    answer: `Mahasiswa dapat mengajukan permintaan cek Turnitin dan lembar pernyataan hasil cek uji plagiasi melalui link berikut:
+
+https://forms.gle/SwNEPYuWSUw8TVjZ6
+
+Pastikan file yang akan dicek sudah sesuai ketentuan dan data yang diisi benar.`,
+    keywords: [
+      "cara cek turnitin",
+      "form turnitin",
+      "cek plagiasi",
+      "uji plagiasi fasilkom",
+      "similarity tugas akhir",
+    ],
+  },
+  {
+    id: 162,
+    category: "Turnitin",
+    question: "Untuk dokumen apa saja layanan cek Turnitin digunakan?",
+    answer: `Layanan cek Turnitin dapat digunakan untuk dokumen akademik seperti laporan tugas akhir, artikel ilmiah, laporan penelitian, atau dokumen lain yang membutuhkan pemeriksaan similarity sesuai ketentuan fakultas atau program studi.`,
+    keywords: [
+      "dokumen turnitin",
+      "laporan tugas akhir",
+      "artikel ilmiah",
+      "cek similarity",
+      "dokumen plagiasi",
+    ],
+  },
+  {
+    id: 163,
+    category: "Buka Blok KRS",
+    question: "Apa itu Form Permintaan Buka Blok KRS Teknik Informatika?",
+    answer: `Form Permintaan Buka Blok KRS Teknik Informatika adalah formulir yang digunakan mahasiswa TI untuk mengajukan pembukaan blokir KRS apabila terdapat kendala yang membuat mahasiswa tidak dapat melakukan pengisian atau akses KRS sesuai kebutuhan akademik.`,
+    keywords: [
+      "buka blok krs",
+      "blok krs ti",
+      "form buka blok krs",
+      "krs teknik informatika",
+    ],
+  },
+  {
+    id: 164,
+    category: "Buka Blok KRS",
+    question: "Bagaimana cara mengajukan buka blok KRS Teknik Informatika?",
+    answer: `Mahasiswa Teknik Informatika dapat mengajukan permintaan buka blok KRS melalui link berikut:
+
+http://bit.ly/BLOKKRS_TI
+
+Setelah mengisi form, mahasiswa perlu menunggu proses verifikasi atau tindak lanjut dari pihak terkait sesuai ketentuan program studi.`,
+    keywords: [
+      "cara buka blok krs",
+      "link buka blok krs",
+      "blok krs ti",
+      "form krs ti",
+    ],
+  },
+  {
+    id: 165,
+    category: "Buka Blok KRS",
+    question: "Kapan mahasiswa perlu mengisi Form Buka Blok KRS?",
+    answer: `Mahasiswa perlu mengisi Form Buka Blok KRS jika mengalami kendala akses atau pengisian KRS karena status KRS terblokir. Form ini digunakan agar pengajuan dapat diverifikasi oleh pihak program studi atau unit terkait.`,
+    keywords: [
+      "kapan buka blok krs",
+      "krs terblokir",
+      "tidak bisa isi krs",
+      "kendala krs",
+    ],
+  },
+  {
+    id: 166,
+    category: "Pelaporan Akademik",
+    question: "Apa itu pelaporan ketidaksesuaian pembelajaran dosen?",
+    answer: `Pelaporan ketidaksesuaian pembelajaran dosen adalah layanan pelaporan jika mahasiswa menemukan ketidaksesuaian dalam proses pembelajaran. Form ini dapat digunakan untuk menyampaikan laporan terkait pelaksanaan pembelajaran yang tidak sesuai dengan ketentuan atau jadwal yang seharusnya.`,
+    keywords: [
+      "pelaporan dosen",
+      "ketidaksesuaian pembelajaran",
+      "lapor pembelajaran",
+      "lapor dosen",
+    ],
+  },
+  {
+    id: 167,
+    category: "Pelaporan Akademik",
+    question:
+      "Kapan mahasiswa dapat mengisi form pelaporan ketidaksesuaian pembelajaran?",
+    answer: `Mahasiswa dapat mengisi form pelaporan jika terdapat kondisi pembelajaran yang tidak sesuai, misalnya kendala pelaksanaan perkuliahan, ketidaksesuaian jadwal, atau hal lain yang perlu dilaporkan agar dapat ditindaklanjuti oleh pihak terkait.`,
+    keywords: [
+      "kapan lapor dosen",
+      "lapor ketidaksesuaian",
+      "kendala pembelajaran",
+      "perkuliahan tidak sesuai",
+    ],
+  },
+  {
+    id: 168,
+    category: "Pelaporan Akademik",
+    question:
+      "Apa saja yang perlu disiapkan sebelum membuat laporan pembelajaran dosen?",
+    answer: `Sebelum membuat laporan, mahasiswa sebaiknya menyiapkan:
+
+1. Nama mahasiswa dan NIM.
+2. Program studi dan kelas.
+3. Nama mata kuliah.
+4. Nama dosen.
+5. Tanggal atau waktu kejadian.
+6. Uraian masalah secara jelas.
+7. Bukti pendukung jika tersedia.
+
+Laporan sebaiknya ditulis dengan bahasa yang sopan, jelas, dan sesuai fakta.`,
+    keywords: [
+      "data laporan dosen",
+      "laporan pembelajaran",
+      "bukti laporan",
+      "ketidaksesuaian dosen",
+    ],
+  },
+  {
+    id: 169,
+    category: "Pelaporan Akademik",
+    question: "Bagaimana cara menyampaikan laporan akademik yang baik?",
+    answer: `Agar laporan mudah diproses, mahasiswa dapat mengikuti cara berikut:
+
+1. Jelaskan masalah secara singkat dan jelas.
+2. Tulis waktu, mata kuliah, kelas, dan dosen terkait.
+3. Hindari bahasa emosional atau tuduhan tanpa bukti.
+4. Sertakan bukti pendukung jika ada.
+5. Gunakan form resmi agar laporan tercatat dan dapat ditindaklanjuti.`,
+    keywords: [
+      "cara membuat laporan",
+      "laporan akademik",
+      "lapor dosen yang baik",
+      "pelaporan resmi",
+    ],
+  },
+  {
+    id: 170,
+    category: "BAK",
+    question: "Apa itu BAK?",
+    answer: `BAK adalah Biro Administrasi Keuangan. Unit ini menangani layanan yang berkaitan dengan administrasi keuangan mahasiswa, seperti informasi pembayaran, konfirmasi kendala keuangan, dan layanan keuangan sesuai kampus atau kelas.`,
+    keywords: [
+      "bak",
+      "biro administrasi keuangan",
+      "keuangan kampus",
+      "administrasi keuangan",
+    ],
+  },
+  {
+    id: 171,
+    category: "BAK",
+    question: "Kapan jam layanan BAK Universitas Mercu Buana?",
+    answer: `Berdasarkan daftar pelayanan BAK, layanan BAK tersedia Senin sampai Sabtu pukul 08.00 sampai 16.00.`,
+    keywords: [
+      "jam layanan bak",
+      "jadwal bak",
+      "bak buka jam berapa",
+      "senin sabtu",
+    ],
+  },
+  {
+    id: 172,
+    category: "BAK",
+    question: "Siapa kontak BAK untuk Kampus Meruya?",
+    answer: `Kontak BAK untuk Kampus Meruya berdasarkan daftar pelayanan adalah:
+
+1. BAK UMB Reguler 1:
+0813 8936 5143
+wa.me/6281389365143
+
+2. BAK UMB Reguler 2:
+0813 1795 3366
+wa.me/6281317953366
+
+3. BAK1 UMB Reguler 1 dan 2:
+0851 7300 8754
+wa.me/6285173008754`,
+    keywords: [
+      "kontak bak meruya",
+      "bak meruya",
+      "keuangan meruya",
+      "reguler 1 meruya",
+      "reguler 2 meruya",
+    ],
+  },
+  {
+    id: 173,
+    category: "BAK",
+    question: "Siapa kontak BAK untuk Kampus Menteng dan Warung Buncit?",
+    answer: `Kontak BAK untuk Kampus Menteng dan Warung Buncit berdasarkan daftar pelayanan adalah:
+
+1. Kampus Menteng Reguler 1 dan 2:
+BAK1 Reguler 1 dan 2
+0851 8344 0664
+wa.me/6285183440664
+
+2. Kampus Warung Buncit:
+Gunakan kontak BAK sesuai informasi layanan kampus atau konfirmasi ke pusat pelayanan informasi apabila membutuhkan arahan lebih lanjut.`,
+    keywords: [
+      "kontak bak menteng",
+      "kontak bak warung buncit",
+      "bak menteng",
+      "bak warung buncit",
+      "keuangan kampus",
+    ],
+  },
+  {
+    id: 174,
+    category: "Layanan Akademik dan Pelaporan",
+    question:
+      "Bagaimana memilih layanan yang tepat sesuai kebutuhan mahasiswa?",
+    answer: `Mahasiswa dapat memilih layanan berdasarkan kebutuhan berikut:
+
+1. Jika membutuhkan legalisir dokumen, gunakan Form Legalisir Online Fasilkom.
+2. Jika membutuhkan cek similarity atau plagiasi, gunakan Form Permintaan Cek Turnitin.
+3. Jika KRS terblokir, gunakan Form Permintaan Buka Blok KRS TI.
+4. Jika ada kendala pembelajaran dosen, gunakan Form Pelaporan Ketidaksesuaian Pembelajaran.
+5. Jika masalah berkaitan dengan pembayaran atau keuangan, hubungi BAK sesuai kampus dan kelas.
+
+Pastikan menggunakan form atau kontak resmi agar pengajuan lebih mudah diproses.`,
+    keywords: [
+      "pilih layanan akademik",
+      "layanan mahasiswa",
+      "legalisir turnitin krs bak",
+      "form akademik",
+      "pelaporan",
+    ],
+  },
+  {
+    id: 175,
+    category: "Pembayaran dan Biaya Kuliah",
+    question: "Bagaimana cara membayar biaya kuliah Universitas Mercu Buana?",
+    answer: `Pembayaran biaya kuliah Universitas Mercu Buana dilakukan secara SPC/Online melalui PT Bank BNI.
+
+Mahasiswa dapat melakukan pembayaran melalui:
+1. Mobile Banking BNI.
+2. Teller BNI seluruh cabang.
+3. ATM BNI, baik menggunakan KTM BNI maupun ATM BNI non-KTM.
+
+Pembayaran dilakukan menggunakan NIM dan kode prefix/billing sesuai kampus, kelas, dan jenis pembayaran.`,
+    keywords: [
+      "pembayaran kuliah",
+      "cara bayar kuliah",
+      "bayar umb",
+      "spc bni",
+      "biaya kuliah",
+    ],
+  },
+  {
+    id: 176,
+    category: "Pembayaran dan Biaya Kuliah",
+    question: "Apakah pembayaran kuliah UMB boleh melalui transfer biasa?",
+    answer: `Tidak. Mahasiswa yang sudah memiliki NIM diharuskan melakukan pembayaran kuliah secara SPC/Online dan tidak diperkenankan melakukan pembayaran melalui transfer biasa.`,
+    keywords: [
+      "transfer biasa",
+      "pembayaran transfer",
+      "spc online",
+      "bayar kuliah bni",
+      "nim",
+    ],
+  },
+  {
+    id: 177,
+    category: "Pembayaran dan Biaya Kuliah",
+    question: "Bagaimana cara membayar kuliah melalui Mobile Banking BNI?",
+    answer: `Cara pembayaran melalui Mobile Banking BNI adalah:
+
+1. Pilih menu Pembayaran.
+2. Pilih Biaya Pendidikan.
+3. Pilih rekening debet, lalu pilih jenis layanan.
+4. Pilih Pembayaran.
+5. Pilih Perguruan Tinggi Universitas Mercu Buana.
+6. Pada kolom Nomor Billing, input kode prefix + NIM.
+7. Pastikan nama dan jumlah tagihan sudah sesuai.
+8. Masukkan password transaksi.
+9. Jika berhasil, layar akan menampilkan transaksi berhasil.
+
+Jika tagihan tidak sesuai, mahasiswa perlu melapor ke loket layanan keuangan.`,
+    keywords: [
+      "mobile banking bni",
+      "m banking bni",
+      "cara bayar via bni mobile",
+      "biaya pendidikan bni",
+      "nomor billing",
+    ],
+  },
+  {
+    id: 178,
+    category: "Pembayaran dan Biaya Kuliah",
+    question: "Bagaimana cara membayar kuliah melalui Teller BNI?",
+    answer: `Untuk pembayaran melalui Teller BNI, mahasiswa cukup datang ke counter Teller BNI seluruh cabang dan menyampaikan bahwa akan membayar uang kuliah Universitas Mercu Buana melalui SPC/Online BNI.
+
+Mahasiswa menyebutkan nama, NIM, dan kode prefix sesuai jenis pembayaran. Setelah data diinput, petugas teller akan menyampaikan nominal tagihan. Setelah pembayaran dilakukan, mahasiswa akan memperoleh receipt atau tanda bukti pembayaran yang harus disimpan dengan baik.`,
+    keywords: [
+      "teller bni",
+      "bayar lewat teller",
+      "pembayaran teller bni",
+      "receipt pembayaran",
+      "bukti pembayaran",
+    ],
+  },
+  {
+    id: 179,
+    category: "Pembayaran dan Biaya Kuliah",
+    question: "Bagaimana cara membayar kuliah melalui ATM BNI?",
+    answer: `Cara pembayaran melalui ATM BNI adalah:
+
+1. Masukkan kartu ATM atau KTM.
+2. Pilih bahasa.
+3. Input PIN.
+4. Pilih Lanjutkan.
+5. Pilih Transaksi Pembayaran.
+6. Pilih Menu Berikutnya.
+7. Pilih Universitas.
+8. Pilih SPC/Student Payment Center.
+9. Input kode Universitas Mercu Buana dengan format 8018 + kode prefix + NIM.
+10. Pastikan nama dan jumlah tagihan sudah sesuai.
+11. Selesaikan transaksi.
+12. Simpan struk atau receipt sebagai bukti pembayaran.`,
+    keywords: [
+      "atm bni",
+      "bayar lewat atm",
+      "student payment center",
+      "8018",
+      "kode universitas mercu buana",
+    ],
+  },
+  {
+    id: 180,
+    category: "Pembayaran dan Biaya Kuliah",
+    question: "Apa itu kode prefix atau billing pembayaran UMB?",
+    answer: `Kode prefix atau billing adalah kode yang digunakan bersama NIM untuk membayar tagihan kuliah melalui SPC/Online BNI. Kode ini berbeda tergantung kampus, kelas, dan jenis pembayaran.
+
+Contohnya, kode prefix untuk uang kuliah, angsuran, KRS, UTS, UAS, semester pendek, dan biaya cuti berbeda dengan kode prefix untuk wisuda, ijazah, sidang, ujian susulan, transkrip nilai, atau sertifikasi profesi.`,
+    keywords: [
+      "kode prefix",
+      "kode billing",
+      "billing umb",
+      "prefix pembayaran",
+      "kode pembayaran",
+    ],
+  },
+  {
+    id: 181,
+    category: "Pembayaran dan Biaya Kuliah",
+    question: "Apa kode prefix pembayaran untuk kelas Reguler 1?",
+    answer: `Kode prefix pembayaran kelas Reguler 1 adalah:
+
+1. Kampus Meruya:
+13 untuk uang kuliah, angsuran, KRS-UTS-UAS, semester pendek, dan biaya cuti.
+14 untuk ijazah dan wisuda.
+15 untuk sidang TA/skripsi/tesis, ujian susulan, konversi, sumbangan buku alumni, transkrip nilai, dan sertifikasi profesi.
+
+2. Kampus Cibubur/Jatisampurna:
+33, 34, dan 35 sesuai jenis pembayaran.
+
+3. Kampus Warung Buncit/Pejaten:
+53, 54, dan 55 sesuai jenis pembayaran.
+
+4. Kampus Menteng:
+73, 74, dan 75 sesuai jenis pembayaran.`,
+    keywords: [
+      "prefix reguler 1",
+      "kode pembayaran reguler 1",
+      "kode meruya 13",
+      "kode menteng 73",
+      "kode warung buncit 53",
+    ],
+  },
+  {
+    id: 182,
+    category: "Pembayaran dan Biaya Kuliah",
+    question:
+      "Apa kode prefix pembayaran untuk kelas Reguler 2 atau kelas karyawan?",
+    answer: `Kode prefix pembayaran kelas Reguler 2 dan 3 atau kelas karyawan adalah:
+
+1. Kampus Meruya:
+23 untuk uang kuliah, angsuran, KRS-UTS-UAS, semester pendek, dan biaya cuti.
+24 untuk ijazah dan wisuda.
+25 untuk sidang TA/skripsi/tesis, ujian susulan, konversi, sumbangan buku alumni, transkrip nilai, dan sertifikasi profesi.
+
+2. Kampus Cibubur/Jatisampurna:
+43, 44, dan 45 sesuai jenis pembayaran.
+
+3. Kampus Warung Buncit/Pejaten:
+63, 64, dan 65 sesuai jenis pembayaran.
+
+4. Kampus Menteng:
+83, 84, dan 85 sesuai jenis pembayaran.`,
+    keywords: [
+      "prefix reguler 2",
+      "kode kelas karyawan",
+      "kode pembayaran reguler 2",
+      "kode meruya 23",
+      "kode menteng 83",
+    ],
+  },
+  {
+    id: 183,
+    category: "Pembayaran dan Biaya Kuliah",
+    question:
+      "Apa yang harus dilakukan jika nominal tagihan pembayaran tidak sesuai?",
+    answer: `Jika nama atau jumlah tagihan yang muncul tidak sesuai, mahasiswa tidak disarankan melanjutkan transaksi. Mahasiswa perlu melapor atau konfirmasi ke loket layanan keuangan agar tagihan dapat diperiksa terlebih dahulu.`,
+    keywords: [
+      "tagihan tidak sesuai",
+      "nominal tidak sesuai",
+      "salah tagihan",
+      "layanan keuangan",
+      "konfirmasi pembayaran",
+    ],
+  },
+  {
+    id: 184,
+    category: "Perubahan Status Mahasiswa",
+    question: "Apa saja jenis perubahan status mahasiswa yang tersedia?",
+    answer: `Jenis perubahan status mahasiswa yang tersedia berdasarkan dokumen prosedur adalah:
+
+1. Pengajuan Cuti.
+2. Aktif Kembali dari Cuti.
+3. Pindah Program Studi.
+4. Pindah Lokasi Kampus.
+5. Pindah Program Perkuliahan.
+
+Setiap jenis perubahan memiliki alur dan dokumen yang berbeda, jadi mahasiswa perlu mengikuti prosedur sesuai kebutuhan masing-masing.`,
+    keywords: [
+      "perubahan status mahasiswa",
+      "status mahasiswa",
+      "cuti",
+      "aktif kembali",
+      "pindah prodi",
+      "pindah lokasi",
+      "pindah program",
+    ],
+  },
+  {
+    id: 185,
+    category: "Pengajuan Cuti",
+    question: "Bagaimana cara mengajukan cuti kuliah?",
+    answer: `Cara mengajukan cuti kuliah adalah:
+
+1. Mahasiswa login ke SIA melalui https://sia.mercubuana.ac.id menggunakan username dan password.
+2. Pilih menu Detail Mahasiswa.
+3. Klik Pengajuan Status.
+4. Pada halaman Pengajuan Status Mahasiswa, klik tombol Tambah.
+5. Pilih jenis pengajuan menjadi Cuti.
+6. Klik Simpan.
+7. Pengajuan akan dicek dan disetujui oleh Kaprodi/Sekprodi.
+8. Pengajuan dilanjutkan ke BAK untuk persetujuan.
+9. BAP menyetujui dan memproses pengajuan cuti.
+10. Status mahasiswa berubah menjadi Cuti dan dapat dilihat di SIA.`,
+    keywords: [
+      "cara mengajukan cuti",
+      "pengajuan cuti",
+      "cuti kuliah",
+      "cuti mahasiswa",
+      "sia cuti",
+    ],
+  },
+  {
+    id: 186,
+    category: "Pengajuan Cuti",
+    question: "Di mana mahasiswa mengajukan cuti kuliah?",
+    answer: `Pengajuan cuti kuliah dilakukan melalui SIA di https://sia.mercubuana.ac.id dengan memilih menu Detail Mahasiswa, lalu masuk ke Pengajuan Status.`,
+    keywords: [
+      "tempat pengajuan cuti",
+      "sia cuti",
+      "link cuti",
+      "pengajuan status mahasiswa",
+    ],
+  },
+  {
+    id: 187,
+    category: "Pengajuan Cuti",
+    question: "Menu apa yang dipilih untuk mengajukan cuti di SIA?",
+    answer: `Mahasiswa memilih menu Detail Mahasiswa, kemudian klik Pengajuan Status. Setelah itu klik tombol Tambah dan pilih jenis pengajuan Cuti.`,
+    keywords: [
+      "menu cuti sia",
+      "detail mahasiswa",
+      "pengajuan status",
+      "tambah pengajuan cuti",
+    ],
+  },
+  {
+    id: 188,
+    category: "Pengajuan Cuti",
+    question: "Siapa saja yang menyetujui pengajuan cuti mahasiswa?",
+    answer: `Pengajuan cuti mahasiswa melalui beberapa tahap persetujuan:
+
+1. Kaprodi/Sekprodi mengecek dan menyetujui pengajuan cuti.
+2. BAK menyetujui pengajuan cuti mahasiswa.
+3. BAP menyetujui dan memproses pengajuan cuti.
+
+Setelah semua tahap selesai, status mahasiswa akan berubah menjadi Cuti di SIA.`,
+    keywords: [
+      "persetujuan cuti",
+      "kaprodi cuti",
+      "sekprodi cuti",
+      "bak cuti",
+      "bap cuti",
+    ],
+  },
+  {
+    id: 189,
+    category: "Pengajuan Cuti",
+    question: "Bagaimana cara mengecek status cuti sudah berhasil?",
+    answer: `Mahasiswa dapat mengecek status cuti melalui SIA. Jika pengajuan sudah selesai diproses, status mahasiswa akan berubah menjadi Cuti dan dapat dilihat pada data status mahasiswa di SIA.`,
+    keywords: [
+      "cek status cuti",
+      "status cuti sia",
+      "cuti berhasil",
+      "status mahasiswa cuti",
+    ],
+  },
+  {
+    id: 190,
+    category: "Pengajuan Cuti",
+    question: "Apa yang terjadi setelah pengajuan cuti disetujui?",
+    answer: `Setelah pengajuan cuti disetujui oleh Kaprodi/Sekprodi, BAK, dan BAP, status mahasiswa akan berubah menjadi Cuti. Status tersebut dapat dilihat oleh mahasiswa melalui SIA.`,
+    keywords: [
+      "setelah cuti disetujui",
+      "cuti disetujui",
+      "status berubah cuti",
+      "bap memproses cuti",
+    ],
+  },
+  {
+    id: 191,
+    category: "Aktif Kembali dari Cuti",
+    question: "Bagaimana prosedur aktif kembali dari cuti?",
+    answer: `Prosedur aktif kembali dari cuti adalah:
+
+1. Mahasiswa melakukan pembayaran sesuai ketentuan yang sudah ditetapkan.
+2. Mahasiswa mengisi KRS Online.
+3. Mahasiswa mendapatkan KRS.
+
+Prosedur ini berlaku untuk mahasiswa Reguler 1 maupun Reguler 2.`,
+    keywords: [
+      "aktif kembali dari cuti",
+      "aktif dari cuti",
+      "selesai cuti",
+      "krs setelah cuti",
+      "pembayaran setelah cuti",
+    ],
+  },
+  {
+    id: 192,
+    category: "Aktif Kembali dari Cuti",
+    question: "Apa langkah pertama untuk aktif kembali setelah cuti?",
+    answer: `Langkah pertama untuk aktif kembali setelah cuti adalah melakukan pembayaran sesuai ketentuan yang sudah ditetapkan.`,
+    keywords: [
+      "langkah pertama aktif cuti",
+      "pembayaran aktif kembali",
+      "aktif dari cuti",
+      "bayar setelah cuti",
+    ],
+  },
+  {
+    id: 193,
+    category: "Aktif Kembali dari Cuti",
+    question:
+      "Apakah mahasiswa yang aktif kembali dari cuti harus mengisi KRS?",
+    answer: `Ya. Setelah melakukan pembayaran sesuai ketentuan, mahasiswa harus mengisi KRS Online agar dapat memperoleh KRS dan mengikuti perkuliahan kembali.`,
+    keywords: [
+      "aktif cuti isi krs",
+      "krs online setelah cuti",
+      "mahasiswa aktif kembali",
+      "mendapatkan krs",
+    ],
+  },
+  {
+    id: 194,
+    category: "Pindah Program Studi",
+    question: "Bagaimana prosedur pindah program studi?",
+    answer: `Prosedur pindah program studi adalah:
+
+1. Mahasiswa mengunduh formulir Pindah Program Studi melalui https://bit.ly/formpindahprodi.
+2. Mahasiswa mengisi formulir Pindah Program Studi.
+3. Mahasiswa meminta persetujuan Kaprodi/Sekprodi asal.
+4. Mahasiswa mencetak transkrip nilai mandiri melalui SIA.
+5. Mahasiswa menyerahkan transkrip nilai dan meminta persetujuan Kaprodi/Sekprodi tujuan.
+6. Kaprodi/Sekprodi tujuan menyetujui, menentukan jumlah SKS yang diambil, dan menentukan jumlah SKS yang diakui.
+7. Mahasiswa mengunggah formulir yang sudah disetujui melalui Google Form sesuai kampus.
+8. BAP mengunduh dan mencetak formulir.
+9. BAP menyerahkan formulir ke BAK untuk validasi.
+10. BAK melakukan validasi dan menyerahkan formulir kembali ke BAP.
+11. BAP memproses perubahan NIM dan menyimpan berkas.
+12. BAP menginformasikan NIM dan password ke email mahasiswa.
+13. BAP menyerahkan berkas ke Kaprodi/Sekprodi tujuan untuk proses entry KRS.
+14. Kaprodi/Sekprodi memproses dan mengesahkan KRS.
+15. Mahasiswa dapat melihat informasi KRS di SIA.`,
+    keywords: [
+      "pindah program studi",
+      "pindah prodi",
+      "prosedur pindah prodi",
+      "form pindah prodi",
+      "ubah nim",
+    ],
+  },
+  {
+    id: 195,
+    category: "Pindah Program Studi",
+    question: "Di mana mahasiswa mengunduh formulir Pindah Program Studi?",
+    answer: `Formulir Pindah Program Studi dapat diunduh melalui link berikut: https://bit.ly/formpindahprodi`,
+    keywords: [
+      "unduh formulir pindah prodi",
+      "form pindah prodi",
+      "link pindah prodi",
+      "formpindahprodi",
+    ],
+  },
+  {
+    id: 196,
+    category: "Pindah Program Studi",
+    question: "Dokumen apa yang diperlukan untuk pindah program studi?",
+    answer: `Dokumen utama yang diperlukan untuk pindah program studi adalah Formulir Pindah Program Studi yang sudah diisi dan disetujui, serta transkrip nilai yang dicetak mandiri melalui SIA.`,
+    keywords: [
+      "dokumen pindah prodi",
+      "transkrip nilai",
+      "formulir pindah program studi",
+      "persyaratan pindah prodi",
+    ],
+  },
+  {
+    id: 197,
+    category: "Pindah Program Studi",
+    question: "Siapa yang harus menyetujui pengajuan pindah program studi?",
+    answer: `Pengajuan pindah program studi harus disetujui oleh Kaprodi/Sekprodi asal dan Kaprodi/Sekprodi program studi yang dituju. Setelah itu, berkas diproses oleh BAP dan divalidasi oleh BAK.`,
+    keywords: [
+      "persetujuan pindah prodi",
+      "kaprodi asal",
+      "kaprodi tujuan",
+      "sekprodi",
+      "validasi bak",
+    ],
+  },
+  {
+    id: 198,
+    category: "Pindah Program Studi",
+    question:
+      "Apa tugas Kaprodi atau Sekprodi tujuan dalam proses pindah program studi?",
+    answer: `Kaprodi/Sekprodi tujuan menyetujui pengajuan pindah program studi, menentukan jumlah SKS yang harus diambil mahasiswa, dan menentukan jumlah SKS yang dapat diakui dari program studi sebelumnya.`,
+    keywords: [
+      "kaprodi tujuan pindah prodi",
+      "sks diakui",
+      "sks diambil",
+      "ekuivalensi pindah prodi",
+    ],
+  },
+  {
+    id: 199,
+    category: "Pindah Program Studi",
+    question:
+      "Link upload berkas Pindah Program Studi untuk tiap kampus apa saja?",
+    answer: `Link upload berkas Pindah Program Studi adalah:
+
+1. Kampus Meruya:
+https://bit.ly/PINDAHPRODI
+
+2. Kampus Menteng:
+https://bit.ly/3c9C9wJ
+
+3. Kampus Warung Buncit:
+https://bit.ly/WBPindah-Program-Studi
+
+Mahasiswa perlu menggunakan link sesuai kampus masing-masing.`,
+    keywords: [
+      "upload pindah prodi",
+      "link pindah prodi meruya",
+      "pindah prodi menteng",
+      "pindah prodi warung buncit",
+    ],
+  },
+  {
+    id: 200,
+    category: "Pindah Program Studi",
+    question: "Apakah pindah program studi menyebabkan perubahan NIM?",
+    answer: `Ya. Dalam prosedur pindah program studi, BAP memproses perubahan NIM setelah berkas disetujui dan divalidasi oleh BAK. NIM dan password baru akan diinformasikan ke email mahasiswa.`,
+    keywords: [
+      "nim berubah pindah prodi",
+      "perubahan nim",
+      "nim baru pindah prodi",
+      "password baru",
+    ],
+  },
+  {
+    id: 201,
+    category: "Pindah Program Studi",
+    question:
+      "Bagaimana mahasiswa mendapatkan NIM dan password setelah pindah program studi?",
+    answer: `Setelah proses pindah program studi selesai, BAP menginformasikan NIM dan password ke email mahasiswa.`,
+    keywords: [
+      "nim password pindah prodi",
+      "email nim baru",
+      "bap email mahasiswa",
+      "password sia",
+    ],
+  },
+  {
+    id: 202,
+    category: "Pindah Program Studi",
+    question:
+      "Siapa yang melakukan entry KRS setelah mahasiswa pindah program studi?",
+    answer: `Entry KRS diproses oleh Kaprodi/Sekprodi program studi tujuan. Setelah KRS diproses dan disahkan, mahasiswa akan mendapatkan informasi melalui WhatsApp bahwa proses entry KRS sudah selesai.`,
+    keywords: [
+      "entry krs pindah prodi",
+      "krs pindah prodi",
+      "kaprodi entry krs",
+      "krs selesai",
+    ],
+  },
+  {
+    id: 203,
+    category: "Pindah Lokasi Kampus",
+    question: "Bagaimana prosedur pindah lokasi kampus?",
+    answer: `Prosedur pindah lokasi kampus adalah:
+
+1. Mahasiswa mengisi formulir Pindah Lokasi Kampus melalui Google Form sesuai kampus.
+2. BAP mengubah status lokasi kuliah melalui SIA.
+3. BAP mengirim informasi pindah lokasi kampus melalui email mahasiswa.
+4. Mahasiswa dapat melihat informasi pindah lokasi kampus di SIA.
+
+Pindah lokasi kampus berlaku untuk lokasi seperti Meruya, Menteng, dan Warung Buncit.`,
+    keywords: [
+      "pindah lokasi kampus",
+      "pindah kampus",
+      "pindah lokasi meruya menteng warung buncit",
+      "status lokasi kuliah",
+    ],
+  },
+  {
+    id: 204,
+    category: "Pindah Lokasi Kampus",
+    question: "Link formulir Pindah Lokasi Kampus untuk tiap kampus apa saja?",
+    answer: `Link formulir Pindah Lokasi Kampus adalah:
+
+1. Kampus Meruya:
+https://bit.ly/FORMPINDAHLOKASIKAMPUS
+
+2. Kampus Menteng:
+https://bit.ly/PindahLokasiKampus
+
+3. Kampus Warung Buncit:
+https:bit.ly/WBPindah-Lokasi-Kampus
+
+Pastikan mahasiswa memilih link sesuai kampus masing-masing.`,
+    keywords: [
+      "form pindah lokasi kampus",
+      "link pindah lokasi",
+      "pindah lokasi meruya",
+      "pindah lokasi menteng",
+      "pindah lokasi warung buncit",
+    ],
+  },
+  {
+    id: 205,
+    category: "Pindah Lokasi Kampus",
+    question: "Siapa yang mengubah status lokasi kuliah mahasiswa?",
+    answer: `Status lokasi kuliah mahasiswa diubah oleh BAP melalui SIA setelah mahasiswa mengisi formulir Pindah Lokasi Kampus.`,
+    keywords: [
+      "ubah status lokasi kuliah",
+      "bap pindah lokasi",
+      "sia lokasi kampus",
+      "status lokasi",
+    ],
+  },
+  {
+    id: 206,
+    category: "Pindah Lokasi Kampus",
+    question:
+      "Bagaimana mahasiswa mengetahui pindah lokasi kampus sudah diproses?",
+    answer: `Mahasiswa akan menerima informasi pindah lokasi kampus melalui email dari BAP. Setelah itu, mahasiswa juga dapat melihat informasi pindah lokasi kampus di SIA.`,
+    keywords: [
+      "cek pindah lokasi kampus",
+      "email pindah lokasi",
+      "pindah lokasi di sia",
+      "bap email",
+    ],
+  },
+  {
+    id: 207,
+    category: "Pindah Program Perkuliahan",
+    question: "Apa itu pindah program perkuliahan?",
+    answer: `Pindah program perkuliahan adalah perubahan program kuliah, misalnya dari Reguler 1 ke Reguler 2 atau Reguler 3, dan juga sebaliknya.`,
+    keywords: [
+      "pindah program perkuliahan",
+      "pindah reguler",
+      "reguler 1 ke reguler 2",
+      "reguler 2 ke reguler 1",
+    ],
+  },
+  {
+    id: 208,
+    category: "Pindah Program Perkuliahan",
+    question: "Bagaimana prosedur pindah program perkuliahan?",
+    answer: `Prosedur pindah program perkuliahan adalah:
+
+1. Mahasiswa mengunduh formulir melalui https://bit.ly/pindah-program-perkuliahan.
+2. Mahasiswa mengisi formulir Pindah Program Perkuliahan.
+3. Mahasiswa mengunggah formulir yang sudah ditandatangani dan Surat Keterangan Kerja jika pindah dari Reguler 1 ke Reguler 2.
+4. TU Fakultas mencetak formulir 3 rangkap untuk proses tanda tangan Kaprodi/Sekprodi.
+5. Kaprodi/Sekprodi menyetujui pengajuan.
+6. Formulir yang sudah disetujui diunggah TU Fakultas ke drive BAP.
+7. BAP menyerahkan berkas yang sudah divalidasi ke BAK.
+8. BAP mengubah status Pindah Program Perkuliahan.
+9. BAP mengirim informasi melalui email mahasiswa.
+10. Mahasiswa dapat melihat informasi Pindah Program Perkuliahan di SIA.`,
+    keywords: [
+      "prosedur pindah program perkuliahan",
+      "pindah reguler",
+      "form pindah program",
+      "reguler 1 reguler 2",
+    ],
+  },
+  {
+    id: 209,
+    category: "Pindah Program Perkuliahan",
+    question: "Di mana mengunduh formulir Pindah Program Perkuliahan?",
+    answer: `Formulir Pindah Program Perkuliahan dapat diunduh melalui link berikut: https://bit.ly/pindah-program-perkuliahan`,
+    keywords: [
+      "unduh formulir pindah program perkuliahan",
+      "form pindah reguler",
+      "pindah program perkuliahan",
+      "link form pindah",
+    ],
+  },
+  {
+    id: 210,
+    category: "Pindah Program Perkuliahan",
+    question:
+      "Apakah pindah dari Reguler 1 ke Reguler 2 perlu Surat Keterangan Kerja?",
+    answer: `Ya. Untuk pindah dari Reguler 1 ke Reguler 2, mahasiswa perlu mengunggah Surat Keterangan Kerja bersama formulir Pindah Program Perkuliahan yang sudah ditandatangani.`,
+    keywords: [
+      "surat keterangan kerja pindah reguler",
+      "reguler 1 ke reguler 2",
+      "syarat pindah reguler",
+      "pindah program perkuliahan",
+    ],
+  },
+  {
+    id: 211,
+    category: "Pindah Program Perkuliahan",
+    question: "Siapa yang menyetujui pindah program perkuliahan?",
+    answer: `Pengajuan pindah program perkuliahan disetujui oleh Kaprodi/Sekprodi. Setelah disetujui, formulir diproses oleh TU Fakultas, BAP, dan BAK sesuai alur yang berlaku.`,
+    keywords: [
+      "persetujuan pindah program",
+      "kaprodi pindah reguler",
+      "sekprodi pindah program",
+      "tu fakultas bap bak",
+    ],
+  },
+  {
+    id: 212,
+    category: "Pindah Program Perkuliahan",
+    question:
+      "Ke mana mahasiswa mengunggah formulir pindah program perkuliahan?",
+    answer: `Formulir Pindah Program Perkuliahan diunggah melalui link atau email yang ditentukan oleh fakultas.
+
+Daftar informasi fakultas:
+1. Ekonomi: feb.mercubuana.ac.id atau https://bit.ly/pindah_program_perkuliahan
+2. Teknik: fakultasteknik@mercubuana.ac.id
+3. Fikom: fikom@mercubuana.ac.id
+4. Fasilkom: fasilkom@mercubuana.ac.id
+5. FDSK: fdsk@mercubuana.ac.id
+6. Psikologi: fpsi@mercubuana.ac.id
+7. Pascasarjana: pasca@mercubuana.ac.id
+
+Untuk mahasiswa Jatisampurna, pengajuan diunggah melalui Google Form khusus yang ditentukan.`,
+    keywords: [
+      "upload pindah program perkuliahan",
+      "email fakultas",
+      "fasilkom pindah program",
+      "feb pindah program",
+      "jatisampurna",
+    ],
+  },
+  {
+    id: 213,
+    category: "Perubahan Status Mahasiswa",
+    question:
+      "Bagaimana cara memastikan perubahan status mahasiswa sudah berhasil?",
+    answer: `Mahasiswa dapat memastikan perubahan status sudah berhasil dengan cara:
+
+1. Mengecek informasi terbaru di SIA.
+2. Memeriksa email mahasiswa karena BAP dapat mengirim informasi melalui email.
+3. Mengecek KRS jika perubahan berkaitan dengan aktif kembali, pindah program studi, atau pindah program perkuliahan.
+4. Menghubungi BAP atau fakultas jika status belum berubah setelah mengikuti prosedur.
+
+Pastikan semua formulir, persetujuan, validasi, dan dokumen pendukung sudah lengkap agar proses tidak tertunda.`,
+    keywords: [
+      "cek perubahan status",
+      "status mahasiswa berhasil",
+      "cek sia",
+      "email bap",
+      "krs perubahan status",
+    ],
+  },
+  {
+    id: 214,
+    category: "E-Learning dan Absensi",
+    question: "Apa itu FAST Learning Universitas Mercu Buana?",
+    answer: `FAST Learning adalah website pembelajaran Universitas Mercu Buana yang digunakan untuk mendukung kegiatan perkuliahan, seperti mengakses materi, mengikuti tatap muka virtual, berdiskusi di forum, mengerjakan kuis, mengumpulkan tugas, dan melihat nilai aktivitas.`,
+    keywords: [
+      "fast learning",
+      "elearning umb",
+      "e learning",
+      "website pembelajaran",
+      "pembelajaran online",
+    ],
+  },
+  {
+    id: 215,
+    category: "E-Learning dan Absensi",
+    question: "Bagaimana cara login ke FAST Learning untuk mahasiswa?",
+    answer: `Mahasiswa dapat mengakses FAST Learning dengan login terlebih dahulu melalui SSO Universitas Mercu Buana.
+
+Langkah login:
+1. Buka https://sso.mercubuana.ac.id.
+2. Login menggunakan NIM sebagai username.
+3. Gunakan password tanggal lahir dengan format ddmmyyyy jika belum diubah.
+4. Setelah berhasil login, klik link FAST Learning untuk mata kuliah kelas FAST Learning.
+5. Jika diminta, lengkapi data profil terlebih dahulu.
+
+Setelah pendaftaran akun selesai, mahasiswa dapat langsung membuka website FAST Learning tanpa harus melalui SSO kembali.`,
+    keywords: [
+      "login fast learning",
+      "cara login elearning",
+      "sso mercu buana",
+      "nim password",
+      "akses fast learning",
+    ],
+  },
+  {
+    id: 216,
+    category: "E-Learning dan Absensi",
+    question: "Apa username dan password awal FAST Learning mahasiswa?",
+    answer: `Username awal mahasiswa adalah NIM. Password awal menggunakan tanggal, bulan, dan tahun lahir dengan format ddmmyyyy.`,
+    keywords: [
+      "username fast learning",
+      "password fast learning",
+      "nim",
+      "ddmmyyyy",
+      "password awal",
+    ],
+  },
+  {
+    id: 217,
+    category: "E-Learning dan Absensi",
+    question: "Apa saja menu utama yang ada di FAST Learning?",
+    answer: `Menu utama FAST Learning meliputi Home, Dashboard, My Courses, Latest Announcements, Daring Users atau Online Users, Download, Grades, Messages, Preferences, dan Log out.
+
+Menu My Courses digunakan untuk melihat kelas yang diikuti, sedangkan Grades digunakan untuk melihat nilai aktivitas seperti forum, kuis, dan tugas.`,
+    keywords: [
+      "menu fast learning",
+      "dashboard fast learning",
+      "my courses",
+      "grades",
+      "nilai aktivitas",
+    ],
+  },
+  {
+    id: 218,
+    category: "E-Learning dan Absensi",
+    question: "Apa itu Weekly Outline pada FAST Learning?",
+    answer: `Weekly Outline adalah bagian pada halaman kelas FAST Learning yang berisi aktivitas perkuliahan berdasarkan minggu atau pertemuan.
+
+Aktivitas yang dapat muncul pada Weekly Outline antara lain:
+1. Materi atau bahan ajar.
+2. Tatap Muka Virtual.
+3. Tatap Muka Kelas.
+4. Forum diskusi.
+5. Kuis.
+6. Tugas atau penugasan.
+
+Rentang aktivitas mingguan umumnya berlaku selama 1 minggu atau 7 hari sesuai kalender FAST Learning.`,
+    keywords: [
+      "weekly outline",
+      "mingguan fast learning",
+      "aktivitas perkuliahan",
+      "materi forum kuis tugas",
+    ],
+  },
+  {
+    id: 219,
+    category: "E-Learning dan Absensi",
+    question: "Apa saja jenis perkuliahan pada sistem FAST Learning?",
+    answer: `Jenis perkuliahan yang digunakan meliputi Tatap Muka Kelas, Tatap Muka Virtual, Dalam Jaringan atau Daring, dan Ujian.
+
+Tatap Muka Kelas dilakukan di kelas sesuai jadwal SIA. Tatap Muka Virtual dilakukan melalui Google Meet di FAST Learning. Perkuliahan Daring dilakukan melalui aktivitas seperti forum, kuis, atau tugas.`,
+    keywords: [
+      "jenis perkuliahan",
+      "tatap muka kelas",
+      "tatap muka virtual",
+      "daring",
+      "ujian",
+    ],
+  },
+  {
+    id: 220,
+    category: "E-Learning dan Absensi",
+    question: "Apa itu Tatap Muka Virtual?",
+    answer: `Tatap Muka Virtual adalah perkuliahan yang dilakukan melalui video conference, biasanya menggunakan Google Meet pada web FAST Learning. Mahasiswa wajib mengikuti Tatap Muka Virtual sesuai jadwal kuliah di SIA sebagai syarat kehadiran.`,
+    keywords: [
+      "tatap muka virtual",
+      "tmv",
+      "google meet",
+      "video conference",
+      "kehadiran virtual",
+    ],
+  },
+  {
+    id: 221,
+    category: "E-Learning dan Absensi",
+    question: "Bagaimana cara mengikuti Tatap Muka Virtual di FAST Learning?",
+    answer: `Cara mengikuti Tatap Muka Virtual adalah:
+
+1. Login ke FAST Learning.
+2. Masuk ke kelas mata kuliah yang dijadwalkan.
+3. Cari aktivitas Tatap Muka Virtual atau Google Meet pada minggu pertemuan.
+4. Klik nama aktivitas tersebut.
+5. Klik tombol Enter the room sesuai waktu kuliah yang terjadwal di SIA.
+
+Mahasiswa perlu mengikuti Google Meet melalui FAST Learning agar kehadiran dapat tercatat sesuai ketentuan.`,
+    keywords: [
+      "cara ikut tmv",
+      "enter the room",
+      "google meet fast learning",
+      "absen tatap muka virtual",
+    ],
+  },
+  {
+    id: 222,
+    category: "E-Learning dan Absensi",
+    question: "Apa itu Tatap Muka Kelas?",
+    answer: `Tatap Muka Kelas adalah perkuliahan yang dilakukan secara langsung di kelas. Mahasiswa hadir di ruang kelas dan aktif mengikuti pertemuan sesuai jadwal kuliah di SIA.`,
+    keywords: [
+      "tatap muka kelas",
+      "kuliah offline",
+      "hadir di kelas",
+      "jadwal sia",
+    ],
+  },
+  {
+    id: 223,
+    category: "E-Learning dan Absensi",
+    question: "Apa itu Perkuliahan Daring?",
+    answer: `Perkuliahan Daring adalah perkuliahan online asynchronous yang dilakukan melalui aktivitas di FAST Learning, seperti forum, kuis, atau tugas.
+
+Mahasiswa tercatat hadir apabila memenuhi aktivitas yang diwajibkan pada minggu perkuliahan tersebut sesuai kalender FAST Learning, misalnya menanggapi forum dan mengerjakan kuis atau tugas.`,
+    keywords: [
+      "perkuliahan daring",
+      "kuliah daring",
+      "asynchronous",
+      "forum kuis tugas",
+      "absensi daring",
+    ],
+  },
+  {
+    id: 224,
+    category: "E-Learning dan Absensi",
+    question: "Bagaimana aturan kehadiran mahasiswa pada Tatap Muka Kelas?",
+    answer: `Pada Tatap Muka Kelas, mahasiswa hadir langsung di kelas sesuai jadwal yang ada pada SIA. Kehadiran mahasiswa akan diinput oleh dosen secara manual di SIA.`,
+    keywords: [
+      "kehadiran tatap muka kelas",
+      "absen kelas",
+      "input absen manual",
+      "jadwal sia",
+    ],
+  },
+  {
+    id: 225,
+    category: "E-Learning dan Absensi",
+    question: "Bagaimana aturan kehadiran mahasiswa pada Tatap Muka Virtual?",
+    answer: `Pada Tatap Muka Virtual, mahasiswa tercatat hadir jika mengikuti video conference dengan dosen menggunakan Google Meet pada web FAST Learning dan sesuai jadwal pada kalender FAST Learning.
+
+Kehadiran Tatap Muka Virtual dapat terinput otomatis ke SIA jika mahasiswa mengikuti aktivitas Google Meet sesuai ketentuan.`,
+    keywords: [
+      "kehadiran tatap muka virtual",
+      "absen tmv",
+      "google meet",
+      "absen otomatis sia",
+      "fast learning",
+    ],
+  },
+  {
+    id: 226,
+    category: "E-Learning dan Absensi",
+    question: "Bagaimana aturan kehadiran mahasiswa pada Perkuliahan Daring?",
+    answer: `Pada Perkuliahan Daring, mahasiswa tercatat hadir jika melakukan aktivitas yang diwajibkan pada minggu tersebut.
+
+Aktivitas yang biasanya menjadi syarat kehadiran adalah:
+1. Memberikan tanggapan di forum.
+2. Mengerjakan kuis.
+3. Mengumpulkan tugas jika ada.
+
+Aktivitas harus dilakukan sesuai jadwal pada kalender FAST Learning, biasanya dalam rentang waktu 1 minggu atau 7 hari.`,
+    keywords: [
+      "kehadiran daring",
+      "absen daring",
+      "forum kuis tugas",
+      "kalender fast learning",
+      "7 hari",
+    ],
+  },
+  {
+    id: 227,
+    category: "E-Learning dan Absensi",
+    question: "Berapa lama rentang waktu aktivitas mingguan di FAST Learning?",
+    answer: `Rentang waktu aktivitas mingguan di FAST Learning umumnya berlangsung selama 1 minggu atau 7 hari. Contohnya, jika kelas dijadwalkan hari Rabu, maka rentang aktivitas dapat berlaku dari Rabu sampai Selasa pukul 23.59 WIB.`,
+    keywords: [
+      "rentang waktu fast learning",
+      "aktivitas mingguan",
+      "7 hari",
+      "rabu sampai selasa",
+      "kalender fast learning",
+    ],
+  },
+  {
+    id: 228,
+    category: "E-Learning dan Absensi",
+    question: "Apa kewajiban mahasiswa pada forum diskusi FAST Learning?",
+    answer: `Mahasiswa wajib minimal satu kali menanggapi forum diskusi yang diberikan oleh dosen dalam rentang waktu 1 minggu atau 7 hari.
+
+Forum digunakan untuk berdiskusi, menjawab pertanyaan dosen, menanggapi pendapat mahasiswa lain, dan menjadi salah satu unsur kehadiran pada minggu Perkuliahan Daring.`,
+    keywords: [
+      "forum fast learning",
+      "kewajiban forum",
+      "reply forum",
+      "diskusi daring",
+      "kehadiran forum",
+    ],
+  },
+  {
+    id: 229,
+    category: "E-Learning dan Absensi",
+    question: "Bagaimana cara menanggapi forum di FAST Learning?",
+    answer: `Cara menanggapi forum di FAST Learning adalah:
+
+1. Masuk ke kelas mata kuliah.
+2. Klik aktivitas forum pada minggu pertemuan.
+3. Untuk forum standar, klik Add a new discussion topic atau pilih topik diskusi lalu klik Reply.
+4. Untuk forum sederhana, klik Reply pada uraian forum.
+5. Isi tanggapan pada kolom yang tersedia.
+6. Klik Post to forum untuk mengirim tanggapan.
+
+Jika tanggapan berupa file, mahasiswa dapat menggunakan fitur Attachment jika tersedia.`,
+    keywords: [
+      "cara reply forum",
+      "menanggapi forum",
+      "post to forum",
+      "forum standar",
+      "forum sederhana",
+    ],
+  },
+  {
+    id: 230,
+    category: "E-Learning dan Absensi",
+    question: "Apa itu kuis di FAST Learning?",
+    answer: `Kuis adalah aktivitas evaluasi mingguan pada FAST Learning. Bentuk kuis dapat berupa essay, pilihan ganda, benar/salah, isian singkat, atau menjodohkan.
+
+Kuis juga menjadi salah satu unsur yang dapat dilihat sebagai kehadiran mahasiswa pada minggu Perkuliahan Daring.`,
+    keywords: [
+      "kuis fast learning",
+      "quiz",
+      "evaluasi mingguan",
+      "pilihan ganda",
+      "essay",
+    ],
+  },
+  {
+    id: 231,
+    category: "E-Learning dan Absensi",
+    question: "Bagaimana cara mengerjakan kuis di FAST Learning?",
+    answer: `Cara mengerjakan kuis di FAST Learning adalah:
+
+1. Klik aktivitas Kuis pada halaman kelas.
+2. Baca informasi aturan kuis, tanggal buka, tanggal tutup, time limit, dan jumlah attempt.
+3. Klik Attempt quiz atau Attempt quiz now.
+4. Pilih Start attempt untuk mulai mengerjakan.
+5. Jawab pertanyaan yang tersedia.
+6. Klik Finish attempt setelah selesai.
+7. Pastikan semua jawaban tersimpan.
+8. Klik Submit all and finish untuk mengakhiri kuis.
+
+Perhatikan time limit karena jika waktu habis, kuis akan tertutup dan hanya menyimpan jawaban yang sudah dikerjakan.`,
+    keywords: [
+      "cara mengerjakan kuis",
+      "attempt quiz",
+      "submit all and finish",
+      "time limit",
+      "kuis fast learning",
+    ],
+  },
+  {
+    id: 232,
+    category: "E-Learning dan Absensi",
+    question: "Apa perbedaan kuis otomatis dan kuis essay di FAST Learning?",
+    answer: `Kuis otomatis seperti pilihan ganda, benar/salah, isian, dan menjodohkan dapat langsung dinilai oleh sistem FAST Learning. Sedangkan kuis essay perlu dikoreksi dan dinilai terlebih dahulu oleh dosen, sehingga nilai biasanya tidak langsung tampil dan dapat berstatus Not yet graded.`,
+    keywords: [
+      "kuis otomatis",
+      "kuis essay",
+      "not yet graded",
+      "nilai kuis",
+      "penilaian fast learning",
+    ],
+  },
+  {
+    id: 233,
+    category: "E-Learning dan Absensi",
+    question: "Bagaimana cara mengumpulkan tugas di FAST Learning?",
+    answer: `Cara mengumpulkan tugas di FAST Learning adalah:
+
+1. Klik aktivitas Tugas pada halaman kelas.
+2. Baca instruksi tugas, tanggal buka, dan tanggal tutup.
+3. Klik Add Submission.
+4. Pada file submissions, klik ikon file atau tanda panah.
+5. Pilih Upload a file.
+6. Klik Browse atau Choose file.
+7. Pilih file tugas dari perangkat.
+8. Klik Upload this file.
+9. Klik Save changes.
+
+Jika ingin mengganti file sebelum batas waktu, gunakan Edit Submission. Jika ingin menghapus file, gunakan Remove submission.`,
+    keywords: [
+      "cara upload tugas",
+      "add submission",
+      "upload tugas fast learning",
+      "save changes",
+      "edit submission",
+    ],
+  },
+  {
+    id: 234,
+    category: "E-Learning dan Absensi",
+    question: "Bagaimana cara melihat nilai aktivitas di FAST Learning?",
+    answer: `Mahasiswa dapat melihat nilai aktivitas melalui menu Grades pada kelas FAST Learning. Menu ini menampilkan nilai dari aktivitas yang menggunakan sistem penilaian, seperti forum, kuis, dan tugas.`,
+    keywords: [
+      "lihat nilai fast learning",
+      "grades",
+      "nilai aktivitas",
+      "nilai kuis",
+      "nilai tugas",
+    ],
+  },
+  {
+    id: 235,
+    category: "E-Learning dan Absensi",
+    question:
+      "Apa yang harus dilakukan jika lupa password atau sulit login SSO?",
+    answer: `Jika lupa password atau mengalami kendala login SSO, mahasiswa dapat menggunakan fitur Lupa Password pada web SSO. Jika masih mengalami kendala, mahasiswa dapat menghubungi BTI atau membuat tiket melalui https://support.mercubuana.ac.id.
+
+Untuk kendala belum mendapatkan email UMB atau kesulitan login SSO, mahasiswa juga dapat menghubungi Biro Teknologi Informasi atau BTI Kampus Meruya Gedung B Lantai 1.`,
+    keywords: [
+      "lupa password sso",
+      "tidak bisa login sso",
+      "bti",
+      "support mercu buana",
+      "email umb",
+    ],
+  },
+  {
+    id: 236,
+    category: "E-Learning dan Absensi",
+    question: "Siapa yang dapat dihubungi jika ada kendala FAST Learning?",
+    answer: `Untuk kendala teknis dan operasional perkuliahan FAST Learning, mahasiswa dapat menghubungi Bagian e-Learning dan Pengembangan Bahan Ajar.
+
+Kontak dan layanan:
+1. Web support: https://support.mercubuana.ac.id
+2. Pilih Open a New Ticket.
+3. Pilih Help Topic: A*. FAST Learning.
+4. Gunakan email aktif saat membuat tiket.
+5. Email FAST Learning: fast@mercubuana.ac.id
+6. Hotline FAST Learning: 0852 8598 0952.
+7. Jam pelayanan: Senin sampai Sabtu, pukul 08.00 sampai 16.00.`,
+    keywords: [
+      "kendala fast learning",
+      "kontak fast learning",
+      "support fast learning",
+      "hallo fast",
+      "fast@mercubuana.ac.id",
+    ],
+  },
+  {
+    id: 237,
+    category: "Surat Edaran dan Kebijakan Kampus",
+    question: "Apa itu surat edaran rektor?",
+    answer: `Surat edaran rektor adalah pengumuman resmi dari Rektor Universitas Mercu Buana yang berisi kebijakan, arahan, atau informasi penting untuk pejabat struktural, dosen, tenaga kependidikan, dan mahasiswa di lingkungan kampus.`,
+    keywords: [
+      "surat edaran rektor",
+      "edaran rektor",
+      "kebijakan kampus",
+      "pengumuman resmi",
+      "informasi rektor",
+    ],
+  },
+  {
+    id: 238,
+    category: "Surat Edaran dan Kebijakan Kampus",
+    question: "Siapa saja yang menjadi penerima surat edaran rektor?",
+    answer: `Surat edaran rektor ditujukan kepada:
+
+1. Pejabat struktural.
+2. Dosen.
+3. Tenaga kependidikan.
+4. Mahasiswa.
+
+Penerima surat adalah seluruh sivitas akademika di lingkungan Universitas Mercu Buana.`,
+    keywords: [
+      "penerima surat edaran",
+      "pejabat struktural",
+      "dosen",
+      "tenaga kependidikan",
+      "mahasiswa",
+    ],
+  },
+  {
+    id: 239,
+    category: "Surat Edaran dan Kebijakan Kampus",
+    question: "Apa kebijakan Work From Home atau WFH pada hari Jumat?",
+    answer: `Berdasarkan surat edaran rektor, mulai tanggal 17 April 2026 Universitas Mercu Buana memberlakukan kebijakan Work From Home atau WFH setiap hari Jumat bagi seluruh dosen, tenaga kependidikan, dan mahasiswa.
+
+Kebijakan ini dapat dievaluasi secara berkala dan dapat diperbaiki jika terdapat kekeliruan dalam penerapannya.`,
+    keywords: [
+      "wfh jumat",
+      "work from home",
+      "kebijakan wfh",
+      "17 april 2026",
+      "edaran rektor wfh",
+    ],
+  },
+  {
+    id: 240,
+    category: "Surat Edaran dan Kebijakan Kampus",
+    question: "Mengapa Universitas Mercu Buana menerapkan WFH hari Jumat?",
+    answer: `Kebijakan WFH hari Jumat diterapkan untuk mendukung optimalisasi efektivitas kinerja dan fleksibilitas kegiatan akademik, serta menindaklanjuti pengaturan pola kerja dan kegiatan akademik di perguruan tinggi.`,
+    keywords: [
+      "alasan wfh",
+      "tujuan wfh",
+      "efektivitas kerja",
+      "fleksibilitas akademik",
+      "kebijakan kampus",
+    ],
+  },
+  {
+    id: 241,
+    category: "Surat Edaran dan Kebijakan Kampus",
+    question: "Bagaimana pelaksanaan perkuliahan Reguler 1 pada hari Jumat?",
+    answer: `Perkuliahan Reguler 1 yang dijadwalkan pada hari Jumat dilaksanakan secara daring atau online melalui LMS Ruang Kelas.
+
+Mahasiswa mengikuti perkuliahan sesuai jadwal yang tercantum pada SIA Mercu Buana.`,
+    keywords: [
+      "reguler 1 jumat",
+      "kuliah jumat",
+      "ruang kelas",
+      "kuliah online",
+      "sia mercu buana",
+    ],
+  },
+  {
+    id: 242,
+    category: "Surat Edaran dan Kebijakan Kampus",
+    question:
+      "Aplikasi apa yang digunakan untuk perkuliahan Reguler 1 hari Jumat?",
+    answer: `Perkuliahan Reguler 1 hari Jumat dilakukan melalui aplikasi Ruang Kelas dengan alamat https://ruangkelas.mercubuana.ac.id/.`,
+    keywords: [
+      "aplikasi reguler 1",
+      "ruang kelas",
+      "lms ruang kelas",
+      "perkuliahan jumat",
+      "kuliah daring",
+    ],
+  },
+  {
+    id: 243,
+    category: "Surat Edaran dan Kebijakan Kampus",
+    question:
+      "Bagaimana pola pertemuan ganjil dan genap pada perkuliahan Reguler 1 hari Jumat?",
+    answer: `Ketentuan perkuliahan Reguler 1 hari Jumat pada aplikasi Ruang Kelas adalah:
+
+1. Pertemuan ganjil, yaitu pertemuan ke-1, 3, 5, 7, 9, 11, 13, dan 15 dilaksanakan secara tatap muka virtual.
+2. Pertemuan genap, yaitu pertemuan ke-2, 4, 6, 10, 12, dan 14 dilaksanakan secara online forum dan kuis.
+3. Pertemuan ke-8 adalah Ujian Tengah Semester atau UTS.
+4. Pertemuan ke-16 adalah Ujian Akhir Semester atau UAS.`,
+    keywords: [
+      "pertemuan ganjil genap",
+      "reguler 1 jumat",
+      "tatap muka virtual",
+      "forum kuis",
+      "uts uas",
+    ],
+  },
+  {
+    id: 244,
+    category: "Surat Edaran dan Kebijakan Kampus",
+    question:
+      "Bagaimana aturan kehadiran dosen pada perkuliahan Reguler 1 hari Jumat?",
+    answer: `Pada perkuliahan Reguler 1 hari Jumat, dosen wajib melaksanakan tatap muka virtual melalui Zoom Meeting atau Google Meet dan melampirkan bukti kegiatan berupa screenshot atau rekaman pembelajaran di aplikasi Ruang Kelas.
+
+Untuk perkuliahan daring, dosen beraktivitas di Ruang Kelas dengan membuat forum, membuat kuis, dan menanggapi forum. Aktivitas dilakukan sesuai jadwal hari dan jam pada SIA.`,
+    keywords: [
+      "kehadiran dosen",
+      "reguler 1 jumat",
+      "zoom meeting",
+      "google meet",
+      "ruang kelas",
+    ],
+  },
+  {
+    id: 245,
+    category: "Surat Edaran dan Kebijakan Kampus",
+    question:
+      "Bagaimana aturan kehadiran mahasiswa pada perkuliahan Reguler 1 hari Jumat?",
+    answer: `Mahasiswa Reguler 1 hari Jumat wajib mengikuti tatap muka virtual melalui Zoom Meeting atau Google Meet sesuai jadwal kuliah.
+
+Pada aktivitas daring seperti forum dan kuis, mahasiswa perlu menanggapi forum dan mengerjakan kuis. Aktivitas dilakukan sesuai jadwal hari dan jam pada SIA.`,
+    keywords: [
+      "kehadiran mahasiswa",
+      "reguler 1 jumat",
+      "absensi jumat",
+      "forum kuis",
+      "zoom google meet",
+    ],
+  },
+  {
+    id: 246,
+    category: "Surat Edaran dan Kebijakan Kampus",
+    question:
+      "Bagaimana pelaksanaan perkuliahan Reguler 2 hari Sabtu untuk kode kelas 1F dan 2F?",
+    answer: `Untuk Reguler 2 hari Sabtu dengan kode kelas 1F dan 2F, pelaksanaan perkuliahan diatur sebagai berikut:
+
+1. Kode kelas 1F pada pertemuan ke-5 dilaksanakan Tatap Muka Virtual atau TVM pada Sabtu, 25 April 2026.
+2. Kode kelas 2F pada pertemuan ke-4 dilaksanakan Perkuliahan Daring berupa forum dan kuis pada Sabtu, 18 April 2026.
+3. Perkuliahan untuk kode kelas 1F dan 2F dilakukan melalui aplikasi FAST Learning di https://fast.mercubuana.ac.id/.`,
+    keywords: [
+      "reguler 2 sabtu",
+      "kode kelas 1f",
+      "kode kelas 2f",
+      "fast learning",
+      "25 april 2026",
+      "18 april 2026",
+    ],
+  },
+  {
+    id: 247,
+    category: "Surat Edaran dan Kebijakan Kampus",
+    question:
+      "Aplikasi apa yang digunakan untuk perkuliahan Reguler 2 hari Sabtu kode kelas 1F dan 2F?",
+    answer: `Perkuliahan Reguler 2 hari Sabtu untuk kode kelas 1F dan 2F dilakukan melalui aplikasi FAST Learning dengan alamat https://fast.mercubuana.ac.id/.`,
+    keywords: [
+      "fast learning",
+      "reguler 2 sabtu",
+      "kelas 1f",
+      "kelas 2f",
+      "aplikasi kuliah",
+    ],
+  },
+  {
+    id: 248,
+    category: "Surat Edaran dan Kebijakan Kampus",
+    question:
+      "Bagaimana ketentuan aktivitas pada FAST Learning untuk kelas Reguler 2 hari Sabtu?",
+    answer: `Ketentuan aktivitas pada FAST Learning untuk Reguler 2 hari Sabtu adalah:
+
+1. Pertemuan ganjil ke-1, 3, 5, 7, 9, 11, 13, dan 15 dilaksanakan tatap muka virtual.
+2. Pertemuan genap ke-2, 4, 6, 10, 12, dan 14 dilaksanakan secara online melalui forum dan kuis.
+3. Pertemuan ke-8 adalah Ujian Tengah Semester atau UTS.
+4. Pertemuan ke-16 adalah Ujian Akhir Semester atau UAS.
+5. Aktivitas dilakukan sesuai jadwal pada kalender FAST Learning.`,
+    keywords: [
+      "fast learning reguler 2",
+      "tatap muka virtual",
+      "forum kuis",
+      "kalender fast learning",
+      "uts uas",
+    ],
+  },
+  {
+    id: 249,
+    category: "Surat Edaran dan Kebijakan Kampus",
+    question: "Bagaimana aturan kehadiran mahasiswa pada FAST Learning?",
+    answer: `Mahasiswa tercatat hadir apabila mengikuti aktivitas Google Meet pada pertemuan Tatap Muka Virtual dan mengikuti aktivitas daring di FAST Learning seperti menanggapi forum dan mengerjakan kuis sesuai kalender FAST Learning.`,
+    keywords: [
+      "kehadiran fast learning",
+      "absensi fast learning",
+      "google meet",
+      "forum kuis",
+      "kalender fast learning",
+    ],
+  },
+  {
+    id: 250,
+    category: "Surat Edaran dan Kebijakan Kampus",
+    question:
+      "Bagaimana pelaksanaan perkuliahan Reguler 2 hari Sabtu untuk kelas selain 1F dan 2F?",
+    answer: `Untuk Reguler 2 hari Sabtu pada program studi dengan kode kelas offline selain 1F, 2F, PR, dan FF, perkuliahan yang sebelumnya dilaksanakan full tatap muka atau offline dialihkan menggunakan aplikasi Ruang Kelas.
+
+Syarat dan ketentuan aktivitas perkuliahan mengikuti ketentuan perkuliahan Reguler 1 hari Jumat pada aplikasi Ruang Kelas.`,
+    keywords: [
+      "reguler 2 sabtu selain 1f 2f",
+      "kelas offline",
+      "ruang kelas",
+      "kode pr ff",
+      "kuliah sabtu",
+    ],
+  },
+  {
+    id: 251,
+    category: "Surat Edaran dan Kebijakan Kampus",
+    question: "Apakah masih ada perkuliahan offline pada hari Sabtu?",
+    answer: `Ya. Beberapa kegiatan perkuliahan Reguler 2 hari Sabtu tetap dilaksanakan tatap muka kelas atau offline, terutama pada mata kuliah yang telah diatur oleh program studi dan Biro Operasional Perkuliahan.
+
+Program studi yang disebut dalam surat edaran antara lain SI Desain Interior, SI Desain Produk, SI Desain Komunikasi Visual, SI Arsitektur, SI Teknik Sipil, SI Psikologi, dan Profesi Arsitek.`,
+    keywords: [
+      "kuliah offline sabtu",
+      "tatap muka sabtu",
+      "reguler 2 offline",
+      "desain interior",
+      "arsitektur",
+      "psikologi",
+    ],
+  },
+  {
+    id: 252,
+    category: "Surat Edaran dan Kebijakan Kampus",
+    question:
+      "Bagaimana aturan kegiatan akademik pada hari Sabtu selama kebijakan WFH?",
+    answer: `Pada hari Sabtu, kegiatan dosen dapat menyesuaikan jadwal yang telah ditentukan oleh program studi. Kegiatan tenaga kependidikan dan operasional kampus dibatasi sampai pukul 12.00 WIB.
+
+Jika terdapat kegiatan akademik lain yang dilaksanakan melebihi pukul 12.00 WIB, kegiatan perlu dikoordinasikan dengan program studi atau unit kerja terkait.`,
+    keywords: [
+      "kegiatan akademik sabtu",
+      "operasional sabtu",
+      "pukul 12.00",
+      "wfh kampus",
+      "koordinasi prodi",
+    ],
+  },
+  {
+    id: 253,
+    category: "Surat Edaran dan Kebijakan Kampus",
+    question: "Apakah praktikum tetap boleh tatap muka selama kebijakan WFH?",
+    answer: `Ya. Jika pada Reguler 2 terdapat mata kuliah yang membutuhkan praktikum, tatap muka, atau luring, maka program studi dapat berkoordinasi dengan Biro Operasional Perkuliahan untuk melaksanakan tatap muka mulai pukul 07.00 sampai 12.00 WIB.
+
+Penyesuaian jadwal praktikum dan kegiatan akademik lainnya perlu mempertimbangkan kebijakan WFH, pencapaian pembelajaran, dan aturan program studi.`,
+    keywords: [
+      "praktikum wfh",
+      "tatap muka praktikum",
+      "07.00 12.00",
+      "biro operasional perkuliahan",
+      "jadwal praktikum",
+    ],
+  },
+  {
+    id: 254,
+    category: "Surat Edaran dan Kebijakan Kampus",
+    question:
+      "Apa isi surat edaran tentang keluarga UMB yang terdampak bencana alam Sumatera?",
+    answer: `Surat edaran tersebut berisi imbauan kepada sivitas akademika Universitas Mercu Buana untuk melaporkan keluarga dosen, tenaga kependidikan, atau mahasiswa yang terdampak langsung bencana alam di Sumatera.
+
+Informasi penting dalam surat edaran:
+1. Bencana terjadi di beberapa wilayah Pulau Sumatera, mulai dari Aceh, Sumatera Utara, dan Sumatera Barat sejak akhir November 2025.
+2. UMB akan memberikan bantuan bagi orang tua kandung dosen, tenaga kependidikan, dan mahasiswa yang terdampak langsung.
+3. Laporan disampaikan ke Biro Administrasi dan Pengembangan Sumber Daya Manusia.
+4. Data yang dilaporkan mencakup kondisi keluarga, jenis dampak, atau kerugian yang dialami.
+5. Lampiran yang diminta adalah KK dan KTP.
+6. Kontak pelaporan: Bapak Kasiyo 08121978929 atau Sdri. Maula Zahra 089518250292.
+7. Batas laporan paling lambat 15 Desember 2025.`,
+    keywords: [
+      "bencana alam sumatera",
+      "surat edaran bencana",
+      "keluarga terdampak",
+      "bantuan umb",
+      "kk ktp",
+      "kasiyo",
+      "maula zahra",
+    ],
+  },
+  {
+    id: 255,
+    category: "Kalender Akademik",
+    question: "Kapan perkuliahan semester genap 2025/2026 dimulai?",
+    answer: `Berdasarkan Kalender FAST Learning Genap 2025/2026, pembukaan perkuliahan Semester Genap 2025/2026 dimulai pada 7 Maret 2026.`,
+    keywords: [
+      "kalender akademik",
+      "semester genap",
+      "mulai kuliah",
+      "7 maret 2026",
+      "fast learning",
+    ],
+  },
+  {
+    id: 256,
+    category: "Kalender Akademik",
+    question: "Apa saja jenis pertemuan pada Kalender FAST Learning?",
+    answer: `Jenis pertemuan pada Kalender FAST Learning meliputi:
+
+1. TMV atau Tatap Muka Virtual.
+2. TMK atau Tatap Muka Kelas.
+3. Daring.
+4. UTS atau Ujian Tengah Semester.
+5. UAS atau Ujian Akhir Semester.
+
+Mahasiswa perlu mengikuti tipe pertemuan sesuai jadwal kelas dan kalender yang berlaku.`,
+    keywords: [
+      "jenis pertemuan fast learning",
+      "tmv",
+      "tmk",
+      "daring",
+      "uts",
+      "uas",
+    ],
+  },
+  {
+    id: 257,
+    category: "Kalender Akademik",
+    question: "Apa itu TMV pada Kalender FAST Learning?",
+    answer: `TMV adalah Tatap Muka Virtual, yaitu perkuliahan yang dilakukan secara virtual melalui media pembelajaran yang ditentukan, seperti FAST Learning atau platform meeting yang digunakan dosen.`,
+    keywords: [
+      "tmv",
+      "tatap muka virtual",
+      "kelas online",
+      "fast learning",
+      "kuliah virtual",
+    ],
+  },
+  {
+    id: 258,
+    category: "Kalender Akademik",
+    question: "Apa itu TMK pada Kalender FAST Learning?",
+    answer: `TMK adalah Tatap Muka Kelas, yaitu perkuliahan yang dilakukan secara langsung di kelas sesuai jadwal dan ketentuan perkuliahan.`,
+    keywords: ["tmk", "tatap muka kelas", "kuliah offline", "kelas tatap muka"],
+  },
+  {
+    id: 259,
+    category: "Kalender Akademik",
+    question: "Apa itu perkuliahan Daring pada Kalender FAST Learning?",
+    answer: `Daring adalah perkuliahan online yang biasanya dilakukan melalui aktivitas di FAST Learning, seperti forum, kuis, tugas, atau aktivitas pembelajaran lain sesuai arahan dosen.`,
+    keywords: ["daring", "kuliah daring", "forum", "kuis", "fast learning"],
+  },
+  {
+    id: 260,
+    category: "Kalender Akademik",
+    question: "Bagaimana pola pertemuan FAST Learning untuk kelas Senin?",
+    answer: `Pola pertemuan FAST Learning untuk kelas Senin adalah:
+
+1. Pertemuan 1 TMV: 9 - 15 Maret 2026.
+2. Libur: 16 - 22 Maret 2026.
+3. Libur: 23 - 29 Maret 2026.
+4. Pertemuan 2 Daring: 30 Maret - 5 April 2026.
+5. Pertemuan 3 TMV: 6 - 12 April 2026.
+6. Pertemuan 4 Daring: 13 - 19 April 2026.
+7. Pertemuan 5 TMV: 20 - 26 April 2026.
+8. Pertemuan 6 Daring: 27 April - 3 Mei 2026.
+9. Pertemuan 7 TMV: 4 - 10 Mei 2026.
+10. Pertemuan 8 UTS: sesuai jadwal di SIA.
+11. Pertemuan 9 TMV: 25 - 31 Mei 2026.
+12. Pertemuan 10 Daring: 1 - 7 Juni 2026.
+13. Pertemuan 11 TMV: 8 - 14 Juni 2026.
+14. Pertemuan 12 Daring: 15 - 21 Juni 2026.
+15. Pertemuan 13 TMV: 22 - 28 Juni 2026.
+16. Pertemuan 14 Daring: 29 Juni - 5 Juli 2026.
+17. Pertemuan 15 TMV: 6 - 12 Juli 2026.
+18. Pertemuan 16 UAS: sesuai jadwal di SIA.`,
+    keywords: [
+      "jadwal senin fast learning",
+      "kelas senin",
+      "kalender senin",
+      "tmv senin",
+      "daring senin",
+    ],
+  },
+  {
+    id: 261,
+    category: "Kalender Akademik",
+    question: "Bagaimana pola pertemuan FAST Learning untuk kelas Selasa?",
+    answer: `Pola pertemuan FAST Learning untuk kelas Selasa dimulai dengan Pertemuan 1 TMV pada 10 - 16 Maret 2026, kemudian terdapat masa libur pada 17 - 23 Maret dan 24 - 30 Maret 2026. Setelah itu pertemuan berlanjut dengan pola Daring dan TMV secara bergantian, UTS sesuai jadwal di SIA, dan UAS juga sesuai jadwal di SIA.`,
+    keywords: [
+      "jadwal selasa fast learning",
+      "kelas selasa",
+      "kalender selasa",
+      "tmv selasa",
+      "daring selasa",
+    ],
+  },
+  {
+    id: 262,
+    category: "Kalender Akademik",
+    question: "Bagaimana pola pertemuan FAST Learning untuk kelas Rabu?",
+    answer: `Pola pertemuan FAST Learning untuk kelas Rabu dimulai dengan Pertemuan 1 TMV pada 11 - 16 Maret 2026. Masa libur berlangsung pada 18 - 24 Maret dan 25 - 31 Maret 2026. Pertemuan berikutnya dilaksanakan dengan pola Daring dan TMV sesuai kalender, sedangkan UTS dan UAS mengikuti jadwal di SIA.`,
+    keywords: [
+      "jadwal rabu fast learning",
+      "kelas rabu",
+      "kalender rabu",
+      "tmv rabu",
+      "daring rabu",
+    ],
+  },
+  {
+    id: 263,
+    category: "Kalender Akademik",
+    question: "Bagaimana pola pertemuan FAST Learning untuk kelas Kamis?",
+    answer: `Pola pertemuan FAST Learning untuk kelas Kamis dimulai dengan Pertemuan 1 TMV pada 12 - 16 Maret 2026. Setelah masa libur pada 19 - 25 Maret dan 26 Maret - 1 April 2026, perkuliahan dilanjutkan dengan pola Daring dan TMV sesuai kalender. UTS dan UAS dilaksanakan sesuai jadwal di SIA.`,
+    keywords: [
+      "jadwal kamis fast learning",
+      "kelas kamis",
+      "kalender kamis",
+      "tmv kamis",
+      "daring kamis",
+    ],
+  },
+  {
+    id: 264,
+    category: "Kalender Akademik",
+    question: "Bagaimana pola pertemuan FAST Learning untuk kelas Jumat?",
+    answer: `Pola pertemuan FAST Learning untuk kelas Jumat dimulai dengan Pertemuan 1 TMV pada 13 - 16 Maret 2026. Masa libur berlangsung pada 20 - 26 Maret dan 27 Maret - 2 April 2026. Setelah itu, perkuliahan berlanjut dengan pola Daring dan TMV, kemudian UTS dan UAS mengikuti jadwal di SIA.`,
+    keywords: [
+      "jadwal jumat fast learning",
+      "kelas jumat",
+      "kalender jumat",
+      "tmv jumat",
+      "daring jumat",
+    ],
+  },
+  {
+    id: 265,
+    category: "Kalender Akademik",
+    question: "Bagaimana pola pertemuan FAST Learning untuk kelas Sabtu?",
+    answer: `Pola kelas Sabtu dapat berbeda sesuai kode kelas atau fakultas.
+
+Pada kalender tertentu, kelas Sabtu dapat menggunakan pola:
+1. Pertemuan awal berupa TMK atau TMV.
+2. Masa libur pada periode Maret 2026.
+3. Pertemuan lanjutan dapat berupa TMK, TMV, atau Daring.
+4. UTS dan UAS tetap mengikuti jadwal di SIA.
+
+Mahasiswa perlu melihat kalender sesuai kode kelas, seperti 1F atau 2F, dan mengikuti jadwal pada SIA.`,
+    keywords: [
+      "jadwal sabtu fast learning",
+      "kelas sabtu",
+      "kalender sabtu",
+      "tmk sabtu",
+      "kode kelas 1f 2f",
+    ],
+  },
+  {
+    id: 266,
+    category: "Kalender Akademik",
+    question: "Kapan UTS dan UAS pada Kalender FAST Learning?",
+    answer: `Pada Kalender FAST Learning Genap 2025/2026, UTS dilaksanakan sesuai jadwal di SIA pada pertemuan ke-8. UAS dilaksanakan sesuai jadwal di SIA pada pertemuan ke-16.`,
+    keywords: [
+      "uts fast learning",
+      "uas fast learning",
+      "jadwal uts",
+      "jadwal uas",
+      "sia",
+    ],
+  },
+  {
+    id: 267,
+    category: "Kalender Akademik",
+    question:
+      "Apa saja tanggal penting pada Kalender FAST Learning Genap 2025/2026?",
+    answer: `Tanggal penting yang tercantum pada Kalender FAST Learning Genap 2025/2026 antara lain:
+
+1. 7 Maret 2026: Pembukaan Perkuliahan Semester Genap 2025/2026.
+2. 17 Februari 2026: Tahun Baru Imlek.
+3. 19 Maret 2026: Hari Suci Nyepi.
+4. 3 April 2026: Wafat Yesus Kristus.
+5. 5 April 2026: Paskah.
+6. 1 Mei 2026: Hari Buruh.
+7. 15 Mei 2026: Kenaikan Yesus Kristus.
+8. 31 Mei 2026: Hari Raya Waisak.
+9. 1 Juni 2026: Hari Lahir Pancasila.
+10. 16 Juni 2026: 1 Muharam Tahun Baru Islam.`,
+    keywords: [
+      "tanggal penting akademik",
+      "kalender fast learning",
+      "hari libur",
+      "semester genap 2026",
+    ],
+  },
+  {
+    id: 268,
+    category: "Pengumuman Kampus",
+    question: "Kapan libur Hari Raya Natal 2025 di Universitas Mercu Buana?",
+    answer: `Libur Nasional dan Cuti Bersama Hari Raya Natal 2025 di Universitas Mercu Buana ditetapkan pada tanggal 25 - 26 Desember 2025.`,
+    keywords: [
+      "libur natal",
+      "natal 2025",
+      "cuti bersama natal",
+      "25 desember 2025",
+      "26 desember 2025",
+    ],
+  },
+  {
+    id: 269,
+    category: "Pengumuman Kampus",
+    question: "Kapan libur Tahun Baru Imlek 2577 Kongzili?",
+    answer: `Libur Nasional dan Cuti Bersama Tahun Baru Imlek 2577 Kongzili di lingkungan Universitas Mercu Buana ditetapkan pada tanggal 16 - 17 Februari 2026.`,
+    keywords: [
+      "libur imlek",
+      "imlek 2026",
+      "2577 kongzili",
+      "16 februari 2026",
+      "17 februari 2026",
+    ],
+  },
+  {
+    id: 270,
+    category: "Pengumuman Kampus",
+    question: "Kapan libur Hari Suci Nyepi 2026?",
+    answer: `Libur dan cuti bersama Hari Suci Nyepi atau Tahun Baru Saka 1948 ditetapkan pada tanggal 18 - 19 Maret 2026.`,
+    keywords: [
+      "libur nyepi",
+      "nyepi 2026",
+      "tahun baru saka 1948",
+      "18 maret 2026",
+      "19 maret 2026",
+    ],
+  },
+  {
+    id: 271,
+    category: "Pengumuman Kampus",
+    question: "Kapan libur Idul Fitri 1 Syawal 1447 H?",
+    answer: `Libur dan cuti bersama Hari Raya Idul Fitri 1 Syawal 1447 H ditetapkan pada tanggal 17 Maret 2026 dan 20 Maret sampai 25 Maret 2026. Aktivitas perkuliahan dan operasional kampus kembali normal mulai Kamis, 26 Maret 2026.`,
+    keywords: [
+      "libur idul fitri",
+      "idul fitri 1447 h",
+      "cuti bersama lebaran",
+      "26 maret 2026",
+      "kampus normal",
+    ],
+  },
+  {
+    id: 272,
+    category: "Pengumuman Kampus",
+    question:
+      "Kapan aktivitas kampus kembali normal setelah libur Idul Fitri 2026?",
+    answer: `Aktivitas perkuliahan dan operasional kampus kembali normal mulai Kamis, 26 Maret 2026.`,
+    keywords: [
+      "kampus normal",
+      "setelah idul fitri",
+      "26 maret 2026",
+      "operasional kampus",
+    ],
+  },
+  {
+    id: 273,
+    category: "Pengumuman Kampus",
+    question: "Apa aturan keamanan kampus selama masa libur?",
+    answer: `Selama masa libur, petugas keamanan tetap bertugas seperti biasa agar kampus tetap aman dan tertib.
+
+Mahasiswa dan karyawan dilarang bermalam di kampus. Sebelum meninggalkan ruangan, pastikan lampu, AC, komputer, perangkat listrik, dan alat kerja lainnya sudah dimatikan serta inventaris berada dalam posisi aman.`,
+    keywords: [
+      "keamanan kampus",
+      "aturan libur kampus",
+      "dilarang bermalam",
+      "matikan ac",
+      "matikan lampu",
+    ],
+  },
+  {
+    id: 274,
+    category: "Pengumuman Kampus",
+    question: "Kapan pengambilan KTM BNI Reguler 1 Semester Ganjil 2025/2026?",
+    answer: `Pengambilan KTM BNI Reguler 1 Semester Ganjil 2025/2026 dijadwalkan pada:
+
+1. Sabtu, 20 Desember 2025.
+2. Senin sampai Rabu, 22 - 24 Desember 2025.
+3. Senin sampai Selasa, 29 - 30 Desember 2025.
+
+Waktu pengambilan adalah pukul 09.00 - 15.00 WIB.`,
+    keywords: [
+      "pengambilan ktm",
+      "ktm bni",
+      "reguler 1",
+      "semester ganjil 2025 2026",
+      "jadwal ktm",
+    ],
+  },
+  {
+    id: 275,
+    category: "Pengumuman Kampus",
+    question: "Di mana lokasi pengambilan KTM BNI Reguler 1?",
+    answer: `Lokasi pengambilan KTM BNI adalah Customer Service Bank BNI, Gedung Bisnis Centre Lantai 2 Universitas Mercu Buana, Jl. Meruya Selatan No. 1, Kembangan, Jakarta Barat.`,
+    keywords: [
+      "lokasi pengambilan ktm",
+      "customer service bni",
+      "gedung bisnis centre",
+      "ktm meruya",
+    ],
+  },
+  {
+    id: 276,
+    category: "Pengumuman Kampus",
+    question: "Apa syarat pengambilan KTM BNI?",
+    answer: `Syarat pengambilan KTM BNI adalah:
+
+1. Mahasiswa harus tercantum dalam daftar mahasiswa yang sudah dapat mengambil KTM.
+2. Pengambilan KTM tidak dapat diwakilkan.
+3. Mahasiswa wajib membawa KTP asli saat pengambilan.
+4. Pengambilan dilakukan sesuai jadwal dan lokasi yang ditentukan.`,
+    keywords: [
+      "syarat ambil ktm",
+      "ktp asli",
+      "ktm tidak dapat diwakilkan",
+      "daftar ktm",
+    ],
+  },
+  {
+    id: 277,
+    category: "Pengumuman Kampus",
+    question:
+      "Bagaimana jika nama mahasiswa belum tercantum pada daftar pengambilan KTM?",
+    answer: `Jika nama mahasiswa belum tercantum dalam daftar pengambilan KTM, mahasiswa dapat mengajukan pembuatan KTM langsung ke Customer Service BNI KCP Universitas Mercu Buana Meruya.
+
+Persyaratan yang perlu dibawa:
+1. Pas foto ukuran 3x4 sebanyak dua lembar dengan background biru atau merah.
+2. Fotokopi KTP satu lembar.
+3. Surat Keterangan Mahasiswa Aktif.`,
+    keywords: [
+      "nama tidak tercantum ktm",
+      "buat ktm bni",
+      "persyaratan ktm",
+      "pas foto ktp sk aktif",
+    ],
+  },
+  {
+    id: 278,
+    category: "Kontak Penting",
+    question: "Apa kontak FAST Learning yang bisa dihubungi mahasiswa?",
+    answer: `Kontak FAST Learning yang tercantum pada kalender adalah Hotline FAST Learning 0852 8598 0952. Layanan tersedia pada jam kerja Senin sampai Sabtu pukul 08.00 - 16.00.`,
+    keywords: [
+      "kontak fast learning",
+      "hotline fast learning",
+      "085285980952",
+      "jam layanan fast",
+    ],
+  },
+  {
+    id: 279,
+    category: "Kontak Penting",
+    question:
+      "Apa saja website penting untuk mahasiswa Universitas Mercu Buana?",
+    answer: `Website penting yang tercantum pada kalender perkuliahan antara lain:
+
+1. Website Mercu Buana:
+www.mercubuana.ac.id
+
+2. Website pembelajaran FAST Learning:
+www.fast.mercubuana.ac.id
+
+3. Website My Class:
+www.myclass.com atau myclass.mercubuana.ac.id sesuai informasi layanan.
+
+4. Website jadwal kuliah/SIA:
+www.sia.mercubuana.ac.id`,
+    keywords: [
+      "website penting umb",
+      "mercubuana",
+      "fast learning",
+      "sia",
+      "myclass",
+    ],
+  },
+  {
+    id: 280,
+    category: "Kontak Penting",
+    question: "Kapan jam pelayanan FAST Learning dan layanan terkait?",
+    answer: `Jam pelayanan yang tercantum pada kalender FAST Learning adalah Senin sampai Sabtu pukul 08.00 - 16.00. Mahasiswa dapat menghubungi layanan pada jam kerja tersebut agar lebih cepat ditindaklanjuti.`,
+    keywords: [
+      "jam pelayanan fast learning",
+      "senin sabtu",
+      "08.00 16.00",
+      "layanan mahasiswa",
+    ],
+  },
+  {
+    id: 281,
+    category: "Perpustakaan dan Jurnal",
+    question: "Apa saja layanan e-resource Perpustakaan UMB?",
+    answer: `E-resource Perpustakaan Universitas Mercu Buana mencakup akses ke beberapa database jurnal dan ebook.
+
+Layanan yang tersedia antara lain:
+1. IEEE Xplore untuk bidang elektro dan komputer.
+2. Gale untuk bidang ekonomi, sosial/humaniora, dan teknik/sains.
+3. Emerald untuk bidang ekonomi, manajemen, dan akuntansi.
+4. ProQuest Ebook Central untuk ebook berbagai bidang.
+5. EBSCO eBooks.
+6. Cambridge Core.
+
+Untuk akses username dan password, mahasiswa dapat menghubungi Perpustakaan UMB karena data akun tidak boleh dipublikasikan secara terbuka.`,
+    keywords: [
+      "e-resource umb",
+      "perpustakaan umb",
+      "jurnal online",
+      "ebook umb",
+      "database jurnal",
+    ],
+  },
+  {
+    id: 282,
+    category: "Perpustakaan dan Jurnal",
+    question: "Apakah username dan password e-resource boleh disebarkan?",
+    answer: `Tidak. Username dan password e-resource Perpustakaan UMB tidak boleh dipublikasikan di internet atau media terbuka seperti website, blog, Facebook, Twitter, atau media sejenis. Jika membutuhkan akses, mahasiswa sebaiknya menghubungi Perpustakaan UMB secara resmi.`,
+    keywords: [
+      "password e-resource",
+      "akun jurnal",
+      "akses jurnal",
+      "username perpustakaan",
+      "tidak boleh disebarkan",
+    ],
+  },
+  {
+    id: 283,
+    category: "Perpustakaan dan Jurnal",
+    question:
+      "Siapa yang bisa dihubungi untuk akses e-resource Perpustakaan UMB?",
+    answer: `Mahasiswa dapat menghubungi kontak Perpustakaan UMB yang tercantum pada dokumen e-resource:
+
+1. 0857-1035-5052.
+2. 0812-8233-9923.
+3. 0812-8396-1122.
+
+Kontak tersebut dapat digunakan untuk menanyakan akses jurnal, ebook, panduan penggunaan database, atau kendala layanan perpustakaan.`,
+    keywords: [
+      "kontak perpustakaan umb",
+      "kontak e-resource",
+      "akses jurnal umb",
+      "bantuan perpustakaan",
+    ],
+  },
+  {
+    id: 284,
+    category: "Perpustakaan dan Jurnal",
+    question: "Apa itu IEEE Xplore?",
+    answer: `IEEE Xplore adalah database jurnal dan publikasi ilmiah yang banyak digunakan untuk bidang elektro, komputer, informatika, teknologi informasi, dan bidang teknik terkait. Mahasiswa dapat menggunakan IEEE Xplore untuk mencari artikel jurnal, prosiding konferensi, dan referensi ilmiah yang relevan dengan topik penelitian.`,
+    keywords: [
+      "ieee xplore",
+      "jurnal ieee",
+      "jurnal komputer",
+      "jurnal teknik",
+      "artikel ilmiah",
+    ],
+  },
+  {
+    id: 285,
+    category: "Perpustakaan dan Jurnal",
+    question: "Bagaimana cara mencari artikel di IEEE Xplore?",
+    answer: `Cara mencari artikel di IEEE Xplore adalah:
+
+1. Buka https://ieeexplore.ieee.org/.
+2. Login menggunakan akses resmi dari Perpustakaan UMB.
+3. Gunakan Search Bar di bagian tengah halaman untuk memasukkan kata kunci.
+4. Gunakan filter di sisi kiri untuk mempersempit hasil pencarian.
+5. Klik judul artikel yang sesuai.
+6. Gunakan tombol PDF jika ingin mengunduh artikel.
+7. Gunakan fitur Cite This jika ingin mengambil sitasi artikel.
+
+Mahasiswa juga dapat menggunakan Advanced Search untuk pencarian yang lebih detail.`,
+    keywords: [
+      "cara akses ieee",
+      "search ieee",
+      "download pdf ieee",
+      "cite this ieee",
+      "advanced search ieee",
+    ],
+  },
+  {
+    id: 286,
+    category: "Perpustakaan dan Jurnal",
+    question: "Apa saja fitur penting di IEEE Xplore?",
+    answer: `Fitur penting di IEEE Xplore antara lain Browse, My Settings, What can I access, Top Searches, Search Bar, filter pencarian, PDF download, Cite This, informasi penulis, document sections, dan Advanced Search.
+
+Fitur tersebut membantu mahasiswa mencari artikel, mengecek akses yang tersedia, mengunduh artikel full text, dan membuat sitasi.`,
+    keywords: [
+      "fitur ieee",
+      "browse ieee",
+      "top searches",
+      "pdf ieee",
+      "cite ieee",
+    ],
+  },
+  {
+    id: 287,
+    category: "Perpustakaan dan Jurnal",
+    question: "Apa itu Gale?",
+    answer: `Gale adalah database e-journal yang menyediakan sumber ilmiah untuk beberapa bidang, seperti ekonomi, sosial/humaniora, dan teknik atau sains. Mahasiswa dapat menggunakan Gale untuk mencari artikel, jurnal, topik penelitian, dan referensi akademik.`,
+    keywords: [
+      "gale",
+      "jurnal gale",
+      "database gale",
+      "jurnal ekonomi",
+      "jurnal humaniora",
+    ],
+  },
+  {
+    id: 288,
+    category: "Perpustakaan dan Jurnal",
+    question: "Apa saja fitur pencarian di Gale?",
+    answer: `Fitur pencarian di Gale meliputi:
+
+1. Pencarian dasar.
+2. Pencarian artikel.
+3. Pencarian topik.
+4. Pencarian subjek manual.
+5. Pencarian jurnal.
+6. Limitasi artikel untuk mempersempit hasil.
+7. Topic Finder 3D.
+8. Fitur translate artikel.
+9. Highlight dan note.
+10. Export citation.
+11. Print, bookmark, dan penyimpanan artikel.
+
+Fitur ini membantu mahasiswa mengelola artikel untuk kebutuhan tugas, penelitian, atau tugas akhir.`,
+    keywords: [
+      "fitur gale",
+      "pencarian gale",
+      "topic finder",
+      "translate gale",
+      "export citation",
+    ],
+  },
+  {
+    id: 289,
+    category: "Perpustakaan dan Jurnal",
+    question: "Bagaimana cara menyimpan atau mengolah artikel di Gale?",
+    answer: `Artikel di Gale dapat disimpan dan diolah menggunakan beberapa fitur, seperti bookmark, virtual drive, highlight and note, export citation, print artikel, dan penyimpanan artikel. Mahasiswa juga dapat menggunakan fitur translate untuk menerjemahkan artikel serta fitur MP3 streaming atau download jika tersedia.`,
+    keywords: [
+      "simpan artikel gale",
+      "bookmark gale",
+      "highlight note",
+      "export citation gale",
+      "translate artikel",
+    ],
+  },
+  {
+    id: 290,
+    category: "Perpustakaan dan Jurnal",
+    question: "Apa itu Emerald?",
+    answer: `Emerald adalah database e-journal yang digunakan untuk mencari artikel ilmiah, terutama pada bidang ekonomi, manajemen, dan akuntansi. Mahasiswa dapat menggunakan Emerald untuk mencari artikel jurnal, membaca artikel yang tersedia, dan mengunduh PDF jika artikel tersebut termasuk dalam akses yang tersedia.`,
+    keywords: [
+      "emerald",
+      "jurnal emerald",
+      "emerald insight",
+      "jurnal manajemen",
+      "jurnal akuntansi",
+    ],
+  },
+  {
+    id: 291,
+    category: "Perpustakaan dan Jurnal",
+    question: "Bagaimana aturan akses Emerald dari luar kampus?",
+    answer: `Berdasarkan info akses Emerald, akses dari luar kampus tidak lagi memerlukan OAN, tetapi pengguna tetap harus memiliki akun Emerald.
+
+Ketentuannya:
+1. Mahasiswa harus membuat akun Emerald terlebih dahulu.
+2. Login pertama atau aktivasi akses perlu dilakukan melalui jaringan kampus.
+3. Setelah login melalui IP kampus, akses dapat digunakan dari luar kampus selama periode tertentu.
+4. Pengguna perlu login kembali melalui jaringan kampus sebelum masa akses berakhir.
+5. Jika mahasiswa kelas online tidak bisa akses dari kampus, admin perpustakaan dapat membantu mendaftarkan akun agar dapat digunakan dari luar kampus.`,
+    keywords: [
+      "akses emerald luar kampus",
+      "akun emerald",
+      "oan emerald",
+      "login emerald",
+      "ip kampus",
+    ],
+  },
+  {
+    id: 292,
+    category: "Perpustakaan dan Jurnal",
+    question: "Bagaimana cara mencari dan mengunduh artikel di Emerald?",
+    answer: `Cara mencari artikel di Emerald adalah:
+
+1. Buka https://www.emerald.com/insight/.
+2. Login menggunakan akun Emerald.
+3. Masukkan kata kunci artikel pada kolom pencarian.
+4. Periksa hasil pencarian.
+5. Gunakan filter Available untuk melihat artikel yang bisa diakses.
+6. Pilih artikel yang sesuai.
+7. Klik PDF untuk mengunduh artikel.
+
+Jika belum memiliki akun, mahasiswa perlu melakukan register terlebih dahulu.`,
+    keywords: [
+      "cara akses emerald",
+      "search emerald",
+      "download pdf emerald",
+      "available emerald",
+      "register emerald",
+    ],
+  },
+  {
+    id: 293,
+    category: "Perpustakaan dan Jurnal",
+    question: "Apa itu ProQuest?",
+    answer: `ProQuest adalah database yang menyediakan akses ke e-journal, e-book, artikel ilmiah, referensi, dan publikasi akademik. ProQuest dapat digunakan untuk mencari literatur penelitian, tugas kuliah, artikel jurnal, dan referensi tugas akhir.`,
+    keywords: [
+      "proquest",
+      "database proquest",
+      "jurnal proquest",
+      "ebook proquest",
+      "artikel ilmiah",
+    ],
+  },
+  {
+    id: 294,
+    category: "Perpustakaan dan Jurnal",
+    question: "Bagaimana cara mengakses ProQuest dari luar institusi?",
+    answer: `Cara mengakses ProQuest dari luar institusi adalah:
+
+1. Buka https://search.proquest.com/.
+2. Klik Log in through your library to access more features.
+3. Klik More Option.
+4. Masukkan username dan password resmi dari Perpustakaan UMB.
+5. Setelah berhasil login, gunakan fitur pencarian untuk mencari artikel atau ebook.
+
+Mahasiswa dapat meminta informasi akun resmi ke Perpustakaan UMB.`,
+    keywords: [
+      "akses proquest luar kampus",
+      "login proquest",
+      "proquest library",
+      "search proquest",
+      "akun proquest",
+    ],
+  },
+  {
+    id: 295,
+    category: "Perpustakaan dan Jurnal",
+    question: "Apa saja fitur utama ProQuest?",
+    answer: `Fitur utama ProQuest meliputi Basic Search, Databases, Advanced Search, Publications, My Research, Selected Item, Recent Searches, Help, Cite, Email, Print, Save Search, Alert, dan RSS Feed.
+
+Fitur tersebut dapat membantu mahasiswa mencari artikel, mempersempit hasil pencarian, membuat sitasi, menyimpan hasil pencarian, dan menerima pembaruan artikel terbaru melalui email atau RSS.`,
+    keywords: [
+      "fitur proquest",
+      "basic search",
+      "advanced search",
+      "my research",
+      "cite proquest",
+    ],
+  },
+  {
+    id: 296,
+    category: "Perpustakaan dan Jurnal",
+    question: "Bagaimana cara mencari artikel di ProQuest?",
+    answer: `Cara mencari artikel di ProQuest adalah:
+
+1. Masuk ke ProQuest.
+2. Gunakan Basic Search untuk pencarian sederhana.
+3. Masukkan kata kunci pada kolom pencarian.
+4. Gunakan tanda kutip jika ingin mencari frasa yang lebih spesifik.
+5. Persempit hasil berdasarkan jenis dokumen, tahun terbit, atau filter lain.
+6. Pilih artikel yang sesuai.
+7. Buka Full Text atau Full Text PDF jika tersedia.
+8. Gunakan Cite, Email, Print, atau Export jika diperlukan.`,
+    keywords: [
+      "cara cari artikel proquest",
+      "basic search proquest",
+      "full text pdf",
+      "filter proquest",
+      "export proquest",
+    ],
+  },
+  {
+    id: 297,
+    category: "Perpustakaan dan Jurnal",
+    question: "Apa itu Ebook Central?",
+    answer: `Ebook Central adalah platform ebook dari ProQuest yang menyediakan buku elektronik berbagai bidang. Mahasiswa dapat membaca buku secara online atau melakukan full download sesuai ketentuan akses yang tersedia.`,
+    keywords: [
+      "ebook central",
+      "proquest ebook central",
+      "ebook umb",
+      "baca ebook online",
+      "download ebook",
+    ],
+  },
+  {
+    id: 298,
+    category: "Perpustakaan dan Jurnal",
+    question: "Bagaimana cara menggunakan Ebook Central?",
+    answer: `Cara menggunakan Ebook Central adalah:
+
+1. Login menggunakan akses resmi Perpustakaan UMB.
+2. Masukkan kata kunci buku pada kolom pencarian.
+3. Pilih salah satu buku dari hasil pencarian.
+4. Gunakan filter jika ingin mempersempit hasil pencarian.
+5. Pilih Read Online untuk membaca langsung.
+6. Pilih Full Download jika ingin mengunduh buku sesuai pilihan waktu akses.
+7. Gunakan fitur Download, Print to PDF, Copy, atau fitur lain sesuai kebutuhan.
+
+Untuk Full Download, pengguna disarankan menginstal Adobe Digital Editions.`,
+    keywords: [
+      "cara ebook central",
+      "read online",
+      "full download ebook",
+      "adobe digital editions",
+      "download ebook central",
+    ],
+  },
+  {
+    id: 299,
+    category: "Perpustakaan dan Jurnal",
+    question: "Apa perbedaan jurnal, ebook, dan database e-resource?",
+    answer: `Jurnal berisi artikel ilmiah yang biasanya membahas hasil penelitian atau kajian akademik. Ebook adalah buku elektronik yang dapat dibaca online atau diunduh sesuai ketentuan. Database e-resource adalah platform yang menyediakan akses ke jurnal, ebook, prosiding, artikel, atau sumber akademik lainnya, misalnya IEEE Xplore, Gale, Emerald, ProQuest, EBSCO, dan Cambridge Core.`,
+    keywords: [
+      "perbedaan jurnal ebook",
+      "database e-resource",
+      "artikel ilmiah",
+      "ebook",
+      "jurnal",
+    ],
+  },
+  {
+    id: 300,
+    category: "Perpustakaan dan Jurnal",
+    question: "Bagaimana cara memilih database jurnal yang sesuai kebutuhan?",
+    answer: `Mahasiswa dapat memilih database berdasarkan bidang dan jenis sumber yang dibutuhkan:
+
+1. Untuk bidang komputer, informatika, elektro, dan teknologi, gunakan IEEE Xplore.
+2. Untuk ekonomi, sosial/humaniora, teknik, dan sains, gunakan Gale.
+3. Untuk manajemen, akuntansi, dan ekonomi, gunakan Emerald.
+4. Untuk ebook berbagai bidang, gunakan ProQuest Ebook Central, EBSCO eBooks, atau Cambridge Core.
+5. Untuk pencarian artikel yang lebih luas, gunakan ProQuest.
+
+Jika masih bingung memilih database, mahasiswa dapat menghubungi Perpustakaan UMB untuk arahan akses dan pencarian referensi.`,
+    keywords: [
+      "pilih database jurnal",
+      "database sesuai bidang",
+      "ieee gale emerald proquest",
+      "referensi tugas akhir",
+      "layanan perpustakaan",
+    ],
+  },
 ];

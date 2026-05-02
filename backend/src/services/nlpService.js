@@ -1,5 +1,5 @@
-import natural from 'natural';
-import { faqs } from '../data/faqs.js';
+import natural from "natural";
+import { faqs } from "../data/faqs.js";
 import { createRequire } from "module";
 
 const require = createRequire(import.meta.url);
@@ -8,23 +8,51 @@ const Sastrawi = require("sastrawijs");
 const stemmer = new Sastrawi.Stemmer();
 
 const stopwords = [
-  "yang", "dan", "di", "ke", "dari", "untuk", "dengan", "atau",
-  "pada", "adalah", "itu", "ini", "saya", "kami", "kamu", "bagaimana",
-  "cara", "apa", "kapan", "dimana"
+  "yang",
+  "dan",
+  "di",
+  "ke",
+  "dari",
+  "untuk",
+  "dengan",
+  "atau",
+  "pada",
+  "adalah",
+  "itu",
+  "ini",
+  "saya",
+  "kami",
+  "kamu",
+  "bagaimana",
+  "cara",
+  "apa",
+  "kapan",
+  "dimana",
 ];
 
 export function preprocess(text) {
   return text
     .toLowerCase()
-    .replace(/[^a-zA-Z0-9\s]/g, "")
+    .replace(/[^a-zA-Z0-9\s]/g, " ")
     .split(/\s+/)
-    .filter((token) => token && token.length > 2)
+    .filter((token) => token)
+    .filter((token) => {
+      // Angka seperti 1, 2, 3, 8 tetap dipertahankan
+      if (/^\d+$/.test(token)) return true;
+
+      // Token huruf tetap minimal 3 karakter
+      return token.length > 2;
+    })
     .filter((token) => !stopwords.includes(token))
-    .map((token) => stemmer.stem(token));
+    .map((token) => {
+      // Angka tidak perlu di-stemming
+      if (/^\d+$/.test(token)) return token;
+
+      return stemmer.stem(token);
+    });
 }
 
 const tokenizer = new natural.WordTokenizer();
-
 
 // const stopwords = new Set([
 //   'yang','di','ke','dari','dan','atau','untuk','dengan','saya','aku','kami','kita','bagaimana','cara','apa','kapan','dimana','mengapa','adalah','itu','ini','pada','mau','ingin','tolong','mohon','dong','ya','kah'
@@ -38,8 +66,8 @@ const tokenizer = new natural.WordTokenizer();
 //     .filter((token) => token.length > 2)
 //     .map((token) => stemmer.stem(token));
 // }
-function normalize(text = '') {
-  return text.toLowerCase().replace(/[^a-zA-Z0-9\s]/g, ' ');
+function normalize(text = "") {
+  return text.toLowerCase().replace(/[^a-zA-Z0-9\s]/g, " ");
 }
 // function preprocess(text) {
 //   return text
@@ -57,12 +85,16 @@ function normalize(text = '') {
 // }
 
 function buildDocument(faq) {
-  return [faq.category, faq.question, faq.answer, ...(faq.keywords || [])].join(' ');
+  return [faq.category, faq.question, faq.answer, ...(faq.keywords || [])].join(
+    " ",
+  );
 }
 
 function termFrequency(tokens) {
   const tf = {};
-  tokens.forEach((token) => { tf[token] = (tf[token] || 0) + 1; });
+  tokens.forEach((token) => {
+    tf[token] = (tf[token] || 0) + 1;
+  });
   return tf;
 }
 
@@ -84,7 +116,7 @@ function cosineSimilarity(vecA, vecB) {
 
 const documents = faqs.map((faq) => ({
   faq,
-  tokens: preprocess(buildDocument(faq))
+  tokens: preprocess(buildDocument(faq)),
 }));
 
 const totalDocs = documents.length;
@@ -99,31 +131,89 @@ function tfidfVector(tokens) {
   const tf = termFrequency(tokens);
   const vector = {};
   Object.keys(tf).forEach((term) => {
-    const idf = Math.log((totalDocs + 1) / ((documentFrequency[term] || 0) + 1)) + 1;
+    const idf =
+      Math.log((totalDocs + 1) / ((documentFrequency[term] || 0) + 1)) + 1;
     vector[term] = tf[term] * idf;
   });
   return vector;
 }
 
-const faqVectors = documents.map((doc) => ({ faq: doc.faq, vector: tfidfVector(doc.tokens) }));
+function extractSemester(text = "") {
+  const normalized = text.toLowerCase();
+
+  const matchNumber = normalized.match(/semester\s+(\d+)/);
+  if (matchNumber) return matchNumber[1];
+
+  const wordToNumber = {
+    satu: "1",
+    dua: "2",
+    tiga: "3",
+    empat: "4",
+    lima: "5",
+    enam: "6",
+    tujuh: "7",
+    delapan: "8",
+  };
+
+  for (const [word, number] of Object.entries(wordToNumber)) {
+    if (normalized.includes(`semester ${word}`)) {
+      return number;
+    }
+  }
+
+  return null;
+}
+
+const faqVectors = documents.map((doc) => ({
+  faq: doc.faq,
+  vector: tfidfVector(doc.tokens),
+}));
 
 export function getBotReply(message) {
   const userTokens = preprocess(message);
   const userVector = tfidfVector(userTokens);
+  const userSemester = extractSemester(message);
 
   const ranked = faqVectors
-    .map(({ faq, vector }) => ({ ...faq, score: cosineSimilarity(userVector, vector) }))
+    .map(({ faq, vector }) => {
+      let score = cosineSimilarity(userVector, vector);
+
+      const faqText =
+        `${faq.question} ${(faq.keywords || []).join(" ")}`.toLowerCase();
+      const faqSemester = extractSemester(faqText);
+
+      // Boost jika user bertanya semester tertentu dan FAQ punya semester yang sama
+      if (userSemester && faqSemester && userSemester === faqSemester) {
+        score += 0.35;
+      }
+
+      // Penalti jika user bertanya semester tertentu tapi FAQ semesternya berbeda
+      if (userSemester && faqSemester && userSemester !== faqSemester) {
+        score -= 0.25;
+      }
+
+      return { ...faq, score };
+    })
     .sort((a, b) => b.score - a.score);
 
   const best = ranked[0];
-  const suggestions = ranked.slice(0, 3).map(({ id, question, category, score }) => ({ id, question, category, score: Number(score.toFixed(3)) }));
+
+  const suggestions = ranked
+    .slice(0, 3)
+    .map(({ id, question, category, score }) => ({
+      id,
+      question,
+      category,
+      score: Number(score.toFixed(3)),
+    }));
 
   if (!best || best.score < 0.12) {
     return {
-      answer: 'Maaf, saya belum menemukan jawaban yang sesuai. Coba gunakan kata kunci lain seperti KRS, UKT, nilai, cuti, skripsi, wisuda, atau surat aktif kuliah.',
+      answer:
+        "Maaf, saya belum menemukan jawaban yang sesuai. Coba gunakan kata kunci lain seperti KRS, UKT, nilai, cuti, skripsi, wisuda, atau surat aktif kuliah.",
       confidence: 0,
       matchedQuestion: null,
-      suggestions
+      suggestions,
     };
   }
 
@@ -132,7 +222,7 @@ export function getBotReply(message) {
     confidence: Number(best.score.toFixed(3)),
     matchedQuestion: best.question,
     category: best.category,
-    suggestions
+    suggestions,
   };
 }
 
