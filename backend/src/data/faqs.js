@@ -4320,4 +4320,404 @@ Informasi penting dalam surat edaran:
       "maula zahra",
     ],
   },
+  {
+    id: 255,
+    category: "Kalender Akademik",
+    question: "Kapan perkuliahan semester genap 2025/2026 dimulai?",
+    answer: `Berdasarkan Kalender FAST Learning Genap 2025/2026, pembukaan perkuliahan Semester Genap 2025/2026 dimulai pada 7 Maret 2026.`,
+    keywords: [
+      "kalender akademik",
+      "semester genap",
+      "mulai kuliah",
+      "7 maret 2026",
+      "fast learning",
+    ],
+  },
+  {
+    id: 256,
+    category: "Kalender Akademik",
+    question: "Apa saja jenis pertemuan pada Kalender FAST Learning?",
+    answer: `Jenis pertemuan pada Kalender FAST Learning meliputi:
+
+1. TMV atau Tatap Muka Virtual.
+2. TMK atau Tatap Muka Kelas.
+3. Daring.
+4. UTS atau Ujian Tengah Semester.
+5. UAS atau Ujian Akhir Semester.
+
+Mahasiswa perlu mengikuti tipe pertemuan sesuai jadwal kelas dan kalender yang berlaku.`,
+    keywords: [
+      "jenis pertemuan fast learning",
+      "tmv",
+      "tmk",
+      "daring",
+      "uts",
+      "uas",
+    ],
+  },
+  {
+    id: 257,
+    category: "Kalender Akademik",
+    question: "Apa itu TMV pada Kalender FAST Learning?",
+    answer: `TMV adalah Tatap Muka Virtual, yaitu perkuliahan yang dilakukan secara virtual melalui media pembelajaran yang ditentukan, seperti FAST Learning atau platform meeting yang digunakan dosen.`,
+    keywords: [
+      "tmv",
+      "tatap muka virtual",
+      "kelas online",
+      "fast learning",
+      "kuliah virtual",
+    ],
+  },
+  {
+    id: 258,
+    category: "Kalender Akademik",
+    question: "Apa itu TMK pada Kalender FAST Learning?",
+    answer: `TMK adalah Tatap Muka Kelas, yaitu perkuliahan yang dilakukan secara langsung di kelas sesuai jadwal dan ketentuan perkuliahan.`,
+    keywords: ["tmk", "tatap muka kelas", "kuliah offline", "kelas tatap muka"],
+  },
+  {
+    id: 259,
+    category: "Kalender Akademik",
+    question: "Apa itu perkuliahan Daring pada Kalender FAST Learning?",
+    answer: `Daring adalah perkuliahan online yang biasanya dilakukan melalui aktivitas di FAST Learning, seperti forum, kuis, tugas, atau aktivitas pembelajaran lain sesuai arahan dosen.`,
+    keywords: ["daring", "kuliah daring", "forum", "kuis", "fast learning"],
+  },
+  {
+    id: 260,
+    category: "Kalender Akademik",
+    question: "Bagaimana pola pertemuan FAST Learning untuk kelas Senin?",
+    answer: `Pola pertemuan FAST Learning untuk kelas Senin adalah:
+
+1. Pertemuan 1 TMV: 9 - 15 Maret 2026.
+2. Libur: 16 - 22 Maret 2026.
+3. Libur: 23 - 29 Maret 2026.
+4. Pertemuan 2 Daring: 30 Maret - 5 April 2026.
+5. Pertemuan 3 TMV: 6 - 12 April 2026.
+6. Pertemuan 4 Daring: 13 - 19 April 2026.
+7. Pertemuan 5 TMV: 20 - 26 April 2026.
+8. Pertemuan 6 Daring: 27 April - 3 Mei 2026.
+9. Pertemuan 7 TMV: 4 - 10 Mei 2026.
+10. Pertemuan 8 UTS: sesuai jadwal di SIA.
+11. Pertemuan 9 TMV: 25 - 31 Mei 2026.
+12. Pertemuan 10 Daring: 1 - 7 Juni 2026.
+13. Pertemuan 11 TMV: 8 - 14 Juni 2026.
+14. Pertemuan 12 Daring: 15 - 21 Juni 2026.
+15. Pertemuan 13 TMV: 22 - 28 Juni 2026.
+16. Pertemuan 14 Daring: 29 Juni - 5 Juli 2026.
+17. Pertemuan 15 TMV: 6 - 12 Juli 2026.
+18. Pertemuan 16 UAS: sesuai jadwal di SIA.`,
+    keywords: [
+      "jadwal senin fast learning",
+      "kelas senin",
+      "kalender senin",
+      "tmv senin",
+      "daring senin",
+    ],
+  },
+  {
+    id: 261,
+    category: "Kalender Akademik",
+    question: "Bagaimana pola pertemuan FAST Learning untuk kelas Selasa?",
+    answer: `Pola pertemuan FAST Learning untuk kelas Selasa dimulai dengan Pertemuan 1 TMV pada 10 - 16 Maret 2026, kemudian terdapat masa libur pada 17 - 23 Maret dan 24 - 30 Maret 2026. Setelah itu pertemuan berlanjut dengan pola Daring dan TMV secara bergantian, UTS sesuai jadwal di SIA, dan UAS juga sesuai jadwal di SIA.`,
+    keywords: [
+      "jadwal selasa fast learning",
+      "kelas selasa",
+      "kalender selasa",
+      "tmv selasa",
+      "daring selasa",
+    ],
+  },
+  {
+    id: 262,
+    category: "Kalender Akademik",
+    question: "Bagaimana pola pertemuan FAST Learning untuk kelas Rabu?",
+    answer: `Pola pertemuan FAST Learning untuk kelas Rabu dimulai dengan Pertemuan 1 TMV pada 11 - 16 Maret 2026. Masa libur berlangsung pada 18 - 24 Maret dan 25 - 31 Maret 2026. Pertemuan berikutnya dilaksanakan dengan pola Daring dan TMV sesuai kalender, sedangkan UTS dan UAS mengikuti jadwal di SIA.`,
+    keywords: [
+      "jadwal rabu fast learning",
+      "kelas rabu",
+      "kalender rabu",
+      "tmv rabu",
+      "daring rabu",
+    ],
+  },
+  {
+    id: 263,
+    category: "Kalender Akademik",
+    question: "Bagaimana pola pertemuan FAST Learning untuk kelas Kamis?",
+    answer: `Pola pertemuan FAST Learning untuk kelas Kamis dimulai dengan Pertemuan 1 TMV pada 12 - 16 Maret 2026. Setelah masa libur pada 19 - 25 Maret dan 26 Maret - 1 April 2026, perkuliahan dilanjutkan dengan pola Daring dan TMV sesuai kalender. UTS dan UAS dilaksanakan sesuai jadwal di SIA.`,
+    keywords: [
+      "jadwal kamis fast learning",
+      "kelas kamis",
+      "kalender kamis",
+      "tmv kamis",
+      "daring kamis",
+    ],
+  },
+  {
+    id: 264,
+    category: "Kalender Akademik",
+    question: "Bagaimana pola pertemuan FAST Learning untuk kelas Jumat?",
+    answer: `Pola pertemuan FAST Learning untuk kelas Jumat dimulai dengan Pertemuan 1 TMV pada 13 - 16 Maret 2026. Masa libur berlangsung pada 20 - 26 Maret dan 27 Maret - 2 April 2026. Setelah itu, perkuliahan berlanjut dengan pola Daring dan TMV, kemudian UTS dan UAS mengikuti jadwal di SIA.`,
+    keywords: [
+      "jadwal jumat fast learning",
+      "kelas jumat",
+      "kalender jumat",
+      "tmv jumat",
+      "daring jumat",
+    ],
+  },
+  {
+    id: 265,
+    category: "Kalender Akademik",
+    question: "Bagaimana pola pertemuan FAST Learning untuk kelas Sabtu?",
+    answer: `Pola kelas Sabtu dapat berbeda sesuai kode kelas atau fakultas.
+
+Pada kalender tertentu, kelas Sabtu dapat menggunakan pola:
+1. Pertemuan awal berupa TMK atau TMV.
+2. Masa libur pada periode Maret 2026.
+3. Pertemuan lanjutan dapat berupa TMK, TMV, atau Daring.
+4. UTS dan UAS tetap mengikuti jadwal di SIA.
+
+Mahasiswa perlu melihat kalender sesuai kode kelas, seperti 1F atau 2F, dan mengikuti jadwal pada SIA.`,
+    keywords: [
+      "jadwal sabtu fast learning",
+      "kelas sabtu",
+      "kalender sabtu",
+      "tmk sabtu",
+      "kode kelas 1f 2f",
+    ],
+  },
+  {
+    id: 266,
+    category: "Kalender Akademik",
+    question: "Kapan UTS dan UAS pada Kalender FAST Learning?",
+    answer: `Pada Kalender FAST Learning Genap 2025/2026, UTS dilaksanakan sesuai jadwal di SIA pada pertemuan ke-8. UAS dilaksanakan sesuai jadwal di SIA pada pertemuan ke-16.`,
+    keywords: [
+      "uts fast learning",
+      "uas fast learning",
+      "jadwal uts",
+      "jadwal uas",
+      "sia",
+    ],
+  },
+  {
+    id: 267,
+    category: "Kalender Akademik",
+    question:
+      "Apa saja tanggal penting pada Kalender FAST Learning Genap 2025/2026?",
+    answer: `Tanggal penting yang tercantum pada Kalender FAST Learning Genap 2025/2026 antara lain:
+
+1. 7 Maret 2026: Pembukaan Perkuliahan Semester Genap 2025/2026.
+2. 17 Februari 2026: Tahun Baru Imlek.
+3. 19 Maret 2026: Hari Suci Nyepi.
+4. 3 April 2026: Wafat Yesus Kristus.
+5. 5 April 2026: Paskah.
+6. 1 Mei 2026: Hari Buruh.
+7. 15 Mei 2026: Kenaikan Yesus Kristus.
+8. 31 Mei 2026: Hari Raya Waisak.
+9. 1 Juni 2026: Hari Lahir Pancasila.
+10. 16 Juni 2026: 1 Muharam Tahun Baru Islam.`,
+    keywords: [
+      "tanggal penting akademik",
+      "kalender fast learning",
+      "hari libur",
+      "semester genap 2026",
+    ],
+  },
+  {
+    id: 268,
+    category: "Pengumuman Kampus",
+    question: "Kapan libur Hari Raya Natal 2025 di Universitas Mercu Buana?",
+    answer: `Libur Nasional dan Cuti Bersama Hari Raya Natal 2025 di Universitas Mercu Buana ditetapkan pada tanggal 25 - 26 Desember 2025.`,
+    keywords: [
+      "libur natal",
+      "natal 2025",
+      "cuti bersama natal",
+      "25 desember 2025",
+      "26 desember 2025",
+    ],
+  },
+  {
+    id: 269,
+    category: "Pengumuman Kampus",
+    question: "Kapan libur Tahun Baru Imlek 2577 Kongzili?",
+    answer: `Libur Nasional dan Cuti Bersama Tahun Baru Imlek 2577 Kongzili di lingkungan Universitas Mercu Buana ditetapkan pada tanggal 16 - 17 Februari 2026.`,
+    keywords: [
+      "libur imlek",
+      "imlek 2026",
+      "2577 kongzili",
+      "16 februari 2026",
+      "17 februari 2026",
+    ],
+  },
+  {
+    id: 270,
+    category: "Pengumuman Kampus",
+    question: "Kapan libur Hari Suci Nyepi 2026?",
+    answer: `Libur dan cuti bersama Hari Suci Nyepi atau Tahun Baru Saka 1948 ditetapkan pada tanggal 18 - 19 Maret 2026.`,
+    keywords: [
+      "libur nyepi",
+      "nyepi 2026",
+      "tahun baru saka 1948",
+      "18 maret 2026",
+      "19 maret 2026",
+    ],
+  },
+  {
+    id: 271,
+    category: "Pengumuman Kampus",
+    question: "Kapan libur Idul Fitri 1 Syawal 1447 H?",
+    answer: `Libur dan cuti bersama Hari Raya Idul Fitri 1 Syawal 1447 H ditetapkan pada tanggal 17 Maret 2026 dan 20 Maret sampai 25 Maret 2026. Aktivitas perkuliahan dan operasional kampus kembali normal mulai Kamis, 26 Maret 2026.`,
+    keywords: [
+      "libur idul fitri",
+      "idul fitri 1447 h",
+      "cuti bersama lebaran",
+      "26 maret 2026",
+      "kampus normal",
+    ],
+  },
+  {
+    id: 272,
+    category: "Pengumuman Kampus",
+    question:
+      "Kapan aktivitas kampus kembali normal setelah libur Idul Fitri 2026?",
+    answer: `Aktivitas perkuliahan dan operasional kampus kembali normal mulai Kamis, 26 Maret 2026.`,
+    keywords: [
+      "kampus normal",
+      "setelah idul fitri",
+      "26 maret 2026",
+      "operasional kampus",
+    ],
+  },
+  {
+    id: 273,
+    category: "Pengumuman Kampus",
+    question: "Apa aturan keamanan kampus selama masa libur?",
+    answer: `Selama masa libur, petugas keamanan tetap bertugas seperti biasa agar kampus tetap aman dan tertib.
+
+Mahasiswa dan karyawan dilarang bermalam di kampus. Sebelum meninggalkan ruangan, pastikan lampu, AC, komputer, perangkat listrik, dan alat kerja lainnya sudah dimatikan serta inventaris berada dalam posisi aman.`,
+    keywords: [
+      "keamanan kampus",
+      "aturan libur kampus",
+      "dilarang bermalam",
+      "matikan ac",
+      "matikan lampu",
+    ],
+  },
+  {
+    id: 274,
+    category: "Pengumuman Kampus",
+    question: "Kapan pengambilan KTM BNI Reguler 1 Semester Ganjil 2025/2026?",
+    answer: `Pengambilan KTM BNI Reguler 1 Semester Ganjil 2025/2026 dijadwalkan pada:
+
+1. Sabtu, 20 Desember 2025.
+2. Senin sampai Rabu, 22 - 24 Desember 2025.
+3. Senin sampai Selasa, 29 - 30 Desember 2025.
+
+Waktu pengambilan adalah pukul 09.00 - 15.00 WIB.`,
+    keywords: [
+      "pengambilan ktm",
+      "ktm bni",
+      "reguler 1",
+      "semester ganjil 2025 2026",
+      "jadwal ktm",
+    ],
+  },
+  {
+    id: 275,
+    category: "Pengumuman Kampus",
+    question: "Di mana lokasi pengambilan KTM BNI Reguler 1?",
+    answer: `Lokasi pengambilan KTM BNI adalah Customer Service Bank BNI, Gedung Bisnis Centre Lantai 2 Universitas Mercu Buana, Jl. Meruya Selatan No. 1, Kembangan, Jakarta Barat.`,
+    keywords: [
+      "lokasi pengambilan ktm",
+      "customer service bni",
+      "gedung bisnis centre",
+      "ktm meruya",
+    ],
+  },
+  {
+    id: 276,
+    category: "Pengumuman Kampus",
+    question: "Apa syarat pengambilan KTM BNI?",
+    answer: `Syarat pengambilan KTM BNI adalah:
+
+1. Mahasiswa harus tercantum dalam daftar mahasiswa yang sudah dapat mengambil KTM.
+2. Pengambilan KTM tidak dapat diwakilkan.
+3. Mahasiswa wajib membawa KTP asli saat pengambilan.
+4. Pengambilan dilakukan sesuai jadwal dan lokasi yang ditentukan.`,
+    keywords: [
+      "syarat ambil ktm",
+      "ktp asli",
+      "ktm tidak dapat diwakilkan",
+      "daftar ktm",
+    ],
+  },
+  {
+    id: 277,
+    category: "Pengumuman Kampus",
+    question:
+      "Bagaimana jika nama mahasiswa belum tercantum pada daftar pengambilan KTM?",
+    answer: `Jika nama mahasiswa belum tercantum dalam daftar pengambilan KTM, mahasiswa dapat mengajukan pembuatan KTM langsung ke Customer Service BNI KCP Universitas Mercu Buana Meruya.
+
+Persyaratan yang perlu dibawa:
+1. Pas foto ukuran 3x4 sebanyak dua lembar dengan background biru atau merah.
+2. Fotokopi KTP satu lembar.
+3. Surat Keterangan Mahasiswa Aktif.`,
+    keywords: [
+      "nama tidak tercantum ktm",
+      "buat ktm bni",
+      "persyaratan ktm",
+      "pas foto ktp sk aktif",
+    ],
+  },
+  {
+    id: 278,
+    category: "Kontak Penting",
+    question: "Apa kontak FAST Learning yang bisa dihubungi mahasiswa?",
+    answer: `Kontak FAST Learning yang tercantum pada kalender adalah Hotline FAST Learning 0852 8598 0952. Layanan tersedia pada jam kerja Senin sampai Sabtu pukul 08.00 - 16.00.`,
+    keywords: [
+      "kontak fast learning",
+      "hotline fast learning",
+      "085285980952",
+      "jam layanan fast",
+    ],
+  },
+  {
+    id: 279,
+    category: "Kontak Penting",
+    question:
+      "Apa saja website penting untuk mahasiswa Universitas Mercu Buana?",
+    answer: `Website penting yang tercantum pada kalender perkuliahan antara lain:
+
+1. Website Mercu Buana:
+www.mercubuana.ac.id
+
+2. Website pembelajaran FAST Learning:
+www.fast.mercubuana.ac.id
+
+3. Website My Class:
+www.myclass.com atau myclass.mercubuana.ac.id sesuai informasi layanan.
+
+4. Website jadwal kuliah/SIA:
+www.sia.mercubuana.ac.id`,
+    keywords: [
+      "website penting umb",
+      "mercubuana",
+      "fast learning",
+      "sia",
+      "myclass",
+    ],
+  },
+  {
+    id: 280,
+    category: "Kontak Penting",
+    question: "Kapan jam pelayanan FAST Learning dan layanan terkait?",
+    answer: `Jam pelayanan yang tercantum pada kalender FAST Learning adalah Senin sampai Sabtu pukul 08.00 - 16.00. Mahasiswa dapat menghubungi layanan pada jam kerja tersebut agar lebih cepat ditindaklanjuti.`,
+    keywords: [
+      "jam pelayanan fast learning",
+      "senin sabtu",
+      "08.00 16.00",
+      "layanan mahasiswa",
+    ],
+  },
 ];
