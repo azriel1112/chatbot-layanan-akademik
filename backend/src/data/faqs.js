@@ -3640,4 +3640,389 @@ Pastikan semua formulir, persetujuan, validasi, dan dokumen pendukung sudah leng
       "krs perubahan status",
     ],
   },
+  {
+    id: 214,
+    category: "E-Learning dan Absensi",
+    question: "Apa itu FAST Learning Universitas Mercu Buana?",
+    answer: `FAST Learning adalah website pembelajaran Universitas Mercu Buana yang digunakan untuk mendukung kegiatan perkuliahan, seperti mengakses materi, mengikuti tatap muka virtual, berdiskusi di forum, mengerjakan kuis, mengumpulkan tugas, dan melihat nilai aktivitas.`,
+    keywords: [
+      "fast learning",
+      "elearning umb",
+      "e learning",
+      "website pembelajaran",
+      "pembelajaran online",
+    ],
+  },
+  {
+    id: 215,
+    category: "E-Learning dan Absensi",
+    question: "Bagaimana cara login ke FAST Learning untuk mahasiswa?",
+    answer: `Mahasiswa dapat mengakses FAST Learning dengan login terlebih dahulu melalui SSO Universitas Mercu Buana.
+
+Langkah login:
+1. Buka https://sso.mercubuana.ac.id.
+2. Login menggunakan NIM sebagai username.
+3. Gunakan password tanggal lahir dengan format ddmmyyyy jika belum diubah.
+4. Setelah berhasil login, klik link FAST Learning untuk mata kuliah kelas FAST Learning.
+5. Jika diminta, lengkapi data profil terlebih dahulu.
+
+Setelah pendaftaran akun selesai, mahasiswa dapat langsung membuka website FAST Learning tanpa harus melalui SSO kembali.`,
+    keywords: [
+      "login fast learning",
+      "cara login elearning",
+      "sso mercu buana",
+      "nim password",
+      "akses fast learning",
+    ],
+  },
+  {
+    id: 216,
+    category: "E-Learning dan Absensi",
+    question: "Apa username dan password awal FAST Learning mahasiswa?",
+    answer: `Username awal mahasiswa adalah NIM. Password awal menggunakan tanggal, bulan, dan tahun lahir dengan format ddmmyyyy.`,
+    keywords: [
+      "username fast learning",
+      "password fast learning",
+      "nim",
+      "ddmmyyyy",
+      "password awal",
+    ],
+  },
+  {
+    id: 217,
+    category: "E-Learning dan Absensi",
+    question: "Apa saja menu utama yang ada di FAST Learning?",
+    answer: `Menu utama FAST Learning meliputi Home, Dashboard, My Courses, Latest Announcements, Daring Users atau Online Users, Download, Grades, Messages, Preferences, dan Log out.
+
+Menu My Courses digunakan untuk melihat kelas yang diikuti, sedangkan Grades digunakan untuk melihat nilai aktivitas seperti forum, kuis, dan tugas.`,
+    keywords: [
+      "menu fast learning",
+      "dashboard fast learning",
+      "my courses",
+      "grades",
+      "nilai aktivitas",
+    ],
+  },
+  {
+    id: 218,
+    category: "E-Learning dan Absensi",
+    question: "Apa itu Weekly Outline pada FAST Learning?",
+    answer: `Weekly Outline adalah bagian pada halaman kelas FAST Learning yang berisi aktivitas perkuliahan berdasarkan minggu atau pertemuan.
+
+Aktivitas yang dapat muncul pada Weekly Outline antara lain:
+1. Materi atau bahan ajar.
+2. Tatap Muka Virtual.
+3. Tatap Muka Kelas.
+4. Forum diskusi.
+5. Kuis.
+6. Tugas atau penugasan.
+
+Rentang aktivitas mingguan umumnya berlaku selama 1 minggu atau 7 hari sesuai kalender FAST Learning.`,
+    keywords: [
+      "weekly outline",
+      "mingguan fast learning",
+      "aktivitas perkuliahan",
+      "materi forum kuis tugas",
+    ],
+  },
+  {
+    id: 219,
+    category: "E-Learning dan Absensi",
+    question: "Apa saja jenis perkuliahan pada sistem FAST Learning?",
+    answer: `Jenis perkuliahan yang digunakan meliputi Tatap Muka Kelas, Tatap Muka Virtual, Dalam Jaringan atau Daring, dan Ujian.
+
+Tatap Muka Kelas dilakukan di kelas sesuai jadwal SIA. Tatap Muka Virtual dilakukan melalui Google Meet di FAST Learning. Perkuliahan Daring dilakukan melalui aktivitas seperti forum, kuis, atau tugas.`,
+    keywords: [
+      "jenis perkuliahan",
+      "tatap muka kelas",
+      "tatap muka virtual",
+      "daring",
+      "ujian",
+    ],
+  },
+  {
+    id: 220,
+    category: "E-Learning dan Absensi",
+    question: "Apa itu Tatap Muka Virtual?",
+    answer: `Tatap Muka Virtual adalah perkuliahan yang dilakukan melalui video conference, biasanya menggunakan Google Meet pada web FAST Learning. Mahasiswa wajib mengikuti Tatap Muka Virtual sesuai jadwal kuliah di SIA sebagai syarat kehadiran.`,
+    keywords: [
+      "tatap muka virtual",
+      "tmv",
+      "google meet",
+      "video conference",
+      "kehadiran virtual",
+    ],
+  },
+  {
+    id: 221,
+    category: "E-Learning dan Absensi",
+    question: "Bagaimana cara mengikuti Tatap Muka Virtual di FAST Learning?",
+    answer: `Cara mengikuti Tatap Muka Virtual adalah:
+
+1. Login ke FAST Learning.
+2. Masuk ke kelas mata kuliah yang dijadwalkan.
+3. Cari aktivitas Tatap Muka Virtual atau Google Meet pada minggu pertemuan.
+4. Klik nama aktivitas tersebut.
+5. Klik tombol Enter the room sesuai waktu kuliah yang terjadwal di SIA.
+
+Mahasiswa perlu mengikuti Google Meet melalui FAST Learning agar kehadiran dapat tercatat sesuai ketentuan.`,
+    keywords: [
+      "cara ikut tmv",
+      "enter the room",
+      "google meet fast learning",
+      "absen tatap muka virtual",
+    ],
+  },
+  {
+    id: 222,
+    category: "E-Learning dan Absensi",
+    question: "Apa itu Tatap Muka Kelas?",
+    answer: `Tatap Muka Kelas adalah perkuliahan yang dilakukan secara langsung di kelas. Mahasiswa hadir di ruang kelas dan aktif mengikuti pertemuan sesuai jadwal kuliah di SIA.`,
+    keywords: [
+      "tatap muka kelas",
+      "kuliah offline",
+      "hadir di kelas",
+      "jadwal sia",
+    ],
+  },
+  {
+    id: 223,
+    category: "E-Learning dan Absensi",
+    question: "Apa itu Perkuliahan Daring?",
+    answer: `Perkuliahan Daring adalah perkuliahan online asynchronous yang dilakukan melalui aktivitas di FAST Learning, seperti forum, kuis, atau tugas.
+
+Mahasiswa tercatat hadir apabila memenuhi aktivitas yang diwajibkan pada minggu perkuliahan tersebut sesuai kalender FAST Learning, misalnya menanggapi forum dan mengerjakan kuis atau tugas.`,
+    keywords: [
+      "perkuliahan daring",
+      "kuliah daring",
+      "asynchronous",
+      "forum kuis tugas",
+      "absensi daring",
+    ],
+  },
+  {
+    id: 224,
+    category: "E-Learning dan Absensi",
+    question: "Bagaimana aturan kehadiran mahasiswa pada Tatap Muka Kelas?",
+    answer: `Pada Tatap Muka Kelas, mahasiswa hadir langsung di kelas sesuai jadwal yang ada pada SIA. Kehadiran mahasiswa akan diinput oleh dosen secara manual di SIA.`,
+    keywords: [
+      "kehadiran tatap muka kelas",
+      "absen kelas",
+      "input absen manual",
+      "jadwal sia",
+    ],
+  },
+  {
+    id: 225,
+    category: "E-Learning dan Absensi",
+    question: "Bagaimana aturan kehadiran mahasiswa pada Tatap Muka Virtual?",
+    answer: `Pada Tatap Muka Virtual, mahasiswa tercatat hadir jika mengikuti video conference dengan dosen menggunakan Google Meet pada web FAST Learning dan sesuai jadwal pada kalender FAST Learning.
+
+Kehadiran Tatap Muka Virtual dapat terinput otomatis ke SIA jika mahasiswa mengikuti aktivitas Google Meet sesuai ketentuan.`,
+    keywords: [
+      "kehadiran tatap muka virtual",
+      "absen tmv",
+      "google meet",
+      "absen otomatis sia",
+      "fast learning",
+    ],
+  },
+  {
+    id: 226,
+    category: "E-Learning dan Absensi",
+    question: "Bagaimana aturan kehadiran mahasiswa pada Perkuliahan Daring?",
+    answer: `Pada Perkuliahan Daring, mahasiswa tercatat hadir jika melakukan aktivitas yang diwajibkan pada minggu tersebut.
+
+Aktivitas yang biasanya menjadi syarat kehadiran adalah:
+1. Memberikan tanggapan di forum.
+2. Mengerjakan kuis.
+3. Mengumpulkan tugas jika ada.
+
+Aktivitas harus dilakukan sesuai jadwal pada kalender FAST Learning, biasanya dalam rentang waktu 1 minggu atau 7 hari.`,
+    keywords: [
+      "kehadiran daring",
+      "absen daring",
+      "forum kuis tugas",
+      "kalender fast learning",
+      "7 hari",
+    ],
+  },
+  {
+    id: 227,
+    category: "E-Learning dan Absensi",
+    question: "Berapa lama rentang waktu aktivitas mingguan di FAST Learning?",
+    answer: `Rentang waktu aktivitas mingguan di FAST Learning umumnya berlangsung selama 1 minggu atau 7 hari. Contohnya, jika kelas dijadwalkan hari Rabu, maka rentang aktivitas dapat berlaku dari Rabu sampai Selasa pukul 23.59 WIB.`,
+    keywords: [
+      "rentang waktu fast learning",
+      "aktivitas mingguan",
+      "7 hari",
+      "rabu sampai selasa",
+      "kalender fast learning",
+    ],
+  },
+  {
+    id: 228,
+    category: "E-Learning dan Absensi",
+    question: "Apa kewajiban mahasiswa pada forum diskusi FAST Learning?",
+    answer: `Mahasiswa wajib minimal satu kali menanggapi forum diskusi yang diberikan oleh dosen dalam rentang waktu 1 minggu atau 7 hari.
+
+Forum digunakan untuk berdiskusi, menjawab pertanyaan dosen, menanggapi pendapat mahasiswa lain, dan menjadi salah satu unsur kehadiran pada minggu Perkuliahan Daring.`,
+    keywords: [
+      "forum fast learning",
+      "kewajiban forum",
+      "reply forum",
+      "diskusi daring",
+      "kehadiran forum",
+    ],
+  },
+  {
+    id: 229,
+    category: "E-Learning dan Absensi",
+    question: "Bagaimana cara menanggapi forum di FAST Learning?",
+    answer: `Cara menanggapi forum di FAST Learning adalah:
+
+1. Masuk ke kelas mata kuliah.
+2. Klik aktivitas forum pada minggu pertemuan.
+3. Untuk forum standar, klik Add a new discussion topic atau pilih topik diskusi lalu klik Reply.
+4. Untuk forum sederhana, klik Reply pada uraian forum.
+5. Isi tanggapan pada kolom yang tersedia.
+6. Klik Post to forum untuk mengirim tanggapan.
+
+Jika tanggapan berupa file, mahasiswa dapat menggunakan fitur Attachment jika tersedia.`,
+    keywords: [
+      "cara reply forum",
+      "menanggapi forum",
+      "post to forum",
+      "forum standar",
+      "forum sederhana",
+    ],
+  },
+  {
+    id: 230,
+    category: "E-Learning dan Absensi",
+    question: "Apa itu kuis di FAST Learning?",
+    answer: `Kuis adalah aktivitas evaluasi mingguan pada FAST Learning. Bentuk kuis dapat berupa essay, pilihan ganda, benar/salah, isian singkat, atau menjodohkan.
+
+Kuis juga menjadi salah satu unsur yang dapat dilihat sebagai kehadiran mahasiswa pada minggu Perkuliahan Daring.`,
+    keywords: [
+      "kuis fast learning",
+      "quiz",
+      "evaluasi mingguan",
+      "pilihan ganda",
+      "essay",
+    ],
+  },
+  {
+    id: 231,
+    category: "E-Learning dan Absensi",
+    question: "Bagaimana cara mengerjakan kuis di FAST Learning?",
+    answer: `Cara mengerjakan kuis di FAST Learning adalah:
+
+1. Klik aktivitas Kuis pada halaman kelas.
+2. Baca informasi aturan kuis, tanggal buka, tanggal tutup, time limit, dan jumlah attempt.
+3. Klik Attempt quiz atau Attempt quiz now.
+4. Pilih Start attempt untuk mulai mengerjakan.
+5. Jawab pertanyaan yang tersedia.
+6. Klik Finish attempt setelah selesai.
+7. Pastikan semua jawaban tersimpan.
+8. Klik Submit all and finish untuk mengakhiri kuis.
+
+Perhatikan time limit karena jika waktu habis, kuis akan tertutup dan hanya menyimpan jawaban yang sudah dikerjakan.`,
+    keywords: [
+      "cara mengerjakan kuis",
+      "attempt quiz",
+      "submit all and finish",
+      "time limit",
+      "kuis fast learning",
+    ],
+  },
+  {
+    id: 232,
+    category: "E-Learning dan Absensi",
+    question: "Apa perbedaan kuis otomatis dan kuis essay di FAST Learning?",
+    answer: `Kuis otomatis seperti pilihan ganda, benar/salah, isian, dan menjodohkan dapat langsung dinilai oleh sistem FAST Learning. Sedangkan kuis essay perlu dikoreksi dan dinilai terlebih dahulu oleh dosen, sehingga nilai biasanya tidak langsung tampil dan dapat berstatus Not yet graded.`,
+    keywords: [
+      "kuis otomatis",
+      "kuis essay",
+      "not yet graded",
+      "nilai kuis",
+      "penilaian fast learning",
+    ],
+  },
+  {
+    id: 233,
+    category: "E-Learning dan Absensi",
+    question: "Bagaimana cara mengumpulkan tugas di FAST Learning?",
+    answer: `Cara mengumpulkan tugas di FAST Learning adalah:
+
+1. Klik aktivitas Tugas pada halaman kelas.
+2. Baca instruksi tugas, tanggal buka, dan tanggal tutup.
+3. Klik Add Submission.
+4. Pada file submissions, klik ikon file atau tanda panah.
+5. Pilih Upload a file.
+6. Klik Browse atau Choose file.
+7. Pilih file tugas dari perangkat.
+8. Klik Upload this file.
+9. Klik Save changes.
+
+Jika ingin mengganti file sebelum batas waktu, gunakan Edit Submission. Jika ingin menghapus file, gunakan Remove submission.`,
+    keywords: [
+      "cara upload tugas",
+      "add submission",
+      "upload tugas fast learning",
+      "save changes",
+      "edit submission",
+    ],
+  },
+  {
+    id: 234,
+    category: "E-Learning dan Absensi",
+    question: "Bagaimana cara melihat nilai aktivitas di FAST Learning?",
+    answer: `Mahasiswa dapat melihat nilai aktivitas melalui menu Grades pada kelas FAST Learning. Menu ini menampilkan nilai dari aktivitas yang menggunakan sistem penilaian, seperti forum, kuis, dan tugas.`,
+    keywords: [
+      "lihat nilai fast learning",
+      "grades",
+      "nilai aktivitas",
+      "nilai kuis",
+      "nilai tugas",
+    ],
+  },
+  {
+    id: 235,
+    category: "E-Learning dan Absensi",
+    question:
+      "Apa yang harus dilakukan jika lupa password atau sulit login SSO?",
+    answer: `Jika lupa password atau mengalami kendala login SSO, mahasiswa dapat menggunakan fitur Lupa Password pada web SSO. Jika masih mengalami kendala, mahasiswa dapat menghubungi BTI atau membuat tiket melalui https://support.mercubuana.ac.id.
+
+Untuk kendala belum mendapatkan email UMB atau kesulitan login SSO, mahasiswa juga dapat menghubungi Biro Teknologi Informasi atau BTI Kampus Meruya Gedung B Lantai 1.`,
+    keywords: [
+      "lupa password sso",
+      "tidak bisa login sso",
+      "bti",
+      "support mercu buana",
+      "email umb",
+    ],
+  },
+  {
+    id: 236,
+    category: "E-Learning dan Absensi",
+    question: "Siapa yang dapat dihubungi jika ada kendala FAST Learning?",
+    answer: `Untuk kendala teknis dan operasional perkuliahan FAST Learning, mahasiswa dapat menghubungi Bagian e-Learning dan Pengembangan Bahan Ajar.
+
+Kontak dan layanan:
+1. Web support: https://support.mercubuana.ac.id
+2. Pilih Open a New Ticket.
+3. Pilih Help Topic: A*. FAST Learning.
+4. Gunakan email aktif saat membuat tiket.
+5. Email FAST Learning: fast@mercubuana.ac.id
+6. Hotline FAST Learning: 0852 8598 0952.
+7. Jam pelayanan: Senin sampai Sabtu, pukul 08.00 sampai 16.00.`,
+    keywords: [
+      "kendala fast learning",
+      "kontak fast learning",
+      "support fast learning",
+      "hallo fast",
+      "fast@mercubuana.ac.id",
+    ],
+  },
 ];
