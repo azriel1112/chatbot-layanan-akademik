@@ -6,24 +6,26 @@ import {
   Col,
   Container,
   Form,
+  Image,
   InputGroup,
   Row,
   Spinner,
 } from "react-bootstrap";
 import {
+  BsArrowClockwise,
   BsInfoCircle,
   BsLightningChargeFill,
   BsSendFill,
 } from "react-icons/bs";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 import ChatMessage from "../components/ChatMessage";
 import FaqList from "../components/FaqList";
 import { getFaqs, sendMessage } from "../api/chatApi";
 
 const WELCOME_MESSAGE = {
   sender: "bot",
-  text:
-    "Halo! Saya Asisten Akademik. Saya bisa membantu menjawab pertanyaan seputar KRS, UKT, KP, Magang, Sempro, Tugas Akhir, Akreditasi, dan Wisuda.\n\nPilih contoh pertanyaan di samping atau ketik pertanyaanmu sendiri.",
+  text: "Halo! Saya Asisten Akademik. Saya bisa membantu menjawab pertanyaan seputar KRS, UKT, KP, Magang, Sempro, Tugas Akhir, Akreditasi, dan Wisuda.\n\nPilih contoh pertanyaan di samping atau ketik pertanyaanmu sendiri.",
 };
 
 const PRIORITY_QUESTIONS = [
@@ -37,25 +39,40 @@ export default function Home() {
   const [faqs, setFaqs] = useState([]);
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
+  const [pageLoading, setPageLoading] = useState(true);
   const [chat, setChat] = useState([WELCOME_MESSAGE]);
 
-  const bottomRef = useRef(null);
+  const chatBoxRef = useRef(null);
 
   useEffect(() => {
+    setPageLoading(true);
+
     getFaqs()
       .then(setFaqs)
-      .catch(() => setFaqs([]));
+      .catch(() => setFaqs([]))
+      .finally(() => {
+        setTimeout(() => {
+          setPageLoading(false);
+        }, 2000);
+      });
   }, []);
 
   useEffect(() => {
-    bottomRef.current?.scrollIntoView({ behavior: "smooth" });
+    const chatBox = chatBoxRef.current;
+
+    if (!chatBox) return;
+
+    chatBox.scrollTo({
+      top: chatBox.scrollHeight,
+      behavior: "smooth",
+    });
   }, [chat, loading]);
 
   const quickPrompts = useMemo(() => {
     if (!faqs.length) return [];
 
     const priorityFaqs = PRIORITY_QUESTIONS.map((question) =>
-      faqs.find((faq) => faq.question === question)
+      faqs.find((faq) => faq.question === question),
     ).filter(Boolean);
 
     if (priorityFaqs.length > 0) {
@@ -86,7 +103,7 @@ export default function Home() {
     return faqs
       .filter(
         (faq) =>
-          faq.category === currentFaq.category && faq.id !== currentFaq.id
+          faq.category === currentFaq.category && faq.id !== currentFaq.id,
       )
       .slice(0, 3)
       .map((faq) => faq.question);
@@ -102,7 +119,11 @@ export default function Home() {
     setLoading(true);
 
     try {
-      const result = await sendMessage(text);
+      const [result] = await Promise.all([
+        sendMessage(text),
+        new Promise((resolve) => setTimeout(resolve, 700)),
+      ]);
+
       const matchedFaq = findMatchedFaq(text, result, sourceFaq);
 
       setChat((prev) => [
@@ -122,8 +143,7 @@ export default function Home() {
         ...prev,
         {
           sender: "bot",
-          text:
-            "Terjadi kesalahan koneksi ke server. Pastikan backend sudah berjalan, lalu coba kirim ulang pertanyaan.",
+          text: "Terjadi kesalahan koneksi ke server. Pastikan backend sudah berjalan, lalu coba kirim ulang pertanyaan.",
         },
       ]);
     } finally {
@@ -131,9 +151,35 @@ export default function Home() {
     }
   }
 
+  function handleResetChat() {
+    setChat([WELCOME_MESSAGE]);
+    setMessage("");
+  }
+
   function handleSubmit(event) {
     event.preventDefault();
     handleSend();
+  }
+
+  if (pageLoading) {
+    return (
+      <div className="page-loader">
+        <div className="loader-card">
+          <img
+            src="https://agv-api.mercubuana.ac.id//uploads/media/file-1716265186029-345037257.png"
+            alt="Logo UMB"
+            className="footer-logo-img"
+          />
+
+          <div className="loader-text">
+            <h1>Asisten Akademik UMB</h1>
+            <p>Menyiapkan layanan chatbot...</p>
+          </div>
+
+          <div className="loader-spinner" />
+        </div>
+      </div>
+    );
   }
 
   return (
@@ -153,9 +199,23 @@ export default function Home() {
                   </p>
                 </div>
 
-                <Badge bg="light" text="primary" className="chat-mode-badge">
-                  <BsInfoCircle /> Berbasis FAQ
-                </Badge>
+                <div className="chat-header-actions">
+                  <Badge bg="light" text="primary" className="chat-mode-badge">
+                    <BsInfoCircle /> Berbasis FAQ
+                  </Badge>
+
+                  <Button
+                    type="button"
+                    variant="light"
+                    size="sm"
+                    className="reset-chat-button"
+                    onClick={handleResetChat}
+                    disabled={loading || chat.length <= 1}
+                  >
+                    <BsArrowClockwise />
+                    Reset Chat
+                  </Button>
+                </div>
               </Card.Header>
 
               {chat.length <= 1 && quickPrompts.length > 0 && (
@@ -174,7 +234,7 @@ export default function Home() {
                 </div>
               )}
 
-              <div className="chat-box">
+              <div className="chat-box" ref={chatBoxRef}>
                 {chat.map((item, index) => (
                   <ChatMessage
                     key={`${item.sender}-${index}`}
@@ -192,8 +252,6 @@ export default function Home() {
                     }}
                   />
                 )}
-
-                <div ref={bottomRef} />
               </div>
 
               <Form className="chat-input" onSubmit={handleSubmit}>
@@ -228,6 +286,8 @@ export default function Home() {
           </Col>
         </Row>
       </Container>
+
+      <Footer />
     </div>
   );
 }
