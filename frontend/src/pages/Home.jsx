@@ -119,7 +119,11 @@ export default function Home() {
     setLoading(true);
 
     try {
-      const result = await sendMessage(text);
+      const [result] = await Promise.all([
+        sendMessage(text),
+        new Promise((resolve) => setTimeout(resolve, 700)),
+      ]);
+
       const matchedFaq = findMatchedFaq(text, result, sourceFaq);
 
       setChat((prev) => [
