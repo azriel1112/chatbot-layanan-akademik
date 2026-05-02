@@ -4025,4 +4025,299 @@ Kontak dan layanan:
       "fast@mercubuana.ac.id",
     ],
   },
+  {
+    id: 237,
+    category: "Surat Edaran dan Kebijakan Kampus",
+    question: "Apa itu surat edaran rektor?",
+    answer: `Surat edaran rektor adalah pengumuman resmi dari Rektor Universitas Mercu Buana yang berisi kebijakan, arahan, atau informasi penting untuk pejabat struktural, dosen, tenaga kependidikan, dan mahasiswa di lingkungan kampus.`,
+    keywords: [
+      "surat edaran rektor",
+      "edaran rektor",
+      "kebijakan kampus",
+      "pengumuman resmi",
+      "informasi rektor",
+    ],
+  },
+  {
+    id: 238,
+    category: "Surat Edaran dan Kebijakan Kampus",
+    question: "Siapa saja yang menjadi penerima surat edaran rektor?",
+    answer: `Surat edaran rektor ditujukan kepada:
+
+1. Pejabat struktural.
+2. Dosen.
+3. Tenaga kependidikan.
+4. Mahasiswa.
+
+Penerima surat adalah seluruh sivitas akademika di lingkungan Universitas Mercu Buana.`,
+    keywords: [
+      "penerima surat edaran",
+      "pejabat struktural",
+      "dosen",
+      "tenaga kependidikan",
+      "mahasiswa",
+    ],
+  },
+  {
+    id: 239,
+    category: "Surat Edaran dan Kebijakan Kampus",
+    question: "Apa kebijakan Work From Home atau WFH pada hari Jumat?",
+    answer: `Berdasarkan surat edaran rektor, mulai tanggal 17 April 2026 Universitas Mercu Buana memberlakukan kebijakan Work From Home atau WFH setiap hari Jumat bagi seluruh dosen, tenaga kependidikan, dan mahasiswa.
+
+Kebijakan ini dapat dievaluasi secara berkala dan dapat diperbaiki jika terdapat kekeliruan dalam penerapannya.`,
+    keywords: [
+      "wfh jumat",
+      "work from home",
+      "kebijakan wfh",
+      "17 april 2026",
+      "edaran rektor wfh",
+    ],
+  },
+  {
+    id: 240,
+    category: "Surat Edaran dan Kebijakan Kampus",
+    question: "Mengapa Universitas Mercu Buana menerapkan WFH hari Jumat?",
+    answer: `Kebijakan WFH hari Jumat diterapkan untuk mendukung optimalisasi efektivitas kinerja dan fleksibilitas kegiatan akademik, serta menindaklanjuti pengaturan pola kerja dan kegiatan akademik di perguruan tinggi.`,
+    keywords: [
+      "alasan wfh",
+      "tujuan wfh",
+      "efektivitas kerja",
+      "fleksibilitas akademik",
+      "kebijakan kampus",
+    ],
+  },
+  {
+    id: 241,
+    category: "Surat Edaran dan Kebijakan Kampus",
+    question: "Bagaimana pelaksanaan perkuliahan Reguler 1 pada hari Jumat?",
+    answer: `Perkuliahan Reguler 1 yang dijadwalkan pada hari Jumat dilaksanakan secara daring atau online melalui LMS Ruang Kelas.
+
+Mahasiswa mengikuti perkuliahan sesuai jadwal yang tercantum pada SIA Mercu Buana.`,
+    keywords: [
+      "reguler 1 jumat",
+      "kuliah jumat",
+      "ruang kelas",
+      "kuliah online",
+      "sia mercu buana",
+    ],
+  },
+  {
+    id: 242,
+    category: "Surat Edaran dan Kebijakan Kampus",
+    question:
+      "Aplikasi apa yang digunakan untuk perkuliahan Reguler 1 hari Jumat?",
+    answer: `Perkuliahan Reguler 1 hari Jumat dilakukan melalui aplikasi Ruang Kelas dengan alamat https://ruangkelas.mercubuana.ac.id/.`,
+    keywords: [
+      "aplikasi reguler 1",
+      "ruang kelas",
+      "lms ruang kelas",
+      "perkuliahan jumat",
+      "kuliah daring",
+    ],
+  },
+  {
+    id: 243,
+    category: "Surat Edaran dan Kebijakan Kampus",
+    question:
+      "Bagaimana pola pertemuan ganjil dan genap pada perkuliahan Reguler 1 hari Jumat?",
+    answer: `Ketentuan perkuliahan Reguler 1 hari Jumat pada aplikasi Ruang Kelas adalah:
+
+1. Pertemuan ganjil, yaitu pertemuan ke-1, 3, 5, 7, 9, 11, 13, dan 15 dilaksanakan secara tatap muka virtual.
+2. Pertemuan genap, yaitu pertemuan ke-2, 4, 6, 10, 12, dan 14 dilaksanakan secara online forum dan kuis.
+3. Pertemuan ke-8 adalah Ujian Tengah Semester atau UTS.
+4. Pertemuan ke-16 adalah Ujian Akhir Semester atau UAS.`,
+    keywords: [
+      "pertemuan ganjil genap",
+      "reguler 1 jumat",
+      "tatap muka virtual",
+      "forum kuis",
+      "uts uas",
+    ],
+  },
+  {
+    id: 244,
+    category: "Surat Edaran dan Kebijakan Kampus",
+    question:
+      "Bagaimana aturan kehadiran dosen pada perkuliahan Reguler 1 hari Jumat?",
+    answer: `Pada perkuliahan Reguler 1 hari Jumat, dosen wajib melaksanakan tatap muka virtual melalui Zoom Meeting atau Google Meet dan melampirkan bukti kegiatan berupa screenshot atau rekaman pembelajaran di aplikasi Ruang Kelas.
+
+Untuk perkuliahan daring, dosen beraktivitas di Ruang Kelas dengan membuat forum, membuat kuis, dan menanggapi forum. Aktivitas dilakukan sesuai jadwal hari dan jam pada SIA.`,
+    keywords: [
+      "kehadiran dosen",
+      "reguler 1 jumat",
+      "zoom meeting",
+      "google meet",
+      "ruang kelas",
+    ],
+  },
+  {
+    id: 245,
+    category: "Surat Edaran dan Kebijakan Kampus",
+    question:
+      "Bagaimana aturan kehadiran mahasiswa pada perkuliahan Reguler 1 hari Jumat?",
+    answer: `Mahasiswa Reguler 1 hari Jumat wajib mengikuti tatap muka virtual melalui Zoom Meeting atau Google Meet sesuai jadwal kuliah.
+
+Pada aktivitas daring seperti forum dan kuis, mahasiswa perlu menanggapi forum dan mengerjakan kuis. Aktivitas dilakukan sesuai jadwal hari dan jam pada SIA.`,
+    keywords: [
+      "kehadiran mahasiswa",
+      "reguler 1 jumat",
+      "absensi jumat",
+      "forum kuis",
+      "zoom google meet",
+    ],
+  },
+  {
+    id: 246,
+    category: "Surat Edaran dan Kebijakan Kampus",
+    question:
+      "Bagaimana pelaksanaan perkuliahan Reguler 2 hari Sabtu untuk kode kelas 1F dan 2F?",
+    answer: `Untuk Reguler 2 hari Sabtu dengan kode kelas 1F dan 2F, pelaksanaan perkuliahan diatur sebagai berikut:
+
+1. Kode kelas 1F pada pertemuan ke-5 dilaksanakan Tatap Muka Virtual atau TVM pada Sabtu, 25 April 2026.
+2. Kode kelas 2F pada pertemuan ke-4 dilaksanakan Perkuliahan Daring berupa forum dan kuis pada Sabtu, 18 April 2026.
+3. Perkuliahan untuk kode kelas 1F dan 2F dilakukan melalui aplikasi FAST Learning di https://fast.mercubuana.ac.id/.`,
+    keywords: [
+      "reguler 2 sabtu",
+      "kode kelas 1f",
+      "kode kelas 2f",
+      "fast learning",
+      "25 april 2026",
+      "18 april 2026",
+    ],
+  },
+  {
+    id: 247,
+    category: "Surat Edaran dan Kebijakan Kampus",
+    question:
+      "Aplikasi apa yang digunakan untuk perkuliahan Reguler 2 hari Sabtu kode kelas 1F dan 2F?",
+    answer: `Perkuliahan Reguler 2 hari Sabtu untuk kode kelas 1F dan 2F dilakukan melalui aplikasi FAST Learning dengan alamat https://fast.mercubuana.ac.id/.`,
+    keywords: [
+      "fast learning",
+      "reguler 2 sabtu",
+      "kelas 1f",
+      "kelas 2f",
+      "aplikasi kuliah",
+    ],
+  },
+  {
+    id: 248,
+    category: "Surat Edaran dan Kebijakan Kampus",
+    question:
+      "Bagaimana ketentuan aktivitas pada FAST Learning untuk kelas Reguler 2 hari Sabtu?",
+    answer: `Ketentuan aktivitas pada FAST Learning untuk Reguler 2 hari Sabtu adalah:
+
+1. Pertemuan ganjil ke-1, 3, 5, 7, 9, 11, 13, dan 15 dilaksanakan tatap muka virtual.
+2. Pertemuan genap ke-2, 4, 6, 10, 12, dan 14 dilaksanakan secara online melalui forum dan kuis.
+3. Pertemuan ke-8 adalah Ujian Tengah Semester atau UTS.
+4. Pertemuan ke-16 adalah Ujian Akhir Semester atau UAS.
+5. Aktivitas dilakukan sesuai jadwal pada kalender FAST Learning.`,
+    keywords: [
+      "fast learning reguler 2",
+      "tatap muka virtual",
+      "forum kuis",
+      "kalender fast learning",
+      "uts uas",
+    ],
+  },
+  {
+    id: 249,
+    category: "Surat Edaran dan Kebijakan Kampus",
+    question: "Bagaimana aturan kehadiran mahasiswa pada FAST Learning?",
+    answer: `Mahasiswa tercatat hadir apabila mengikuti aktivitas Google Meet pada pertemuan Tatap Muka Virtual dan mengikuti aktivitas daring di FAST Learning seperti menanggapi forum dan mengerjakan kuis sesuai kalender FAST Learning.`,
+    keywords: [
+      "kehadiran fast learning",
+      "absensi fast learning",
+      "google meet",
+      "forum kuis",
+      "kalender fast learning",
+    ],
+  },
+  {
+    id: 250,
+    category: "Surat Edaran dan Kebijakan Kampus",
+    question:
+      "Bagaimana pelaksanaan perkuliahan Reguler 2 hari Sabtu untuk kelas selain 1F dan 2F?",
+    answer: `Untuk Reguler 2 hari Sabtu pada program studi dengan kode kelas offline selain 1F, 2F, PR, dan FF, perkuliahan yang sebelumnya dilaksanakan full tatap muka atau offline dialihkan menggunakan aplikasi Ruang Kelas.
+
+Syarat dan ketentuan aktivitas perkuliahan mengikuti ketentuan perkuliahan Reguler 1 hari Jumat pada aplikasi Ruang Kelas.`,
+    keywords: [
+      "reguler 2 sabtu selain 1f 2f",
+      "kelas offline",
+      "ruang kelas",
+      "kode pr ff",
+      "kuliah sabtu",
+    ],
+  },
+  {
+    id: 251,
+    category: "Surat Edaran dan Kebijakan Kampus",
+    question: "Apakah masih ada perkuliahan offline pada hari Sabtu?",
+    answer: `Ya. Beberapa kegiatan perkuliahan Reguler 2 hari Sabtu tetap dilaksanakan tatap muka kelas atau offline, terutama pada mata kuliah yang telah diatur oleh program studi dan Biro Operasional Perkuliahan.
+
+Program studi yang disebut dalam surat edaran antara lain SI Desain Interior, SI Desain Produk, SI Desain Komunikasi Visual, SI Arsitektur, SI Teknik Sipil, SI Psikologi, dan Profesi Arsitek.`,
+    keywords: [
+      "kuliah offline sabtu",
+      "tatap muka sabtu",
+      "reguler 2 offline",
+      "desain interior",
+      "arsitektur",
+      "psikologi",
+    ],
+  },
+  {
+    id: 252,
+    category: "Surat Edaran dan Kebijakan Kampus",
+    question:
+      "Bagaimana aturan kegiatan akademik pada hari Sabtu selama kebijakan WFH?",
+    answer: `Pada hari Sabtu, kegiatan dosen dapat menyesuaikan jadwal yang telah ditentukan oleh program studi. Kegiatan tenaga kependidikan dan operasional kampus dibatasi sampai pukul 12.00 WIB.
+
+Jika terdapat kegiatan akademik lain yang dilaksanakan melebihi pukul 12.00 WIB, kegiatan perlu dikoordinasikan dengan program studi atau unit kerja terkait.`,
+    keywords: [
+      "kegiatan akademik sabtu",
+      "operasional sabtu",
+      "pukul 12.00",
+      "wfh kampus",
+      "koordinasi prodi",
+    ],
+  },
+  {
+    id: 253,
+    category: "Surat Edaran dan Kebijakan Kampus",
+    question: "Apakah praktikum tetap boleh tatap muka selama kebijakan WFH?",
+    answer: `Ya. Jika pada Reguler 2 terdapat mata kuliah yang membutuhkan praktikum, tatap muka, atau luring, maka program studi dapat berkoordinasi dengan Biro Operasional Perkuliahan untuk melaksanakan tatap muka mulai pukul 07.00 sampai 12.00 WIB.
+
+Penyesuaian jadwal praktikum dan kegiatan akademik lainnya perlu mempertimbangkan kebijakan WFH, pencapaian pembelajaran, dan aturan program studi.`,
+    keywords: [
+      "praktikum wfh",
+      "tatap muka praktikum",
+      "07.00 12.00",
+      "biro operasional perkuliahan",
+      "jadwal praktikum",
+    ],
+  },
+  {
+    id: 254,
+    category: "Surat Edaran dan Kebijakan Kampus",
+    question:
+      "Apa isi surat edaran tentang keluarga UMB yang terdampak bencana alam Sumatera?",
+    answer: `Surat edaran tersebut berisi imbauan kepada sivitas akademika Universitas Mercu Buana untuk melaporkan keluarga dosen, tenaga kependidikan, atau mahasiswa yang terdampak langsung bencana alam di Sumatera.
+
+Informasi penting dalam surat edaran:
+1. Bencana terjadi di beberapa wilayah Pulau Sumatera, mulai dari Aceh, Sumatera Utara, dan Sumatera Barat sejak akhir November 2025.
+2. UMB akan memberikan bantuan bagi orang tua kandung dosen, tenaga kependidikan, dan mahasiswa yang terdampak langsung.
+3. Laporan disampaikan ke Biro Administrasi dan Pengembangan Sumber Daya Manusia.
+4. Data yang dilaporkan mencakup kondisi keluarga, jenis dampak, atau kerugian yang dialami.
+5. Lampiran yang diminta adalah KK dan KTP.
+6. Kontak pelaporan: Bapak Kasiyo 08121978929 atau Sdri. Maula Zahra 089518250292.
+7. Batas laporan paling lambat 15 Desember 2025.`,
+    keywords: [
+      "bencana alam sumatera",
+      "surat edaran bencana",
+      "keluarga terdampak",
+      "bantuan umb",
+      "kk ktp",
+      "kasiyo",
+      "maula zahra",
+    ],
+  },
 ];
