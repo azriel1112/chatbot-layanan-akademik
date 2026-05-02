@@ -6,6 +6,7 @@ import {
   Col,
   Container,
   Form,
+  Image,
   InputGroup,
   Row,
   Spinner,
@@ -38,14 +39,22 @@ export default function Home() {
   const [faqs, setFaqs] = useState([]);
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
+  const [pageLoading, setPageLoading] = useState(true);
   const [chat, setChat] = useState([WELCOME_MESSAGE]);
 
   const chatBoxRef = useRef(null);
 
   useEffect(() => {
+    setPageLoading(true);
+
     getFaqs()
       .then(setFaqs)
-      .catch(() => setFaqs([]));
+      .catch(() => setFaqs([]))
+      .finally(() => {
+        setTimeout(() => {
+          setPageLoading(false);
+        }, 2000);
+      });
   }, []);
 
   useEffect(() => {
@@ -146,6 +155,27 @@ export default function Home() {
   function handleSubmit(event) {
     event.preventDefault();
     handleSend();
+  }
+
+  if (pageLoading) {
+    return (
+      <div className="page-loader">
+        <div className="loader-card">
+          <img
+            src="https://agv-api.mercubuana.ac.id//uploads/media/file-1716265186029-345037257.png"
+            alt="Logo UMB"
+            className="footer-logo-img"
+          />
+
+          <div className="loader-text">
+            <h1>Asisten Akademik UMB</h1>
+            <p>Menyiapkan layanan chatbot...</p>
+          </div>
+
+          <div className="loader-spinner" />
+        </div>
+      </div>
+    );
   }
 
   return (
