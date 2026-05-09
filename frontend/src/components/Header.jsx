@@ -1,10 +1,6 @@
 import React from "react";
 import { Badge, Container } from "react-bootstrap";
-import {
-  BsMortarboardFill,
-  BsStars,
-  BsWifi,
-} from "react-icons/bs";
+import { BsMortarboardFill, BsStars, BsWifi } from "react-icons/bs";
 
 const TOPICS = [
   "KRS",

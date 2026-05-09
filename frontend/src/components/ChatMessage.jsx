@@ -9,14 +9,21 @@ import {
   BsRobot,
 } from "react-icons/bs";
 
+function formatConfidenceScore(score) {
+  return Number.isInteger(score) ? String(score) : score.toFixed(2);
+}
+
 function getConfidenceBadge(confidence) {
   const score = Number(confidence);
 
   if (Number.isNaN(score)) return null;
 
+  const formattedScore = formatConfidenceScore(score);
+
   if (score >= 0.75) {
     return {
       label: "Kecocokan tinggi",
+      score: formattedScore,
       variant: "success",
     };
   }
@@ -24,12 +31,14 @@ function getConfidenceBadge(confidence) {
   if (score >= 0.55) {
     return {
       label: "Kecocokan cukup",
+      score: formattedScore,
       variant: "primary",
     };
   }
 
   return {
     label: "Perlu diperjelas",
+    score: formattedScore,
     variant: "warning",
   };
 }
@@ -89,6 +98,7 @@ export default function ChatMessage({ item, onQuickPick }) {
           <div className="confidence-wrap">
             <Badge bg={confidenceBadge.variant} className="confidence-badge">
               {confidenceBadge.label}
+              <span className="confidence-score">{confidenceBadge.score}</span>
             </Badge>
           </div>
         )}
