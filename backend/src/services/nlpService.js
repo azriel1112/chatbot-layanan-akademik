@@ -1,88 +1,5 @@
-import natural from "natural";
 import { faqs } from "../data/faqs.js";
-import { createRequire } from "module";
-
-const require = createRequire(import.meta.url);
-const Sastrawi = require("sastrawijs");
-
-const stemmer = new Sastrawi.Stemmer();
-
-const stopwords = [
-  "yang",
-  "dan",
-  "di",
-  "ke",
-  "dari",
-  "untuk",
-  "dengan",
-  "atau",
-  "pada",
-  "adalah",
-  "itu",
-  "ini",
-  "saya",
-  "kami",
-  "kamu",
-  "bagaimana",
-  "cara",
-  "apa",
-  "kapan",
-  "dimana",
-];
-
-export function preprocess(text) {
-  return text
-    .toLowerCase()
-    .replace(/[^a-zA-Z0-9\s]/g, " ")
-    .split(/\s+/)
-    .filter((token) => token)
-    .filter((token) => {
-      // Angka seperti 1, 2, 3, 8 tetap dipertahankan
-      if (/^\d+$/.test(token)) return true;
-
-      // Token huruf tetap minimal 3 karakter
-      return token.length > 2;
-    })
-    .filter((token) => !stopwords.includes(token))
-    .map((token) => {
-      // Angka tidak perlu di-stemming
-      if (/^\d+$/.test(token)) return token;
-
-      return stemmer.stem(token);
-    });
-}
-
-const tokenizer = new natural.WordTokenizer();
-
-// const stopwords = new Set([
-//   'yang','di','ke','dari','dan','atau','untuk','dengan','saya','aku','kami','kita','bagaimana','cara','apa','kapan','dimana','mengapa','adalah','itu','ini','pada','mau','ingin','tolong','mohon','dong','ya','kah'
-// ]);
-
-// export function preprocess(text) {
-//   return text
-//     .toLowerCase()
-//     .replace(/[^a-zA-Z0-9\s]/g, "")
-//     .split(" ")
-//     .filter((token) => token.length > 2)
-//     .map((token) => stemmer.stem(token));
-// }
-function normalize(text = "") {
-  return text.toLowerCase().replace(/[^a-zA-Z0-9\s]/g, " ");
-}
-// function preprocess(text) {
-//   return text
-//     .toLowerCase()
-//     .replace(/[^a-zA-Z0-9\s]/g, "")
-//     .split(" ")
-//     .filter((token) => token.length > 2)
-//     .map((token) => stemmer.stem(token));
-// }
-// function preprocess(text = '') {
-//   return tokenizer
-//     .tokenize(normalize(text))
-//     .filter((token) => token.length > 1 && !stopwords.has(token))
-//     .map((token) => stemmer.stem(token));
-// }
+import { preprocess } from "./textPreprocessing.js";
 
 function buildDocument(faq) {
   return [faq.category, faq.question, faq.answer, ...(faq.keywords || [])].join(
@@ -92,25 +9,34 @@ function buildDocument(faq) {
 
 function termFrequency(tokens) {
   const tf = {};
+
   tokens.forEach((token) => {
     tf[token] = (tf[token] || 0) + 1;
   });
+
   return tf;
 }
 
 function cosineSimilarity(vecA, vecB) {
   const terms = new Set([...Object.keys(vecA), ...Object.keys(vecB)]);
+
   let dot = 0;
   let magA = 0;
   let magB = 0;
+
   terms.forEach((term) => {
     const a = vecA[term] || 0;
     const b = vecB[term] || 0;
+
     dot += a * b;
     magA += a * a;
     magB += b * b;
   });
-  if (magA === 0 || magB === 0) return 0;
+
+  if (magA === 0 || magB === 0) {
+    return 0;
+  }
+
   return dot / (Math.sqrt(magA) * Math.sqrt(magB));
 }
 
@@ -121,6 +47,7 @@ const documents = faqs.map((faq) => ({
 
 const totalDocs = documents.length;
 const documentFrequency = {};
+
 documents.forEach(({ tokens }) => {
   new Set(tokens).forEach((token) => {
     documentFrequency[token] = (documentFrequency[token] || 0) + 1;
@@ -130,11 +57,14 @@ documents.forEach(({ tokens }) => {
 function tfidfVector(tokens) {
   const tf = termFrequency(tokens);
   const vector = {};
+
   Object.keys(tf).forEach((term) => {
     const idf =
       Math.log((totalDocs + 1) / ((documentFrequency[term] || 0) + 1)) + 1;
+
     vector[term] = tf[term] * idf;
   });
+
   return vector;
 }
 
@@ -142,7 +72,10 @@ function extractSemester(text = "") {
   const normalized = text.toLowerCase();
 
   const matchNumber = normalized.match(/semester\s+(\d+)/);
-  if (matchNumber) return matchNumber[1];
+
+  if (matchNumber) {
+    return matchNumber[1];
+  }
 
   const wordToNumber = {
     satu: "1",
@@ -164,9 +97,9 @@ function extractSemester(text = "") {
   return null;
 }
 
-const faqVectors = documents.map((doc) => ({
-  faq: doc.faq,
-  vector: tfidfVector(doc.tokens),
+const faqVectors = documents.map((document) => ({
+  faq: document.faq,
+  vector: tfidfVector(document.tokens),
 }));
 
 export function getBotReply(message) {
@@ -178,21 +111,24 @@ export function getBotReply(message) {
     .map(({ faq, vector }) => {
       let score = cosineSimilarity(userVector, vector);
 
-      const faqText =
-        `${faq.question} ${(faq.keywords || []).join(" ")}`.toLowerCase();
+      const faqText = `${faq.question} ${(faq.keywords || []).join(
+        " ",
+      )}`.toLowerCase();
+
       const faqSemester = extractSemester(faqText);
 
-      // Boost jika user bertanya semester tertentu dan FAQ punya semester yang sama
       if (userSemester && faqSemester && userSemester === faqSemester) {
         score += 0.35;
       }
 
-      // Penalti jika user bertanya semester tertentu tapi FAQ semesternya berbeda
       if (userSemester && faqSemester && userSemester !== faqSemester) {
         score -= 0.25;
       }
 
-      return { ...faq, score };
+      return {
+        ...faq,
+        score,
+      };
     })
     .sort((a, b) => b.score - a.score);
 

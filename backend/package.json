@@ -6,7 +6,11 @@
     "dev": "nodemon src/server.js",
     "start": "node src/server.js",
     "dataset:export": "node scripts/exportIntentDataset.js",
-    "dataset:validate": "node scripts/validateIntentDataset.js"
+    "dataset:validate": "node scripts/validateIntentDataset.js",
+    "dataset:analyze": "node scripts/analyzeIntentDataset.js",
+    "dataset:prepare": "npm run dataset:export && npm run dataset:validate && npm run dataset:analyze",
+    "test": "node --test",
+    "verify": "npm run dataset:prepare && npm test"
   },
   "dependencies": {
     "cors": "^2.8.6",
