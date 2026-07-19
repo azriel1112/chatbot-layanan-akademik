@@ -4,7 +4,9 @@
   "type": "module",
   "scripts": {
     "dev": "nodemon src/server.js",
-    "start": "node src/server.js"
+    "start": "node src/server.js",
+    "dataset:export": "node scripts/exportIntentDataset.js",
+    "dataset:validate": "node scripts/validateIntentDataset.js"
   },
   "dependencies": {
     "cors": "^2.8.6",
