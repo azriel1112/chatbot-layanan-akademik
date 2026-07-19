@@ -1,0 +1,34 @@
+{
+  "totalUtterances": 300,
+  "totalIntents": 13,
+  "uniqueVocabulary": 401,
+  "averageOriginalWords": 7.73,
+  "averagePreprocessedTokens": 5.9,
+  "emptyAfterPreprocessing": 0,
+  "largestIntent": {
+    "intent": "kurikulum_dan_mata_kuliah",
+    "total": 35,
+    "percentage": 11.67
+  },
+  "smallestIntent": {
+    "intent": "pembayaran_dan_biaya",
+    "total": 9,
+    "percentage": 3
+  },
+  "imbalanceRatio": 3.89,
+  "recommendedMinimumPerIntent": 15,
+  "lowDataIntents": [
+    {
+      "intent": "layanan_akademik_dan_kontak",
+      "total": 13
+    },
+    {
+      "intent": "seminar_proposal",
+      "total": 13
+    },
+    {
+      "intent": "pembayaran_dan_biaya",
+      "total": 9
+    }
+  ]
+}
