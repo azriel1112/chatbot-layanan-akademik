@@ -9,8 +9,11 @@
     "dataset:validate": "node scripts/validateIntentDataset.js",
     "dataset:analyze": "node scripts/analyzeIntentDataset.js",
     "dataset:prepare": "npm run dataset:export && npm run dataset:validate && npm run dataset:analyze",
+    "model:train": "node scripts/trainIntentClassifier.js",
+    "model:evaluate": "node scripts/evaluateIntentClassifier.js",
+    "model:prepare": "npm run model:train && npm run model:evaluate",
     "test": "node --test",
-    "verify": "npm run dataset:prepare && npm test"
+    "verify": "npm run dataset:prepare && npm run model:prepare && npm test"
   },
   "dependencies": {
     "cors": "^2.8.6",
