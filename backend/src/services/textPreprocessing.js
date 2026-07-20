@@ -30,6 +30,19 @@ export const STOPWORDS = Object.freeze([
 
 const stopwordSet = new Set(STOPWORDS);
 
+const romanNumeralSet = new Set([
+  "i",
+  "ii",
+  "iii",
+  "iv",
+  "v",
+  "vi",
+  "vii",
+  "viii",
+  "ix",
+  "x",
+]);
+
 function normalizeInput(text) {
   return String(text ?? "");
 }
@@ -55,21 +68,29 @@ function isNumberToken(token) {
   return /^\d+$/.test(token);
 }
 
+function isRomanNumeralToken(token) {
+  return romanNumeralSet.has(token);
+}
+
 export function filterTokens(tokens = []) {
   return tokens.filter((token) => {
-    if (!token) return false;
+    if (!token) {
+      return false;
+    }
 
-    // Angka seperti semester 1, 2, 3, dan 8 tetap dipertahankan.
-    if (isNumberToken(token)) return true;
+    if (isNumberToken(token) || isRomanNumeralToken(token)) {
+      return true;
+    }
 
-    // Token huruf minimal tiga karakter dan bukan stopword.
     return token.length > 2 && !stopwordSet.has(token);
   });
 }
 
 export function stemTokens(tokens = []) {
   return tokens.map((token) =>
-    isNumberToken(token) ? token : stemmer.stem(token),
+    isNumberToken(token) || isRomanNumeralToken(token)
+      ? token
+      : stemmer.stem(token),
   );
 }
 
@@ -86,7 +107,9 @@ export function getPreprocessingStages(text = "") {
   const lowercase = lowercaseText(original);
   const cleaned = cleanText(original);
   const tokens = cleaned ? cleaned.split(" ") : [];
+
   const filteredTokens = filterTokens(tokens);
+
   const stemmedTokens = stemTokens(filteredTokens);
 
   return {

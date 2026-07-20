@@ -60,3 +60,14 @@ test("getPreprocessingStages mengembalikan seluruh tahapan", () => {
 
   assert.equal(stages.result, "tugas akhir");
 });
+
+test("preprocess mempertahankan angka Romawi untuk nomor bab", () => {
+  assert.deepEqual(preprocess("Apa saja isi BAB IV Tugas Akhir?"), [
+    "saja",
+    "isi",
+    "bab",
+    "iv",
+    "tugas",
+    "akhir",
+  ]);
+});
