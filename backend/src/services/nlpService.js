@@ -1,164 +1,272 @@
+import path from "node:path";
+
+import { fileURLToPath } from "node:url";
+
 import { faqs } from "../data/faqs.js";
-import { preprocess } from "./textPreprocessing.js";
 
-function buildDocument(faq) {
-  return [faq.category, faq.question, faq.answer, ...(faq.keywords || [])].join(
-    " ",
-  );
-}
+import { loadIntentClassifier } from "./intentClassifierService.js";
 
-function termFrequency(tokens) {
-  const tf = {};
+import { rankFaqs, toFaqSuggestions } from "./faqRetrievalService.js";
 
-  tokens.forEach((token) => {
-    tf[token] = (tf[token] || 0) + 1;
-  });
+const currentFile = fileURLToPath(import.meta.url);
 
-  return tf;
-}
+const currentDirectory = path.dirname(currentFile);
 
-function cosineSimilarity(vecA, vecB) {
-  const terms = new Set([...Object.keys(vecA), ...Object.keys(vecB)]);
+export const DEFAULT_INTENT_MODEL_PATH = path.resolve(
+  currentDirectory,
+  "../../models/intent_classifier.json",
+);
 
-  let dot = 0;
-  let magA = 0;
-  let magB = 0;
+export const NLP_THRESHOLDS = Object.freeze({
+  /*
+   * Confidence intent classifier
+   * pada package natural tidak
+   * sama dengan probabilitas tunggal.
+   * Karena ada 13 intent, nilainya
+   * cenderung berada sekitar
+   * 0.10 sampai 0.25.
+   */
+  minimumIntentConfidence: 0.1,
 
-  terms.forEach((term) => {
-    const a = vecA[term] || 0;
-    const b = vecB[term] || 0;
+  /*
+   * Selisih minimal antara prediksi
+   * pertama dan prediksi kedua.
+   */
+  minimumIntentMargin: 0.01,
 
-    dot += a * b;
-    magA += a * a;
-    magB += b * b;
-  });
+  /*
+   * Jawaban FAQ di bawah nilai ini
+   * dianggap tidak cukup relevan.
+   */
+  minimumFaqScore: 0.18,
 
-  if (magA === 0 || magB === 0) {
-    return 0;
-  }
-
-  return dot / (Math.sqrt(magA) * Math.sqrt(magB));
-}
-
-const documents = faqs.map((faq) => ({
-  faq,
-  tokens: preprocess(buildDocument(faq)),
-}));
-
-const totalDocs = documents.length;
-const documentFrequency = {};
-
-documents.forEach(({ tokens }) => {
-  new Set(tokens).forEach((token) => {
-    documentFrequency[token] = (documentFrequency[token] || 0) + 1;
-  });
+  /*
+   * Pencarian global hanya boleh
+   * mengambil alih hasil intent
+   * apabila skornya jauh lebih tinggi.
+   */
+  globalOverrideMargin: 0.12,
 });
 
-function tfidfVector(tokens) {
-  const tf = termFrequency(tokens);
-  const vector = {};
+let classifierPromise = null;
 
-  Object.keys(tf).forEach((term) => {
-    const idf =
-      Math.log((totalDocs + 1) / ((documentFrequency[term] || 0) + 1)) + 1;
+let loadedModelPath = null;
 
-    vector[term] = tf[term] * idf;
+function roundScore(value) {
+  return Number(Number(value ?? 0).toFixed(6));
+}
+
+function getIntentDecision(prediction) {
+  const first = prediction.classifications?.[0] ?? null;
+
+  const second = prediction.classifications?.[1] ?? null;
+
+  const margin = first ? first.confidence - (second?.confidence ?? 0) : 0;
+
+  const accepted = Boolean(
+    prediction.intent &&
+    !prediction.isUnknown &&
+    prediction.confidence >= NLP_THRESHOLDS.minimumIntentConfidence &&
+    margin >= NLP_THRESHOLDS.minimumIntentMargin,
+  );
+
+  return {
+    accepted,
+
+    margin: roundScore(margin),
+  };
+}
+
+function selectFaqRanking({ globalRanking, intentRanking, intentDecision }) {
+  const globalBest = globalRanking[0] ?? null;
+
+  const intentBest = intentRanking[0] ?? null;
+
+  /*
+   * Jika intent tidak cukup meyakinkan,
+   * pencarian kembali dilakukan pada
+   * semua FAQ.
+   */
+  if (!intentDecision.accepted || !intentBest) {
+    return {
+      ranking: globalRanking,
+
+      retrievalMode: "global_fallback",
+    };
+  }
+
+  /*
+   * Pengaman apabila classifier salah.
+   * Hasil global hanya menggantikan
+   * hasil intent apabila selisih
+   * skornya cukup besar.
+   */
+  const shouldOverrideWithGlobal = Boolean(
+    globalBest &&
+    globalBest.intent !== intentBest.intent &&
+    globalBest.score >= intentBest.score + NLP_THRESHOLDS.globalOverrideMargin,
+  );
+
+  if (shouldOverrideWithGlobal) {
+    return {
+      ranking: globalRanking,
+
+      retrievalMode: "global_override",
+    };
+  }
+
+  return {
+    ranking: intentRanking,
+
+    retrievalMode: "intent_filtered",
+  };
+}
+
+export async function initializeNlpService({
+  modelPath = DEFAULT_INTENT_MODEL_PATH,
+
+  forceReload = false,
+} = {}) {
+  const resolvedModelPath = path.resolve(modelPath);
+
+  if (
+    forceReload ||
+    !classifierPromise ||
+    loadedModelPath !== resolvedModelPath
+  ) {
+    loadedModelPath = resolvedModelPath;
+
+    classifierPromise = loadIntentClassifier(resolvedModelPath).catch(
+      (error) => {
+        classifierPromise = null;
+
+        loadedModelPath = null;
+
+        throw new Error(
+          "Gagal memuat intent " +
+            "classifier dari " +
+            `${resolvedModelPath}: ` +
+            error.message,
+          {
+            cause: error,
+          },
+        );
+      },
+    );
+  }
+
+  return classifierPromise;
+}
+
+export async function classifyIntent(message) {
+  const classifier = await initializeNlpService();
+
+  return classifier.predict(message, {
+    topK: 3,
+  });
+}
+
+export async function getBotReply(message) {
+  const normalizedMessage = String(message ?? "").trim();
+
+  if (!normalizedMessage) {
+    throw new Error("Pesan tidak boleh kosong.");
+  }
+
+  /*
+   * Tahap pertama:
+   * prediksi intent.
+   */
+  const intentPrediction = await classifyIntent(normalizedMessage);
+
+  const intentDecision = getIntentDecision(intentPrediction);
+
+  /*
+   * Ranking global tetap dihitung
+   * sebagai fallback dan pengaman.
+   */
+  const globalRanking = rankFaqs(normalizedMessage);
+
+  /*
+   * Ranking berbasis intent hanya
+   * dilakukan ketika prediksi intent
+   * memenuhi threshold.
+   */
+  const intentRanking = intentDecision.accepted
+    ? rankFaqs(normalizedMessage, {
+        intent: intentPrediction.intent,
+      })
+    : [];
+
+  const { ranking, retrievalMode } = selectFaqRanking({
+    globalRanking,
+    intentRanking,
+    intentDecision,
   });
 
-  return vector;
-}
+  const best = ranking[0] ?? null;
 
-function extractSemester(text = "") {
-  const normalized = text.toLowerCase();
+  const suggestions = toFaqSuggestions(ranking);
 
-  const matchNumber = normalized.match(/semester\s+(\d+)/);
+  const commonMetadata = {
+    intent: intentPrediction.intent,
 
-  if (matchNumber) {
-    return matchNumber[1];
-  }
+    intentConfidence: roundScore(intentPrediction.confidence),
 
-  const wordToNumber = {
-    satu: "1",
-    dua: "2",
-    tiga: "3",
-    empat: "4",
-    lima: "5",
-    enam: "6",
-    tujuh: "7",
-    delapan: "8",
+    intentMargin: intentDecision.margin,
+
+    intentAccepted: intentDecision.accepted,
+
+    intentAlternatives: intentPrediction.classifications,
+
+    retrievalMode,
+
+    suggestions,
   };
 
-  for (const [word, number] of Object.entries(wordToNumber)) {
-    if (normalized.includes(`semester ${word}`)) {
-      return number;
-    }
-  }
-
-  return null;
-}
-
-const faqVectors = documents.map((document) => ({
-  faq: document.faq,
-  vector: tfidfVector(document.tokens),
-}));
-
-export function getBotReply(message) {
-  const userTokens = preprocess(message);
-  const userVector = tfidfVector(userTokens);
-  const userSemester = extractSemester(message);
-
-  const ranked = faqVectors
-    .map(({ faq, vector }) => {
-      let score = cosineSimilarity(userVector, vector);
-
-      const faqText = `${faq.question} ${(faq.keywords || []).join(
-        " ",
-      )}`.toLowerCase();
-
-      const faqSemester = extractSemester(faqText);
-
-      if (userSemester && faqSemester && userSemester === faqSemester) {
-        score += 0.35;
-      }
-
-      if (userSemester && faqSemester && userSemester !== faqSemester) {
-        score -= 0.25;
-      }
-
-      return {
-        ...faq,
-        score,
-      };
-    })
-    .sort((a, b) => b.score - a.score);
-
-  const best = ranked[0];
-
-  const suggestions = ranked
-    .slice(0, 3)
-    .map(({ id, question, category, score }) => ({
-      id,
-      question,
-      category,
-      score: Number(score.toFixed(3)),
-    }));
-
-  if (!best || best.score < 0.12) {
+  /*
+   * Tidak memberikan jawaban apabila
+   * skor FAQ terlalu rendah.
+   * Ini mencegah pertanyaan di luar
+   * domain dipaksakan menjadi FAQ.
+   */
+  if (!best || best.score < NLP_THRESHOLDS.minimumFaqScore) {
     return {
       answer:
-        "Maaf, saya belum menemukan jawaban yang sesuai. Coba gunakan kata kunci lain seperti KRS, UKT, nilai, cuti, skripsi, wisuda, atau surat aktif kuliah.",
+        "Maaf, saya belum menemukan jawaban yang cukup sesuai. " +
+        "Coba gunakan kata kunci akademik yang lebih spesifik, " +
+        "misalnya KRS, biaya kuliah, cuti, kerja praktek, " +
+        "seminar proposal, tugas akhir, atau surat mahasiswa aktif.",
+
       confidence: 0,
       matchedQuestion: null,
-      suggestions,
+      category: null,
+
+      ...commonMetadata,
+
+      retrievalMode: "no_match",
     };
   }
 
   return {
     answer: best.answer,
+
+    /*
+     * confidence tetap berisi skor
+     * kecocokan FAQ supaya frontend
+     * lama tetap kompatibel.
+     */
     confidence: Number(best.score.toFixed(3)),
+
     matchedQuestion: best.question,
+
     category: best.category,
-    suggestions,
+
+    matchedFaqId: best.id,
+
+    matchedIntent: best.intent,
+
+    ...commonMetadata,
   };
 }
 
