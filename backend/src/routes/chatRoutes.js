@@ -1,20 +1,37 @@
-import express from 'express';
-import { getAllFaqs, getBotReply } from '../services/nlpService.js';
+import express from "express";
+
+import { getAllFaqs, getBotReply } from "../services/nlpService.js";
 
 const router = express.Router();
 
-router.get('/faqs', (req, res) => {
-  res.json({ success: true, data: getAllFaqs() });
+router.get("/faqs", (request, response) => {
+  response.json({
+    success: true,
+    data: getAllFaqs(),
+  });
 });
 
-router.post('/chat', (req, res) => {
-  const { message } = req.body;
-  if (!message || !message.trim()) {
-    return res.status(400).json({ success: false, message: 'Pesan tidak boleh kosong.' });
-  }
+router.post("/chat", async (request, response, next) => {
+  try {
+    const message = String(request.body?.message ?? "").trim();
 
-  const reply = getBotReply(message);
-  return res.json({ success: true, data: reply });
+    if (!message) {
+      return response.status(400).json({
+        success: false,
+
+        message: "Pesan tidak boleh kosong.",
+      });
+    }
+
+    const reply = await getBotReply(message);
+
+    return response.json({
+      success: true,
+      data: reply,
+    });
+  } catch (error) {
+    return next(error);
+  }
 });
 
 export default router;
