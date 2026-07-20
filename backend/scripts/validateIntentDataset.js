@@ -1,15 +1,24 @@
 import { faqs } from "../src/data/faqs.js";
-import { intentDataset } from "../src/data/intentDataset.js";
-
+import {
+  DATASET_SOURCE_TYPES,
+  intentDataset,
+} from "../src/data/intentDataset.js";
 import { FAQ_CATEGORY_TO_INTENT, INTENTS } from "../src/data/intentConfig.js";
+import { supplementalIntentUtterances } from "../src/data/supplementalIntentUtterances.js";
+import {
+  cleanText,
+  preprocessToText,
+} from "../src/services/textPreprocessing.js";
 
 const MINIMUM_UTTERANCES = 200;
 const MINIMUM_INTENTS = 4;
-const MINIMUM_UTTERANCES_PER_INTENT = 8;
+const MINIMUM_UTTERANCES_PER_INTENT = 20;
+
+let validationFailed = false;
 
 function fail(message) {
   console.error(`VALIDASI GAGAL: ${message}`);
-  process.exitCode = 1;
+  validationFailed = true;
 }
 
 function findDuplicates(values) {
@@ -25,6 +34,31 @@ function findDuplicates(values) {
   }
 
   return [...duplicates];
+}
+
+function findDuplicateGroups(rows, valueSelector) {
+  const groupedRows = new Map();
+
+  for (const row of rows) {
+    const value = valueSelector(row);
+
+    if (!value) {
+      continue;
+    }
+
+    if (!groupedRows.has(value)) {
+      groupedRows.set(value, []);
+    }
+
+    groupedRows.get(value).push(row);
+  }
+
+  return [...groupedRows.entries()]
+    .filter(([, group]) => group.length > 1)
+    .map(([value, group]) => ({
+      value,
+      group,
+    }));
 }
 
 const faqCategories = [...new Set(faqs.map((faq) => faq.category))];
@@ -47,12 +81,6 @@ if (unusedMappings.length > 0) {
   fail(`Pemetaan kategori tidak digunakan: ${unusedMappings.join(", ")}`);
 }
 
-if (intentDataset.length !== faqs.length) {
-  fail(
-    `Jumlah dataset (${intentDataset.length}) berbeda dari jumlah FAQ (${faqs.length}).`,
-  );
-}
-
 if (intentDataset.length < MINIMUM_UTTERANCES) {
   fail(
     `Dataset hanya memiliki ${intentDataset.length} utterance; minimal ${MINIMUM_UTTERANCES}.`,
@@ -65,16 +93,116 @@ if (duplicateIds.length > 0) {
   fail(`ID utterance duplikat: ${duplicateIds.join(", ")}`);
 }
 
-const duplicateFaqIds = findDuplicates(intentDataset.map((row) => row.faqId));
+const intentNames = Object.values(INTENTS);
 
-if (duplicateFaqIds.length > 0) {
-  fail(`FAQ ID duplikat: ${duplicateFaqIds.join(", ")}`);
-}
+const validIntentSet = new Set(intentNames);
+
+const validSourceTypeSet = new Set(Object.values(DATASET_SOURCE_TYPES));
 
 for (const row of intentDataset) {
-  if (!row.id || !row.text || !row.intent || !row.sourceCategory) {
-    fail(`Data tidak lengkap pada FAQ ID ${row.faqId}.`);
+  if (!row.id || !row.text || !row.intent || !row.sourceType) {
+    fail(`Data tidak lengkap pada utterance ${row.id || "tanpa ID"}.`);
+
+    continue;
   }
+
+  if (!validIntentSet.has(row.intent)) {
+    fail(`Intent tidak dikenal pada ${row.id}: ${row.intent}`);
+  }
+
+  if (!validSourceTypeSet.has(row.sourceType)) {
+    fail(`Source type tidak dikenal pada ${row.id}: ${row.sourceType}`);
+  }
+}
+
+const faqRows = intentDataset.filter(
+  (row) => row.sourceType === DATASET_SOURCE_TYPES.FAQ,
+);
+
+const supplementalRows = intentDataset.filter(
+  (row) => row.sourceType === DATASET_SOURCE_TYPES.MANUAL_AUGMENTATION,
+);
+
+if (faqRows.length !== faqs.length) {
+  fail(
+    `Jumlah data sumber FAQ (${faqRows.length}) berbeda dari jumlah FAQ (${faqs.length}).`,
+  );
+}
+
+if (supplementalRows.length !== supplementalIntentUtterances.length) {
+  fail(
+    `Jumlah data augmentasi (${supplementalRows.length}) berbeda dari sumber augmentasi (${supplementalIntentUtterances.length}).`,
+  );
+}
+
+const faqRowIds = faqRows.map((row) => row.faqId);
+
+const duplicateFaqIds = findDuplicates(faqRowIds);
+
+if (duplicateFaqIds.length > 0) {
+  fail(`FAQ ID duplikat pada dataset: ${duplicateFaqIds.join(", ")}`);
+}
+
+const expectedFaqIds = new Set(faqs.map((faq) => faq.id));
+
+const actualFaqIds = new Set(faqRowIds);
+
+const missingFaqIds = [...expectedFaqIds].filter((id) => !actualFaqIds.has(id));
+
+const unknownFaqIds = [...actualFaqIds].filter((id) => !expectedFaqIds.has(id));
+
+if (missingFaqIds.length > 0) {
+  fail(`FAQ belum masuk ke dataset: ${missingFaqIds.join(", ")}`);
+}
+
+if (unknownFaqIds.length > 0) {
+  fail(`FAQ ID tidak dikenal pada dataset: ${unknownFaqIds.join(", ")}`);
+}
+
+for (const row of faqRows) {
+  if (!row.sourceCategory || row.faqId === null || row.faqId === undefined) {
+    fail(`Metadata sumber FAQ tidak lengkap pada ${row.id}.`);
+  }
+}
+
+for (const row of supplementalRows) {
+  if (row.faqId !== null) {
+    fail(`Data augmentasi ${row.id} tidak boleh memiliki faqId.`);
+  }
+
+  if (!row.sourceCategory) {
+    fail(`Data augmentasi ${row.id} tidak memiliki sourceCategory.`);
+  }
+}
+
+const exactTextDuplicates = findDuplicateGroups(intentDataset, (row) =>
+  cleanText(row.text),
+);
+
+if (exactTextDuplicates.length > 0) {
+  fail(
+    `Terdapat teks duplikat setelah normalisasi: ${exactTextDuplicates
+      .map(
+        ({ value, group }) =>
+          `${value} [${group.map((row) => row.id).join(", ")}]`,
+      )
+      .join("; ")}`,
+  );
+}
+
+const preprocessedDuplicates = findDuplicateGroups(intentDataset, (row) =>
+  preprocessToText(row.text),
+);
+
+if (preprocessedDuplicates.length > 0) {
+  fail(
+    `Terdapat hasil preprocessing duplikat: ${preprocessedDuplicates
+      .map(
+        ({ value, group }) =>
+          `${value} [${group.map((row) => row.id).join(", ")}]`,
+      )
+      .join("; ")}`,
+  );
 }
 
 const counts = intentDataset.reduce((result, row) => {
@@ -82,8 +210,6 @@ const counts = intentDataset.reduce((result, row) => {
 
   return result;
 }, {});
-
-const intentNames = Object.values(INTENTS);
 
 if (intentNames.length < MINIMUM_INTENTS) {
   fail(
@@ -109,19 +235,25 @@ if (undersizedIntents.length > 0) {
   );
 }
 
-if (process.exitCode) {
-  process.exit(process.exitCode);
+if (validationFailed) {
+  process.exitCode = 1;
+} else {
+  console.log("Validasi dataset intent berhasil.");
+
+  console.log(`Total utterance : ${intentDataset.length}`);
+
+  console.log(`Data FAQ        : ${faqRows.length}`);
+
+  console.log(`Data augmentasi : ${supplementalRows.length}`);
+
+  console.log(`Total intent    : ${Object.keys(counts).length}`);
+
+  console.table(
+    Object.entries(counts)
+      .sort((a, b) => b[1] - a[1])
+      .map(([intent, total]) => ({
+        intent,
+        total,
+      })),
+  );
 }
-
-console.log("Validasi dataset intent berhasil.");
-console.log(`Total utterance : ${intentDataset.length}`);
-console.log(`Total intent    : ${Object.keys(counts).length}`);
-
-console.table(
-  Object.entries(counts)
-    .sort((a, b) => b[1] - a[1])
-    .map(([intent, total]) => ({
-      intent,
-      total,
-    })),
-);

@@ -2,41 +2,39 @@
 
 ## Ringkasan
 
-- Total utterance: **300**
+- Total utterance: **327**
 - Total intent: **13**
-- Kosakata unik setelah preprocessing: **401**
-- Rata-rata kata sebelum preprocessing: **7.73**
-- Rata-rata token setelah preprocessing: **5.9**
+- Kosakata unik setelah preprocessing: **424**
+- Rata-rata kata sebelum preprocessing: **7.63**
+- Rata-rata token setelah preprocessing: **5.87**
 - Intent terbesar: **kurikulum_dan_mata_kuliah (35)**
-- Intent terkecil: **pembayaran_dan_biaya (9)**
-- Rasio intent terbesar terhadap terkecil: **3.89 : 1**
+- Intent terkecil: **seminar_proposal (20)**
+- Rasio intent terbesar terhadap terkecil: **1.75 : 1**
 - Data kosong setelah preprocessing: **0**
 
 ## Distribusi Data
 
 | No. | Intent | Jumlah | Persentase |
 |---:|---|---:|---:|
-| 1 | `kurikulum_dan_mata_kuliah` | 35 | 11.67% |
-| 2 | `tugas_akhir` | 35 | 11.67% |
-| 3 | `kerja_praktek_dan_magang` | 34 | 11.33% |
-| 4 | `status_dan_perpindahan_mahasiswa` | 33 | 11% |
-| 5 | `surat_dan_legalisir` | 24 | 8% |
-| 6 | `elearning_dan_absensi` | 23 | 7.67% |
-| 7 | `kalender_dan_pengumuman` | 23 | 7.67% |
-| 8 | `akreditasi` | 20 | 6.67% |
-| 9 | `perpustakaan_dan_jurnal` | 20 | 6.67% |
-| 10 | `kebijakan_kampus` | 18 | 6% |
-| 11 | `layanan_akademik_dan_kontak` | 13 | 4.33% |
-| 12 | `seminar_proposal` | 13 | 4.33% |
-| 13 | `pembayaran_dan_biaya` | 9 | 3% |
+| 1 | `kurikulum_dan_mata_kuliah` | 35 | 10.7% |
+| 2 | `tugas_akhir` | 35 | 10.7% |
+| 3 | `kerja_praktek_dan_magang` | 34 | 10.4% |
+| 4 | `status_dan_perpindahan_mahasiswa` | 33 | 10.09% |
+| 5 | `surat_dan_legalisir` | 24 | 7.34% |
+| 6 | `elearning_dan_absensi` | 23 | 7.03% |
+| 7 | `kalender_dan_pengumuman` | 23 | 7.03% |
+| 8 | `akreditasi` | 20 | 6.12% |
+| 9 | `kebijakan_kampus` | 20 | 6.12% |
+| 10 | `layanan_akademik_dan_kontak` | 20 | 6.12% |
+| 11 | `pembayaran_dan_biaya` | 20 | 6.12% |
+| 12 | `perpustakaan_dan_jurnal` | 20 | 6.12% |
+| 13 | `seminar_proposal` | 20 | 6.12% |
 
 ## Intent yang Masih Perlu Ditambah
 
-Batas rekomendasi yang digunakan pada analisis ini adalah 15 utterance per intent.
+Batas rekomendasi yang digunakan pada analisis ini adalah 20 utterance per intent.
 
-- `layanan_akademik_dan_kontak`: 13 utterance
-- `seminar_proposal`: 13 utterance
-- `pembayaran_dan_biaya`: 9 utterance
+Tidak ada intent di bawah batas rekomendasi.
 
 ## Contoh Sebelum dan Sesudah Preprocessing
 

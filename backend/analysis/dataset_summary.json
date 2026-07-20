@@ -1,34 +1,25 @@
 {
-  "totalUtterances": 300,
+  "totalUtterances": 327,
   "totalIntents": 13,
-  "uniqueVocabulary": 401,
-  "averageOriginalWords": 7.73,
-  "averagePreprocessedTokens": 5.9,
+  "uniqueVocabulary": 424,
+  "sourceCounts": {
+    "faq": 300,
+    "manual_augmentation": 27
+  },
+  "averageOriginalWords": 7.63,
+  "averagePreprocessedTokens": 5.87,
   "emptyAfterPreprocessing": 0,
   "largestIntent": {
     "intent": "kurikulum_dan_mata_kuliah",
     "total": 35,
-    "percentage": 11.67
+    "percentage": 10.7
   },
   "smallestIntent": {
-    "intent": "pembayaran_dan_biaya",
-    "total": 9,
-    "percentage": 3
+    "intent": "seminar_proposal",
+    "total": 20,
+    "percentage": 6.12
   },
-  "imbalanceRatio": 3.89,
-  "recommendedMinimumPerIntent": 15,
-  "lowDataIntents": [
-    {
-      "intent": "layanan_akademik_dan_kontak",
-      "total": 13
-    },
-    {
-      "intent": "seminar_proposal",
-      "total": 13
-    },
-    {
-      "intent": "pembayaran_dan_biaya",
-      "total": 9
-    }
-  ]
+  "imbalanceRatio": 1.75,
+  "recommendedMinimumPerIntent": 20,
+  "lowDataIntents": []
 }
