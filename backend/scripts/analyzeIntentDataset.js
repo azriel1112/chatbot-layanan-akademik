@@ -17,7 +17,7 @@ const currentDirectory = path.dirname(currentFile);
 
 const outputDirectory = path.resolve(currentDirectory, "../analysis");
 
-const RECOMMENDED_MINIMUM_PER_INTENT = 15;
+const RECOMMENDED_MINIMUM_PER_INTENT = 20;
 
 function escapeCsv(value) {
   const normalized = String(value ?? "");
@@ -220,6 +220,12 @@ const intentCounts = intentDataset.reduce((counts, row) => {
   return counts;
 }, {});
 
+const sourceCounts = intentDataset.reduce((counts, row) => {
+  counts[row.sourceType] = (counts[row.sourceType] ?? 0) + 1;
+
+  return counts;
+}, {});
+
 const distribution = Object.entries(intentCounts)
   .map(([intent, total]) => ({
     intent,
@@ -286,6 +292,8 @@ const summary = {
 
   uniqueVocabulary: uniqueVocabulary.size,
 
+  sourceCounts,
+
   averageOriginalWords: Number(
     average(intentDataset.map((row) => countOriginalWords(row.text))).toFixed(
       2,
@@ -347,12 +355,21 @@ const examplesCsv = createCsv(
 );
 
 const preprocessedDatasetCsv = createCsv(
-  ["id", "text", "text_preprocessed", "intent", "source_category", "faq_id"],
+  [
+    "id",
+    "text",
+    "text_preprocessed",
+    "intent",
+    "source_type",
+    "source_category",
+    "faq_id",
+  ],
   preprocessedRows.map((row) => [
     row.id,
     row.text,
     row.textPreprocessed,
     row.intent,
+    row.sourceType,
     row.sourceCategory,
     row.faqId,
   ]),

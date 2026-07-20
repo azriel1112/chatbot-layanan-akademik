@@ -24,7 +24,7 @@
     y="56"
     text-anchor="middle"
     font-size="13"
-  >Total 300 utterance</text>
+  >Total 327 utterance</text>
 
 
         <text
@@ -200,7 +200,7 @@
           y="378"
           text-anchor="end"
           font-size="14"
-        >perpustakaan_dan_jurnal</text>
+        >kebijakan_kampus</text>
 
         <rect
           x="355"
@@ -221,83 +221,83 @@
           y="414"
           text-anchor="end"
           font-size="14"
-        >kebijakan_kampus</text>
-
-        <rect
-          x="355"
-          y="399"
-          width="336.86"
-          height="22"
-          rx="4"
-          fill="#64748b"
-        />
-
-        <text
-          x="699.86"
-          y="415"
-          font-size="14"
-        >18</text>
-        <text
-          x="343"
-          y="450"
-          text-anchor="end"
-          font-size="14"
         >layanan_akademik_dan_kontak</text>
 
         <rect
           x="355"
-          y="435"
-          width="243.29"
+          y="399"
+          width="374.29"
           height="22"
           rx="4"
           fill="#64748b"
         />
 
         <text
-          x="606.29"
-          y="451"
+          x="737.29"
+          y="415"
           font-size="14"
-        >13</text>
+        >20</text>
         <text
           x="343"
-          y="486"
-          text-anchor="end"
-          font-size="14"
-        >seminar_proposal</text>
-
-        <rect
-          x="355"
-          y="471"
-          width="243.29"
-          height="22"
-          rx="4"
-          fill="#64748b"
-        />
-
-        <text
-          x="606.29"
-          y="487"
-          font-size="14"
-        >13</text>
-        <text
-          x="343"
-          y="522"
+          y="450"
           text-anchor="end"
           font-size="14"
         >pembayaran_dan_biaya</text>
 
         <rect
           x="355"
-          y="507"
-          width="168.43"
+          y="435"
+          width="374.29"
           height="22"
           rx="4"
           fill="#64748b"
         />
 
         <text
-          x="531.43"
+          x="737.29"
+          y="451"
+          font-size="14"
+        >20</text>
+        <text
+          x="343"
+          y="486"
+          text-anchor="end"
+          font-size="14"
+        >perpustakaan_dan_jurnal</text>
+
+        <rect
+          x="355"
+          y="471"
+          width="374.29"
+          height="22"
+          rx="4"
+          fill="#64748b"
+        />
+
+        <text
+          x="737.29"
+          y="487"
+          font-size="14"
+        >20</text>
+        <text
+          x="343"
+          y="522"
+          text-anchor="end"
+          font-size="14"
+        >seminar_proposal</text>
+
+        <rect
+          x="355"
+          y="507"
+          width="374.29"
+          height="22"
+          rx="4"
+          fill="#64748b"
+        />
+
+        <text
+          x="737.29"
           y="523"
           font-size="14"
-        >9</text>
+        >20</text>
 </svg>
