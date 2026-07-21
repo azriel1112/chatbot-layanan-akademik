@@ -4,9 +4,11 @@ import { fileURLToPath } from "node:url";
 
 import { faqs } from "../data/faqs.js";
 
+import { rankFaqs, toFaqSuggestions } from "./faqRetrievalService.js";
+
 import { loadIntentClassifier } from "./intentClassifierService.js";
 
-import { rankFaqs, toFaqSuggestions } from "./faqRetrievalService.js";
+import { extractSlots } from "./slotFillingService.js";
 
 const currentFile = fileURLToPath(import.meta.url);
 
@@ -18,33 +20,12 @@ export const DEFAULT_INTENT_MODEL_PATH = path.resolve(
 );
 
 export const NLP_THRESHOLDS = Object.freeze({
-  /*
-   * Confidence intent classifier
-   * pada package natural tidak
-   * sama dengan probabilitas tunggal.
-   * Karena ada 13 intent, nilainya
-   * cenderung berada sekitar
-   * 0.10 sampai 0.25.
-   */
   minimumIntentConfidence: 0.1,
 
-  /*
-   * Selisih minimal antara prediksi
-   * pertama dan prediksi kedua.
-   */
   minimumIntentMargin: 0.01,
 
-  /*
-   * Jawaban FAQ di bawah nilai ini
-   * dianggap tidak cukup relevan.
-   */
   minimumFaqScore: 0.18,
 
-  /*
-   * Pencarian global hanya boleh
-   * mengambil alih hasil intent
-   * apabila skornya jauh lebih tinggi.
-   */
   globalOverrideMargin: 0.12,
 });
 
@@ -82,11 +63,6 @@ function selectFaqRanking({ globalRanking, intentRanking, intentDecision }) {
 
   const intentBest = intentRanking[0] ?? null;
 
-  /*
-   * Jika intent tidak cukup meyakinkan,
-   * pencarian kembali dilakukan pada
-   * semua FAQ.
-   */
   if (!intentDecision.accepted || !intentBest) {
     return {
       ranking: globalRanking,
@@ -95,12 +71,6 @@ function selectFaqRanking({ globalRanking, intentRanking, intentDecision }) {
     };
   }
 
-  /*
-   * Pengaman apabila classifier salah.
-   * Hasil global hanya menggantikan
-   * hasil intent apabila selisih
-   * skornya cukup besar.
-   */
   const shouldOverrideWithGlobal = Boolean(
     globalBest &&
     globalBest.intent !== intentBest.intent &&
@@ -143,10 +113,10 @@ export async function initializeNlpService({
         loadedModelPath = null;
 
         throw new Error(
-          "Gagal memuat intent " +
-            "classifier dari " +
+          "Gagal memuat intent classifier dari " +
             `${resolvedModelPath}: ` +
             error.message,
+
           {
             cause: error,
           },
@@ -174,27 +144,28 @@ export async function getBotReply(message) {
   }
 
   /*
-   * Tahap pertama:
-   * prediksi intent.
+   * Slot filling dilakukan satu kali
+   * untuk setiap pesan pengguna.
    */
+  const slotResult = extractSlots(normalizedMessage);
+
   const intentPrediction = await classifyIntent(normalizedMessage);
 
   const intentDecision = getIntentDecision(intentPrediction);
 
   /*
-   * Ranking global tetap dihitung
-   * sebagai fallback dan pengaman.
+   * Slot yang sudah diekstrak
+   * diberikan ke proses ranking FAQ.
    */
-  const globalRanking = rankFaqs(normalizedMessage);
+  const globalRanking = rankFaqs(normalizedMessage, {
+    slots: slotResult.slots,
+  });
 
-  /*
-   * Ranking berbasis intent hanya
-   * dilakukan ketika prediksi intent
-   * memenuhi threshold.
-   */
   const intentRanking = intentDecision.accepted
     ? rankFaqs(normalizedMessage, {
         intent: intentPrediction.intent,
+
+        slots: slotResult.slots,
       })
     : [];
 
@@ -219,17 +190,17 @@ export async function getBotReply(message) {
 
     intentAlternatives: intentPrediction.classifications,
 
+    slots: slotResult.slots,
+
+    slotDetails: slotResult.details,
+
+    slotCount: slotResult.detectedCount,
+
     retrievalMode,
 
     suggestions,
   };
 
-  /*
-   * Tidak memberikan jawaban apabila
-   * skor FAQ terlalu rendah.
-   * Ini mencegah pertanyaan di luar
-   * domain dipaksakan menjadi FAQ.
-   */
   if (!best || best.score < NLP_THRESHOLDS.minimumFaqScore) {
     return {
       answer:
@@ -239,8 +210,12 @@ export async function getBotReply(message) {
         "seminar proposal, tugas akhir, atau surat mahasiswa aktif.",
 
       confidence: 0,
+
       matchedQuestion: null,
+
       category: null,
+
+      matchedSlotTypes: [],
 
       ...commonMetadata,
 
@@ -251,11 +226,6 @@ export async function getBotReply(message) {
   return {
     answer: best.answer,
 
-    /*
-     * confidence tetap berisi skor
-     * kecocokan FAQ supaya frontend
-     * lama tetap kompatibel.
-     */
     confidence: Number(best.score.toFixed(3)),
 
     matchedQuestion: best.question,
@@ -265,6 +235,10 @@ export async function getBotReply(message) {
     matchedFaqId: best.id,
 
     matchedIntent: best.intent,
+
+    matchedSlotTypes: best.matchedSlotTypes,
+
+    slotScore: roundScore(best.slotScore),
 
     ...commonMetadata,
   };
