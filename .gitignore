@@ -15,11 +15,17 @@ echo frontend/node_modules/ >> .gitignore
 echo dist/ >> .gitignore
 echo frontend/dist/ >> .gitignore
 
-# Python
-.venv/
-__pycache__/
-*.pyc
-.pytest_cache/
+# Node.js baseline backend
+backend-node/node_modules/
+backend-node/.env
+
+# Python Flask backend
+backend/.venv/
+backend/.env
+backend/.pytest_cache/
+backend/__pycache__/
+backend/**/*.pyc
+backend/**/__pycache__/
 
 # Conversation logs
 backend/logs/*.jsonl
