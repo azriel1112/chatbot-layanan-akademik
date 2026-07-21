@@ -1,4 +1,5 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
+
 import {
   Badge,
   Button,
@@ -6,26 +7,42 @@ import {
   Col,
   Container,
   Form,
-  Image,
   InputGroup,
   Row,
   Spinner,
 } from "react-bootstrap";
+
 import {
   BsArrowClockwise,
   BsInfoCircle,
   BsLightningChargeFill,
   BsSendFill,
 } from "react-icons/bs";
+
 import Header from "../components/Header";
+
 import Footer from "../components/Footer";
+
 import ChatMessage from "../components/ChatMessage";
+
 import FaqList from "../components/FaqList";
-import { getFaqs, sendMessage } from "../api/chatApi";
+
+import {
+  getFaqs,
+  getStoredSessionId,
+  resetChatSession,
+  sendMessage,
+} from "../api/chatApi";
 
 const WELCOME_MESSAGE = {
   sender: "bot",
-  text: "Halo! Saya Asisten Akademik. Saya bisa membantu menjawab pertanyaan seputar KRS, UKT, KP, Magang, Sempro, Tugas Akhir, Akreditasi, dan Wisuda.\n\nPilih contoh pertanyaan di samping atau ketik pertanyaanmu sendiri.",
+
+  text:
+    "Halo! Saya Asisten Akademik. " +
+    "Saya bisa membantu menjawab pertanyaan seputar KRS, UKT, KP, Magang, " +
+    "Sempro, Tugas Akhir, Akreditasi, dan Wisuda.\n\n" +
+    "Saya juga dapat menanyakan informasi tambahan dan melakukan " +
+    "konfirmasi sebelum menampilkan jawaban tertentu.",
 };
 
 const PRIORITY_QUESTIONS = [
@@ -37,10 +54,16 @@ const PRIORITY_QUESTIONS = [
 
 export default function Home() {
   const [faqs, setFaqs] = useState([]);
+
   const [message, setMessage] = useState("");
+
   const [loading, setLoading] = useState(false);
+
   const [pageLoading, setPageLoading] = useState(true);
+
   const [chat, setChat] = useState([WELCOME_MESSAGE]);
+
+  const [sessionId, setSessionId] = useState(() => getStoredSessionId());
 
   const chatBoxRef = useRef(null);
 
@@ -60,16 +83,21 @@ export default function Home() {
   useEffect(() => {
     const chatBox = chatBoxRef.current;
 
-    if (!chatBox) return;
+    if (!chatBox) {
+      return;
+    }
 
     chatBox.scrollTo({
       top: chatBox.scrollHeight,
+
       behavior: "smooth",
     });
   }, [chat, loading]);
 
   const quickPrompts = useMemo(() => {
-    if (!faqs.length) return [];
+    if (!faqs.length) {
+      return [];
+    }
 
     const priorityFaqs = PRIORITY_QUESTIONS.map((question) =>
       faqs.find((faq) => faq.question === question),
@@ -83,7 +111,17 @@ export default function Home() {
   }, [faqs]);
 
   function findMatchedFaq(text, result, sourceFaq) {
-    if (sourceFaq) return sourceFaq;
+    if (sourceFaq) {
+      return sourceFaq;
+    }
+
+    if (result?.matchedFaqId) {
+      const faqById = faqs.find((faq) => faq.id === result.matchedFaqId);
+
+      if (faqById) {
+        return faqById;
+      }
+    }
 
     const normalizedText = text.toLowerCase();
 
@@ -94,7 +132,9 @@ export default function Home() {
   }
 
   function getRelatedQuestions(currentFaq) {
-    if (!faqs.length) return [];
+    if (!faqs.length) {
+      return [];
+    }
 
     if (!currentFaq) {
       return quickPrompts.slice(0, 3).map((faq) => faq.question);
@@ -109,41 +149,86 @@ export default function Home() {
       .map((faq) => faq.question);
   }
 
+  function getBotQuickReplies(result, matchedFaq) {
+    const dialogReplies = result?.dialog?.quickReplies;
+
+    if (Array.isArray(dialogReplies) && dialogReplies.length > 0) {
+      return dialogReplies;
+    }
+
+    const turnType = result?.dialog?.turnType;
+
+    const mayShowRelatedQuestions =
+      !turnType || turnType === "direct_answer" || turnType === "final_answer";
+
+    return mayShowRelatedQuestions ? getRelatedQuestions(matchedFaq) : [];
+  }
+
   async function handleSend(customText, sourceFaq = null) {
     const text = String(customText || message).trim();
 
-    if (!text || loading) return;
+    if (!text || loading) {
+      return;
+    }
 
-    setChat((prev) => [...prev, { sender: "user", text }]);
+    setChat((previous) => [
+      ...previous,
+
+      {
+        sender: "user",
+
+        text,
+      },
+    ]);
+
     setMessage("");
     setLoading(true);
 
     try {
       const [result] = await Promise.all([
-        sendMessage(text),
+        sendMessage(text, sessionId),
+
         new Promise((resolve) => setTimeout(resolve, 700)),
       ]);
 
+      if (result?.sessionId) {
+        setSessionId(result.sessionId);
+      }
+
       const matchedFaq = findMatchedFaq(text, result, sourceFaq);
 
-      setChat((prev) => [
-        ...prev,
+      setChat((previous) => [
+        ...previous,
+
         {
           sender: "bot",
+
           text:
             result?.answer ||
-            "Maaf, saya belum menemukan jawaban yang sesuai. Coba gunakan kata kunci yang lebih spesifik.",
+            "Maaf, saya belum menemukan jawaban yang sesuai. " +
+              "Coba gunakan kata kunci yang lebih spesifik.",
+
           confidence: result?.confidence,
+
           category: result?.category || matchedFaq?.category,
-          quickReplies: getRelatedQuestions(matchedFaq),
+
+          quickReplies: getBotQuickReplies(result, matchedFaq),
+
+          dialogState: result?.dialog?.state,
+
+          turnType: result?.dialog?.turnType,
         },
       ]);
     } catch {
-      setChat((prev) => [
-        ...prev,
+      setChat((previous) => [
+        ...previous,
+
         {
           sender: "bot",
-          text: "Terjadi kesalahan koneksi ke server. Pastikan backend sudah berjalan, lalu coba kirim ulang pertanyaan.",
+
+          text:
+            "Terjadi kesalahan koneksi ke server. " +
+            "Pastikan backend sudah berjalan, lalu coba kirim ulang pertanyaan.",
         },
       ]);
     } finally {
@@ -151,9 +236,29 @@ export default function Home() {
     }
   }
 
-  function handleResetChat() {
-    setChat([WELCOME_MESSAGE]);
-    setMessage("");
+  async function handleResetChat() {
+    if (loading) {
+      return;
+    }
+
+    setLoading(true);
+
+    try {
+      await resetChatSession(sessionId);
+    } catch {
+      /*
+       * UI tetap direset
+       * walaupun backend tidak
+       * dapat dihubungi.
+       */
+    } finally {
+      setSessionId(null);
+
+      setChat([WELCOME_MESSAGE]);
+
+      setMessage("");
+      setLoading(false);
+    }
   }
 
   function handleSubmit(event) {
@@ -173,6 +278,7 @@ export default function Home() {
 
           <div className="loader-text">
             <h1>Asisten Akademik UMB</h1>
+
             <p>Menyiapkan layanan chatbot...</p>
           </div>
 
@@ -193,15 +299,19 @@ export default function Home() {
               <Card.Header className="chat-header">
                 <div>
                   <span className="section-kicker">Ruang bantuan</span>
+
                   <h2>Tanya Akademik</h2>
+
                   <p>
-                    Saya akan mencari jawaban paling relevan dari FAQ akademik.
+                    Saya dapat memahami konteks percakapan, meminta informasi
+                    tambahan, dan mengonfirmasi kebutuhan Anda.
                   </p>
                 </div>
 
                 <div className="chat-header-actions">
                   <Badge bg="light" text="primary" className="chat-mode-badge">
-                    <BsInfoCircle /> Berbasis FAQ
+                    <BsInfoCircle />
+                    Multi-turn NLP
                   </Badge>
 
                   <Button
@@ -247,8 +357,10 @@ export default function Home() {
                   <ChatMessage
                     item={{
                       sender: "bot",
+
                       typing: true,
-                      text: "Asisten sedang mencari jawaban terbaik...",
+
+                      text: "Asisten sedang memproses konteks percakapan...",
                     }}
                   />
                 )}
@@ -259,7 +371,7 @@ export default function Home() {
                   <Form.Control
                     value={message}
                     onChange={(event) => setMessage(event.target.value)}
-                    placeholder="Contoh: Berapa lama batas revisi sidang TA?"
+                    placeholder="Contoh: Saya ingin mengajukan surat keterangan"
                     disabled={loading}
                     aria-label="Tulis pertanyaan akademik"
                   />
