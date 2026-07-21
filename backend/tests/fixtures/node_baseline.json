@@ -1,0 +1,118 @@
+[
+  {
+    "query": "bagaimana cara bayar uang kuliah",
+    "answer": "Pembayaran biaya kuliah Universitas Mercu Buana dilakukan secara SPC/Online melalui PT Bank BNI.\n\nMahasiswa dapat melakukan pembayaran melalui:\n1. Mobile Banking BNI.\n2. Teller BNI seluruh cabang.\n3. ATM BNI, baik menggunakan KTM BNI maupun ATM BNI non-KTM.\n\nPembayaran dilakukan menggunakan NIM dan kode prefix/billing sesuai kampus, kelas, dan jenis pembayaran.",
+    "confidence": 0.777,
+    "matchedQuestion": "Bagaimana cara membayar biaya kuliah Universitas Mercu Buana?",
+    "category": "Pembayaran dan Biaya Kuliah",
+    "intent": "pembayaran_dan_biaya",
+    "slots": {
+      "requestType": "procedure",
+      "service": "pembayaran"
+    },
+    "suggestionIds": [
+      175,
+      178,
+      177
+    ]
+  },
+  {
+    "query": "Apa saja syarat pendaftaran sidang Tugas Akhir?",
+    "answer": "Syarat pendaftaran sidang Tugas Akhir antara lain:\n\n1. Mendapat persetujuan dari dosen Pembimbing Akademik.\n2. Melampirkan 10 sertifikat sebagai syarat kelulusan atau SKPI.\n3. Melampirkan screenshot atau tangkapan layar data yang dibutuhkan dari SIA.\n4. Melampirkan seluruh berkas Tugas Akhir.\n5. Melampirkan bukti pembayaran sidang TA.\n6. Melakukan pendaftaran melalui tautan atau prosedur yang diberikan saat sosialisasi.\n7. Memastikan tanda tangan dosen pembimbing tidak diwakilkan kecuali dalam kondisi tertentu sesuai ketentuan.",
+    "confidence": 1,
+    "matchedQuestion": "Apa saja syarat pendaftaran sidang Tugas Akhir?",
+    "category": "Tugas Akhir",
+    "intent": "tugas_akhir",
+    "slots": {
+      "requestType": "requirements",
+      "service": "tugas_akhir"
+    },
+    "suggestionIds": [
+      92,
+      70,
+      72
+    ]
+  },
+  {
+    "query": "Apa saja syarat mengikuti Magang Mandiri?",
+    "answer": "Berdasarkan Pakta Integritas Magang Mandiri, beberapa syarat yang perlu diperhatikan adalah:\n\n1. Mahasiswa aktif pada semester 5 sampai 7 saat periode pendaftaran.\n2. Maksimal mengikuti kegiatan PDPS sebanyak 2 kali.\n3. Tidak sedang aktif dalam Program Kampus Merdeka flagship atau non-flagship saat program berlangsung.\n4. Tidak sedang cuti atau dikenakan sanksi akademik maupun non-akademik.\n5. Bersedia mengikuti seluruh ketentuan program sampai akhir.\n6. Bersedia menjalankan proses seleksi, pembekalan, pelaksanaan, dan pelaporan kegiatan dengan penuh tanggung jawab.",
+    "confidence": 1,
+    "matchedQuestion": "Apa saja syarat mengikuti Magang Mandiri?",
+    "category": "Magang Mandiri",
+    "intent": "kerja_praktek_dan_magang",
+    "slots": {
+      "requestType": "requirements",
+      "service": "magang_mandiri"
+    },
+    "suggestionIds": [
+      41,
+      42,
+      44
+    ]
+  },
+  {
+    "query": "Apa mata kuliah semester 6 Informatika kurikulum 2025?",
+    "answer": "Mata kuliah semester 6 Informatika kurikulum 2025 meliputi:\n\n1. Natural Language Processing, 3 SKS.\n2. Computer Vision, 3 SKS.\n3. Cloud Computing, 3 SKS.\n4. Sistem Informasi Geografis, 3 SKS.\n5. Animasi Komputer dan Pemodelan 3D, 3 SKS.\n6. Big Data, 3 SKS.\n7. UI/UX Teknologi Digital Immersive, 3 SKS.\n8. Generative AI, 3 SKS.",
+    "confidence": 1,
+    "matchedQuestion": "Apa saja mata kuliah semester 6 Informatika kurikulum 2025?",
+    "category": "Kurikulum Informatika",
+    "intent": "kurikulum_dan_mata_kuliah",
+    "slots": {
+      "semester": 6,
+      "studyProgram": "teknik_informatika",
+      "curriculumYear": 2025
+    },
+    "suggestionIds": [
+      115,
+      116,
+      117
+    ]
+  },
+  {
+    "query": "Form surat keterangan untuk Kampus Menteng yang mana?",
+    "answer": "Mahasiswa Kampus Menteng dapat menggunakan link berikut:\n\n1. Surat Keterangan Mahasiswa Aktif:\nhttps://docs.google.com/forms/d/e/1FAIpQLSe7GJV4HRCWWtpFMEqrMjtrIRqMAKu3Rw5QVi8d1QuODODQog/viewform\n\n2. Surat Keterangan Lulus:\nhttps://docs.google.com/forms/u/0/d/e/1FAIpQLScOIna2LKJ2svqZl3V-D4ckFIMX0HPAltVEFEjWqLsWpxI05Q/viewform?usp=send_form&pli=1\n\n3. Surat Keterangan Mundur, Putus Studi, atau Drop Out:\nhttps://bit.ly/SKmundurPutusStudiDO",
+    "confidence": 1,
+    "matchedQuestion": "Form surat keterangan mana yang digunakan mahasiswa Kampus Menteng?",
+    "category": "Surat Keterangan",
+    "intent": "surat_dan_legalisir",
+    "slots": {
+      "service": "surat_keterangan",
+      "campus": "menteng"
+    },
+    "suggestionIds": [
+      146,
+      152,
+      142
+    ]
+  },
+  {
+    "query": "Apa kode prefix pembayaran untuk kelas Reguler 2?",
+    "answer": "Kode prefix pembayaran kelas Reguler 2 dan 3 atau kelas karyawan adalah:\n\n1. Kampus Meruya:\n23 untuk uang kuliah, angsuran, KRS-UTS-UAS, semester pendek, dan biaya cuti.\n24 untuk ijazah dan wisuda.\n25 untuk sidang TA/skripsi/tesis, ujian susulan, konversi, sumbangan buku alumni, transkrip nilai, dan sertifikasi profesi.\n\n2. Kampus Cibubur/Jatisampurna:\n43, 44, dan 45 sesuai jenis pembayaran.\n\n3. Kampus Warung Buncit/Pejaten:\n63, 64, dan 65 sesuai jenis pembayaran.\n\n4. Kampus Menteng:\n83, 84, dan 85 sesuai jenis pembayaran.",
+    "confidence": 0.981,
+    "matchedQuestion": "Apa kode prefix pembayaran untuk kelas Reguler 2 atau kelas karyawan?",
+    "category": "Pembayaran dan Biaya Kuliah",
+    "intent": "pembayaran_dan_biaya",
+    "slots": {
+      "classProgram": "reguler_2"
+    },
+    "suggestionIds": [
+      182,
+      180,
+      181
+    ]
+  },
+  {
+    "query": "cara membuat nasi goreng",
+    "answer": "Maaf, saya belum menemukan jawaban yang cukup sesuai. Coba gunakan kata kunci akademik yang lebih spesifik, misalnya KRS, biaya kuliah, cuti, kerja praktek, seminar proposal, tugas akhir, atau surat mahasiswa aktif.",
+    "confidence": 0,
+    "matchedQuestion": null,
+    "category": null,
+    "intent": "layanan_akademik_dan_kontak",
+    "slots": {},
+    "suggestionIds": [
+      168,
+      169,
+      156
+    ]
+  }
+]
