@@ -14,3 +14,13 @@ echo node_modules/ >> .gitignore
 echo frontend/node_modules/ >> .gitignore
 echo dist/ >> .gitignore
 echo frontend/dist/ >> .gitignore
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Conversation logs
+backend/logs/*.jsonl
+!backend/logs/.gitkeep
