@@ -1,27 +1,23 @@
+# Node.js
 node_modules/
-backend/node_modules/
+backend-node/node_modules/
 frontend/node_modules/
 
-.env
-.env.local
-
-desktop.ini
-.DS_Store
-
+# Frontend build
+frontend/dist/
 dist/
 build/
-echo node_modules/ >> .gitignore
-echo frontend/node_modules/ >> .gitignore
-echo dist/ >> .gitignore
-echo frontend/dist/ >> .gitignore
 
-# Node.js baseline backend
-backend-node/node_modules/
+# Environment variables
+.env
+.env.local
 backend-node/.env
-
-# Python Flask backend
-backend/.venv/
 backend/.env
+frontend/.env
+frontend/.env.local
+
+# Python
+backend/.venv/
 backend/.pytest_cache/
 backend/__pycache__/
 backend/**/*.pyc
@@ -30,3 +26,9 @@ backend/**/__pycache__/
 # Conversation logs
 backend/logs/*.jsonl
 !backend/logs/.gitkeep
+
+# Operating system and editor
+.DS_Store
+desktop.ini
+Thumbs.db
+.vscode/*.log
