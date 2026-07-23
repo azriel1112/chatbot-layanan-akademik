@@ -1,114 +1,192 @@
-# Chatbot FAQ Layanan Akademik Kampus Berbasis Web
+# Chatbot Layanan Akademik Berbasis NLP
 
-Project fullstack untuk Capstone Project semester 8. Aplikasi ini menggunakan React sebagai frontend, Express.js sebagai backend, dan NLP sederhana untuk mencocokkan pertanyaan mahasiswa dengan FAQ layanan akademik kampus.
+Aplikasi chatbot akademik berbasis web untuk membantu mahasiswa menemukan informasi layanan kampus. Frontend menggunakan React/Vite, sedangkan backend aktif menggunakan Flask. Sistem menerapkan klasifikasi intent, slot filling berbasis regex, pencarian FAQ berbasis TF-IDF, dialog multi-turn, konfirmasi pengguna, dan penyimpanan log percakapan.
 
-## Fitur
+## Fitur utama
 
-- Chatbot FAQ akademik berbasis web
-- Dataset FAQ dapat dikembangkan sendiri
-- API backend untuk chat dan daftar FAQ
-- Penerapan NLP:
-  - normalisasi teks
-  - tokenisasi
-  - stopword removal
-  - stemming Bahasa Indonesia menggunakan `natural.PorterStemmerId`
-  - TF-IDF
-  - cosine similarity
-- Tampilan responsive untuk presentasi/demo
+- Dataset intent lebih dari 200 utterance dan 13 intent.
+- Text preprocessing: lowercase, cleaning, tokenization, stopword removal, dan stemming Bahasa Indonesia.
+- Intent classification menggunakan TF-IDF dan Logistic Regression.
+- Evaluasi accuracy, precision, recall, F1-score, confusion matrix, serta contoh salah klasifikasi.
+- Slot filling berbasis regex dan pattern.
+- FAQ retrieval yang mempertimbangkan intent dan slot.
+- Dialog manager multi-turn dengan session state.
+- Tahap konfirmasi sebelum jawaban tertentu ditampilkan.
+- Penyimpanan log percakapan dalam JSONL.
+- Analisis log percakapan menjadi JSON dan CSV.
+- Frontend responsif untuk demo.
 
-## Struktur Folder
+## Arsitektur
 
 ```text
-chatbot-faq-akademik/
-├── backend/
-│   ├── package.json
-│   ├── .env.example
-│   └── src/
-│       ├── server.js
-│       ├── data/
-│       │   └── faqs.js
-│       ├── routes/
-│       │   └── chatRoutes.js
-│       └── services/
-│           └── nlpService.js
-└── frontend/
-    ├── package.json
-    ├── index.html
-    └── src/
-        ├── main.jsx
-        ├── api/
-        │   └── chatApi.js
-        ├── components/
-        │   ├── Header.jsx
-        │   ├── ChatMessage.jsx
-        │   └── FaqList.jsx
-        ├── pages/
-        │   └── Home.jsx
-        └── styles/
-            └── app.css
+React/Vite Frontend
+        ↓ HTTP JSON
+Flask REST API
+        ↓
+Dialog Manager + Session State
+        ↓
+Intent Classifier + Slot Filling
+        ↓
+Intent/Slot-Aware FAQ Retrieval
+        ↓
+Response + Conversation Log JSONL
 ```
 
-## Cara Menjalankan
+## Struktur proyek
 
-### 1. Jalankan Backend
+```text
+chatbot-layanan-akademik/
+├── backend/                       # Backend Flask aktif
+│   ├── app.py
+│   ├── config.py
+│   ├── requirements.txt
+│   ├── data/
+│   ├── models/
+│   ├── logs/
+│   ├── reports/
+│   ├── scripts/
+│   ├── src/
+│   └── tests/
+├── backend-node/                  # Baseline Node.js Tahap 1–8
+├── docs/
+│   ├── API.md
+│   ├── DEMO_SCENARIOS.md
+│   └── UAS_COMPLIANCE.md
+├── frontend/
+└── scripts/
+    ├── verify_all.sh
+    └── verify_all.ps1
+```
+
+## Persiapan backend Flask
+
+### Git Bash
 
 ```bash
 cd backend
-npm install
+python -m venv .venv
+source .venv/Scripts/activate
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
 cp .env.example .env
-npm run dev
 ```
 
-Backend berjalan di:
+### PowerShell
 
-```text
-http://localhost:5000
+```powershell
+cd backend
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
+Copy-Item .env.example .env
 ```
 
-### 2. Jalankan Frontend
+Jalankan backend:
+
+```bash
+python app.py
+```
+
+Backend tersedia di `http://localhost:5000`.
+
+## Persiapan frontend
 
 Buka terminal baru:
 
 ```bash
 cd frontend
-npm install
+npm ci
 npm run dev
 ```
 
-Frontend berjalan di:
+Frontend tersedia di `http://localhost:5173`.
+
+## Endpoint penting
 
 ```text
-http://localhost:5173
+GET    /api/health
+GET    /api/faqs
+POST   /api/chat
+DELETE /api/chat/session/:sessionId
 ```
 
-## Contoh Pertanyaan
+Dokumentasi request dan response tersedia pada `docs/API.md`.
 
-- Bagaimana cara mengisi KRS?
-- Kapan jadwal pengisian KRS?
-- Bagaimana cara membayar UKT?
-- Bagaimana cara melihat nilai semester?
-- Bagaimana prosedur pengajuan cuti akademik?
-- Apa syarat mengambil skripsi?
-- Bagaimana cara membuat surat aktif kuliah?
-- Apa saja syarat pendaftaran wisuda?
+## Verifikasi final
 
-## Alur Kerja NLP
+### Git Bash
 
-1. Pertanyaan user dinormalisasi menjadi huruf kecil dan karakter khusus dihapus.
-2. Kalimat dipecah menjadi token/kata.
-3. Stopword seperti “yang”, “di”, “ke”, “dan” dihapus.
-4. Kata diproses menggunakan stemming Bahasa Indonesia.
-5. Sistem membentuk vektor TF-IDF dari pertanyaan user dan dokumen FAQ.
-6. Sistem menghitung cosine similarity.
-7. FAQ dengan skor tertinggi dikirim sebagai jawaban chatbot.
+```bash
+bash scripts/verify_all.sh
+```
 
-## Catatan Pengembangan
+### PowerShell
 
-Untuk kampus asli, ubah dataset pada file:
+```powershell
+.\scripts\verify_all.ps1
+```
+
+Pemeriksaan tersebut menjalankan:
+
+1. Python syntax compilation.
+2. Seluruh pytest.
+3. Validasi dataset, model, confusion matrix, API, multi-turn, konfirmasi, dan logging.
+4. Frontend production build.
+
+Laporan final dihasilkan pada:
 
 ```text
-backend/src/data/faqs.js
+backend/reports/final_verification.json
+backend/reports/final_verification.md
 ```
 
-Tambahkan FAQ sesuai SOP akademik kampus, misalnya layanan BAAK, prodi, pembayaran, beasiswa, surat, yudisium, dan wisuda.
-"# chatbot-layanan-akademik" 
+## Analisis log percakapan
+
+Setelah chatbot digunakan:
+
+```bash
+cd backend
+python scripts/analyze_conversation_logs.py
+```
+
+Output:
+
+```text
+backend/reports/conversation_log_summary.json
+backend/reports/conversation_log_summary.csv
+```
+
+Log mentah berada di `backend/logs/conversations.jsonl` dan tidak disimpan ke Git.
+
+## Artefak evaluasi model
+
+Salin artefak evaluasi dari backend Node.js lama:
+
+```bash
+cd backend
+python scripts/sync_evaluation_artifacts.py
+```
+
+Hasilnya berada di:
+
+```text
+backend/reports/model-evaluation/
+```
+
+Artefak tersebut mencakup model metrics, classification report, confusion matrix, distribusi intent, contoh preprocessing, dan contoh salah klasifikasi.
+
+## Skenario demo
+
+Tiga skenario wajib sudah didokumentasikan dalam `docs/DEMO_SCENARIOS.md`:
+
+1. Jawaban langsung untuk pembayaran kuliah.
+2. Multi-turn pengajuan surat mahasiswa aktif dengan slot dan konfirmasi.
+3. Penanganan pertanyaan di luar domain.
+
+## Catatan keamanan dan privasi
+
+- Jangan commit file `.env`.
+- Jangan commit `.venv` atau `node_modules`.
+- Jangan commit `backend/logs/conversations.jsonl` karena dapat memuat isi percakapan pengguna.
+- Log sebaiknya digunakan untuk evaluasi sistem dengan memperhatikan privasi pengguna.

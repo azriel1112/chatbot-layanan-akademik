@@ -1,0 +1,20 @@
+{
+  "logPath": "C:\\Users\\afif.ramadhan\\OneDrive - PCMan\\Documents\\College\\Semester 8\\Natural Language Processing\\chatbot-layanan-akademik\\backend\\logs\\conversations.jsonl",
+  "totalTurns": 0,
+  "uniqueSessions": 0,
+  "malformedLines": 0,
+  "firstTimestampUtc": null,
+  "lastTimestampUtc": null,
+  "noMatchTurns": 0,
+  "noMatchRate": 0.0,
+  "confirmedTurns": 0,
+  "confirmationRate": 0.0,
+  "cancelledTurns": 0,
+  "cancellationRate": 0.0,
+  "averageProcessingMs": 0.0,
+  "p95ProcessingMs": 0.0,
+  "intentCounts": {},
+  "categoryCounts": {},
+  "retrievalModeCounts": {},
+  "dialogTurnTypeCounts": {}
+}

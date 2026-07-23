@@ -1,0 +1,15 @@
+section,key,value
+summary,logPath,C:\Users\afif.ramadhan\OneDrive - PCMan\Documents\College\Semester 8\Natural Language Processing\chatbot-layanan-akademik\backend\logs\conversations.jsonl
+summary,totalTurns,0
+summary,uniqueSessions,0
+summary,malformedLines,0
+summary,firstTimestampUtc,
+summary,lastTimestampUtc,
+summary,noMatchTurns,0
+summary,noMatchRate,0.0
+summary,confirmedTurns,0
+summary,confirmationRate,0.0
+summary,cancelledTurns,0
+summary,cancellationRate,0.0
+summary,averageProcessingMs,0.0
+summary,p95ProcessingMs,0.0
