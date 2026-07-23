@@ -1,0 +1,62 @@
+{
+  "status": "failed",
+  "passed": 10,
+  "failed": 1,
+  "results": [
+    {
+      "name": "Runtime assets",
+      "status": "passed",
+      "details": "300 FAQ dan 13 intent tersedia."
+    },
+    {
+      "name": "Dataset intent",
+      "status": "passed",
+      "details": "327 utterance dan 13 intent divalidasi dari C:\\Users\\afif.ramadhan\\OneDrive - PCMan\\Documents\\College\\Semester 8\\Natural Language Processing\\chatbot-layanan-akademik\\backend-node\\data\\intent_dataset.csv."
+    },
+    {
+      "name": "Evaluasi model",
+      "status": "passed",
+      "details": "Accuracy 92.54% dan macro F1 91.41% tersedia."
+    },
+    {
+      "name": "Git merge markers",
+      "status": "failed",
+      "details": "ValueError: Git merge marker masih ditemukan: venv\\Lib\\site-packages\\_pytest\\hookspec.py:67, venv\\Lib\\site-packages\\_pytest\\hookspec.py:90, venv\\Lib\\site-packages\\_pytest\\hookspec.py:131, venv\\Lib\\site-packages\\_pytest\\hookspec.py:150, venv\\Lib\\site-packages\\_pytest\\hookspec.py:182, venv\\Lib\\site-packages\\_pytest\\hookspec.py:199, venv\\Lib\\site-packages\\_pytest\\hookspec.py:218, venv\\Lib\\site-packages\\_pytest\\hookspec.py:265, venv\\Lib\\site-packages\\_pytest\\hookspec.py:287, venv\\Lib\\site-packages\\_pytest\\hookspec.py:299, venv\\Lib\\site-packages\\_pytest\\hookspec.py:339, venv\\Lib\\site-packages\\_pytest\\hookspec.py:369, venv\\Lib\\site-packages\\_pytest\\hookspec.py:405, venv\\Lib\\site-packages\\_pytest\\hookspec.py:422, venv\\Lib\\site-packages\\_pytest\\hookspec.py:437, venv\\Lib\\site-packages\\_pytest\\hookspec.py:451, venv\\Lib\\site-packages\\_pytest\\hookspec.py:474, venv\\Lib\\site-packages\\_pytest\\hookspec.py:491, venv\\Lib\\site-packages\\_pytest\\hookspec.py:534, venv\\Lib\\site-packages\\_pytest\\hookspec.py:560"
+    },
+    {
+      "name": "Dokumentasi final",
+      "status": "passed",
+      "details": "README, dokumentasi API, skenario demo, dan checklist UAS tersedia."
+    },
+    {
+      "name": "Health endpoint",
+      "status": "passed",
+      "details": "HTTP 200; 300 FAQ, 13 intent, framework Flask."
+    },
+    {
+      "name": "Direct FAQ answer",
+      "status": "passed",
+      "details": "FAQ pembayaran ditemukan: Bagaimana cara membayar biaya kuliah Universitas Mercu Buana?"
+    },
+    {
+      "name": "Out-of-domain handling",
+      "status": "passed",
+      "details": "Pertanyaan luar domain ditolak dengan aman."
+    },
+    {
+      "name": "Multi-turn dan konfirmasi",
+      "status": "passed",
+      "details": "Empat turn berhasil sampai final_answer terkonfirmasi."
+    },
+    {
+      "name": "Reset session",
+      "status": "passed",
+      "details": "Endpoint reset session mengembalikan HTTP 200."
+    },
+    {
+      "name": "Conversation logging",
+      "status": "passed",
+      "details": "6 turn, 3 session, no-match 1, confirmed 1."
+    }
+  ]
+}
