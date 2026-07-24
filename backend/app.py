@@ -13,12 +13,20 @@ from src.routes.chat_routes import (
     chat_blueprint,
 )
 
+from src.routes.evaluation_routes import (
+    evaluation_blueprint,
+)
+
 from src.services.conversation_logger import (
-    ConversationLogger,
+    create_conversation_logger,
 )
 
 from src.services.dialog_manager import (
     DialogManager,
+)
+
+from src.services.evaluation_service import (
+    EvaluationService,
 )
 
 from src.services.faq_retrieval import (
@@ -106,9 +114,28 @@ def create_app(
             ],
     )
 
-    logger = ConversationLogger(
+    logger = (
+        create_conversation_logger(
+            storage=
+                app.config[
+                    "LOG_STORAGE"
+                ],
+
+            log_path=
+                app.config[
+                    "CONVERSATION_LOG_PATH"
+                ],
+
+            database_url=
+                app.config[
+                    "DATABASE_URL"
+                ],
+        )
+    )
+
+    evaluation = EvaluationService(
         app.config[
-            "CONVERSATION_LOG_PATH"
+            "EVALUATION_ARTIFACTS_DIR"
         ]
     )
 
@@ -129,6 +156,9 @@ def create_app(
 
         "logger":
             logger,
+
+        "evaluation":
+            evaluation,
     }
 
     @app.get("/")
@@ -139,22 +169,38 @@ def create_app(
                     "API Chatbot FAQ "
                     "Akademik Flask aktif."
                 ),
+
+            "health":
+                "/api/health",
         })
 
     @app.get(
         "/api/health"
     )
     def health():
+        log_ready = (
+            logger.ping()
+        )
+
         return jsonify({
             "success":
                 True,
 
             "data": {
                 "status":
-                    "healthy",
+                    (
+                        "healthy"
+                        if log_ready
+                        else "degraded"
+                    ),
 
                 "framework":
                     "Flask",
+
+                "environment":
+                    app.config[
+                        "ENVIRONMENT"
+                    ],
 
                 "algorithm":
                     classifier
@@ -172,6 +218,17 @@ def create_app(
                     len(
                         classifier.labels
                     ),
+
+                "evaluationReady":
+                    evaluation
+                    .is_ready(),
+
+                "logStorage":
+                    logger
+                    .storage_name,
+
+                "logStorageReady":
+                    log_ready,
             },
         })
 
@@ -179,6 +236,28 @@ def create_app(
         chat_blueprint,
         url_prefix="/api",
     )
+
+    app.register_blueprint(
+        evaluation_blueprint,
+        url_prefix="/api",
+    )
+
+    @app.errorhandler(
+        FileNotFoundError
+    )
+    def handle_file_not_found(
+        error: FileNotFoundError,
+    ):
+        return (
+            jsonify({
+                "success":
+                    False,
+
+                "message":
+                    str(error),
+            }),
+            404,
+        )
 
     @app.errorhandler(
         ValueError
@@ -215,8 +294,8 @@ def create_app(
 
                 "message":
                     (
-                        "Terjadi kesalahan pada "
-                        "layanan chatbot."
+                        "Terjadi kesalahan "
+                        "pada layanan chatbot."
                     ),
             }),
             500,
@@ -233,7 +312,9 @@ if __name__ == "__main__":
         host="0.0.0.0",
 
         port=
-            app.config["PORT"],
+            app.config[
+                "PORT"
+            ],
 
         debug=False,
     )
