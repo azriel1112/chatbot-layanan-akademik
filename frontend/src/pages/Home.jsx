@@ -1,6 +1,13 @@
-import React, { useEffect, useMemo, useRef, useState } from "react";
+import React, {
+  useCallback,
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
+} from "react";
 
 import {
+  Alert,
   Badge,
   Button,
   Card,
@@ -14,6 +21,7 @@ import {
 
 import {
   BsArrowClockwise,
+  BsExclamationTriangleFill,
   BsInfoCircle,
   BsLightningChargeFill,
   BsSendFill,
@@ -28,6 +36,7 @@ import ChatMessage from "../components/ChatMessage";
 import FaqList from "../components/FaqList";
 
 import {
+  checkBackendHealth,
   getFaqs,
   getStoredSessionId,
   resetChatSession,
@@ -38,9 +47,9 @@ const WELCOME_MESSAGE = {
   sender: "bot",
 
   text:
-    "Halo! Saya Asisten Akademik. " +
-    "Saya bisa membantu menjawab pertanyaan seputar KRS, UKT, KP, Magang, " +
-    "Sempro, Tugas Akhir, Akreditasi, dan Wisuda.\n\n" +
+    "Halo! Saya Asisten Akademik. Saya bisa membantu menjawab " +
+    "pertanyaan seputar KRS, UKT, KP, Magang, Sempro, Tugas Akhir, " +
+    "Akreditasi, dan Wisuda.\n\n" +
     "Saya juga dapat menanyakan informasi tambahan dan melakukan " +
     "konfirmasi sebelum menampilkan jawaban tertentu.",
 };
@@ -52,6 +61,12 @@ const PRIORITY_QUESTIONS = [
   "Apa saja syarat mengikuti Magang Mandiri?",
 ];
 
+function readableError(error) {
+  return error instanceof Error
+    ? error.message
+    : "Terjadi kesalahan " + "yang tidak diketahui.";
+}
+
 export default function Home() {
   const [faqs, setFaqs] = useState([]);
 
@@ -59,7 +74,11 @@ export default function Home() {
 
   const [loading, setLoading] = useState(false);
 
-  const [pageLoading, setPageLoading] = useState(true);
+  const [faqsLoading, setFaqsLoading] = useState(true);
+
+  const [connectionStatus, setConnectionStatus] = useState("checking");
+
+  const [connectionError, setConnectionError] = useState("");
 
   const [chat, setChat] = useState([WELCOME_MESSAGE]);
 
@@ -67,18 +86,42 @@ export default function Home() {
 
   const chatBoxRef = useRef(null);
 
-  useEffect(() => {
-    setPageLoading(true);
+  const loadRuntime = useCallback(async () => {
+    setFaqsLoading(true);
 
-    getFaqs()
-      .then(setFaqs)
-      .catch(() => setFaqs([]))
-      .finally(() => {
-        setTimeout(() => {
-          setPageLoading(false);
-        }, 2000);
-      });
+    setConnectionStatus("checking");
+
+    setConnectionError("");
+
+    try {
+      const [health, faqData] = await Promise.all([
+        checkBackendHealth(),
+        getFaqs(),
+      ]);
+
+      setFaqs(faqData);
+
+      setConnectionStatus(health.status === "healthy" ? "online" : "offline");
+
+      if (health.status !== "healthy") {
+        setConnectionError(
+          "Backend merespons, tetapi status penyimpanan log sedang bermasalah.",
+        );
+      }
+    } catch (error) {
+      setFaqs([]);
+
+      setConnectionStatus("offline");
+
+      setConnectionError(readableError(error));
+    } finally {
+      setFaqsLoading(false);
+    }
   }, []);
+
+  useEffect(() => {
+    void loadRuntime();
+  }, [loadRuntime]);
 
   useEffect(() => {
     const chatBox = chatBoxRef.current;
@@ -103,11 +146,7 @@ export default function Home() {
       faqs.find((faq) => faq.question === question),
     ).filter(Boolean);
 
-    if (priorityFaqs.length > 0) {
-      return priorityFaqs;
-    }
-
-    return faqs.slice(0, 4);
+    return priorityFaqs.length > 0 ? priorityFaqs : faqs.slice(0, 4);
   }, [faqs]);
 
   function findMatchedFaq(text, result, sourceFaq) {
@@ -158,16 +197,16 @@ export default function Home() {
 
     const turnType = result?.dialog?.turnType;
 
-    const mayShowRelatedQuestions =
+    const canShowRelated =
       !turnType || turnType === "direct_answer" || turnType === "final_answer";
 
-    return mayShowRelatedQuestions ? getRelatedQuestions(matchedFaq) : [];
+    return canShowRelated ? getRelatedQuestions(matchedFaq) : [];
   }
 
   async function handleSend(customText, sourceFaq = null) {
     const text = String(customText || message).trim();
 
-    if (!text || loading) {
+    if (!text || loading || connectionStatus !== "online") {
       return;
     }
 
@@ -185,13 +224,9 @@ export default function Home() {
     setLoading(true);
 
     try {
-      const [result] = await Promise.all([
-        sendMessage(text, sessionId),
+      const result = await sendMessage(text, sessionId);
 
-        new Promise((resolve) => setTimeout(resolve, 700)),
-      ]);
-
-      if (result?.sessionId) {
+      if (result.sessionId) {
         setSessionId(result.sessionId);
       }
 
@@ -204,31 +239,35 @@ export default function Home() {
           sender: "bot",
 
           text:
-            result?.answer ||
+            result.answer ||
             "Maaf, saya belum menemukan jawaban yang sesuai. " +
               "Coba gunakan kata kunci yang lebih spesifik.",
 
-          confidence: result?.confidence,
+          confidence: result.confidence,
 
-          category: result?.category || matchedFaq?.category,
+          category: result.category || matchedFaq?.category,
 
           quickReplies: getBotQuickReplies(result, matchedFaq),
 
-          dialogState: result?.dialog?.state,
+          dialogState: result.dialog?.state,
 
-          turnType: result?.dialog?.turnType,
+          turnType: result.dialog?.turnType,
         },
       ]);
-    } catch {
+    } catch (error) {
+      const messageText = readableError(error);
+
+      setConnectionStatus("offline");
+
+      setConnectionError(messageText);
+
       setChat((previous) => [
         ...previous,
 
         {
           sender: "bot",
 
-          text:
-            "Terjadi kesalahan koneksi ke server. " +
-            "Pastikan backend sudah berjalan, lalu coba kirim ulang pertanyaan.",
+          text: messageText,
         },
       ]);
     } finally {
@@ -247,9 +286,8 @@ export default function Home() {
       await resetChatSession(sessionId);
     } catch {
       /*
-       * UI tetap direset
-       * walaupun backend tidak
-       * dapat dihubungi.
+       * UI tetap direset ketika
+       * backend tidak dapat dijangkau.
        */
     } finally {
       setSessionId(null);
@@ -257,42 +295,54 @@ export default function Home() {
       setChat([WELCOME_MESSAGE]);
 
       setMessage("");
+
       setLoading(false);
     }
   }
 
   function handleSubmit(event) {
     event.preventDefault();
-    handleSend();
+
+    void handleSend();
   }
 
-  if (pageLoading) {
-    return (
-      <div className="page-loader">
-        <div className="loader-card">
-          <img
-            src="https://agv-api.mercubuana.ac.id//uploads/media/file-1716265186029-345037257.png"
-            alt="Logo UMB"
-            className="footer-logo-img"
-          />
-
-          <div className="loader-text">
-            <h1>Asisten Akademik UMB</h1>
-
-            <p>Menyiapkan layanan chatbot...</p>
-          </div>
-
-          <div className="loader-spinner" />
-        </div>
-      </div>
-    );
-  }
+  const online = connectionStatus === "online";
 
   return (
     <div className="app">
-      <Header />
+      <Header
+        activePage="chat"
+        connectionStatus={online ? "online" : "offline"}
+      />
 
       <Container className="main-shell">
+        {!online && (
+          <Alert variant="danger" className="runtime-alert">
+            <BsExclamationTriangleFill />
+
+            <div>
+              <strong>Frontend belum terhubung ke backend Flask.</strong>
+
+              <span>{connectionError || "Backend sedang diperiksa."}</span>
+
+              <small>
+                Pada Vercel, pastikan environment variable VITE_API_URL mengarah
+                ke URL backend Render dan lakukan redeploy frontend.
+              </small>
+            </div>
+
+            <Button
+              type="button"
+              variant="danger"
+              size="sm"
+              onClick={loadRuntime}
+            >
+              <BsArrowClockwise />
+              Coba Lagi
+            </Button>
+          </Alert>
+        )}
+
         <Row className="g-4 align-items-start">
           <Col lg={8}>
             <Card as="section" className="chat-card surface-card">
@@ -328,7 +378,7 @@ export default function Home() {
                 </div>
               </Card.Header>
 
-              {chat.length <= 1 && quickPrompts.length > 0 && (
+              {chat.length <= 1 && quickPrompts.length > 0 && online && (
                 <div className="quick-start">
                   {quickPrompts.map((faq) => (
                     <Button
@@ -338,6 +388,7 @@ export default function Home() {
                       onClick={() => handleSend(faq.question, faq)}
                     >
                       <BsLightningChargeFill />
+
                       {faq.question}
                     </Button>
                   ))}
@@ -371,15 +422,19 @@ export default function Home() {
                   <Form.Control
                     value={message}
                     onChange={(event) => setMessage(event.target.value)}
-                    placeholder="Contoh: Saya ingin mengajukan surat keterangan"
-                    disabled={loading}
+                    placeholder={
+                      online
+                        ? "Contoh: Saya ingin mengajukan surat keterangan"
+                        : "Backend offline — periksa konfigurasi deployment"
+                    }
+                    disabled={loading || !online}
                     aria-label="Tulis pertanyaan akademik"
                   />
 
                   <Button
                     type="submit"
                     className="send-button"
-                    disabled={loading || !message.trim()}
+                    disabled={loading || !message.trim() || !online}
                   >
                     {loading ? (
                       <Spinner animation="border" size="sm" />
@@ -394,7 +449,13 @@ export default function Home() {
           </Col>
 
           <Col lg={4}>
-            <FaqList faqs={faqs} onPick={handleSend} />
+            <FaqList
+              faqs={faqs}
+              onPick={handleSend}
+              loading={faqsLoading}
+              error={connectionError}
+              onRetry={loadRuntime}
+            />
           </Col>
         </Row>
       </Container>

@@ -5,15 +5,26 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 
+
 BASE_DIR = Path(__file__).resolve().parent
-load_dotenv(BASE_DIR / ".env")
+
+load_dotenv(
+    BASE_DIR / ".env"
+)
 
 
-def _resolve_path(value: str, default: str) -> Path:
+def _resolve_path(
+    value: str,
+    default: str,
+) -> Path:
     raw = value or default
     path = Path(raw)
 
-    return path if path.is_absolute() else BASE_DIR / path
+    return (
+        path
+        if path.is_absolute()
+        else BASE_DIR / path
+    )
 
 
 class Config:
@@ -22,6 +33,15 @@ class Config:
             "PORT",
             "5000",
         )
+    )
+
+    ENVIRONMENT = (
+        os.getenv(
+            "APP_ENV",
+            "development",
+        )
+        .strip()
+        .lower()
     )
 
     CLIENT_ORIGINS = [
@@ -58,6 +78,30 @@ class Config:
             "",
         ),
         "models/intent_classifier.json",
+    )
+
+    EVALUATION_ARTIFACTS_DIR = _resolve_path(
+        os.getenv(
+            "EVALUATION_ARTIFACTS_DIR",
+            "",
+        ),
+        "reports/model-evaluation",
+    )
+
+    LOG_STORAGE = (
+        os.getenv(
+            "LOG_STORAGE",
+            "jsonl",
+        )
+        .strip()
+        .lower()
+    )
+
+    DATABASE_URL = (
+        os.getenv(
+            "DATABASE_URL",
+            "",
+        ).strip()
     )
 
     CONVERSATION_LOG_PATH = _resolve_path(
