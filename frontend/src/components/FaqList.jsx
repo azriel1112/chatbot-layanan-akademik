@@ -1,8 +1,19 @@
 import React, { useMemo, useState } from "react";
-import { Badge, Button, Card, Form, InputGroup } from "react-bootstrap";
+
 import {
+  Badge,
+  Button,
+  Card,
+  Form,
+  InputGroup,
+  Spinner,
+} from "react-bootstrap";
+
+import {
+  BsArrowClockwise,
   BsArrowRight,
   BsBriefcase,
+  BsExclamationTriangle,
   BsFileEarmarkText,
   BsMortarboard,
   BsPatchCheck,
@@ -12,21 +23,33 @@ import {
 function getCategoryIcon(category) {
   const icons = {
     Akreditasi: <BsPatchCheck />,
+
     "Kerja Praktek": <BsBriefcase />,
+
     "Magang Mandiri": <BsBriefcase />,
+
     "Seminar Proposal": <BsFileEarmarkText />,
+
     "Tugas Akhir": <BsMortarboard />,
   };
 
   return icons[category] || <BsFileEarmarkText />;
 }
 
-export default function FaqList({ faqs, onPick }) {
+export default function FaqList({
+  faqs,
+  onPick,
+  loading = false,
+  error = "",
+  onRetry,
+}) {
   const [selectedCategory, setSelectedCategory] = useState("Semua");
+
   const [search, setSearch] = useState("");
 
   const categories = useMemo(() => {
     const uniqueCategories = [...new Set(faqs.map((faq) => faq.category))];
+
     return ["Semua", ...uniqueCategories];
   }, [faqs]);
 
@@ -51,7 +74,9 @@ export default function FaqList({ faqs, onPick }) {
       <Card.Body>
         <div className="section-heading">
           <span className="section-kicker">Referensi cepat</span>
+
           <h2>Contoh Pertanyaan</h2>
+
           <p>Pilih topik atau cari pertanyaan yang paling sesuai.</p>
         </div>
 
@@ -59,11 +84,13 @@ export default function FaqList({ faqs, onPick }) {
           <InputGroup.Text>
             <BsSearch />
           </InputGroup.Text>
+
           <Form.Control
             value={search}
             onChange={(event) => setSearch(event.target.value)}
             placeholder="Cari pertanyaan..."
             aria-label="Cari contoh pertanyaan"
+            disabled={loading || Boolean(error)}
           />
         </InputGroup>
 
@@ -75,6 +102,7 @@ export default function FaqList({ faqs, onPick }) {
               size="sm"
               variant={selectedCategory === category ? "primary" : "light"}
               onClick={() => setSelectedCategory(category)}
+              disabled={loading || Boolean(error)}
             >
               {category}
             </Button>
@@ -82,7 +110,31 @@ export default function FaqList({ faqs, onPick }) {
         </div>
 
         <div className="faq-list">
-          {filteredFaqs.length > 0 ? (
+          {loading && (
+            <div className="faq-runtime-state">
+              <Spinner animation="border" size="sm" />
+              Mengambil FAQ dari backend...
+            </div>
+          )}
+
+          {!loading && error && (
+            <div className="faq-runtime-state error">
+              <BsExclamationTriangle />
+
+              <strong>FAQ gagal dimuat.</strong>
+
+              <span>{error}</span>
+
+              <Button type="button" size="sm" onClick={onRetry}>
+                <BsArrowClockwise />
+                Coba Lagi
+              </Button>
+            </div>
+          )}
+
+          {!loading &&
+            !error &&
+            filteredFaqs.length > 0 &&
             filteredFaqs.map((faq) => (
               <button
                 key={faq.id}
@@ -90,21 +142,27 @@ export default function FaqList({ faqs, onPick }) {
                 className="faq-item"
                 onClick={() => onPick(faq.question, faq)}
               >
-                <span className="faq-icon">{getCategoryIcon(faq.category)}</span>
+                <span className="faq-icon">
+                  {getCategoryIcon(faq.category)}
+                </span>
 
                 <span className="faq-item-content">
                   <Badge bg="light" text="primary" className="faq-category">
                     {faq.category}
                   </Badge>
+
                   <span className="faq-question">{faq.question}</span>
                 </span>
 
                 <BsArrowRight className="faq-arrow" />
               </button>
-            ))
-          ) : (
+            ))}
+
+          {!loading && !error && filteredFaqs.length === 0 && (
             <div className="faq-empty">
-              Tidak ada pertanyaan yang cocok dengan pencarianmu.
+              {faqs.length === 0
+                ? "Backend belum mengirimkan " + "data FAQ."
+                : "Tidak ada pertanyaan yang " + "cocok dengan pencarianmu."}
             </div>
           )}
         </div>
